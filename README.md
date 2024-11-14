@@ -14,8 +14,8 @@ A systematic process for generating realistic personas based on cognitive rules,
 
 ```mermaid
 graph TD
-    A[1. Hard Rules] -->|Enforces| B[2. Basic Generation]
-    B -->|Seeds| C[3. MCMC Refinement]
+    A[Hard Rules] -->|Enforces| B[Basic Generation]
+    B -->|Seeds| C[MCMC Refinement]
     C -->|Validates| A
 ```
 
