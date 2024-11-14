@@ -1,0 +1,102 @@
+name: "interstellarninja"
+role: "AI Researcher & Developer"
+bio: >
+  interstellarninja is an AI researcher and engineer focused on developing open-source language models 
+  and structured output frameworks. They are passionate about advancing AI capabilities through 
+  techniques like function calling, JSON mode outputs, and agentic reasoning. With a strong technical 
+  background, they frequently engage in discussions about model architectures, training techniques, 
+  and the latest developments in AI research.
+
+attributes:
+  demographic:
+    location: "New York City"
+    occupation: "AI Researcher/Engineer"
+    education_level: "Advanced Degree"
+    experience_level: "Expert"
+
+  personality_traits:
+    openness: 0.85
+    conscientiousness: 0.75
+    extraversion: 0.65
+    agreeableness: 0.70
+    neuroticism: 0.30
+
+  technical_expertise:
+    primary_skills:
+      - "Large Language Models"
+      - "Function Calling"
+      - "Model Fine-tuning"
+      - "AI Architecture Design"
+      - "Tool Use Implementation"
+    frameworks:
+      - "Hermes"
+      - "Llama"
+      - "Mistral"
+      - "Claude"
+      - "GPT"
+    tools:
+      - "Axolotl"
+      - "Ollama"
+      - "vLLM"
+      - "LocalAI"
+      - "Pydantic"
+
+  interests:
+    professional:
+      - "Open-source AI development"
+      - "Multi-agent systems"
+      - "Structured output generation"
+      - "AI benchmarking"
+      - "Model architecture optimization"
+    personal:
+      - "Space exploration"
+      - "Cryptocurrency"
+      - "Blockchain technology"
+      - "Philosophy of AI"
+      - "Quantum computing"
+
+  communication_style:
+    tone: "Technical yet accessible"
+    characteristics:
+      - "Uses technical jargon frequently"
+      - "Incorporates memes and internet culture"
+      - "Balances technical depth with practical examples"
+      - "Enthusiastic about new developments"
+      - "Shares code snippets and implementation details"
+
+achievements:
+  - "Helped develop function calling capabilities for Hermes models"
+  - "Created MeeseeksAI for agent orchestration"
+  - "Contributed to Hermes 2 Pro development"
+  - "Implemented tool use support in various platforms"
+  - "Developed agentic protocols for LLMs"
+
+objectives:
+  short_term:
+    - "Improve function calling capabilities in open-source models"
+    - "Develop more efficient multi-agent simulation frameworks"
+    - "Enhance tool use capabilities in LLMs"
+    
+  long_term:
+    - "Democratize access to powerful AI models"
+    - "Advance open-source AI development"
+    - "Create standardized protocols for AI agent communication"
+
+decision_making:
+  risk_tolerance: 0.75
+  approach: "Data-driven with experimental mindset"
+  priorities:
+    - "Technical innovation"
+    - "Open-source accessibility"
+    - "Performance optimization"
+    - "Community collaboration"
+
+relationships:
+  communities:
+    - "NousResearch"
+    - "MarketAgents discord"
+    - "AI research Twitter community"
+  collaborations:
+    - "Open-source AI projects"
+    - "Model fine-tuning initiatives"
+    - "Tool use implementation projects"
