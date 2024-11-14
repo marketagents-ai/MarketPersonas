@@ -128,79 +128,22 @@ graph TD
     PM --> OF
     OF --> YS
 ```
+## Advanced Features
 
-# Rule-Based Persona Generator
+### 1. Weighted Distribution
+- Supports probability distributions for realistic attribute generation
+- Handles normal distribution for personality traits
+- Allows custom weighting for occupation frequencies
 
-A sophisticated system for generating realistic personas based on cognitive rules, attribute relationships, and demographic constraints. This system creates consistent, believable character profiles for simulation or gaming environments, with a particular focus on buyer/seller scenarios.
+### 2. Validation Rules
+- Multi-factor validation for demographic consistency
+- Cross-attribute validation rules
+- Conditional relationship application
 
-## Core Concepts
-
-### 1. Attribute Management
-The system manages persona attributes through two primary mechanisms:
-- **Options**: Discrete choices or numerical ranges for each attribute
-- **Relationships**: Inter-attribute dependencies and influences
-
-### 2. Cognitive Rule System
-The generator employs several layers of cognitive rules:
-
-#### a. Demographic Consistency
-- Age-appropriate occupations
-- Education-level requirements
-- Income range validation
-- Gender-specific name generation
-
-#### b. Personality Modeling
-- Implements Big Five personality traits:
-  - Openness
-  - Conscientiousness
-  - Extraversion
-  - Agreeableness
-  - Neuroticism
-- Uses normal distribution for realistic trait generation
-- Maintains psychological consistency through trait relationships
-
-#### c. Attribute Relationships
-- Weighted influences between attributes
-- Conditional relationships based on demographic factors
-- Inverse relationships for opposing characteristics
-- Multi-attribute validation rules
-
-### 3. Configuration System
-- YAML-based configuration files for:
-  - Attribute options and ranges
-  - Inter-attribute relationships
-  - Validation rules
-  - Persona templates
-- Easily extensible without code modifications
-
-### 4. Generation Process
-
-The system follows a structured generation process:
-
-1. **Initialization**
-   - Load configurations
-   - Set up relationship matrices
-   - Initialize validation rules
-
-2. **Core Generation**
-   - Generate attributes in priority order
-   - Apply relationship influences
-   - Validate combinations
-   - Ensure demographic consistency
-
-3. **Refinement**
-   - Apply personality trait modeling
-   - Ensure statistical distribution
-   - Format persona description
-
-4. **Output**
-   - Generate formatted YAML files
-   - Create human-readable descriptions
-   - Save to specified directory
-
-## Architecture Diagram
-
-The following diagram illustrates the system's architecture and the flow of data through the cognitive rule engine:
+### 3. Extensibility
+- Plugin system for custom attribute generators
+- Configurable templates for persona formatting
+- Flexible output formats (YAML, JSON, Text)
 
 ## Implementation Example
 
@@ -246,33 +189,9 @@ age:
       conditions:
         - "age > 60"
 ```
-
-## Advanced Features
-
-### 1. Weighted Distribution
-- Supports probability distributions for realistic attribute generation
-- Handles normal distribution for personality traits
-- Allows custom weighting for occupation frequencies
-
-### 2. Validation Rules
-- Multi-factor validation for demographic consistency
-- Cross-attribute validation rules
-- Conditional relationship application
-
-### 3. Extensibility
-- Plugin system for custom attribute generators
-- Configurable templates for persona formatting
-- Flexible output formats (YAML, JSON, Text)
-
 ---
 
 **High-Level Overview:**
-
-The project is designed to generate realistic personas by randomly assigning attributes to each persona, considering predefined options and relationships between attributes. These personas are then saved as YAML files. The main components of the project are:
-
-- **Attribute Options**: Defines possible values for each attribute (e.g., age, occupation).
-- **Attribute Relationships**: Specifies how attributes influence each other (e.g., age affects occupation).
-- **Persona Generation**: Creates personas by selecting attributes based on options and relationships.
 
 **Class and Function Breakdown with Relationships and IPO:**
 
@@ -457,90 +376,6 @@ flowchart TD
     AssignCrypto & AssignSavings & AssignDefaultInvestment --> UpdatePersonaData[Update Persona Data]
     UpdatePersonaData --> End
 ```
-
-Now, let's examine each step in more detail:
-
-1. Input:
-   - YAML configuration files: attribute_options.yaml, attribute_relationships.yaml, persona_template.yaml
-   - Number of personas to generate
-
-Processing:
-   - Load configuration files
-   - Initialize AttributeOptions, AttributeRelationships, and PersonaGenerator classes
-
-Output:
-   - Initialized objects ready for persona generation
-
-Expected outcome: The system is prepared with all necessary data and objects to start generating personas.
-
-2. Input:
-   - Initialized objects from step 1
-
-Processing:
-   - Generate a persona:
-     a. Iterate through attributes
-     b. Generate each attribute value
-     c. Apply relationship weights and adjust values accordingly
-   - Format persona data using the template
-
-Output:
-   - A Persona object with generated attributes
-
-Expected outcome: A realistic persona with attributes that are influenced by each other, reflecting real-world relationships between characteristics.
-
-3. Input:
-   - Generated Persona object
-
-Processing:
-   - Convert Persona object to YAML format
-   - Save YAML to a file in the output directory
-
-Output:
-   - YAML file containing the generated persona
-
-Expected outcome: A well-structured, human-readable file containing the persona data, ready for use in market simulations or other applications.
-
-4. Input:
-   - Number of personas to generate
-
-Processing:
-   - Repeat steps 2-3 for the specified number of personas
-
-Output:
-   - Multiple YAML files, each containing a unique persona
-
-Expected outcome: A collection of diverse, realistic personas that can be used for market simulations or other purposes requiring varied user profiles.
-
-The current weights and relationships affect the generation of personas in several ways:
-
-1. Age-based relationships:
-   - Younger personas are more likely to have lower education levels and less investment experience.
-   - Older personas (65+) have a high probability of being retired.
-   - Middle-aged personas are more likely to have higher income brackets and more investment experience.
-
-2. Education and occupation relationships:
-   - Higher education levels are associated with higher-income occupations and income brackets.
-   - Certain occupations are more likely in specific geographic locations.
-
-3. Income-based relationships:
-   - Higher income brackets are associated with more liberal spending habits, higher saving preferences, and more investment experience.
-   - Income influences risk tolerance and investment preferences.
-
-4. Personality trait influences:
-   - Openness is positively correlated with risk tolerance and diverse hobbies.
-   - Conscientiousness is positively correlated with saving preferences and negatively with spending habits.
-   - Extraversion is positively correlated with spending habits and certain occupations.
-   - Neuroticism is negatively correlated with risk tolerance.
-
-5. Risk profile relationships:
-   - Risk tolerance and risk appetite are strongly correlated.
-   - Higher risk tolerance is associated with more aggressive investment preferences.
-
-6. Life stage and events:
-   - Relationship status influences spending habits, saving preferences, and goals.
-   - Recent life events affect mood, short-term goals, and long-term goals.
-
-These relationships ensure that the generated personas have realistic and coherent attribute combinations, avoiding unlikely or contradictory characteristics. The weighted system allows for some variability while maintaining overall plausibility, resulting in a diverse but believable set of personas for market simulations or other applications requiring varied user profiles.
 
 ## Example Persona Construction Flow
 
