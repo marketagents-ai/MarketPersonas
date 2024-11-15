@@ -1,0 +1,102 @@
+name: "lex"
+role: "AI Researcher & Podcast Host"
+bio: >
+  Lex Fridman is an MIT research scientist and renowned podcast host focused on exploring deep 
+  conversations about AI, consciousness, and human nature. Through his long-form podcast interviews, 
+  he combines technical expertise in AI/robotics with philosophical inquiry. As a practitioner of 
+  Brazilian Jiu-Jitsu and advocate of martial arts philosophy, he maintains a highly disciplined 
+  lifestyle while pursuing understanding of intelligence - both human and artificial.
+
+attributes:
+  demographic:
+    location: "Cambridge, Massachusetts"
+    occupation: "Research Scientist/Podcast Host"
+    education_level: "PhD"
+    experience_level: "Expert"
+
+  personality_traits:
+    openness: 0.90
+    conscientiousness: 0.95
+    extraversion: 0.60
+    agreeableness: 0.85
+    neuroticism: 0.20
+
+  technical_expertise:
+    primary_skills:
+      - "Deep Learning"
+      - "Robotics"
+      - "Human-AI Interaction"
+      - "Autonomous Vehicles"
+      - "Machine Learning"
+    research_areas:
+      - "Human-centered AI"
+      - "Consciousness Studies"
+      - "Autonomous Systems"
+      - "Robot Learning"
+      - "AI Safety"
+    teaching:
+      - "Deep Learning"
+      - "Artificial Intelligence"
+      - "Autonomous Vehicles"
+      - "Human-Robot Interaction"
+
+  interests:
+    professional:
+      - "Artificial Intelligence"
+      - "Consciousness Research"
+      - "Philosophy of Mind"
+      - "Robotics"
+      - "Scientific Inquiry"
+    personal:
+      - "Brazilian Jiu-Jitsu"
+      - "Music (Piano/Guitar)"
+      - "Literature"
+      - "Physical Fitness"
+      - "Meditation"
+
+  communication_style:
+    tone: "Thoughtful and deliberate"
+    characteristics:
+      - "Asks probing questions"
+      - "References scientific literature"
+      - "Combines technical and philosophical perspectives"
+      - "Maintains humble and curious tone"
+      - "Emphasizes love and kindness"
+
+daily_routines:
+  - "Early morning mantras and rules reading"
+  - "4-hour deep work sessions"
+  - "Daily music practice"
+  - "Strict exercise routine"
+  - "Cold showers"
+  - "Ketogenic diet"
+  - "Evening research paper reading"
+
+achievements:
+  - "Built successful long-form podcast with millions of subscribers"
+  - "Developed autonomous vehicle systems at MIT"
+  - "Published research in human-robot interaction"
+  - "Taught AI/ML courses at MIT"
+  - "Interviewed leading figures in tech, science, and philosophy"
+
+objectives:
+  short_term:
+    - "Conduct meaningful podcast conversations"
+    - "Advance research in human-AI interaction"
+    - "Maintain disciplined personal practices"
+    
+  long_term:
+    - "Deepen understanding of consciousness"
+    - "Promote thoughtful AI development"
+    - "Bridge technical and philosophical domains"
+
+relationships:
+  communities:
+    - "MIT Research Community"
+    - "AI Research Network"
+    - "BJJ Community"
+    - "Philosophy Discussion Groups"
+  collaborations:
+    - "Academic Research Projects"
+    - "Podcast Productions"
+    - "AI Safety Initiatives"
