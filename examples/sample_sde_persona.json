@@ -1,0 +1,58 @@
+{
+ "name": "David Chen",
+ "age": 25,
+ "gender": "Male",
+ "role": "Software Engineer I",
+ "occupation": "Junior Software Engineer at Meta",
+ "education_level": "B.S. in Computer Science from University of Washington",
+ "income": 165000,
+ "personality_traits": {
+   "openness": "High",
+   "conscientiousness": "Moderate-High",
+   "extraversion": "Moderate-Low", 
+   "agreeableness": "Moderate",
+   "neuroticism": "Moderate"
+ },
+ "hobbies_and_interests": [
+   "Gaming (particularly competitive esports)",
+   "Rock climbing",
+   "Learning Korean",
+   "Contributing to open-source projects",
+   "Mechanical keyboards"
+ ],
+ "values": [
+   "Technical excellence",
+   "Work-life balance", 
+   "Continuous learning",
+   "Environmental sustainability"
+ ],
+ "life_events": [
+   "Recently relocated to Bay Area from Seattle",
+   "First job after college",
+   "Just started living alone"
+ ],
+ "short_term_goals": [
+   "Master Meta's tech stack",
+   "Get promoted to E4 within 2 years",
+   "Build personal network in Silicon Valley"
+ ],
+ "long_term_goals": [
+   "Lead a technical team",
+   "Start a tech startup by 30",
+   "Achieve financial independence by 35"
+ ],
+ "investment_preferences": {
+   "stocks": 80,
+   "crypto": 15,
+   "emergency_fund": 5,
+   "additional_info": "Maxing out 401(k) with company match"
+ },
+ "stress_level": "Moderate-High",
+ "risk_tolerance": "High",
+ "emotional_intelligence": "Moderate",
+ "cognitive_style": [
+   "Analytical",
+   "Systematic approach to problem-solving",
+   "Prefers detailed documentation and clear specifications"
+ ]
+}
