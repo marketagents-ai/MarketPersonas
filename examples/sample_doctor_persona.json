@@ -1,0 +1,73 @@
+{
+ "name": "Sarah Patel, M.D., Ph.D.",
+ "age": 38,
+ "gender": "Female",
+ "role": "Chief of Neurology",
+ "occupation": "Neurologist at Massachusetts General Hospital",
+ "education_level": {
+   "medical_degree": "M.D. from Johns Hopkins School of Medicine",
+   "doctorate": "Ph.D. in Neuroscience from Johns Hopkins",
+   "residency": "Neurology Residency at Mayo Clinic",
+   "fellowship": "Neurodegenerative Disease Fellowship at MGH"
+ },
+ "income": 485000,
+ "personality_traits": {
+   "openness": "High",
+   "conscientiousness": "Very High",
+   "extraversion": "Moderate",
+   "agreeableness": "High",
+   "neuroticism": "Low-Moderate"
+ },
+ "hobbies_and_interests": [
+   "Classical piano",
+   "Medical research publication",
+   "Tennis",
+   "Wine tasting",
+   "Travel to medical conferences",
+   "High-end cooking"
+ ],
+ "values": [
+   "Excellence in patient care",
+   "Medical ethics",
+   "Work-life integration",
+   "Continuous medical education",
+   "Family wellbeing",
+   "Research advancement"
+ ],
+ "life_events": [
+   "Completed dual MD-PhD program",
+   "Recently promoted to Chief of Department",
+   "Published groundbreaking research in Alzheimer's treatment",
+   "Married to a cardiothoracic surgeon",
+   "Has two children ages 6 and 8"
+ ],
+ "short_term_goals": [
+   "Publish major research paper in Nature Neuroscience",
+   "Expand department's clinical trial program",
+   "Secure additional research funding",
+   "Mentor junior neurologists"
+ ],
+ "long_term_goals": [
+   "Develop novel treatment protocols for neurodegenerative diseases",
+   "Become hospital Chief Medical Officer",
+   "Establish a neurology research foundation",
+   "Achieve work-life balance while maintaining research excellence"
+ ],
+ "investment_preferences": {
+   "stocks_and_bonds": 60,
+   "real_estate": 20,
+   "retirement_accounts": 15,
+   "cash": 5,
+   "additional_info": "Conservative portfolio managed by financial advisor, maxing out retirement accounts, significant disability insurance"
+ },
+ "stress_level": "High",
+ "risk_tolerance": "Moderate",
+ "emotional_intelligence": "Very High",
+ "cognitive_style": [
+   "Detail-oriented",
+   "Research-driven decision making",
+   "Evidence-based approach",
+   "Strong diagnostic reasoning",
+   "Excellent pattern recognition"
+ ]
+}
