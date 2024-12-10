@@ -1,0 +1,3 @@
+Visualise non DTF generation metrics
+Add logic to ensure retirement condition includes their occupation prior to retirement
+Change Career domains into name career positions, currently haz messy grammar in placement of {str}
