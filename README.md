@@ -5,8 +5,10 @@
 
 A systematic process for generating realistic personas based on cognitive rules, attribute relationships, and demographic constraints. This system creates consistent, believable character profiles for simulation or gaming environments, with a particular focus on transaction scenarios.
 
+DTS is a sampling algorithm that deliberately inverts MCMC principles to achieve controlled divergence in constrained spaces. While MCMC and VAEs converge toward minimum energy states, DTS systematically explores the valid state space while maintaining constraint satisfaction. The algorithm draws inspiration from statistical physics concepts of entropy maximization, applying them to generate diverse but valid samples within defined constraint boundaries.
+
 ## What It Does
-- Creates realistic personas using rules + MCMC optimization
+- Creates realistic personas using rules + DTS optimization
 - Enforces hard constraints (e.g., "doctors need PhDs")
 - Optimizes soft relationships (e.g., "risk tolerance affects investment style")
 
@@ -15,7 +17,7 @@ A systematic process for generating realistic personas based on cognitive rules,
 ```mermaid
 graph TD
     A[Hard Rules] -->|Enforces| B[Basic Generation]
-    B -->|Seeds| C[MCMC Refinement]
+    B -->|Seeds| C[DTF Refinement]
     C -->|Validates| A
 ```
 
@@ -50,588 +52,318 @@ Output:
 ## Key Points
 1. Rules are never broken
 2. Initial state is randomly valid
-3. MCMC makes it realistic
+3. DTF makes it realistic
 4. More coherent than pure random
 5. More diverse than pure rules
 
-## Core Concepts
+## Core Flow
 
-### 1. MCMC Generation Pipeline
-The system uses MCMC sampling to generate personas through:
-- **State Space Exploration**: Intelligent traversal of possible persona configurations
-- **Likelihood Evaluation**: Scoring states based on attribute relationships and constraints
-- **Acceptance Criteria**: Metropolis-Hastings algorithm for state transitions
-- **Chain Convergence**: Burn-in period and thinning for optimal sampling
-
-### 2. Attribute Management
-- **Base Attributes**: Core demographic and personality traits
-- **Derived Attributes**: Calculated from relationships between base attributes
-- **Dynamic Ranges**: Context-aware attribute boundaries
-
-### 3. Cognitive Rule System
-The generator employs multiple validation layers:
-
-#### a. Demographic Validation
-- Real-world demographic constraints
-- Age-based validation rules
-- Geographic distribution modeling
-- Cultural context awareness
-
-#### b. Personality Framework
-- Comprehensive trait modeling including:
-  - Core personality traits
-  - Decision-making patterns
-  - Risk tolerance factors
-  - Social preferences
-- Statistical validation against population norms
-- Inter-trait consistency checks
-
-#### c. Relationship Engine
-- Bidirectional attribute influences
-- Complex conditional logic
-- Weighted probability distributions
-- Dynamic adjustment system
-
-### 4. Generation Process
-
-The system implements a staged MCMC generation approach:
-
-1. **Initialization**
-   - Configure MCMC parameters
-   - Set up state space
-   - Initialize chain
-
-2. **Chain Evolution**
-   - Propose state transitions
-   - Evaluate likelihood scores
-   - Apply acceptance criteria
-   - Track convergence metrics
-
-3. **Sampling & Validation**
-   - Apply burn-in period
-   - Perform chain thinning
-   - Validate demographic consistency
-   - Ensure statistical distribution
-
-4. **Output Processing**
-   - Generate formatted YAML files
-   - Create diagnostic visualizations
-   - Export chain statistics
-   - Save persona metadata
-
-
-The MCMC implementation in this script uses the Metropolis-Hastings algorithm to explore the space of possible personas. Here's how it works:
-
-1. **State Space**:
-   - Each persona is a state in a high-dimensional space
-   - Dimensions correspond to attributes (age, education, personality traits, etc.)
-   - Some dimensions are discrete (occupation, education level)
-   - Others are continuous (personality scores, income)
-
-2. **Likelihood Function**:
-   - Measures how "good" a persona is
-   - Combines relationship scores and constraint satisfaction
-   - Higher scores mean more realistic/coherent personas
-   - Zero likelihood for invalid combinations
-
-3. **Proposal Mechanism**:
-   - Randomly selects 1-3 attributes to modify
-   - Proposes new values based on attribute options
-   - More related attributes have higher selection probability
-   - Maintains basic constraints during proposal
-
-4. **Acceptance Rule**:
-   - Compare likelihood of proposed state to current state
-   - Accept better states automatically
-   - Accept worse states probabilistically
-   - Ensures exploration of state space
-
-## Mathematical Formulation
-
-### State Definition
-$$
-X_t = \{x_1, x_2, ..., x_n\} \text{ where } x_i \text{ is attribute } i
-$$
-
-### Likelihood Function
-For a state $$X$$:
-
-$$
-L(X) = \begin{cases}
-0 & \text{if constraints violated} \\
-\exp(\sum_{r \in R} w_r S_r(X)) & \text{otherwise}
-\end{cases}
-$$
-
-Where:
-- $$R$$ is the set of relationships
-- $$w_r$$ is the weight of relationship $$r$$
-- $$S_r(X)$$ is the relationship score for $$r$$ in state $$X$$
-
-### Proposal Distribution
-For attributes $$A$$:
-
-$$
-Q(X' | X) = P(k) \prod_{i=1}^k P(a_i) P(v_i | X, a_i)
-$$
-
-Where:
-- $$k \sim \text{Uniform}(1,3)$$ is number of attributes to modify
-- $$P(a_i)$$ is selection probability for attribute $$i$$
-- $$P(v_i | X, a_i)$$ is value proposal distribution for attribute $$a_i$$
-
-### Acceptance Probability
-For current state $$X$$ and proposed state $$X'$$:
-
-$$
-\alpha(X' | X) = \min\left(1, \frac{L(X')}{L(X)}\right)
-$$
-
-### Update Rule
-For random $$u \sim \text{Uniform}(0,1)$$:
-
-$$
-X_{t+1} = \begin{cases}
-X' & \text{if } u < \alpha(X' | X_t) \\
-X_t & \text{otherwise}
-\end{cases}
-$$
-
-### Convergence Criterion
-Chain is considered converged when:
-
-$$
-\left|\frac{1}{N}\sum_{i=t-N}^t L(X_i) - \frac{1}{N}\sum_{i=t-2N}^{t-N} L(X_i)\right| < \epsilon
-$$
-
-Where:
-- $$N$$ is window size
-- $$\epsilon$$ is convergence threshold
-
-## Implementation Details
-
-The script implements this in the likelihood calculation:
+The base algorithm follows this pattern:
 
 ```python
-def likelihood(self, persona_data: Dict[str, Any]) -> float:
-    # Check hard constraints
-    if not self._check_hard_constraints(persona_data):
-        return 0.0
+def wander_tree(initial_state, constraints, relationships):
+    current_node = initial_state
+    exploration_tree = []
     
-    # Calculate relationship scores
-    score = 0.0
-    for attr, config in relationships.items():
-        if 'relationships' in config:
-            for relation in config['relationships']:
-                weighted_value, weight = self.get_weighted_value(
-                    attr, persona_data[attr],
-                    relation['secondary_attribute'],
-                    persona_data
-                )
-                score += weight * self._calculate_relationship_score(
-                    weighted_value,
-                    persona_data[relation['secondary_attribute']]
-                )
-    
-    return np.exp(score)
+    while not sufficient_diversity:
+        # Generate divergent child node
+        child = spawn_child_node(current_node)
+        
+        # Check validity against constraints
+        if validate_constraints(child, constraints):
+            # Calculate validity score
+            score = calculate_validity(child, relationships)
+            
+            # Accept with probability proportional to validity
+            if random() < min(1.0, score/current_score):
+                current_node = child
+                exploration_tree.append(child)
 ```
-
-And in the acceptance probability:
-
-```python
-def acceptance_probability(self, current: Dict[str, Any], 
-                         proposed: Dict[str, Any]) -> float:
-    current_likelihood = self.likelihood(current)
-    proposed_likelihood = self.likelihood(proposed)
-    
-    if current_likelihood == 0:
-        return 1.0
-    
-    return min(1.0, proposed_likelihood / current_likelihood)
-```
-
-The combination of these elements creates a MCMC process that:
-1. Starts with a valid initial persona
-2. Proposes modifications based on attribute relationships
-3. Accepts changes that maintain or improve coherence
-4. Eventually converges to realistic, well-balanced personas
-
-This formulation ensures that the generated personas maintain both:
-- Hard constraints from demographic rules
-- Soft constraints from attribute relationships
-
-The statistical nature of MCMC allows for:
-- Exploration of complex attribute combinations
-- Natural handling of competing constraints
-- Discovery of realistic persona patterns
-- Generation of diverse yet coherent personas
-
-
-**Class and Function Breakdown with Relationships and IPO:**
-
-1. **`Persona` Class (`pydantic.BaseModel`):**
-   - **Purpose**: Represents the final persona data structure with MCMC metadata.
-   - **Input**: `name`, `role`, `persona`, `objectives`, `metadata`.
-   - **Process**: Data validation and storage.
-   - **Output**: An instance containing persona information and generation metrics.
-
-2. **`AttributeOptions` Class:**
-
-   - **Purpose**: Manages attribute options loaded from a YAML file.
-   - **Input**: Path to `attribute_options.yaml`.
-   - **Process**:
-     - Loads attribute options into `self.options`.
-     - Provides methods to retrieve random attribute values considering any filters.
-   - **Output**: Provides attribute options for persona generation.
-
-   - **Key Methods**:
-     - `__init__(yaml_file: str)`: Loads attribute options from YAML.
-     - `get_random_option(attribute: str, persona_data: Dict[str, Any]) -> Any`:
-       - **Input**: Attribute name, current persona data.
-       - **Process**: Selects a random option for the attribute, applying filters if necessary.
-       - **Output**: Randomly selected attribute value.
-     - `filter_options(attribute: str, options: List[Any], persona_data: Dict[str, Any]) -> List[Any]`:
-       - Filters options based on current persona data.
-     - `is_valid_occupation(...)`:
-       - Checks if an occupation is valid for the persona's age, education, and income.
-     - `generate_personality_trait(...)`:
-       - Generates a personality trait value using a Gaussian distribution.
-     - `generate_ranged_value(...)`:
-       - Generates a value within a specified range, with special handling for 'age'.
-
-3. **`AttributeRelationships` Class:**
-
-   - **Purpose**: Manages attribute relationships loaded from a YAML file.
-   - **Input**: Path to `attribute_relationships.yaml`.
-   - **Process**:
-     - Loads attribute relationships into `self.relationships`.
-     - Provides methods to adjust attribute values based on relationships.
-   - **Output**: Provides relationship data for attribute adjustments.
-
-   - **Key Methods**:
-     - `__init__(yaml_file: str)`: Loads relationships from YAML.
-     - `get_weighted_value(...)`:
-       - **Input**: Primary attribute and value, secondary attribute, persona data.
-       - **Process**: Adjusts secondary attribute based on the primary attribute's value and defined relationships.
-       - **Output**: Adjusted attribute value and associated weight.
-     - `check_conditions(...)`:
-       - Evaluates conditions specified in relationships.
-     - `check_condition(...)`:
-       - Checks individual condition expressions.
-
-4. **`PersonaGenerator` Class:**
-
-   - **Purpose**: Base generator for persona creation.
-   - **Input**: Instances of `AttributeRelationships` and `AttributeOptions`.
-   - **Process**: 
-     - Initializes attribute lists
-     - Generates individual attributes
-     - Formats persona descriptions
-   - **Output**: A basic `Persona` instance.
-
-5. **`MCMCPersonaGenerator` Class:**
-
-   - **Purpose**: Advanced generator using MCMC sampling.
-   - **Input**: `base_generator`, `num_iterations`, `burn_in`, `adaptation_rate`.
-   - **Process**:
-     - Implements Metropolis-Hastings algorithm
-     - Manages state transitions
-     - Tracks chain history and acceptance rates
-   - **Output**: Statistically consistent personas.
-
-   - **Key Methods**:
-     - `likelihood(persona_data: Dict[str, Any]) -> float`:
-       - Evaluates persona state quality
-       - Checks constraints and relationships
-     - `propose_new_state(current_state: Dict[str, Any]) -> Dict[str, Any]`:
-       - Generates candidate persona states
-       - Maintains attribute relationships
-     - `acceptance_probability(current: Dict[str, Any], proposed: Dict[str, Any]) -> float`:
-       - Implements Metropolis-Hastings criterion
-       - Includes minimum acceptance threshold
-
-6. **`Visualizer` Class:**
-
-   - **Purpose**: Generates MCMC diagnostic visualizations.
-   - **Input**: `chain_history`, `acceptance_history`, `burn_in`.
-   - **Process**: Creates diagnostic plots including:
-     - Acceptance rate evolution
-     - Likelihood progression
-     - Attribute distributions
-   - **Output**: Diagnostic plots saved to the visualization directory.
-
-7. **Helper Functions:**
-
-   - `save_persona_to_file(persona: Persona, metadata: Dict[str, Any], output_dir: Path)`:
-     - **Purpose**: Saves persona with MCMC metadata.
-     - **Input**: Persona instance, MCMC metadata, output directory.
-     - **Process**: 
-       - Formats persona data with generation metrics
-       - Creates structured YAML output
-       - Includes MCMC statistics
-
-8. **Main Execution Block:**
-
-   - **Purpose**: Configurable entry point with MCMC options.
-   - **Process**:
-     - Parses command-line arguments
-     - Initializes appropriate generator (MCMC or basic)
-     - Manages visualization generation
-     - Handles persona output
-   - **Arguments**:
-     - `--no-mcmc`: Disables MCMC generation
-     - `--num-personas`: Number to generate
-     - `--iterations`: MCMC iterations
-     - `--burn-in`: Burn-in period
-     - `--adaptation-rate`: MCMC adaptation rate
-
-**Expected Outputs:**
-- **Generated Personas**: YAML files with:
-  - Personal details and traits
-  - MCMC generation metrics
-  - Likelihood scores
-  - Chain position information
-- **Diagnostic Visualizations**:
-  - Acceptance rate plots
-  - Likelihood evolution
-  - Attribute distribution analysis
-- **Console Output**:
-  - Generation progress
-  - MCMC statistics
-  - Final acceptance rates
-
-**Summary:**
-
-# System Component Analysis: Deterministic vs Probabilistic
-
-## 1. Strictly Deterministic Components (Rule-Based)
-
-### Hard Constraints
-- Education requirements for occupations
-- Minimum age requirements
-- Retirement age limits
-- Valid income ranges per occupation
-- Gender-specific name assignments
-- Basic validation rules
-
-### Attribute Dependencies
-```yaml
-# Example of deterministic rules
-occupation:
-  - value: "Software Engineer"
-    valid_education: ["Bachelor's", "Master's", "PhD"]
-    min_age: 22
-    retirement_age: 65
-    valid_income_range: [70000, 200000]
-```
-
-## 2. Probabilistic Components (Base Generation)
-
-### Initial Value Generation
-- Age distribution within valid ranges
-- Income distribution within occupation bounds
-- Basic personality trait generation
-- Random hobby selection
-- Initial goal selection
-
-```python
-def generate_personality_trait(min_val: float, max_val: float) -> float:
-    mean = (min_val + max_val) / 2
-    std_dev = (max_val - min_val) / 6
-    return random.gauss(mean, std_dev)  # Probabilistic
-```
-
-## 3. MCMC Refinement Layer
-
-### What MCMC Optimizes
-- Personality trait coherence
-- Income-education alignment
-- Risk tolerance relationships
-- Investment preference alignment
-- Life event consistency
-- Goal coherence
-
-```mermaid
-flowchart TD
-    subgraph Deterministic["Deterministic Rules"]
-        HC[Hard Constraints] --> VO[Validation Only]
-        DR[Dependency Rules] --> BO[Boundary Conditions]
-    end
-
-    subgraph Probabilistic["Initial Probability"]
-        RG[Random Generation] --> IV[Initial Values]
-        PD[Probability Distributions] --> AS[Attribute Selection]
-    end
-
-    subgraph MCMC["MCMC Refinement"]
-        PS[Propose State] --> EL[Evaluate Likelihood]
-        EL --> AR[Accept/Reject]
-        AR --> CH[Chain History]
-    end
-
-    Deterministic -->|Constrains| Probabilistic
-    Probabilistic -->|Seeds| MCMC
-    MCMC -->|Validates Against| Deterministic
-```
-
-## 4. Component Interaction Matrix
-
-| Component Type | Initial Generation | Final Output | MCMC Influence |
-|---------------|-------------------|--------------|----------------|
-| Hard Constraints | Deterministic | Deterministic | None (Always Enforced) |
-| Value Ranges | Probabilistic | Probabilistic | Medium |
-| Relationships | Semi-Deterministic | Probabilistic | High |
-| Personality Traits | Probabilistic | Probabilistic | High |
-| Life Events | Probabilistic | Probabilistic | Medium |
-| Goals | Probabilistic | Probabilistic | High |
-
-## 5. MCMC Refinement Process
-
-```mermaid
-stateDiagram-v2
-    [*] --> Initial: Rule-Based Generation
-
-    state Initial {
-        Deterministic --> Probabilistic
-        Probabilistic --> InitialState
-    }
-
-    state "MCMC Chain" as Chain {
-        [*] --> ProposeChange: Select Attributes
-        ProposeChange --> ValidateRules: Check Deterministic
-        ValidateRules --> EvaluateLikelihood: Check Probabilistic
-        EvaluateLikelihood --> AcceptReject
-        AcceptReject --> ProposeChange: Continue
-    }
-
-    Initial --> Chain: Start Optimization
-    Chain --> FinalState: Converged
-    
-    state FinalState {
-        [*] --> ValidateAll: Final Checks
-        ValidateAll --> Format: Output
-    }
-```
-
-## 6. Processing Flow by Component Type
-
-### Deterministic Flow (Rules)
-1. Load configuration constraints
-2. Validate attribute combinations
-3. Enforce hard limits
-4. Check relationship requirements
-
-### Probabilistic Flow (Initial)
-1. Generate base values within ranges
-2. Apply basic distributions
-3. Select initial attribute sets
-4. Create starting relationships
-
-### MCMC Refinement Flow
-1. Propose attribute modifications
-2. Check against deterministic rules
-3. Evaluate probabilistic likelihood
-4. Accept/reject changes
-5. Update chain history
-
-## 7. Example Processing Chain
-
-For generating a software engineer persona:
-
-```plaintext
-Deterministic Rules:
-- Must have Bachelor's or higher
-- Age must be 22+
-- Income must be in valid range
-- Must not exceed retirement age
-
-Initial Probabilistic Generation:
-- Random age within valid range
-- Random education level meeting minimum
-- Random personality traits
-- Random initial goals
-
-MCMC Refinement:
-- Adjust personality traits for career consistency
-- Refine income based on experience/education
-- Optimize goal alignment
-- Balance risk tolerance
-```
-
-## 8. System Balance
-
-The system maintains balance through:
-
-1. **Rule Enforcement**: ~30% (Deterministic)
-   - Hard constraints
-   - Validation rules
-   - Basic relationships
-
-2. **Initial Generation**: ~20% (Probabilistic)
-   - Base value selection
-   - Initial distributions
-   - Starting states
-
-3. **MCMC Optimization**: ~50% (Guided Probabilistic)
-   - Relationship refinement
-   - Coherence optimization
-   - Pattern discovery
-
-# Conclusion
-
-This persona generation system represents a novel approach to creating realistic character profiles by combining deterministic rules with statistical optimization through MCMC. The key innovations include:
-
-## Technical Achievements
-
-1. **Hybrid Architecture**
-   - Successfully merges rule-based constraints with probabilistic optimization
-   - Maintains hard demographic constraints while allowing flexible trait relationships
-   - Achieves balance between consistency and diversity
-
-2. **MCMC Implementation**
-   ```mermaid
-   graph LR
-       A[Rule Enforcement] -->|30%| D[Final Persona]
-       B[Initial Generation] -->|20%| D
-       C[MCMC Optimization] -->|50%| D
-   ```
-   - Implements Metropolis-Hastings algorithm for persona optimization
-   - Uses sophisticated likelihood functions for trait coherence
-   - Provides statistical validation of generated personas
-
-3. **Relationship Modeling**
-   - Creates complex, interconnected attribute networks
-   - Handles both direct and inverse relationships
-   - Supports conditional dependencies and weighted influences
-
-## Practical Applications
-
-- **Simulation Environments**: Generate realistic agent populations
-- **Testing Scenarios**: Create diverse user profiles
-- **Gaming Applications**: Develop NPC characters
-- **Market Research**: Model consumer segments
-- **Training Data**: Generate synthetic datasets
 
 ## Key Innovations
 
-1. The system moves beyond traditional:
-   - Random generation (too chaotic)
-   - Rule-based systems (too rigid)
-   - Pure statistical approaches (unrealistic)
+1. **Inverted Acceptance Probability**
+   - Traditional MCMC: `P(accept) = min(1, π(x')/π(x))`
+   - DTS: `P(accept) = min(1, V(x')/V(x))` where V is validity score
+   - Forces exploration while maintaining realistic bounds
 
-2. Instead, it provides:
-   - Statistically sound personas
-   - Demographically accurate profiles
-   - Psychologically coherent traits
-   - Realistic attribute relationships
+2. **Adaptive Node Spawning**
+```python
+num_modifications = max(1, min(4, int(1 + 3 * (1 - recent_acceptance_rate))))
+attributes_to_modify = weighted_sample(attributes, size=num_modifications)
+```
 
-## Future Directions
+3. **Relationship Preservation**
+- Uses weighted attribute relationships instead of transition kernels
+- Maintains statistical validity while allowing divergence
+- Handles both categorical and continuous attributes
 
-The architecture supports expansion through:
-1. Additional attribute relationships
-2. Enhanced MCMC optimization strategies
-3. New demographic constraint sets
-4. Extended personality modeling
-5. Add an LLM to generate in parallel to create a generative twin
+4. **Constraint Management**
+```python
+def validate_constraints(node, constraints):
+    # Hard constraints (e.g., education requirements)
+    if not check_hard_constraints(node):
+        return False
+        
+    # Relationship constraints
+    return check_relationship_validity(node)
+```
 
-This framework demonstrates that combining rule-based systems with statistical optimization can create more realistic and coherent personas than either approach alone, while maintaining the flexibility to adapt to various use cases and domains.
+## Advantages Over Traditional Methods
+
+1. **VS. MCMC**
+   - Actively promotes diversity rather than convergence
+   - Maintains validity through constraints rather than distribution sampling
+   - Better handles mixed categorical/continuous spaces
+
+2. **VS. VAEs/GANs**
+   - No training required
+   - Explicit constraint handling
+   - Deterministic validity checks
+   - No mode collapse issues
+
+3. **VS. Rejection Sampling**
+   - More efficient in high-dimensional constrained spaces
+   - Maintains attribute relationships
+   - Guided exploration rather than blind sampling
+
+## Implementation Details
+
+The core components work together as follows:
+
+```python
+class DivergentTreeSampler:
+    def spawn_child_node(self, parent_node):
+        # Select attributes to modify based on relationships
+        attributes = select_weighted_attributes()
+        
+        # Generate modifications that promote divergence
+        modifications = generate_divergent_changes(attributes)
+        
+        # Apply while maintaining minimal validity
+        return apply_modifications(parent_node, modifications)
+        
+    def validity_score(self, node):
+        # Calculate relationship preservation
+        relationship_score = calculate_relationship_score(node)
+        
+        # Calculate constraint satisfaction
+        constraint_score = calculate_constraint_score(node)
+        
+        return combine_scores(relationship_score, constraint_score)
+```
+
+## Statistical Guarantees
+
+While DTS doesn't guarantee convergence to a target distribution (by design), it provides:
+
+1. Constraint Satisfaction: All generated samples meet hard constraints
+2. Relationship Preservation: Maintains specified attribute correlations
+3. Diversity Maximization: Actively explores valid state space
+4. Statistical Validity: Generated populations match specified distributions
+
+## Performance Characteristics
+
+- Time Complexity: O(n * c * r) where:
+  - n = number of attributes
+  - c = number of constraints
+  - r = number of relationships
+- Space Complexity: O(t) where t = size of exploration tree
+- Acceptance Rate: Typically 30-70% depending on constraint strictness
+
+## Use Cases
+
+Particularly suited for:
+- Generating diverse but realistic personas
+- Exploring constrained possibility spaces
+- Maintaining complex attribute relationships
+- Scenarios requiring explicit constraint satisfaction
+
+```mermaid
+flowchart TB
+    Start([Initial Valid State]) --> Root[Root Node]
+    
+    
+        Root --> Diverge{Diverge?}
+        
+        Diverge -->|Yes| Spawn[Spawn Child Node]
+        Spawn --> Valid{Valid?}
+        
+        Valid -->|Yes| Store[Store Node]
+        Store --> Diverse{Enough<br>Diversity?}
+        
+        Diverse -->|No| Diverge
+        Valid -->|No| Diverge
+        
+        Diverse -->|Yes| Complete([Complete])
+    
+    
+    %% Styling
+    classDef state fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+    classDef decision fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+    classDef process fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+
+    class Start,Complete state
+    class Diverge,Valid,Diverse decision
+    class Root,Spawn,Store process
+```
+---
+
+Basic Usage:
+```bash
+# Generate 100 personas with default settings
+python persona_generator.py
+
+# Generate 500 personas with more iterations for better diversity
+python persona_generator.py --num-personas 500 --iterations 2000
+
+# Generate personas without using DTS (simpler but less diverse)
+python persona_generator.py --no-wandering --num-personas 100
+```
+
+Common Parameters:
+```bash
+--num-personas N        Number of personas to generate (default: 100)
+--iterations N          Number of DTS iterations (default: 1000)
+--burn-in N            Initial iterations to discard (default: 100)
+--exploration-rate X    Rate of exploration (0-1, default: 0.1)
+--output-dir PATH      Output directory (default: 'output')
+--debug                Enable detailed logging
+--skip-visualizations  Skip generating visualizations
+```
+
+Expected Outputs:
+```
+output/
+├── [timestamp]/
+│   ├── personas/                    # Generated personas
+│   │   ├── [Name1].yaml
+│   │   ├── [Name1].json
+│   │   └── [Name1].md
+│   ├── visualizations/              # Visual analysis
+│   │   ├── diagnostics/
+│   │   │   ├── wandering_diagnostics_1.png
+│   │   │   └── wandering_diagnostics_2.png
+│   │   └── personality/
+│   │       └── personality_analysis.png
+│   └── statistics/                  # Population analysis
+│       └── population_statistics.md
+```
+
+Example Command with All Options:
+```bash
+python persona_generator.py \
+  --num-personas 200 \
+  --iterations 1500 \
+  --burn-in 150 \
+  --exploration-rate 0.15 \
+  --output-dir "my_personas" \
+  --debug
+```
+
+This will generate:
+1. 200 diverse personas
+2. Diagnostic visualizations showing the exploration process
+3. Personality trait analysis across generations
+4. Comprehensive population statistics
+5. Detailed generation logs (due to --debug)
+
+The script will maintain distributions of:
+- Demographics (age, gender)
+- Education levels
+- Occupations
+- Income ranges
+- Personality traits
+- Other defined attributes
+
+While ensuring all relationships (like education-occupation, age-retirement, income-occupation) remain realistic according to the configured rules.
+
+
+# Configuration
+
+1. `attribute_options.yaml`:
+This is the primary configuration file that defines all possible attributes and their valid values/ranges. It contains:
+
+- Individual attributes with either ranges or discrete options:
+```yaml
+# Continuous range attributes
+age:
+  range: '18-80'
+income:
+  range: '20000-300000'
+
+# Discrete option attributes
+gender:
+  options:
+    - value: Male
+      distribution: 49
+    - value: Female
+      distribution: 49
+    - value: Non-binary
+      distribution: 2
+```
+
+- Occupation definitions with detailed constraints:
+```yaml
+occupation:
+  options:
+    - value: Software Developer
+      total_employment: 1656880
+      valid_education: [Some College, Bachelor's Degree, Master's Degree]
+      valid_income_range: [92589, 171951]
+      min_age: 22
+      retirement_age: 65
+```
+
+2. `attribute_relationships.yaml`:
+Defines how different attributes influence each other through weighted relationships:
+
+```yaml
+age:
+  relationships:
+    - secondary_attribute: education_level
+      weight: 0.8
+      conditions: [age<22]
+    - secondary_attribute: occupation
+      weight: 0.7
+```
+
+Key concepts:
+- `weight`: Strength of relationship (-1 to 1)
+- `conditions`: When relationships apply
+- Can include specific value assignments
+
+3. `persona_template.yaml` and `persona_template.md`:
+These define how the generated personas are formatted:
+
+```yaml
+template: >
+  name: {name}
+  description: >
+    {name} is a {age}-year-old {gender}...
+```
+
+Roles in the Script:
+
+1. AttributeOptions class:
+- Loads attribute_options.yaml
+- Validates configurations
+- Provides methods to get random valid options
+- Enforces constraints between attributes
+
+2. AttributeRelationships class:
+- Loads attribute_relationships.yaml
+- Calculates weighted influences between attributes
+- Ensures generated personas maintain realistic relationships
+
+3. PersonaGenerator class:
+- Uses both configurations to generate valid personas
+- Applies templates for output formatting
+- Maintains statistical validity and diversity
+
+4. DivergentTreeSampler class:
+- Uses the configurations to explore the valid state space
+- Maintains constraint satisfaction while maximizing diversity
+- Uses relationships to guide exploration
+
+The YAML configurations effectively create a framework of rules and relationships that guide the generation of realistic, diverse, yet constrained personas. The script uses these to create statistically valid populations while maintaining individual attribute relationships and constraints.
