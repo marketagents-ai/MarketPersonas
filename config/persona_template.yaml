@@ -1,0 +1,41 @@
+# persona_template.yaml
+template: >
+  name: {name}
+
+  description: >
+    {name} is a {age}-year-old {gender} with a career in {occupation}. Having achieved a {education_level} education, their current annual income is ${income:,}
+
+  demographics:
+    age: {age}
+    gender: {gender}
+    occupation: {occupation}
+    education_level: {education_level}
+    income: {income}
+
+  personality_traits:
+    openness: {openness}
+    conscientiousness: {conscientiousness}
+    extraversion: {extraversion}
+    agreeableness: {agreeableness}
+    neuroticism: {neuroticism}
+
+  attributes:
+    role: {role}
+    stress_level: {stress_level}
+    risk_tolerance: {risk_tolerance}
+    emotional_intelligence: {emotional_intelligence}
+    cognitive_style: {cognitive_style}
+    investment_preferences: {investment_preferences}
+
+  personal_details:
+    hobbies_and_interests: {hobbies_and_interests}
+    values: {values}
+    life_events: {life_events}
+
+  goals:
+    short_term: {short_term_goals}
+    long_term: {long_term_goals}
+
+  narrative: >
+    As a current {role} in the marketplace, {name} approaches decisions with a {cognitive_style} mindset.
+    Their risk tolerance of {risk_tolerance}% and it influences their approach, their financial preference is {investment_preferences}
