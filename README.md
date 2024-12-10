@@ -20,14 +20,14 @@ graph TD
     B -->|Seeds| C[DTF Refinement]
     C -->|Validates| A
 
-    %% Styling
-    classDef state fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
-    classDef decision fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
-    classDef process fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+%% Styling
+classDef state fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+classDef decision fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+classDef process fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
 
-    class Start,Complete state
-    class Diverge,Valid,Diverse decision
-    class Root,Spawn,Store process
+class Start,Complete state
+class Diverge,Valid,Diverse decision
+class Root,Spawn,Store process
 ```
 
 ## By The Numbers
