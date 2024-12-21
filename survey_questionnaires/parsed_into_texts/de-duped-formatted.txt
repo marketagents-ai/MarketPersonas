@@ -1,0 +1,190 @@
+I. Economic Outlook and Financial Attitudes:
+
+    Expectations for the economy (1 year and 5 years out).
+    Self-assessed financial knowledge.
+    Risk tolerance in financial decisions.
+    Sources of financial information and advice.
+    Concerns about the impact of inflation on personal finances.
+    Concerns about the impact of geopolitical events on personal finances.
+
+II. Employment, Compensation, and Benefits:
+
+    Current employment status (employed, unemployed, self-employed, retired, etc.).
+    If employed:
+        Type of employment (full-time, part-time, contract, etc.).
+        Occupation and industry.
+        Compensation structure (salary, hourly wage, commission).
+        Overtime pay eligibility.
+        Frequency of pay.
+        Regular bonuses or incentives (and how determined).
+        Approximate amount of bonuses received in the past year.
+        Participation in profit-sharing programs.
+        Stock options or ESOP participation (and current value).
+        Access to and details of retirement plans (401(k), 403(b), etc.), including employer matching.
+        Current balance of retirement accounts.
+        Type of health insurance coverage and monthly premiums.
+        Employer contributions to HSA/FSA.
+        Other benefits received (PTO, sick leave, life insurance, etc.).
+    If self-employed:
+        Type of business.
+        Net income from self-employment in the past year.
+    If unemployed:
+        Actively seeking employment?
+        Duration of unemployment.
+    If retired:
+        Sources of retirement income.
+
+III. Income and Income Sources:
+
+    Primary source of income.
+    Secondary sources of income (if any).
+    Total income from all sources in the past year (categorized by source: wages/salary, self-employment, investments, rental income, government benefits, other).
+    Investment types held (stocks, bonds, real estate, etc.).
+    Net rental income (if applicable).
+    Government benefits received (type and amount).
+    Income stability and volatility (how much income fluctuates).
+    Concerns about the impact of an economic downturn on income.
+
+IV. Housing and Real Estate:
+
+    Type of residence (owned, rented, other).
+    If owned:
+        Value of property.
+        Outstanding mortgage balance(s).
+        Home equity loan/line of credit details.
+        Real estate taxes paid.
+    If rented:
+        Monthly rent.
+    Investment real estate or second homes owned (details of each).
+    History of selling real estate and providing financing.
+    History of providing loans for real estate purchases.
+
+V. Financial Assets and Debts:
+
+    Checking account balances.
+    Savings and money market account balances.
+    CDs (value).
+    IRA/Keogh account balances and investment allocation.
+    Trusts or managed investment accounts (value and details).
+    Life insurance policies (face value and cash value).
+    Outstanding loans (type, amount owed, interest rate, payment terms).
+    Credit card debt (total balance and interest rates).
+    Student loan debt (total balance and interest rates).
+    Medical debt (if any).
+
+VI. Spending, Saving, and Investing Behaviors:
+
+    Reasons for saving.
+    Foreseeable major expenses.
+    Planning horizon for saving and spending.
+    Spending habits relative to income (spending more, less, or about the same).
+    Financial emergency preparedness (ability to cover unexpected expenses).
+    Amount needed in savings for emergencies.
+    Typical spending on non-essential goods and services.
+    Spending on subscription services.
+    Investment strategies and asset allocation.
+    Use of Fintech services.
+    Online shopping habits.
+
+VII. Financial Distress and Access to Credit:
+
+    History of being behind on payments, foreclosure, or bankruptcy.
+    Use of "payday" loans or other alternative financial services.
+    Access to credit when needed.
+    Concerns about healthcare affordability.
+    Out-of-pocket medical expenses in the past year.
+
+VIII. Retirement Planning:
+
+    Expected retirement age.
+    Expected sources of retirement income.
+    Confidence in retirement savings.
+    Concerns about the impact of inflation on retirement savings.
+    Long-term care planning.
+
+IX. Social and Intergenerational Financial Dynamics:
+
+    Providing financial support to family members outside the household.
+    Expectations regarding inheritances.
+    Frequency of financial discussions within the household.
+    Previous financial literacy education.
+
+X. Demographics and Health:
+
+    Age, gender, race/ethnicity, education level, marital status, number of children.
+    Health status (self-assessed).
+    Expected lifespan.
+
+XI. Impact of External Factors:
+
+    Impact of recent inflation on spending and saving.
+    Experience with supply chain disruptions.
+    Consideration of climate change in financial planning.
+
+XII. Subjective Well-being:
+
+    Financial satisfaction.
+    Frequency of feeling stressed about money.
+    Perceived financial security.
+    
+XIII. Financial Goals and Planning:
+
+    Long-term financial goals (e.g., purchasing a home, paying off debt, funding education, etc.).
+    Short-term financial goals (e.g., saving for a vacation, building an emergency fund, etc.).
+    Current financial planning process (e.g., do you use a financial advisor, personal budgeting tools, or professional financial planning services?).
+    Financial goal progress (how satisfied are you with your progress toward achieving your financial goals?).
+    Use of financial software/tools (e.g., budgeting apps, retirement calculators, portfolio tracking).
+
+XIV. Taxation:
+
+    Tax planning awareness (how much you plan for taxes in your financial decisions).
+    Sources of tax advice (e.g., accountants, online resources, HR department).
+    Experience with tax returns (e.g., do you file on your own or hire a tax professional?).
+    Concerns regarding tax policy changes (e.g., upcoming legislation or potential changes in tax brackets).
+
+XV. Financial Literacy and Education:
+
+    Perceived understanding of basic financial concepts (e.g., interest rates, compound interest, financial statements, etc.).
+    Sources of financial education (e.g., books, courses, online resources, family members).
+    Willingness to learn more about finance (e.g., interest in financial literacy courses or self-study).
+    Financial decision-making process (how do you make key financial decisions?).
+
+XVI. Social Responsibility and Impact Investing:
+
+    Interest in ethical or sustainable investing (e.g., ESG (Environmental, Social, Governance) investments).
+    Concerns about the environmental or social impact of investments.
+    Charitable giving and donations (how often, to what causes, and the amount contributed).
+    Perceptions of corporate social responsibility (does a company’s ethical behavior impact your buying or investment decisions?).
+
+XVII. Credit Score and Financial Health:
+
+    Awareness of credit score (Do you know your current credit score?).
+    Factors affecting credit score (how often do you review your credit report and what factors concern you?).
+    Credit score impact on financial decisions (e.g., does your credit score influence decisions like renting a home, buying a car, etc.?).
+    Concerns about creditworthiness or financial reputation.
+
+XVIII. Financial Resilience and Recovery:
+
+    Preparation for financial setbacks (e.g., job loss, medical emergency, natural disaster).
+    Ability to recover financially from a significant setback (e.g., a financial shock like a job loss or medical emergency).
+    Access to emergency funds (how quickly can you access emergency funds if necessary?).
+
+XIX. Consumer Behavior and Economic Trends:
+
+    Shopping behavior in times of economic uncertainty (e.g., do you cut back on non-essential purchases during a recession or crisis?).
+    Impact of technological advancements on personal finance (e.g., use of digital wallets, cryptocurrencies, or automated investing platforms).
+    Impact of government policy on financial decisions (e.g., stimulus packages, tax incentives, etc.).
+    Perceptions of economic inequality (e.g., do you feel the current economic system supports equal opportunity for all?).
+
+XX. Housing and Real Estate (Expanded):
+
+    Impact of housing market trends (e.g., perceptions of rising or falling property values).
+    Real estate investment strategy (buying, selling, renting properties).
+    Mortgage rate concerns (how sensitive are you to fluctuations in mortgage rates?).
+
+XXI. Digital Finance and Innovation:
+
+    Use of digital currencies (e.g., Bitcoin, Ethereum, or other cryptocurrencies).
+    Adoption of digital payment systems (e.g., PayPal, Venmo, Apple Pay, etc.).
+    Trust in financial technology companies (e.g., trust in neobanks or robo-advisors).
+    Interest in decentralized finance (DeFi) platforms.
