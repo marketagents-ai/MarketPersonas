@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRTYPREF",
+  "description": "Questions related to PRTYPREF",
+  "properties": {
+    "PRTYPREF": {
+      "type": "string",
+      "title": "PRTYPREF",
+      "description": "Generally speaking, do you usually think of yourself as a Republican, Democrat, Independent, or what?",
+      "enum": [
+        "republican",
+        "democrat",
+        "independent",
+        "other_specify",
+        "no_preference",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Republican",
+        "Democrat",
+        "Independent",
+        "Other",
+        "No preference",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PRTYPREF"
+  ]
+}

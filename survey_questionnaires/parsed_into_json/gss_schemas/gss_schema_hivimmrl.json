@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HIVIMMRL",
+  "description": "Questions related to HIVIMMRL",
+  "properties": {
+    "HIVIMMRL": {
+      "type": "string",
+      "title": "HIVIMMRL",
+      "description": "(Please indicate how much you agree or disagree with each of the following comments.) People who have HIV have participated in immoral activities.",
+      "enum": [
+        "str_disag",
+        "smwt_disag",
+        "smwt_agr",
+        "str_agr",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HIVIMMRL"
+  ]
+}

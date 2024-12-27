@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DEPRESS",
+  "description": "Questions related to DEPRESS",
+  "properties": {
+    "DEPRESS": {
+      "type": "string",
+      "title": "DEPRESS",
+      "description": "(Has a doctor, nurse, or other health professional EVER told you that you had...) ...depression?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "DEPRESS"
+  ]
+}

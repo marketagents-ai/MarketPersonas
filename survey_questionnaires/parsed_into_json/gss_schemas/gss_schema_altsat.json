@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ALTSAT",
+  "description": "Questions related to ALTSAT",
+  "properties": {
+    "ALTSAT": {
+      "type": "string",
+      "title": "ALTSAT",
+      "description": "(How satisfied or dissatisfied were you with the treatment you received...) When you last visited an alternative health care practitioner?",
+      "enum": [
+        "d15_1",
+        "d15_2",
+        "d15_3",
+        "d15_4",
+        "d15_5",
+        "d15_6",
+        "d15_7",
+        "d15_8",
+        "d15_9",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Completely satisfied",
+        "Very satisfied",
+        "Fairly satisfied",
+        "Neither satisfied nor dissatisfied",
+        "Fairly dissatisfied",
+        "Very dissatisfied",
+        "Completely dissatisfied",
+        "Does not apply",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ALTSAT"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SUICIDE",
+  "description": "Questions related to SUICIDE",
+  "properties": {
+    "SUICIDE": {
+      "type": "string",
+      "title": "SUICIDE",
+      "description": "Do you think a person has the right to end his or her own life if this person...\nElse"
+    },
+    "SUICIDE1": {
+      "type": "string",
+      "title": "SUICIDE1",
+      "description": "Do you think a person has the right to end his or her own life if this person... has an incurable disease?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "SUICIDE2": {
+      "type": "string",
+      "title": "SUICIDE2",
+      "description": "(Do you think a person has the right to end his or her own life if this person...) has gone bankrupt?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "SUICIDE3": {
+      "type": "string",
+      "title": "SUICIDE3",
+      "description": "(Do you think a person has the right to end his or her own life if this person...) has dishonored his or her family?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "SUICIDE4": {
+      "type": "string",
+      "title": "SUICIDE4",
+      "description": "(Do you think a person has the right to end his or her own life if this person...) is tired of living and ready to die?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "SUICIDE",
+    "SUICIDE1",
+    "SUICIDE2",
+    "SUICIDE3",
+    "SUICIDE4"
+  ]
+}

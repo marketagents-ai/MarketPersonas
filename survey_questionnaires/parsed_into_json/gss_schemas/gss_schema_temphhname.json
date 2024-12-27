@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TempHHName",
+  "description": "Questions related to TempHHName",
+  "properties": {
+    "HH": {
+      "type": "string",
+      "title": "HH",
+      "description": "Info"
+    },
+    "RESPNUM": {
+      "type": "string",
+      "title": "RESPNUM",
+      "description": "Categorical (Single)"
+    },
+    "KIDSUND18": {
+      "type": "string",
+      "title": "KIDSUND18",
+      "description": "Categorical (Single)"
+    },
+    "KIDS0TO6": {
+      "type": "string",
+      "title": "KIDS0TO6",
+      "description": "Long [0 .. 99]"
+    },
+    "KIDS7TO12": {
+      "type": "string",
+      "title": "KIDS7TO12",
+      "description": "Long [0 .. 99]"
+    },
+    "KIDS13TO17": {
+      "type": "string",
+      "title": "KIDS13TO17",
+      "description": "Long [0 .. 99]"
+    },
+    "OVER18": {
+      "type": "string",
+      "title": "OVER18",
+      "description": "Long [1 .. 99]"
+    },
+    "HOUSECK": {
+      "type": "string",
+      "title": "HOUSECK",
+      "description": "Categorical (Single)"
+    },
+    "LNGRLTNSHP": {
+      "type": "string",
+      "title": "LNGRLTNSHP",
+      "description": "Categorical (Single)"
+    },
+    "RCHILD18": {
+      "type": "string",
+      "title": "RCHILD18",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "HH",
+    "RESPNUM",
+    "KIDSUND18",
+    "KIDS0TO6",
+    "KIDS7TO12",
+    "KIDS13TO17",
+    "OVER18",
+    "HOUSECK",
+    "LNGRLTNSHP",
+    "RCHILD18"
+  ]
+}

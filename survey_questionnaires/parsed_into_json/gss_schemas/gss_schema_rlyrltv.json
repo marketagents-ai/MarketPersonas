@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RLYRLTV",
+  "description": "Questions related to RLYRLTV",
+  "properties": {
+    "RLYRLTV": {
+      "type": "string",
+      "title": "RLYRLTV",
+      "description": "People have different opinions about who you can rely on and who should be important to you. While some people think that you can rely more on close relatives, others think that you can rely more on close friends. Which view is closer to your opinion? Please choose a number on a scale of 1 to 7 where 1 is \"You can definitely rely more on close relatives\", 4 is \"You can rely equally on both\" and 7 is \"You can definitely rely more on close friends\" or \"You cannot rely on either of them\".",
+      "enum": [
+        "RLYRLTV_1",
+        "RLYRLTV_2",
+        "RLYRLTV_3",
+        "RLYRLTV_4",
+        "RLYRLTV_5",
+        "RLYRLTV_6",
+        "RLYRLTV_7",
+        "RLYRLTV_8",
+        "cantchoose8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "1 You can definitely rely more on close relatives",
+        "2",
+        "3",
+        "4 You can rely equally on both",
+        "5",
+        "6",
+        "7 You can definitely rely more on close friends",
+        "You cannot rely on either of them",
+        "8 Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RLYRLTV"
+  ]
+}

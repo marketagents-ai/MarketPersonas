@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: INDPA",
+  "description": "Questions related to INDPA",
+  "properties": {
+    "INDPA": {
+      "type": "string",
+      "title": "INDPA",
+      "description": "What kind of place did he work for? (What would you call that business or industry?)"
+    }
+  },
+  "required": [
+    "INDPA"
+  ]
+}

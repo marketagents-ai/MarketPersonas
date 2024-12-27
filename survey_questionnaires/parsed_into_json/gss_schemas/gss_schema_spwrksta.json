@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPWRKSTA",
+  "description": "Questions related to SPWRKSTA",
+  "properties": {
+    "SPWRKSTA": {
+      "type": "string",
+      "title": "SPWRKSTA",
+      "description": "Last week was your {response to _spfill1} working full time, part time, going to school, keeping house, or what? Please provide one response only. If your {response to _spfill1} was doing more than one of these last week, select the one closest to the top of the list.",
+      "enum": [
+        "working_full_time",
+        "working_part_time",
+        "not_at_work",
+        "unemployed",
+        "retired",
+        "in_school",
+        "keeping_house",
+        "other_specify",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Working full time",
+        "Working part time",
+        "With a job, but not at work because of temporary illness, vacation,",
+        "strike",
+        "Unemployed, laid off, looking for work",
+        "Retired",
+        "In school",
+        "Keeping house",
+        "Other",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "SPWRKSTA"
+  ]
+}

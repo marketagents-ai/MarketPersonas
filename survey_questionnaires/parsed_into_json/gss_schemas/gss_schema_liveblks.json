@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LIVEBLKS",
+  "description": "Questions related to LIVEBLKS",
+  "properties": {
+    "LIVEBLKS": {
+      "type": "string",
+      "title": "LIVEBLKS",
+      "description": "Now we are going to ask you about different types of contact with various groups of people. For the following situation, please indicate whether you would be very much in favor of it happening, somewhat in favor, neither in favor nor opposed to it happening, somewhat opposed, or very much opposed to it happening. Living in a neighborhood where half of your neighbors are Black people?",
+      "enum": [
+        "very_much_in_favor",
+        "somewhat_in_favor",
+        "somewhat_opposed",
+        "very_much_opposed",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "pposed}",
+        "Very much in favor",
+        "Somewhat in favor",
+        "Neither favor nor opposed",
+        "Somewhat opposed",
+        "Very much opposed",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "LIVEBLKS"
+  ]
+}

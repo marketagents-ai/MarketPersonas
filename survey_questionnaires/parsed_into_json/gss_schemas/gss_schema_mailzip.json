@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MAILZIP",
+  "description": "Questions related to MAILZIP",
+  "properties": {
+    "MAILZIP": {
+      "type": "string",
+      "title": "MAILZIP",
+      "description": "Zip: End Page - MAILADDRpage If Not IsEmpty(MAILSTAE) Then MAILSTAE.Response = UCase(MAILSTAE) End If If Not(MAILSTAE.Response.Coded) And Not(ItemInList(MAILSTAE,\"AL,AK,AZ,AR,CA,CO,CT,DE,DC,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,M A,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,PR,RI,SC,SD,TN,TX,UT,VT,VA,W A,WV,WI,WY,CZ,GU,VI,FC\",\",\")) Then If QUEXLANG = {ESN} Then MAILSTAE.Errors.AddNew(\"err\",\"Por favor, entra la abreviatura del estado válida\") Else MAILSTAE.Errors.AddNew(\"err\",\"Please enter valid state abbreviation\") End If Goto LabelMailADDR End If End If"
+    }
+  },
+  "required": [
+    "MAILZIP"
+  ]
+}

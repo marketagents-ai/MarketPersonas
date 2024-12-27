@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SMOKEDAY",
+  "description": "Questions related to SMOKEDAY",
+  "properties": {
+    "SMOKEDAY": {
+      "type": "string",
+      "title": "SMOKEDAY",
+      "description": "Do you smoke cigarettes, and if so about how many cigarettes a day?",
+      "enum": [
+        "d16_1",
+        "d16_2",
+        "d16_3",
+        "d16_4",
+        "d16_5",
+        "d16_6",
+        "d16_7",
+        "d16_8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Do not smoke and never did",
+        "Do not smoke now but smoked in the past",
+        "Smoke 1-5 cigarettes per day",
+        "Smoke 6-10 cigarettes per day",
+        "Smoke 11-20 cigarettes per day",
+        "Smoke 21-40 cigarettes per day",
+        "Smoke more than 40 cigarettes per day",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SMOKEDAY"
+  ]
+}

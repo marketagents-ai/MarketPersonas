@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ROSTINTRO",
+  "description": "Questions related to ROSTINTRO",
+  "properties": {
+    "ROSTINTRO": {
+      "type": "string",
+      "title": "ROSTINTRO",
+      "description": "{response to rostintrotxt}"
+    }
+  },
+  "required": [
+    "ROSTINTRO"
+  ]
+}

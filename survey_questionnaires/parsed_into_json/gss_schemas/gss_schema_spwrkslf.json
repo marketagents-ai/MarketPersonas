@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPWRKSLF",
+  "description": "Questions related to SPWRKSLF",
+  "properties": {
+    "SPWRKSLF": {
+      "type": "string",
+      "title": "SPWRKSLF",
+      "description": "{spwrkslffill}",
+      "enum": [
+        "selfemployed",
+        "someone_else",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Self-employed",
+        "Someone else",
+        "Don't know",
+        "NA",
+        "If SPWRKSLF = {selfemployed} Then",
+        "If SPWRKSTA.ContainsAny({working_full_time,working_part_time,not_at_work}) Then",
+        "SPWRKSLF1.Label.Inserts[\"spwrkslf1fill\"] = spwrkslf1fill1.Label",
+        "Else"
+      ]
+    },
+    "SPWRKSLF1": {
+      "type": "string",
+      "title": "SPWRKSLF1",
+      "description": "{spwrkslf1fill}",
+      "enum": [
+        "yesemployees",
+        "NoNoemployees",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes, employees",
+        "No, no employees",
+        "Don't know",
+        "NA",
+        "If SPWRKSTA.ContainsAny({working_full_time,working_part_time,not_at_work}) Then",
+        "SPWRKSLF2.Label.Inserts[\"spwrkslf2fill\"] = spwrkslf2fill1.Label",
+        "Else",
+        "SPWRKSLF2.Label.Inserts[\"spwrkslf2fill\"] = spwrkslf2fill2.Label"
+      ]
+    },
+    "SPWRKSLF2": {
+      "type": "string",
+      "title": "SPWRKSLF2",
+      "description": "{spwrkslf2fill}",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "LabelWKSUB:",
+        "If WRKSTAT.ContainsAny({working_full_time,working_part_time,not_at_work}) Or"
+      ]
+    }
+  },
+  "required": [
+    "SPWRKSLF",
+    "SPWRKSLF1",
+    "SPWRKSLF2"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PROTSPC",
+  "description": "Questions related to PROTSPC",
+  "properties": {
+    "PROTSPC2": {
+      "type": "string",
+      "title": "PROTSPC2",
+      "description": "Please specify other religion: End If ElseIf RELIG16 = {protestant} Then Goto LabelTMPDENOM2 ElseIf RELIG16 = {jewish} Then Goto LabelJEW2 Else Goto LabelAttend End If"
+    },
+    "PROTSPC3": {
+      "type": "string",
+      "title": "PROTSPC3",
+      "description": "Please specify other religion: End If If PROTCH3 <> {yes} Then Goto LabelPOSTLIFE End If If SPREL.ContainsAny({catholic,jewish,none,refused,dontknow,noanswer}) Then Goto LabelSPJEW"
+    }
+  },
+  "required": [
+    "PROTSPC2",
+    "PROTSPC3"
+  ]
+}

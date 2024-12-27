@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: JOBLOSE",
+  "description": "Questions related to JOBLOSE",
+  "properties": {
+    "JOBLOSE": {
+      "type": "string",
+      "title": "JOBLOSE",
+      "description": "Thinking about the next 12 months, how likely do you think it is that you will lose your job or be laid off-- very likely, fairly likely, not too likely, or not at all likely?",
+      "enum": [
+        "very_likely",
+        "fairly_likely",
+        "not_too_likely",
+        "not_at_all_likely",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very likely",
+        "Fairly likely",
+        "Not too likely",
+        "Not at all likely",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "JOBLOSE"
+  ]
+}

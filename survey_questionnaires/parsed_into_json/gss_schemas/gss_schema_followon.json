@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FOLLOWON",
+  "description": "Questions related to FOLLOWON",
+  "properties": {
+    "FOLLOWON": {
+      "type": "string",
+      "title": "FOLLOWON",
+      "description": "{response to followonfill}{instr}",
+      "enum": [
+        "gotofollowon",
+        "continue"
+      ],
+      "enumDescriptions": [
+        "Start the Follow-up",
+        "Continue"
+      ]
+    }
+  },
+  "required": [
+    "FOLLOWON"
+  ]
+}

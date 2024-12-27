@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SINGCHK",
+  "description": "Questions related to SINGCHK",
+  "properties": {
+    "SINGCHK": {
+      "type": "string",
+      "title": "SINGCHK",
+      "description": "This question is just to make sure we have the correct information. Is this a one-person household?",
+      "enum": [
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "ehold}"
+      ]
+    }
+  },
+  "required": [
+    "SINGCHK"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HANDCARDAX",
+  "description": "Questions related to HANDCARDAX",
+  "properties": {
+    "HANDCARDAX": {
+      "type": "string",
+      "title": "HANDCARDAX",
+      "description": "mygss.norc.org/AX.pdf"
+    }
+  },
+  "required": [
+    "HANDCARDAX"
+  ]
+}

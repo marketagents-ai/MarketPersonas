@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDEE",
+  "description": "Questions related to ENDEE",
+  "properties": {
+    "ENDEE": {
+      "type": "string",
+      "title": "ENDEE",
+      "description": "FOR TESTING ONLY:  END OF SECTION EE\nsexconftxt1: Categorical (Single)\nCategories:\n{male}\n{female}\n{dntknow}\n{refused}\n{noanswer}\nyour sex was recorded as male\nyour sex was recorded as female\nyou don't know your sex recorded\nyou would rather not share your sex recorded\nyou would rather not share your sex recorded\nsexconftxt2: Categorical (Single)\nCategories:\n{male}\n{female}\n{transgender}\n{nonethese}\n{dntknow}\n{refused}\n{noanswer}\nnow describe yourself as male\nnow describe yourself as female\nnow describe yourself as transgender\nnow describe yourself as neither male, female, nor transgender\ndon't know how you describe yourself now\nwould rather not share how you describe yourself now\nwould rather not share how you describe yourself now\nptsexconftxt1: Categorical (Single)\nCategories:\n{male}\n{female}\n{dntknow}\n{refused}\n{noanswer}\nyour most recent sexual partner's sex was recorded as male\nyour most recent sexual partner's sex was recorded as female\nyou don't know your most recent sexual partner's sex recorded\nyou would rather not share your most recent sexual partner's sex\nrecorded\nyou would rather not share your most recent sexual partner's sex\nrecorded\nptsexconftxt2: Categorical (Single)\nCategories:\n{male}\n{female}\n{transgender}\n{nonethese}\n{dntknow}\n{refused}\n{noanswer}\nyour most recent sexual partner now describes himself as male\nyour most recent sexual partner now describes herself as female\nyour most recent sexual partner now describes themselves as\ntransgender\nyour most recent sexual partner now describes themselves as neither\nmale, female, nor transgender\nyou don't know how your most recent sexual partner describes\nthemselves now\nyou would rather not share how your most recent sexual partner\ndescribes themselves now\nyou would rather not share how your most recent sexual partner\ndescribes themselves now"
+    }
+  },
+  "required": [
+    "ENDEE",
+    "ENDEE"
+  ]
+}

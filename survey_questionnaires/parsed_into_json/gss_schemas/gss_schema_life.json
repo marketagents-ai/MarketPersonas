@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LIFE",
+  "description": "Questions related to LIFE",
+  "properties": {
+    "LIFE": {
+      "type": "string",
+      "title": "LIFE",
+      "description": "In general, do you find life exciting, pretty routine, or dull?",
+      "enum": [
+        "exciting",
+        "routine",
+        "dull",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Exciting",
+        "Routine",
+        "Dull",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "LIFE"
+  ]
+}

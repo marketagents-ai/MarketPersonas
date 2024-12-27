@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PTNRORNT",
+  "description": "Questions related to PTNRORNT",
+  "properties": {
+    "PTNRORNT": {
+      "type": "string",
+      "title": "PTNRORNT",
+      "description": "To the best of your knowledge, which of the following best describes how your most recent sexual partner thinks of themselves?",
+      "enum": [
+        "gay",
+        "bi",
+        "hetero",
+        "nopartner",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow"
+      ],
+      "enumDescriptions": [
+        "Gay, lesbian, or homosexual",
+        "Bisexual",
+        "Heterosexual or straight",
+        "I have never had a sexual partner",
+        "Don't know",
+        "NA",
+        "If PTNRORNT = {nopartner} Then Goto LabelJ39",
+        "LabelPTNRSXBRTH:"
+      ]
+    }
+  },
+  "required": [
+    "PTNRORNT"
+  ]
+}

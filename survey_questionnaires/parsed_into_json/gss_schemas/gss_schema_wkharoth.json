@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WKHAROTH",
+  "description": "Questions related to WKHAROTH",
+  "properties": {
+    "WKHAROTH": {
+      "type": "string",
+      "title": "WKHAROTH",
+      "description": "In the last 12 months, were you threatened or harassed in any other way by anyone while you were on the job?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WKHAROTH"
+  ]
+}

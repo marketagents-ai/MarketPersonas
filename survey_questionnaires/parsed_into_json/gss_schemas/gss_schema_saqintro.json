@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SAQINTRO",
+  "description": "Questions related to SAQINTRO",
+  "properties": {
+    "SAQINTRO2": {
+      "type": "string",
+      "title": "SAQINTRO2",
+      "description": "Now we would like you to complete a brief questionnaire on your own. Remember that all of your answers are completely confidential.  They will not be associated with your name in any way, and will be published in summary form only.  When you've answered the last question, you'll see a screen that says 'Questionnaire Complete' and you can give the tablet back to me. Do you have any questions?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SAQINTRO2"
+  ]
+}

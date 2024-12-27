@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EMAILTM",
+  "description": "Questions related to EMAILTM",
+  "properties": {
+    "WEBMOB": {
+      "type": "string",
+      "title": "WEBMOB",
+      "description": "Categorical (Single)"
+    },
+    "EMAILHR": {
+      "type": "string",
+      "title": "EMAILHR",
+      "description": "Long [0 .. 168]"
+    },
+    "EMAILMIN": {
+      "type": "string",
+      "title": "EMAILMIN",
+      "description": "Long [0 .. 9999]"
+    }
+  },
+  "required": [
+    "WEBMOB",
+    "EMAILHR",
+    "EMAILMIN"
+  ]
+}

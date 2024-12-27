@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CONTADDR",
+  "description": "Questions related to CONTADDR",
+  "properties": {
+    "CONTADDR": {
+      "type": "string",
+      "title": "CONTADDR",
+      "description": "Address:"
+    }
+  },
+  "required": [
+    "CONTADDR"
+  ]
+}

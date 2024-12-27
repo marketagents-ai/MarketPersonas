@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: INSTYPE",
+  "description": "Questions related to INSTYPE",
+  "properties": {
+    "INSTYPE": {
+      "type": "string",
+      "title": "INSTYPE",
+      "description": "What kind of health insurance do you have? Please check all that apply.",
+      "enum": [
+        "pubins",
+        "privins",
+        "empins",
+        "othins",
+        "noins",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Public health insurance (for example, Medicaid, Medicare)",
+        "Private insurance (that is, insurance purchased directly for your",
+        "coverage)",
+        "Employer/union based insurance",
+        "Other",
+        "Have no health insurance",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "INSTYPE"
+  ]
+}

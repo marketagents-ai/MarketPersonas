@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: AFRAIDOF",
+  "description": "Questions related to AFRAIDOF",
+  "properties": {
+    "AFRAIDOF": {
+      "type": "string",
+      "title": "AFRAIDOF",
+      "description": "(In your day-to-day life how often have any of the following things happened to you?) People act as if they are afraid of you.",
+      "enum": [
+        "almosteveryday",
+        "atleastonceaweek",
+        "afewtimesamonth",
+        "afewtimesayear",
+        "Lessthanonceayear",
+        "never",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Almost every day",
+        "At least once a week",
+        "A few times a month",
+        "A few times a year",
+        "Less than once a year",
+        "Never",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "AFRAIDOF"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OWNSPEC",
+  "description": "Questions related to OWNSPEC",
+  "properties": {
+    "OWNSPEC": {
+      "type": "string",
+      "title": "OWNSPEC",
+      "description": "Please explain the situation with your dwelling. End If"
+    }
+  },
+  "required": [
+    "OWNSPEC"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CLSRLTV",
+  "description": "Questions related to CLSRLTV",
+  "properties": {
+    "CLSRLTV": {
+      "type": "string",
+      "title": "CLSRLTV",
+      "description": "People may have different perceptions about who they consider to be close relatives. Imagine a person living with a partner and their children. Which of the following options comes closest to who you would consider to be his/her close relatives?",
+      "enum": [
+        "kidpart",
+        "kidpartparsim",
+        "kidallfam",
+        "kidalloth",
+        "contchoose5",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Children and partner only",
+        "Children and partner but also parents and siblings",
+        "All of the above but also cousins, aunts/uncles and nephews or nieces",
+        "All of the above but others as well",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "CLSRLTV"
+  ]
+}

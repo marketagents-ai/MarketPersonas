@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RCOL",
+  "description": "Questions related to RCOL",
+  "properties": {
+    "RCOL": {
+      "type": "string",
+      "title": "RCOL",
+      "description": "Did you ever complete one or more years of college for credit--not including schooling such as business college, technical or vocational school?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If RCOL = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "RCOL"
+  ]
+}

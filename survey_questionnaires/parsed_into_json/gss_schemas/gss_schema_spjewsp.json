@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPJEWSP",
+  "description": "Questions related to SPJEWSP",
+  "properties": {
+    "SPJEWSP": {
+      "type": "string",
+      "title": "SPJEWSP",
+      "description": "Please specify: End If End If End If LabelPOSTLIFE: If QUEXMODE.ContainsAny({capi,phone}) Or VERXY = \"Y\" Then POSTLIFE.Categories.Filter={yes, no, undecided, dontknow, refused, noanswer} Else POSTLIFE.Categories.Filter={yes, no, dontknow, refused, noanswer} End If"
+    }
+  },
+  "required": [
+    "SPJEWSP"
+  ]
+}

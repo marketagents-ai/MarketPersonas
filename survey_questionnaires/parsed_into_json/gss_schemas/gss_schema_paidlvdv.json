@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PAIDLVDV",
+  "description": "Questions related to PAIDLVDV",
+  "properties": {
+    "PAIDLVDV": {
+      "type": "string",
+      "title": "PAIDLVDV",
+      "description": "Still thinking about the same couple, if both are in a similar work situation and are eligible for paid leave, how should this paid leave period be divided between the mother and the father?",
+      "enum": [
+        "c10mentire",
+        "c10fsome",
+        "c10half",
+        "c10msome",
+        "c10fentire",
+        "cantchoose",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "The mother should take the entire paid leave period and the father",
+        "should not take any paid leave",
+        "The mother should take most of the paid leave period and the father",
+        "should take some of it",
+        "The mother and the father should each take half of the paid leave",
+        "period",
+        "The father should take most of the paid leave period and the mother",
+        "should take some of it",
+        "End If"
+      ]
+    }
+  },
+  "required": [
+    "PAIDLVDV"
+  ]
+}

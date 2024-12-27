@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PARTNERS",
+  "description": "Questions related to PARTNERS",
+  "properties": {
+    "PARTNERS": {
+      "type": "string",
+      "title": "PARTNERS",
+      "description": "How many sex partners have you had in the last 12 months?",
+      "enum": [
+        "no_partners",
+        "_1_partner",
+        "_2_partners",
+        "_3_partners",
+        "_4_partners",
+        "_510_partners",
+        "_1120_partners",
+        "_21100_partners",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "rs}",
+        "No partners",
+        "1 partner",
+        "2 partners",
+        "3 partners",
+        "4 partners",
+        "5-10 partners",
+        "11-20 partners",
+        "21-100 partners",
+        "More than 100 partners",
+        "Don't know",
+        "NA",
+        "If PARTNERS = {no_partners} Then Goto LabelSEXFREQ"
+      ]
+    }
+  },
+  "required": [
+    "PARTNERS"
+  ]
+}

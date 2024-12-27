@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RSBLNG",
+  "description": "Questions related to RSBLNG",
+  "properties": {
+    "RSBLNG18": {
+      "type": "string",
+      "title": "RSBLNG18",
+      "description": "Are you the sibling of another individual 18 or older in your house?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RSBLNG18"
+  ]
+}

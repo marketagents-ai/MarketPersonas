@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: IF",
+  "description": "Questions related to IF",
+  "properties": {
+    "IF16WHO": {
+      "type": "string",
+      "title": "IF16WHO",
+      "description": "Who would you have voted for, for President, if you had voted?",
+      "enum": [
+        "clinton",
+        "trump",
+        "other",
+        "dkcr",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Hillary Clinton",
+        "Donald Trump",
+        "Other",
+        "Don't know/Can't remember",
+        "Don't know",
+        "REFUSED"
+      ]
+    },
+    "IF20WHO": {
+      "type": "string",
+      "title": "IF20WHO",
+      "description": "Who would you have voted for, for President, if you had voted?",
+      "enum": [
+        "biden",
+        "trump",
+        "other",
+        "dkcr",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Joe Biden",
+        "Donald Trump",
+        "Other",
+        "Don't know/Can't remember",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "IF16WHO",
+    "IF20WHO"
+  ]
+}

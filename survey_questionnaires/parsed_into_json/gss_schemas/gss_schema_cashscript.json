@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CASHSCRIPT",
+  "description": "Questions related to CASHSCRIPT",
+  "properties": {
+    "CASHSCRIPT": {
+      "type": "string",
+      "title": "CASHSCRIPT",
+      "description": "Thank you. In just a few moments, I will provide your cash incentive and have you sign a receipt."
+    }
+  },
+  "required": [
+    "CASHSCRIPT"
+  ]
+}

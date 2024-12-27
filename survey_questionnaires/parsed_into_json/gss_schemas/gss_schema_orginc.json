@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ORGINC",
+  "description": "Questions related to ORGINC",
+  "properties": {
+    "ORGINC": {
+      "type": "string",
+      "title": "ORGINC",
+      "description": "How do you and your {response to spousepartfill} organize the income that one or both of you receive? Please choose the option that comes closest.",
+      "enum": [
+        "magageall",
+        "myspousemanages",
+        "wepoolall",
+        "wepoolsome",
+        "keepsep",
+        "cantchoose",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "I manage all the money and give my {response to spousepartfill}",
+        "his/her share",
+        "My {response to spousepartfill} manages all the money and gives me",
+        "my share",
+        "We pool all the money and each take out what we need",
+        "We pool some of the money and keep the rest separate",
+        "We each keep our own money separate",
+        "Can't choose",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "ORGINC"
+  ]
+}

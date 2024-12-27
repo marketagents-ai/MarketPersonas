@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATSPACY",
+  "description": "Questions related to NATSPACY",
+  "properties": {
+    "NATSPACY": {
+      "type": "string",
+      "title": "NATSPACY",
+      "description": "Let's begin with some things people think about today.  We are faced with many problems in this country, none of which can be solved easily or inexpensively.  For each of the following problems, please indicate whether you think we're spending too much money on it, too little money, or about the right amount. First: Space exploration ... are we spending too much, too little, or about the right amount on Space exploration?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATSPACY"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EVSTRAY",
+  "description": "Questions related to EVSTRAY",
+  "properties": {
+    "EVSTRAY": {
+      "type": "string",
+      "title": "EVSTRAY",
+      "description": "Have you ever had sex with someone other than your husband or wife while you were married?",
+      "enum": [
+        "yes",
+        "no",
+        "never_married",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Never married",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "EVSTRAY"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATENVIR",
+  "description": "Questions related to NATENVIR",
+  "properties": {
+    "NATENVIR": {
+      "type": "string",
+      "title": "NATENVIR",
+      "description": "Improving and protecting the environment ... are we spending too much, too little, or about the right amount on Improving and protecting the environment?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATENVIR"
+  ]
+}

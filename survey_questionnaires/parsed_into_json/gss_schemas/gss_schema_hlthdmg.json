@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHDMG",
+  "description": "Questions related to HLTHDMG",
+  "properties": {
+    "HLTHDMG": {
+      "type": "string",
+      "title": "HLTHDMG",
+      "description": "(People should have access to publicly funded health care even if they...) Behave in ways that damage their health.",
+      "enum": [
+        "d5_1",
+        "d5_2",
+        "d5_3",
+        "d5_4",
+        "d5_5",
+        "d5_6",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HLTHDMG"
+  ]
+}

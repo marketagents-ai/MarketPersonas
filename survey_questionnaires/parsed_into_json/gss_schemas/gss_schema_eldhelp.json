@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ELDHELP",
+  "description": "Questions related to ELDHELP",
+  "properties": {
+    "ELDHELP": {
+      "type": "string",
+      "title": "ELDHELP",
+      "description": "Thinking about elderly people who need some help in their everyday lives, such as help with grocery shopping, cleaning the house, doing the laundry, etc. Who do you think should primarily provide this help? Should....",
+      "enum": [
+        "fammem",
+        "govag",
+        "nonprof",
+        "prichildcare",
+        "employers",
+        "cantchoose",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Family members",
+        "Government agencies",
+        "Non-profit organizations (e.g., charitable organizations,",
+        "churches/religious organizations)",
+        "Private providers of this kind of help",
+        "Employers",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ELDHELP"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: GRANOUT",
+  "description": "Questions related to GRANOUT",
+  "properties": {
+    "GRANOUT": {
+      "type": "string",
+      "title": "GRANOUT",
+      "description": "How many were born outside the United States?",
+      "enum": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Don't know",
+        "NA",
+        "LabelUSCITZN:",
+        "If BORN <> {yes} Then",
+        "If QUEXMODE.ContainsAny({capi,phone}) Or VERXY = \"Y\" Then"
+      ]
+    }
+  },
+  "required": [
+    "GRANOUT"
+  ]
+}

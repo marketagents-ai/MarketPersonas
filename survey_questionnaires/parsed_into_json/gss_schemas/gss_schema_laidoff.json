@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LAIDOFF",
+  "description": "Questions related to LAIDOFF",
+  "properties": {
+    "LAIDOFF": {
+      "type": "string",
+      "title": "LAIDOFF",
+      "description": "Were you laid off your main job at any time in the last year?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "LAIDOFF"
+  ]
+}

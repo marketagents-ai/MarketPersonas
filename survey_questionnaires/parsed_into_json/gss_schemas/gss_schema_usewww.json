@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: USEWWW",
+  "description": "Questions related to USEWWW",
+  "properties": {
+    "USEWWW": {
+      "type": "string",
+      "title": "USEWWW",
+      "description": "Other than for e-mail, do you ever use the Internet or Web?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "USEWWW"
+  ]
+}

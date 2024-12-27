@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WRKTYPE",
+  "description": "Questions related to WRKTYPE",
+  "properties": {
+    "WRKTYPE": {
+      "type": "string",
+      "title": "WRKTYPE",
+      "description": "How would you describe your work arrangement in your main job?",
+      "enum": [
+        "indep",
+        "oncall",
+        "tempag",
+        "contr",
+        "perm",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "I work as an independent contractor, independent consultant, or",
+        "freelance worker",
+        "I am on-call, and work only when called to work",
+        "I am paid by a temporary agency",
+        "I work for a contractor who provides workers and services to others",
+        "under contract",
+        "I am a regular, permanent employee (standard work arrangement)",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "WRKTYPE"
+  ]
+}

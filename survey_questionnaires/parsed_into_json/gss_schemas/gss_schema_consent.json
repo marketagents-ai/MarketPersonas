@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CONSENT",
+  "description": "Questions related to CONSENT",
+  "properties": {
+    "CONSENT": {
+      "type": "string",
+      "title": "CONSENT",
+      "description": "Your participation is voluntary. However, all information that you provide will be kept in strict confidence. It is important to us to protect your privacy. All participants' answers are combined, and presented in the form of summary statistics, such as tables and graphs.  If you decline to answer a question or a portion of the interview, data from other questions you have answered may be used in these summary statistics. We have received a Certificate of Confidentiality from the National Institutes of Health.  This means that your answers will be kept confidential, even if the researchers receive a court order or subpoena to release information that could identify you. The protection offered by the certificate does not stop the researchers from voluntarily reporting information about suspected or known sexual, physical, or other abuse of a child or elderly person, or a participant's threats of violence to self or others. If you voluntarily give your written consent for anyone to receive information about your participation in this research, then we may not use the certificate to withhold this information. If you have questions about your rights as a research participant, you may call the NORC Institutional Review Board Manager toll-free at 1-866-309-0542. If you have questions about the General Social Survey, you can contact the project hotline at 1-888-837-8988. Please press 'Next' to continue with the survey.",
+      "enum": [
+        "yes",
+        "no"
+      ],
+      "enumDescriptions": [
+        "R CONSENTS/ASSENTS TO PARTICIPATE IN THE SURVEY",
+        "R CONSENTS/ASSENTS TO PARTICIPATE IN THE SURVEY BUT"
+      ]
+    }
+  },
+  "required": [
+    "CONSENT"
+  ]
+}

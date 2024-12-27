@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ABRAPE",
+  "description": "Questions related to ABRAPE",
+  "properties": {
+    "ABRAPE": {
+      "type": "string",
+      "title": "ABRAPE",
+      "description": "Do you think it should be possible for a pregnant woman to obtain a legal abortion... If she became pregnant as a result of rape?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ABRAPE"
+  ]
+}

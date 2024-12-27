@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRNTFNCE",
+  "description": "Questions related to PRNTFNCE",
+  "properties": {
+    "PRNTFNCE": {
+      "type": "string",
+      "title": "PRNTFNCE",
+      "description": "Please consider a family with a father and a mother raising a child who is five years old. In your opinion, which parent should do the following? Who should... ...provide  for the family financially?",
+      "enum": [
+        "mommost",
+        "momsom",
+        "momdadeq",
+        "dadsom",
+        "dadmost",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "The mother mostly",
+        "The mother somewhat more than the father",
+        "The mother and father equally",
+        "The father somewhat more than the mother",
+        "The father mostly",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PRNTFNCE"
+  ]
+}

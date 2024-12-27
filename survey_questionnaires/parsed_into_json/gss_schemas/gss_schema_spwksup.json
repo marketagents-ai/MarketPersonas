@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPWKSUP",
+  "description": "Questions related to SPWKSUP",
+  "properties": {
+    "SPWKSUP": {
+      "type": "string",
+      "title": "SPWKSUP",
+      "description": "In your {response to _spfill1}'s job, does he or she supervise anyone who is directly responsible to them?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If TIMEA2.Info.OffPathResponse = \"\" Then",
+        "TIMEA2.Response = Now()"
+      ]
+    }
+  },
+  "required": [
+    "SPWKSUP"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: VOTE",
+  "description": "Questions related to VOTE",
+  "properties": {
+    "VOTE16": {
+      "type": "string",
+      "title": "VOTE16",
+      "description": "In 2016, you remember that Hillary Clinton ran for President on the Democratic ticket against Donald Trump for the Republicans. Do you remember for sure whether or not you voted in that election?",
+      "enum": [
+        "voted",
+        "didnotvote",
+        "ineligible",
+        "refusedtoanswer",
+        "dkcr",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Voted",
+        "Did not vote",
+        "Ineligible",
+        "Prefer not to answer",
+        "Don't know/Can't remember",
+        "NA",
+        "If VOTE16 = {voted} Then"
+      ]
+    },
+    "VOTE20": {
+      "type": "string",
+      "title": "VOTE20",
+      "description": "In 2020, you remember that Joe Biden ran for President on the Democratic ticket against Donald Trump for the Republicans. Do you remember for sure whether or not you voted in that election?",
+      "enum": [
+        "voted",
+        "didnotvote",
+        "ineligible",
+        "refusedtoanswer",
+        "dkcr",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Voted",
+        "Did not vote",
+        "Ineligible",
+        "Prefer not to answer",
+        "Don't know/Can't remember",
+        "NA",
+        "If VOTE20 = {voted} Then"
+      ]
+    }
+  },
+  "required": [
+    "VOTE16",
+    "VOTE20"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WORKFOR",
+  "description": "Questions related to WORKFOR",
+  "properties": {
+    "WORKFOR1": {
+      "type": "string",
+      "title": "WORKFOR1",
+      "description": "Do you work for a for-profit company, a non-profit or not-for-profit organization, or for the government or a government agency? A for-profit company is a company owned by private persons OR by investors on a stock market. If you have two jobs, please answer “For-profit company” if you have a private sector job of any kind.",
+      "enum": [
+        "Private",
+        "NonProfit",
+        "Govt",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "For-profit company",
+        "Non-profit or not-for-profit organization",
+        "Government or government agency",
+        "Don't know",
+        "NA",
+        "If WORKFOR1 = {private} Then"
+      ]
+    }
+  },
+  "required": [
+    "WORKFOR1"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NMBRKIDS",
+  "description": "Questions related to NMBRKIDS",
+  "properties": {
+    "NMBRKIDS": {
+      "type": "integer",
+      "title": "NMBRKIDS",
+      "description": "How many children have you ever had? Please include any biological, adoptive, foster or step-children. End If MODECHKC.Response = SetMode(MODECHKC,QUEXMODE) ETIMEC.Response = SetTime(ETIMEC) ETIMEC_D.Response = Now() ElapsedTimeC.Response = CalcTime(ElapsedTimeC,btimeC,btimeC_d,etimeC,etimeC_d) If IOM.Info.IsTest Or IOM.ProjectName = \"TGSS2022M\" Then SkipSection: Categorical (Single) CHOOSE NEXT SECTION TO TEST OR CLICK [NEXT] Categories: {A} {B} {C} {D} {E} {F} {G} {H} {skiptoend} {NA} A - Core B - Household Composition C - ISSP Family and Gender Roles D - ISSP Health and Health Care EE - Shared Capitalism F - NIOSH G - CDC RISKY BEHAVIORS SAQ H - Contact/Validation SKIP TO END DO NOT SKIP If SkipSection = {A} Then Goto LabelSectionA ElseIf SkipSection = {B} Then Goto LabelSectionB ElseIf SkipSection = {C} Then Goto LabelSectionC ElseIf SkipSection = {D} Then Goto LabelSectionD ElseIf SkipSection = {E} Then Goto LabelSectionE ElseIf SkipSection = {F} Then Goto LabelSectionF ElseIf SkipSection = {G} Then Goto LabelSectionG ElseIf SkipSection = {H} Then Goto LabelSectionH ElseIf SkipSection = {skiptoend} Then Goto LabelTimeQuex End If End If BTIMED.Response = SetTime(BTIMED) BTIMED_D.Response = Now() LASTSECT.Response = \"D\" If BALLOT = 3 Then",
+      "minimum": 1,
+      "maximum": 99
+    }
+  },
+  "required": [
+    "NMBRKIDS",
+    "NMBRKIDS"
+  ]
+}

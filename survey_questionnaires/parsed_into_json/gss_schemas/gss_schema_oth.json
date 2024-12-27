@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OTH",
+  "description": "Questions related to OTH",
+  "properties": {
+    "OTH16SPC": {
+      "type": "string",
+      "title": "OTH16SPC",
+      "description": "{othdemtxt} End If LabelJEW2: If RELIG16 = {jewish} Then"
+    }
+  },
+  "required": [
+    "OTH16SPC"
+  ]
+}

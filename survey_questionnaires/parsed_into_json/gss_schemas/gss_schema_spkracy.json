@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPKRACY",
+  "description": "Questions related to SPKRACY",
+  "properties": {
+    "SPKRACY": {
+      "type": "string",
+      "title": "SPKRACY",
+      "description": "Or, consider a person who believes that Black people are genetically inferior. If such a person wanted to make a speech in your community claiming that Black people are inferior, should this person be allowed to speak, or not?",
+      "enum": [
+        "yes_allowed",
+        "not_allowed",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes, allowed",
+        "Not allowed",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SPKRACY"
+  ]
+}

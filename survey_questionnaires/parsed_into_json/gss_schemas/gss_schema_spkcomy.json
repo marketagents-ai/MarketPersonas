@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPKCOMY",
+  "description": "Questions related to SPKCOMY",
+  "properties": {
+    "SPKCOMY": {
+      "type": "string",
+      "title": "SPKCOMY",
+      "description": "Now, we would like to ask you some questions about a self-identified Communist. Suppose this admitted Communist wanted to make a speech in your community.  Should this person be allowed to speak, or not?",
+      "enum": [
+        "yes_allowed_to_speak",
+        "not_allowed",
+        "dontknow",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Not allowed",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SPKCOMY"
+  ]
+}

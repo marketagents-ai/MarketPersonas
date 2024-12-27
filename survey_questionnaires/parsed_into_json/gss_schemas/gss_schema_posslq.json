@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: POSSLQ",
+  "description": "Questions related to POSSLQ",
+  "properties": {
+    "POSSLQ": {
+      "type": "string",
+      "title": "POSSLQ",
+      "description": "Which of these statements applies to you?",
+      "enum": [
+        "marliv",
+        "posslq",
+        "noliv",
+        "nopart",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "I am married and living in the same household as my husband or wife.",
+        "I am living as married and my partner and I together live in the same",
+        "household.",
+        "I have a husband or wife or steady partner, but we don't live in the",
+        "same household.",
+        "I don't have a steady partner.",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "POSSLQ",
+    "POSSLQ"
+  ]
+}

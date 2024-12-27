@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: REGPHONE",
+  "description": "Questions related to REGPHONE",
+  "properties": {
+    "REGPHONE": {
+      "type": "string",
+      "title": "REGPHONE",
+      "description": "Do you also have a regular, landline phone number for your residence?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "REGPHONE"
+  ]
+}

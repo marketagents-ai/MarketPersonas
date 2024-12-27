@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WRKBABY",
+  "description": "Questions related to WRKBABY",
+  "properties": {
+    "WRKBABY": {
+      "type": "string",
+      "title": "WRKBABY",
+      "description": "Do you think that women should work full-time, part-time or not at all under the following circumstances? When there is a child under school age.",
+      "enum": [
+        "wfulltime",
+        "wparttime",
+        "stayhome",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Work full-time",
+        "Work part-time",
+        "Stay at home",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WRKBABY"
+  ]
+}

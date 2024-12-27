@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDB",
+  "description": "Questions related to ENDB",
+  "properties": {
+    "ENDB": {
+      "type": "string",
+      "title": "ENDB",
+      "description": "FOR TESTING ONLY:  END OF SECTION B\nhousecktxt1: Categorical (Single)\nCategories:\n{is}\n{are}\nis {response to sumunder18} person\nare {response to sumunder18} people\nhousecktxt2: Categorical (Single)\nCategories:\n{one}\n{more}"
+    }
+  },
+  "required": [
+    "ENDB",
+    "ENDB"
+  ]
+}

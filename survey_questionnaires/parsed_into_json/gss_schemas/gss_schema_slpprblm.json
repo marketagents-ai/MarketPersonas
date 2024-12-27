@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SLPPRBLM",
+  "description": "Questions related to SLPPRBLM",
+  "properties": {
+    "SLPPRBLM": {
+      "type": "string",
+      "title": "SLPPRBLM",
+      "description": "During the past 12 months, how often have you had trouble going to sleep or staying asleep?",
+      "enum": [
+        "often",
+        "sometm",
+        "rare",
+        "nev",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Often",
+        "Sometimes",
+        "Rarely",
+        "Never",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SLPPRBLM"
+  ]
+}

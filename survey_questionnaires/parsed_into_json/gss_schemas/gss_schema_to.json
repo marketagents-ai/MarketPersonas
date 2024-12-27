@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TO",
+  "description": "Questions related to TO",
+  "properties": {
+    "TO": {
+      "type": "string",
+      "title": "TO",
+      "description": "End Page - USETECH End If End If"
+    }
+  },
+  "required": [
+    "TO"
+  ]
+}

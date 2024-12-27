@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RINCBLLS",
+  "description": "Questions related to RINCBLLS",
+  "properties": {
+    "RINCBLLS": {
+      "type": "string",
+      "title": "RINCBLLS",
+      "description": "Do you feel that the income from your job alone is enough to meet your family's usual monthly expenses and bills?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RINCBLLS"
+  ]
+}

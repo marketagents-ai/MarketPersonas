@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: IWER",
+  "description": "Questions related to IWER",
+  "properties": {
+    "IWER": {
+      "type": "string",
+      "title": "IWER",
+      "description": "Categories: {yes} {no} Yes No If SAQAGREE2 = {no} Then Goto LabelTIMEG Else"
+    }
+  },
+  "required": [
+    "IWER"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EXTR",
+  "description": "Questions related to EXTR",
+  "properties": {
+    "EXTR2021": {
+      "type": "string",
+      "title": "EXTR2021",
+      "description": "Did you receive any of these performance-based payments in the year 2021? Performance-based pay means individual or group bonuses, commissions, or any type of profit- sharing.",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If EXTR2021 = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "EXTR2021"
+  ]
+}

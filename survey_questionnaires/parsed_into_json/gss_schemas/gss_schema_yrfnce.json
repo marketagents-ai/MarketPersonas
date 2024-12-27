@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: YRFNCE",
+  "description": "Questions related to YRFNCE",
+  "properties": {
+    "YRFNCE": {
+      "type": "string",
+      "title": "YRFNCE",
+      "description": "Compared to 12 months ago, how do you think the financial situation of your household has changed? Would you say the current situation is...",
+      "enum": [
+        "much_better",
+        "somewhat_better",
+        "about_the_same",
+        "somewhat_worse",
+        "much_worse",
+        "cantchoose",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Much better",
+        "Somewhat better",
+        "About the same",
+        "Somewhat worse",
+        "Much worse",
+        "Can't choose",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "YRFNCE"
+  ]
+}

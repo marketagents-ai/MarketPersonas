@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: USETECH",
+  "description": "Questions related to USETECH",
+  "properties": {
+    "USETECH1": {
+      "type": "integer",
+      "title": "USETECH1",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Percentage of time (Number between 0 and 100):  ');});During a typical week, about what percentage of your total time at work would you normally spend using different types of electronic technologies (such as computers, tablets, smart phones, cash registers, scanners, GPS devices, robotic devices, and so on)? ElseIf USETECH0 = {_2} Then Begin Page - USETECH",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "USETECH0": {
+      "type": "string",
+      "title": "USETECH0",
+      "description": "During a typical week, about what percentage of your total time at work would you normally spend using different types of electronic technologies (such as computers, tablets, smart phones, cash registers, scanners, GPS devices, robotic devices, and so on)?",
+      "enum": [
+        "_1",
+        "_2",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Enter exact amount",
+        "Enter range",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "USETECH2": {
+      "type": "integer",
+      "title": "USETECH2",
+      "description": "Enter range:",
+      "minimum": 0,
+      "maximum": 100
+    }
+  },
+  "required": [
+    "USETECH1",
+    "USETECH0",
+    "USETECH1",
+    "USETECH2"
+  ]
+}

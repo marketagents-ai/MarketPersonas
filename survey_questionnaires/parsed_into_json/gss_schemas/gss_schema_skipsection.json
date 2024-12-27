@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SkipSection",
+  "description": "Questions related to SkipSection",
+  "properties": {
+    "ENDA": {
+      "type": "string",
+      "title": "ENDA",
+      "description": "Info"
+    },
+    "HH": {
+      "type": "string",
+      "title": "HH",
+      "description": "Info"
+    },
+    "HASRELSP": {
+      "type": "string",
+      "title": "HASRELSP",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "ENDA",
+    "HH",
+    "HASRELSP"
+  ]
+}

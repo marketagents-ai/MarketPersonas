@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NOINTEREST",
+  "description": "Questions related to NOINTEREST",
+  "properties": {
+    "NOINTEREST": {
+      "type": "string",
+      "title": "NOINTEREST",
+      "description": "Over the last 2 weeks, how often have you been bothered by the following problems: Little interest or pleasure in doing things.",
+      "enum": [
+        "notatall",
+        "sevdays",
+        "mthalfdys",
+        "nrevday",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Not at all",
+        "Several days",
+        "More than half the days",
+        "Nearly every day",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NOINTEREST"
+  ]
+}

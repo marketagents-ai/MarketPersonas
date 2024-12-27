@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CITYSAME",
+  "description": "Questions related to CITYSAME",
+  "properties": {
+    "CITYSAME": {
+      "type": "string",
+      "title": "CITYSAME",
+      "description": "Do you currently live in the same city or town you lived in when you were 16 years old?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "CITYSAME"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPEVWORK",
+  "description": "Questions related to SPEVWORK",
+  "properties": {
+    "SPEVWORK": {
+      "type": "string",
+      "title": "SPEVWORK",
+      "description": "Did your {response to _spfill1} ever work for as long as one year?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If SPEVWORK <> {yes} Then Goto LabelWKSUB",
+        "End If",
+        "If SPWRKSTA.ContainsAny({working_full_time,working_part_time,not_at_work}) Then",
+        "OCCSP.Label.Inserts[\"occspfill\"] = occspfill1.Label"
+      ]
+    }
+  },
+  "required": [
+    "SPEVWORK"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TimeA1",
+  "description": "Questions related to TimeA1",
+  "properties": {
+    "MAWRKSLFFAM": {
+      "type": "string",
+      "title": "MAWRKSLFFAM",
+      "description": "Categorical (Single)"
+    },
+    "MARITAL": {
+      "type": "string",
+      "title": "MARITAL",
+      "description": "Categorical (Single)"
+    },
+    "MARTYPE": {
+      "type": "string",
+      "title": "MARTYPE",
+      "description": "Categorical (Single)"
+    },
+    "DIVORCE": {
+      "type": "string",
+      "title": "DIVORCE",
+      "description": "Categorical (Single)"
+    },
+    "WIDOWED": {
+      "type": "string",
+      "title": "WIDOWED",
+      "description": "Categorical (Single)"
+    },
+    "POSSLQY": {
+      "type": "string",
+      "title": "POSSLQY",
+      "description": "Categorical (Single)"
+    },
+    "POSSLQ": {
+      "type": "string",
+      "title": "POSSLQ",
+      "description": "Categorical (Single)"
+    },
+    "ETHWORLD": {
+      "type": "string",
+      "title": "ETHWORLD",
+      "description": "Categorical (Single)"
+    },
+    "ETHREGION": {
+      "type": "string",
+      "title": "ETHREGION",
+      "description": "Categorical (Single)"
+    },
+    "ETHPICK": {
+      "type": "string",
+      "title": "ETHPICK",
+      "description": "Categorical (Single)"
+    },
+    "ETH1": {
+      "type": "string",
+      "title": "ETH1",
+      "description": "Categorical (Single)"
+    },
+    "ETH2": {
+      "type": "string",
+      "title": "ETH2",
+      "description": "Categorical (Single)"
+    },
+    "ETH3": {
+      "type": "string",
+      "title": "ETH3",
+      "description": "Categorical (Single)"
+    },
+    "SIBS": {
+      "type": "string",
+      "title": "SIBS",
+      "description": "Long [0 .. 49, 50 .. 99]"
+    },
+    "WRKSTAT": {
+      "type": "string",
+      "title": "WRKSTAT",
+      "description": "Categorical (Single)"
+    },
+    "WRKSPEC": {
+      "type": "string",
+      "title": "WRKSPEC",
+      "description": "Text"
+    },
+    "HRS1": {
+      "type": "string",
+      "title": "HRS1",
+      "description": "Long [0 .. 168]"
+    },
+    "HRS2": {
+      "type": "string",
+      "title": "HRS2",
+      "description": "Long [1 .. 168]"
+    },
+    "EVWORK": {
+      "type": "string",
+      "title": "EVWORK",
+      "description": "Categorical (Single)"
+    },
+    "OCCSLF": {
+      "type": "string",
+      "title": "OCCSLF",
+      "description": "Text"
+    },
+    "MAINSLF": {
+      "type": "string",
+      "title": "MAINSLF",
+      "description": "Text"
+    },
+    "INDSLF": {
+      "type": "string",
+      "title": "INDSLF",
+      "description": "Text"
+    },
+    "WHATSLF": {
+      "type": "string",
+      "title": "WHATSLF",
+      "description": "Text"
+    },
+    "WHATSLF2": {
+      "type": "string",
+      "title": "WHATSLF2",
+      "description": "Categorical (Single)"
+    },
+    "WRKSLF": {
+      "type": "string",
+      "title": "WRKSLF",
+      "description": "Categorical (Single)"
+    },
+    "SELFEMS": {
+      "type": "string",
+      "title": "SELFEMS",
+      "description": "Categorical (Single)"
+    },
+    "NUMEMPS": {
+      "type": "string",
+      "title": "NUMEMPS",
+      "description": "Long [1 .. 99999]"
+    },
+    "WRKSLFFAM": {
+      "type": "string",
+      "title": "WRKSLFFAM",
+      "description": "Categorical (Single)"
+    },
+    "WRKGOVT1": {
+      "type": "string",
+      "title": "WRKGOVT1",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "MAWRKSLFFAM",
+    "MARITAL",
+    "MARTYPE",
+    "DIVORCE",
+    "WIDOWED",
+    "POSSLQY",
+    "POSSLQ",
+    "ETHWORLD",
+    "ETHREGION",
+    "ETHPICK",
+    "ETH1",
+    "ETH2",
+    "ETH3",
+    "SIBS",
+    "WRKSTAT",
+    "WRKSPEC",
+    "HRS1",
+    "HRS2",
+    "EVWORK",
+    "OCCSLF",
+    "MAINSLF",
+    "INDSLF",
+    "WHATSLF",
+    "WHATSLF2",
+    "WRKSLF",
+    "SELFEMS",
+    "NUMEMPS",
+    "WRKSLFFAM",
+    "WRKGOVT1"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PLAN",
+  "description": "Questions related to PLAN",
+  "properties": {
+    "PLAN1": {
+      "type": "string",
+      "title": "PLAN1",
+      "description": "(In your household who does the following things...?) Plans and organizes social and family activities?",
+      "enum": [
+        "alwaysme",
+        "usuallyme",
+        "equal",
+        "usuallypart",
+        "alwayspart",
+        "thirdperson",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Always me",
+        "Usually me",
+        "About equal or both together",
+        "Usually my {response to spousepartfill}",
+        "Always my {response to spousepartfill}",
+        "Is done by a third person",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PLAN1"
+  ]
+}

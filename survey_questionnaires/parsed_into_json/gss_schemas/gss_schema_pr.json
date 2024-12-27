@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PR",
+  "description": "Questions related to PR",
+  "properties": {
+    "PR16SPEC": {
+      "type": "string",
+      "title": "PR16SPEC",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Other candidate: ');});Who did you vote for in the 2016 election? End If End If If VOTE16.ContainsAny({didnotvote,ineligible}) Or PRES16 = {didn_t_vote_for_president} Then"
+    },
+    "PR20SPEC": {
+      "type": "string",
+      "title": "PR20SPEC",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Other candidate: ');});Who did you vote for in the 2020 election? End If End If If VOTE20.ContainsAny({didnotvote,ineligible}) Or PRES20 = {didn_t_vote_for_president} Then"
+    }
+  },
+  "required": [
+    "PR16SPEC",
+    "PR20SPEC"
+  ]
+}

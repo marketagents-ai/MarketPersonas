@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ETHWORLD",
+  "description": "Questions related to ETHWORLD",
+  "properties": {
+    "ETHWORLD": {
+      "type": "string",
+      "title": "ETHWORLD",
+      "description": "From what part of the world did your ancestors come? (Check all that apply)",
+      "enum": [
+        "europe",
+        "africa",
+        "asia",
+        "mideast",
+        "samer",
+        "camer",
+        "namer",
+        "carib",
+        "oceania",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Europe",
+        "Africa",
+        "Asia",
+        "Middle East",
+        "South America",
+        "Central America",
+        "North America",
+        "Caribbean",
+        "Oceania",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ETHWORLD"
+  ]
+}

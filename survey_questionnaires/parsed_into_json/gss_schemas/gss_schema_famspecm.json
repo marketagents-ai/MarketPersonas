@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FAMSPECM",
+  "description": "Questions related to FAMSPECM",
+  "properties": {
+    "FAMSPECM": {
+      "type": "string",
+      "title": "FAMSPECM",
+      "description": "Who was the male relative you were living with at age 16? Please tell us his relationship to you, e.g. uncle, grandfather, cousin. End If If FAMILY16B.ContainsAny({other_specify,some_other_female_relative_no_male_head}) Then"
+    }
+  },
+  "required": [
+    "FAMSPECM"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: COMPPERF",
+  "description": "Questions related to COMPPERF",
+  "properties": {
+    "COMPPERF": {
+      "type": "string",
+      "title": "COMPPERF",
+      "description": "Does the size of these performance-based payments depend on... Company profits or performance?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "COMPPERF"
+  ]
+}

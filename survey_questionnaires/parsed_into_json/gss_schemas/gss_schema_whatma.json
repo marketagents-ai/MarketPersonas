@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WHATMA",
+  "description": "Questions related to WHATMA",
+  "properties": {
+    "WHATMA": {
+      "type": "string",
+      "title": "WHATMA",
+      "description": "What did they make or do? (What they mainly did) End Page - indmapage"
+    },
+    "WHATMA2": {
+      "type": "string",
+      "title": "WHATMA2",
+      "description": "How would you classify the place where {response to MOMFILL} worked? Was this mainly...?",
+      "enum": [
+        "manufac",
+        "whlsale",
+        "retail",
+        "othind",
+        "dkcantrem",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Manufacturing",
+        "Wholesale trade",
+        "Retail trade",
+        "Other (Agriculture, Construction, Service, Government, etc.)",
+        "Don't know/Can't remember",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WHATMA",
+    "WHATMA2"
+  ]
+}

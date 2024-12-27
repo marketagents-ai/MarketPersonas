@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HURTATWK",
+  "description": "Questions related to HURTATWK",
+  "properties": {
+    "HURTATWK": {
+      "type": "integer",
+      "title": "HURTATWK",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of times injured: ');});In the past 12 months, how many times have you been injured on the job? If none, enter '0'.",
+      "minimum": 0,
+      "maximum": 99
+    }
+  },
+  "required": [
+    "HURTATWK"
+  ]
+}

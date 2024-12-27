@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MNTHSUSA",
+  "description": "Questions related to MNTHSUSA",
+  "properties": {
+    "MNTHSUSA": {
+      "type": "integer",
+      "title": "MNTHSUSA",
+      "description": "Months: End Page - INUSA If YEARSUSA.Response.Coded = {NA} and MNTHSUSA.Response.Coded = {NA} Then YEARSUSA.Errors.AddNew(\"err\",\"Please enter either YEARS or MONTHS\") Goto LABEL_INUSA End If If YEARSUSA > 0 and MNTHSUSA > 0 Then YEARSUSA.Errors.AddNew(\"err\",\"Please enter one, either YEARS or MONTHS\") Goto LABEL_INUSA End If End If",
+      "minimum": 1,
+      "maximum": 11
+    }
+  },
+  "required": [
+    "MNTHSUSA"
+  ]
+}

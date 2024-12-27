@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EVPAIDSX",
+  "description": "Questions related to EVPAIDSX",
+  "properties": {
+    "EVPAIDSX": {
+      "type": "string",
+      "title": "EVPAIDSX",
+      "description": "Thinking about the time since your 18th birthday, have you ever had sex with a person you paid or who paid you for sex?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "EVPAIDSX"
+  ]
+}

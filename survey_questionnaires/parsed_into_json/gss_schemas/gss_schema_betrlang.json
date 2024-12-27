@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: BETRLANG",
+  "description": "Questions related to BETRLANG",
+  "properties": {
+    "BETRLANG": {
+      "type": "string",
+      "title": "BETRLANG",
+      "description": "Which language do you speak more fluently?",
+      "enum": [
+        "_1",
+        "_2",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Don't know",
+        "REFUSED",
+        "NA",
+        "ElseIf Len(OTHLANG1) > 1 Then",
+        "BETRLANG.Response = {_1}"
+      ]
+    }
+  },
+  "required": [
+    "BETRLANG"
+  ]
+}

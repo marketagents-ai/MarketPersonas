@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATDRUGY",
+  "description": "Questions related to NATDRUGY",
+  "properties": {
+    "NATDRUGY": {
+      "type": "string",
+      "title": "NATDRUGY",
+      "description": "Drug rehabilitation ... are we spending too much, too little, or about the right amount on Drug rehabilitation?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATDRUGY"
+  ]
+}

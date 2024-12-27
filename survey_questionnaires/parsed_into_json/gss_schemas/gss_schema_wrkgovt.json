@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WRKGOVT",
+  "description": "Questions related to WRKGOVT",
+  "properties": {
+    "WRKGOVT1": {
+      "type": "string",
+      "title": "WRKGOVT1",
+      "description": "{response to arewere} you employed by the government? (Please consider federal, state, or local government.)",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "WRKGOVT2": {
+      "type": "string",
+      "title": "WRKGOVT2",
+      "description": "{response to arewere} you employed by a private employer (including non-profit organizations)?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WRKGOVT1",
+    "WRKGOVT2"
+  ]
+}

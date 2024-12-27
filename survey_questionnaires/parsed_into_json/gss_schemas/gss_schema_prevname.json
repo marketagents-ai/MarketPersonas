@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PREVNAME",
+  "description": "Questions related to PREVNAME",
+  "properties": {
+    "CHNGNAME": {
+      "type": "string",
+      "title": "CHNGNAME",
+      "description": "Categorical (Single)"
+    },
+    "FPREVNAME": {
+      "type": "string",
+      "title": "FPREVNAME",
+      "description": "Text"
+    },
+    "MPREVNAME": {
+      "type": "string",
+      "title": "MPREVNAME",
+      "description": "Text"
+    },
+    "LPREVNAME": {
+      "type": "string",
+      "title": "LPREVNAME",
+      "description": "Text"
+    },
+    "I_APT": {
+      "type": "string",
+      "title": "I_APT",
+      "description": "Text"
+    },
+    "INCENTCHOICE": {
+      "type": "string",
+      "title": "INCENTCHOICE",
+      "description": "Categorical (Single)"
+    },
+    "CASHSCRIPT": {
+      "type": "string",
+      "title": "CASHSCRIPT",
+      "description": "Info"
+    },
+    "INTERVIEWER": {
+      "type": "string",
+      "title": "INTERVIEWER",
+      "description": "DON'T GIVE CASH INCENTIVE TO RESPONDENT UNTIL YOU REACH THE"
+    },
+    "I_FNAME": {
+      "type": "string",
+      "title": "I_FNAME",
+      "description": "Text"
+    },
+    "I_LNAME": {
+      "type": "string",
+      "title": "I_LNAME",
+      "description": "Text"
+    },
+    "I_STREET": {
+      "type": "string",
+      "title": "I_STREET",
+      "description": "Text"
+    },
+    "I_CITY": {
+      "type": "string",
+      "title": "I_CITY",
+      "description": "Text"
+    },
+    "I_STATE": {
+      "type": "string",
+      "title": "I_STATE",
+      "description": "Text"
+    },
+    "I_ZIP": {
+      "type": "string",
+      "title": "I_ZIP",
+      "description": "Text"
+    }
+  },
+  "required": [
+    "CHNGNAME",
+    "FPREVNAME",
+    "MPREVNAME",
+    "LPREVNAME",
+    "I_APT",
+    "INCENTCHOICE",
+    "CASHSCRIPT",
+    "INTERVIEWER",
+    "I_FNAME",
+    "I_LNAME",
+    "I_STREET",
+    "I_APT",
+    "I_CITY",
+    "I_STATE",
+    "I_ZIP",
+    "I_FNAME",
+    "I_LNAME"
+  ]
+}

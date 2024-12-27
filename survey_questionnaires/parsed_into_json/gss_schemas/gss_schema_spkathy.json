@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPKATHY",
+  "description": "Questions related to SPKATHY",
+  "properties": {
+    "SPKATHY": {
+      "type": "string",
+      "title": "SPKATHY",
+      "description": "There are always some people whose ideas are considered bad or dangerous by other people.  For instance, somebody who is against all churches and religion... If such a person wanted to make a speech in your community against churches and religion, should this person be allowed to speak, or not?",
+      "enum": [
+        "yes_allowed",
+        "not_allowed",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes, allowed",
+        "Not allowed",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SPKATHY"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPHRS",
+  "description": "Questions related to SPHRS",
+  "properties": {
+    "SPHRS1": {
+      "type": "integer",
+      "title": "SPHRS1",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Hours: ');});How many hours did your {response to _spfill1} work last week, at all jobs? End If If SPWRKSTA = {not_at_work} Then",
+      "minimum": 0,
+      "maximum": 168
+    },
+    "SPHRS2": {
+      "type": "integer",
+      "title": "SPHRS2",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Hours: ');});How many hours a week does your {response to _spfill1} usually work, at all jobs? End If If SPWRKSTA.ContainsAny({retired,in_school,keeping_house,other_specify}) Then",
+      "minimum": 1,
+      "maximum": 168
+    }
+  },
+  "required": [
+    "SPHRS1",
+    "SPHRS2"
+  ]
+}

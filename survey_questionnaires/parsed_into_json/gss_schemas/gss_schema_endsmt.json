@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDSMT",
+  "description": "Questions related to ENDSMT",
+  "properties": {
+    "ENDSMT": {
+      "type": "string",
+      "title": "ENDSMT",
+      "description": "Thinking about your household's total income, including all the sources of income of all the members who contribute to it, how difficult or easy is it currently for your household to make ends meet? Is it...",
+      "enum": [
+        "verydifficult",
+        "fairlydifficult",
+        "neithereasynordifficult",
+        "fairlyeasy",
+        "veryeasy",
+        "cantchoose"
+      ],
+      "enumDescriptions": [
+        "Very difficult",
+        "Fairly difficult",
+        "Fairly easy",
+        "Very easy",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ENDSMT"
+  ]
+}

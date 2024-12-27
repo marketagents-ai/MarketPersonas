@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DWELOWN",
+  "description": "Questions related to DWELOWN",
+  "properties": {
+    "DWELOWN": {
+      "type": "string",
+      "title": "DWELOWN",
+      "description": "Currently, do you (or does your family) own your home, pay rent, or something else?",
+      "enum": [
+        "own_or_is_buying",
+        "pays_rent",
+        "other_specify",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Own or is buying",
+        "Pays rent",
+        "Other",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "DWELOWN16": {
+      "type": "string",
+      "title": "DWELOWN16",
+      "description": "When you were 16 years old, did your family own your own home, pay rent, or something else? If you lived in two or more places, please think of the place you resided most of the time.",
+      "enum": [
+        "paid_rent",
+        "other_specify",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "}",
+        "Owned or was buying",
+        "Paid rent",
+        "Other",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "DWELOWN",
+    "DWELOWN16"
+  ]
+}

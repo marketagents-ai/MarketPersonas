@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RELITEN",
+  "description": "Questions related to RELITEN",
+  "properties": {
+    "RELITEN": {
+      "type": "string",
+      "title": "RELITEN",
+      "description": "Would you call yourself a strong {response to religfill} or not a very strong {response to religfill}?",
+      "enum": [
+        "strong",
+        "not_very_strong",
+        "somewhat_strong",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Strong",
+        "Not very strong",
+        "Somewhat strong",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "RELITEN"
+  ]
+}

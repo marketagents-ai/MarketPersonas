@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HOUSECK",
+  "description": "Questions related to HOUSECK",
+  "properties": {
+    "HOUSECK": {
+      "type": "string",
+      "title": "HOUSECK",
+      "description": "Just to check, you said that there {response to housecktxt1} under the age of 18 in this household, and {response to OVER18} {response to housecktxt2} 18 or older in this household. Is that correct?",
+      "enum": [
+        "hhcorr",
+        "chldinc",
+        "adltinc",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "Number of children is incorrect",
+        "Number of adults is incorrect",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HOUSECK"
+  ]
+}

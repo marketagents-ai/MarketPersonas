@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LETDIE",
+  "description": "Questions related to LETDIE",
+  "properties": {
+    "LETDIE1Y": {
+      "type": "string",
+      "title": "LETDIE1Y",
+      "description": "When a person has a disease that cannot be cured, do you think doctors should be allowed by law to end the patient's life by some painless means if the patient and the patient's family request it?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "Else",
+        "REFUSED"
+      ]
+    },
+    "LETDIE1": {
+      "type": "string",
+      "title": "LETDIE1",
+      "description": "When a person has a disease that cannot be cured, do you think doctors should be allowed by law to end the patient's life by some painless means if the patient and his family request it?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "LETDIE1Y",
+    "LETDIE1"
+  ]
+}

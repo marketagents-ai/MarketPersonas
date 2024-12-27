@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPFALOOK",
+  "description": "Questions related to SPFALOOK",
+  "properties": {
+    "SPFALOOK": {
+      "type": "integer",
+      "title": "SPFALOOK",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Hours: ');});And on average, how many hours a week does he/she spend looking after family members (e.g. children, elderly, ill or disabled family members)? If QUEXMODE = {CAWI} Then ORGINC.Categories={magageall,myspousemanages,wepoolall,wepoolsome,keepsep,cantchoose,dont know,refused,noanswer} Else ORGINC.Categories={magageall,myspousemanages,wepoolall,wepoolsome,keepsep,dontknow,refuse d,noanswer} End If",
+      "minimum": 0,
+      "maximum": 168
+    }
+  },
+  "required": [
+    "SPFALOOK"
+  ]
+}

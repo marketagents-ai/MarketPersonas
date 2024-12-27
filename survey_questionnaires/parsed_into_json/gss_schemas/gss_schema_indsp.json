@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: INDSP",
+  "description": "Questions related to INDSP",
+  "properties": {
+    "INDSP": {
+      "type": "string",
+      "title": "INDSP",
+      "description": "{indspfill}"
+    }
+  },
+  "required": [
+    "INDSP"
+  ]
+}

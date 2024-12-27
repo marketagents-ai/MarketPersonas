@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SEXSEX",
+  "description": "Questions related to SEXSEX",
+  "properties": {
+    "SEXSEX": {
+      "type": "string",
+      "title": "SEXSEX",
+      "description": "Have your sex partners in the last 12 months been...",
+      "enum": [
+        "exclusively_male",
+        "exclusively_female",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "}",
+        "LabelSEXFREQ:",
+        "Exclusively male",
+        "Both male and female",
+        "Exclusively female",
+        "Don't know",
+        "NA"
+      ]
+    },
+    "SEXSEX5": {
+      "type": "string",
+      "title": "SEXSEX5",
+      "description": "Have your sex partners in the last five years been...",
+      "enum": [
+        "exclusively_male",
+        "exclusively_female",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "}",
+        "LabelNUMWOMEN:",
+        "Exclusively male",
+        "Both male and female",
+        "Exclusively female",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SEXSEX",
+    "SEXSEX5"
+  ]
+}

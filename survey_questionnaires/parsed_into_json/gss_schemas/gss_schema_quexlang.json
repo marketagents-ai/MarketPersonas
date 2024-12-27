@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: QUEXLANG",
+  "description": "Questions related to QUEXLANG",
+  "properties": {
+    "QUEXLANG": {
+      "type": "string",
+      "title": "QUEXLANG",
+      "description": "Please select the language in which you would like to complete the questionnaire: Seleccione el idioma en el que desea completar el cuestionario:",
+      "enum": [
+        "ENU",
+        "ESN"
+      ],
+      "enumDescriptions": [
+        "English",
+        "español"
+      ]
+    }
+  },
+  "required": [
+    "QUEXLANG"
+  ]
+}

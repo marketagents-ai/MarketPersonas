@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HASRELSP",
+  "description": "Questions related to HASRELSP",
+  "properties": {
+    "HASRELSP": {
+      "type": "string",
+      "title": "HASRELSP",
+      "description": "Does {name} have a spouse or unmarried partner who lives in the household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HASRELSP"
+  ]
+}

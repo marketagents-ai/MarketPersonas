@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LNGRLTNSHP",
+  "description": "Questions related to LNGRLTNSHP",
+  "properties": {
+    "LNGRLTNSHP": {
+      "type": "string",
+      "title": "LNGRLTNSHP",
+      "description": "These next questions are about your relationships with other individuals in your household who are 18 or older. Are you married to, partnered with, or otherwise in a long-term relationship with another individual 18 or older who lives in this household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "LNGRLTNSHP"
+  ]
+}

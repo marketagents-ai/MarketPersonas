@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RCONFIRM",
+  "description": "Questions related to RCONFIRM",
+  "properties": {
+    "RCONFIRM": {
+      "type": "string",
+      "title": "RCONFIRM",
+      "description": "First, we'd like to make sure the correct individual is completing this survey. Are you {response to R_FNAME} {response to R_LNAME}?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RCONFIRM"
+  ]
+}

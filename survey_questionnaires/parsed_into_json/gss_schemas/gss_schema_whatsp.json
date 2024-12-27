@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WHATSP",
+  "description": "Questions related to WHATSP",
+  "properties": {
+    "WHATSP": {
+      "type": "string",
+      "title": "WHATSP",
+      "description": "{whatspfill} End Page - spindpage If SPWRKSTA.ContainsAny({working_full_time,working_part_time,not_at_work}) Then whatsp2fill.Response = {_1} Else whatsp2fill.Response = {_2} End If"
+    },
+    "WHATSP2": {
+      "type": "string",
+      "title": "WHATSP2",
+      "description": "How would you classify the place where your {response to _spfill1} {response to whatsp2fill}? Was this mainly...?",
+      "enum": [
+        "manufact",
+        "wholesale",
+        "retail",
+        "othclass",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Manufacturing",
+        "Wholesale trade",
+        "Retail trade",
+        "Other (agriculture, construction, service, government, etc.)",
+        "Don't know",
+        "NA",
+        "If SPWRKSTA.ContainsAny({working_full_time,working_part_time,not_at_work}) Then",
+        "spwrkslf.Label.Inserts[\"spwrkslffill\"] = spwrkslffill1.Label",
+        "Else",
+        "spwrkslf.Label.Inserts[\"spwrkslffill\"] = spwrkslffill2.Label"
+      ]
+    }
+  },
+  "required": [
+    "WHATSP",
+    "WHATSP2"
+  ]
+}

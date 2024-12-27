@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SATJOB",
+  "description": "Questions related to SATJOB",
+  "properties": {
+    "SATJOB": {
+      "type": "string",
+      "title": "SATJOB",
+      "description": "On the whole, how satisfied are you with the work you do -- would you say you are very satisfied, moderately satisfied, a little dissatisfied, or very dissatisfied?",
+      "enum": [
+        "very_satisfied",
+        "moderately_satisfied",
+        "a_little_dissatisfied",
+        "very_dissatisfied",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very satisfied",
+        "Moderately satisfield",
+        "A little dissatisfied",
+        "Very dissatisfied",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "SATJOB1": {
+      "type": "string",
+      "title": "SATJOB1",
+      "description": "All in all, how satisfied would you say you are with your job?",
+      "enum": [
+        "_1_very_satisfied",
+        "_3_not_too_satisfied",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "}",
+        "}",
+        "Very satisfied",
+        "Somewhat satisfied",
+        "Not too satisfied"
+      ]
+    }
+  },
+  "required": [
+    "SATJOB",
+    "SATJOB1"
+  ]
+}

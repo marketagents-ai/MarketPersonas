@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: COMPUSE",
+  "description": "Questions related to COMPUSE",
+  "properties": {
+    "COMPUSE": {
+      "type": "string",
+      "title": "COMPUSE",
+      "description": "Do you personally ever use a computer at home, at work, or at some other location?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "COMPUSE"
+  ]
+}

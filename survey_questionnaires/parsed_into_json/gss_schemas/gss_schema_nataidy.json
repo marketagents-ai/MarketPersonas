@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATAIDY",
+  "description": "Questions related to NATAIDY",
+  "properties": {
+    "NATAIDY": {
+      "type": "string",
+      "title": "NATAIDY",
+      "description": "Assistance to other countries ... are we spending too much, too little, or about the right amount on Assistance to other countries?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATAIDY"
+  ]
+}

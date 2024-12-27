@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: STOCKYR",
+  "description": "Questions related to STOCKYR",
+  "properties": {
+    "STOCKYR": {
+      "type": "string",
+      "title": "STOCKYR",
+      "description": "Were you granted shares of stock in the company where you work in 2021? This means shares that the company gave to you for free through a restricted stock plan or an Employee Stock Ownership Plan, a stock bonus plan, or other stock plan. It does not mean shares you purchased or matching shares you received in a 401k plan.",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If STOCKYR = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "STOCKYR"
+  ]
+}

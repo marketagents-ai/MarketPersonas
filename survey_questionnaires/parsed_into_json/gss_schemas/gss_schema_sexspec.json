@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SEXSPEC",
+  "description": "Questions related to SEXSPEC",
+  "properties": {
+    "SEXSPEC": {
+      "type": "string",
+      "title": "SEXSPEC",
+      "description": "Please specify other sexual partner. LabelSEXSEX: If IOM.Context <> \"CAPI\" Then End If"
+    }
+  },
+  "required": [
+    "SEXSPEC"
+  ]
+}

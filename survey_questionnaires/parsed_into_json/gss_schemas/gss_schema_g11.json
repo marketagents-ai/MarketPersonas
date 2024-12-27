@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: G11",
+  "description": "Questions related to G11",
+  "properties": {
+    "MATESEX": {
+      "type": "string",
+      "title": "MATESEX",
+      "description": "Categorical (Single)"
+    },
+    "G11": {
+      "type": "string",
+      "title": "G11",
+      "description": "Info"
+    }
+  },
+  "required": [
+    "MATESEX",
+    "G11"
+  ]
+}

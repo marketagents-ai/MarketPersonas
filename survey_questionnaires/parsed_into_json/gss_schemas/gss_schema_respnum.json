@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RESPNUM",
+  "description": "Questions related to RESPNUM",
+  "properties": {
+    "RESPNUM": {
+      "type": "string",
+      "title": "RESPNUM",
+      "description": "Which of these household members is you? (Please select the person on the list that refers to you.)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "name",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "skiptoend",
+        "NA"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "If RESPNUM.ContainsAny({a}) Then",
+        "itemLooped.relhhBfill2={informant}",
+        "Else",
+        "itemLooped.relhhBfill2={otherhh}",
+        "itemLooped.relhhBfill1={otherhh}",
+        "End If",
+        "If itemLooped.QuestionName = \"A\" Then",
+        "itemLooped.RELHHA = {_1}",
+        "End If",
+        "If RESPNUM.ContainsAny(itemLooped.QuestionName) Then",
+        "itemLooped.relhhfill={informant}",
+        "Else",
+        "itemLooped.relhhfill={otherhh}",
+        "End If",
+        "ElseIf itemLooped.QuestionName = \"B\" Then",
+        "itemLooped.RELHHA = {_2}"
+      ]
+    }
+  },
+  "required": [
+    "RESPNUM",
+    "RESPNUM"
+  ]
+}

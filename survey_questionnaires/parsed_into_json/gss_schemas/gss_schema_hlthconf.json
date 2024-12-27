@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHCONF",
+  "description": "Questions related to HLTHCONF",
+  "properties": {
+    "HLTHCONF": {
+      "type": "string",
+      "title": "HLTHCONF",
+      "description": "(During the past 4 weeks how often...) Have you lost confidence in yourself?",
+      "enum": [
+        "d12_1",
+        "d12_2",
+        "d12_3",
+        "d12_4",
+        "d12_5",
+        "d12_8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Never",
+        "Seldom",
+        "Sometimes",
+        "Often",
+        "Very often",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HLTHCONF"
+  ]
+}

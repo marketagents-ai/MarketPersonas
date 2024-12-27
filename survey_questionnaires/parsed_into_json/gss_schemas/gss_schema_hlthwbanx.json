@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHWBANX",
+  "description": "Questions related to HLTHWBANX",
+  "properties": {
+    "HLTHWBANX": {
+      "type": "string",
+      "title": "HLTHWBANX",
+      "description": "(During the past 12 months, how often, if at all, have you used the internet to look for information on the following topics?) Information related to anxiety, stress, or similar problems?",
+      "enum": [
+        "d12_1",
+        "d12_2",
+        "d12_3",
+        "d12_4",
+        "d12_5",
+        "d12_8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Never",
+        "Seldom",
+        "Sometimes",
+        "Often",
+        "Very often",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HLTHWBANX"
+  ]
+}

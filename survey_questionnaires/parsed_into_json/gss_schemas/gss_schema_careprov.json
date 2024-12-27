@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CAREPROV",
+  "description": "Questions related to CAREPROV",
+  "properties": {
+    "CAREPROV": {
+      "type": "string",
+      "title": "CAREPROV",
+      "description": "People have different views on childcare for children under school age. Who do you think should primarily provide childcare? Should...",
+      "enum": [
+        "fammem",
+        "govag",
+        "nonprof",
+        "prichildcare",
+        "employers",
+        "cantchoose",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Family members",
+        "Government agencies",
+        "Non-profit organizations (e.g., charitable organizations,",
+        "churches/religious organizations)",
+        "Private childcare providers (e.g., private day care center, nanny,",
+        "babysitter)",
+        "Employers",
+        "Can't choose"
+      ]
+    }
+  },
+  "required": [
+    "CAREPROV"
+  ]
+}

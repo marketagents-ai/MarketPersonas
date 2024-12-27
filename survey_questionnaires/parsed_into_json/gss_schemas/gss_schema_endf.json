@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDF",
+  "description": "Questions related to ENDF",
+  "properties": {
+    "ENDF": {
+      "type": "string",
+      "title": "ENDF",
+      "description": "FOR TESTING ONLY:  END OF SECTION F\nSkipSection: Categorical (Single)\nCHOOSE NEXT SECTION TO TEST OR CLICK [NEXT]\nCategories:\n{A}\n{B}\n{C}\n{D}\n{E}\n{F}\n{G}\n{H}\n{skiptoend}\n{NA}\nA - Core\nB - Household Composition\nC - ISSP Family and Gender Roles\nD - ISSP Health and Health Care\nEE - Shared Capitalism\nF - NIOSH\nG - CDC RISKY BEHAVIORS SAQ\nH - Contact/Validation\nSKIP TO END\nDO NOT SKIP\nIf SkipSection = {A} Then\nGoto LabelSectionA\nElseIf SkipSection = {B} Then\nGoto LabelSectionB\nElseIf SkipSection = {C} Then\nGoto LabelSectionC\nElseIf SkipSection = {D} Then\nGoto LabelSectionD\nElseIf SkipSection = {E} Then\nGoto LabelSectionE\nElseIf SkipSection = {F} Then\nGoto LabelSectionF\nElseIf SkipSection = {G} Then\nGoto LabelSectionG\nElseIf SkipSection = {H} Then\nGoto LabelSectionH\nElseIf SkipSection = {skiptoend} Then\nGoto LabelTimeQuex\nEnd If\nEnd If\nBTIMEG.Response = SetTime(BTIMEG)\nBTIMEG_D.Response = Now()\nLASTSECT.Response = \"G\"\nIf (BALLOT = 2 And VerXY = \"Y\") or BALLOT = 3 Then\nIf QUEXMODE.ContainsAny({capi,phone}) Then"
+    }
+  },
+  "required": [
+    "ENDF",
+    "ENDF"
+  ]
+}

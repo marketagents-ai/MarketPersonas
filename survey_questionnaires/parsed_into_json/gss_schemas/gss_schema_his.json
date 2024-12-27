@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HIS",
+  "description": "Questions related to HIS",
+  "properties": {
+    "HIS2SPEC": {
+      "type": "string",
+      "title": "HIS2SPEC",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Origin: ');});Indicate origin, for example, Argentinean, Colombian, Dominican, Nicaraguan, Salvadoran, Spaniard, and so on. End If"
+    }
+  },
+  "required": [
+    "HIS2SPEC"
+  ]
+}

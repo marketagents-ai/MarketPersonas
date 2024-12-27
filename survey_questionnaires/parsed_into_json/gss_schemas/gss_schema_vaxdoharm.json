@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: VAXDOHARM",
+  "description": "Questions related to VAXDOHARM",
+  "properties": {
+    "VAXDOHARM": {
+      "type": "string",
+      "title": "VAXDOHARM",
+      "description": "How much do you agree or disagree with the following statements about vaccinations? Overall, vaccinations do more harm than good.",
+      "enum": [
+        "d5_1",
+        "d5_2",
+        "d5_3",
+        "d5_4",
+        "d5_5",
+        "d5_6",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "VAXDOHARM"
+  ]
+}

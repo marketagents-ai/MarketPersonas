@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ATTEND",
+  "description": "Questions related to ATTEND",
+  "properties": {
+    "ATTEND": {
+      "type": "string",
+      "title": "ATTEND",
+      "description": "How often do you attend religious services?",
+      "enum": [
+        "never",
+        "several_times_a_year",
+        "about_once_a_month",
+        "_23_times_a_month",
+        "nearly_every_week",
+        "every_week",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "About once or twice a year",
+        "Never",
+        "Less than once a year",
+        "r}",
+        "a_year}",
+        "}",
+        "2-3 times a month",
+        "Nearly every week",
+        "Every week"
+      ]
+    }
+  },
+  "required": [
+    "ATTEND"
+  ]
+}

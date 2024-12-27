@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RACLIVE",
+  "description": "Questions related to RACLIVE",
+  "properties": {
+    "RACLIVE": {
+      "type": "string",
+      "title": "RACLIVE",
+      "description": "Are there any {response to racefill} living in your neighborhood now?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If VERXY = \"X\" Then",
+        "racdifintro.Response = {x}",
+        "Else",
+        "racdifintro.Response = {y}"
+      ]
+    }
+  },
+  "required": [
+    "RACLIVE"
+  ]
+}

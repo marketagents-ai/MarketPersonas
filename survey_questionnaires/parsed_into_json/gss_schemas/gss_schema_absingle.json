@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ABSINGLE",
+  "description": "Questions related to ABSINGLE",
+  "properties": {
+    "ABSINGLE": {
+      "type": "string",
+      "title": "ABSINGLE",
+      "description": "Do you think it should be possible for a pregnant woman to obtain a legal abortion... If she is not married and does not want to marry the man?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "ABSINGLE"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: STRESS",
+  "description": "Questions related to STRESS",
+  "properties": {
+    "STRESS12": {
+      "type": "string",
+      "title": "STRESS12",
+      "description": "In the past 12 months, have you participated in any of these stress management or stress reduction programs?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "STRESS": {
+      "type": "string",
+      "title": "STRESS",
+      "description": "How often do you find your work stressful?",
+      "enum": [
+        "always",
+        "often",
+        "sometimes",
+        "hardly_ever",
+        "never",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Always",
+        "Often",
+        "Sometimes",
+        "Hardly ever",
+        "Never",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "STRESS12",
+    "STRESS"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TAX",
+  "description": "Questions related to TAX",
+  "properties": {
+    "TAX": {
+      "type": "string",
+      "title": "TAX",
+      "description": "Do you consider the amount of federal income tax which you have to pay as too high, about right, or too low?",
+      "enum": [
+        "too_high",
+        "about_right",
+        "too_low",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too high",
+        "About right",
+        "Too low",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "TAX"
+  ]
+}

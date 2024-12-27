@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SEXEDUC",
+  "description": "Questions related to SEXEDUC",
+  "properties": {
+    "SEXEDUC": {
+      "type": "string",
+      "title": "SEXEDUC",
+      "description": "Would you be for or against sex education in the public schools?",
+      "enum": [
+        "for",
+        "against",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "For",
+        "Against",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SEXEDUC"
+  ]
+}

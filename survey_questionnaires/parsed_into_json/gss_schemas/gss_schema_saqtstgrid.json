@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SAQTstGrid",
+  "description": "Questions related to SAQTstGrid",
+  "properties": {
+    "SAQINT3": {
+      "type": "string",
+      "title": "SAQINT3",
+      "description": "Categorical (Single)"
+    },
+    "PART2": {
+      "type": "string",
+      "title": "PART2",
+      "description": "Info"
+    },
+    "PARTNERS": {
+      "type": "string",
+      "title": "PARTNERS",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "SAQINT3",
+    "PART2",
+    "PARTNERS"
+  ]
+}

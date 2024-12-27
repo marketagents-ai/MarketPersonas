@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OVER",
+  "description": "Questions related to OVER",
+  "properties": {
+    "OVER18": {
+      "type": "integer",
+      "title": "OVER18",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of individuals 18 or over: ');});Including yourself, how many individuals 18 or older live in this household? If you have roommates, please include them. Please also include those who usually live here but are away temporarily, such as those on business trips, at school, or temporarily in a hospital. sumunder18.Response = KIDS0TO6+KIDS7TO12+KIDS13TO17 If isEmpty(sumunder18) Then sumunder18.Response = 0 End If If sumunder18 = 1 Then housecktxt1.Response = {is} Else housecktxt1.Response = {are} End If If OVER18 = 1 Then housecktxt2.Response = {one} Else housecktxt2.Response = {more} End If",
+      "minimum": 1,
+      "maximum": 99
+    }
+  },
+  "required": [
+    "OVER18"
+  ]
+}

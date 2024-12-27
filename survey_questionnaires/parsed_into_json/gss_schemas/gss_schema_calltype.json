@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CALLTYPE",
+  "description": "Questions related to CALLTYPE",
+  "properties": {
+    "CALLTYPE": {
+      "type": "string",
+      "title": "CALLTYPE",
+      "description": "Please think about the voice calls that you and your family receive. Excluding all fax, modem, and non- voice calls, what situation best describes the telephone calls that your and your family receive?",
+      "enum": [
+        "All",
+        "Some",
+        "Few",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "All or almost all calls received are on cell phones",
+        "Some calls are received on cell phones and some on regular phones",
+        "Very few or none are received on cell phones",
+        "Don't know",
+        "End If",
+        "End If"
+      ]
+    }
+  },
+  "required": [
+    "CALLTYPE",
+    "CALLTYPE",
+    "CALLTYPE"
+  ]
+}

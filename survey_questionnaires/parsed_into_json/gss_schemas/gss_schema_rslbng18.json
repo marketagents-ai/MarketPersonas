@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RSLBNG18",
+  "description": "Questions related to RSLBNG18",
+  "properties": {
+    "RSTPPRNT18": {
+      "type": "string",
+      "title": "RSTPPRNT18",
+      "description": "Categorical (Single)"
+    },
+    "RSBLNG18": {
+      "type": "string",
+      "title": "RSBLNG18",
+      "description": "Categorical (Single)"
+    },
+    "RGPRNT18": {
+      "type": "string",
+      "title": "RGPRNT18",
+      "description": "Categorical (Single)"
+    },
+    "RFMLY18": {
+      "type": "string",
+      "title": "RFMLY18",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "RSTPPRNT18",
+    "RSBLNG18",
+    "RGPRNT18",
+    "RFMLY18"
+  ]
+}

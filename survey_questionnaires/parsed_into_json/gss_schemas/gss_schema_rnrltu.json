@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RNRLTU",
+  "description": "Questions related to RNRLTU",
+  "properties": {
+    "RNRLTU18": {
+      "type": "string",
+      "title": "RNRLTU18",
+      "description": "Are there any individuals under the age of 18 in this household who are not related to you in any way? For example, the child of a roommate or lodger.",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "skiptoend",
+        "NA"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA",
+        "LabelENDBB:",
+        "ETIMEBB.Response = SetTime(ETIMEB)",
+        "ETIMEBB_D.Response = Now()",
+        "ElapsedTimeBB.Response = CalcTime(ElapsedTimeBB,btimeBB,btimeBB_d,etimeBB,etimeBB_d)",
+        "MODECHKBB.Response = SetMode(MODECHKBB,QUEXMODE)",
+        "If IOM.Info.IsTest Or IOM.ProjectName = \"TGSS2022M\" Then",
+        "SkipSection: Categorical (Single)",
+        "CHOOSE NEXT SECTION TO TEST OR CLICK [NEXT]",
+        "Categories:"
+      ]
+    }
+  },
+  "required": [
+    "RNRLTU18",
+    "RNRLTU18"
+  ]
+}

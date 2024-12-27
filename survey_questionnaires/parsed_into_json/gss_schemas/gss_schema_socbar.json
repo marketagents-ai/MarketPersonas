@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SOCBAR",
+  "description": "Questions related to SOCBAR",
+  "properties": {
+    "SOCBAR": {
+      "type": "string",
+      "title": "SOCBAR",
+      "description": "How often do you go to a bar or tavern?",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Almost every day",
+        "Once or twice a week",
+        "Several times a month",
+        "About once a month",
+        "Several times a year",
+        "About once a year",
+        "Never",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SOCBAR"
+  ]
+}

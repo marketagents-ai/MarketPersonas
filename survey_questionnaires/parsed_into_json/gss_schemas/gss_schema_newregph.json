@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NEWREGPH",
+  "description": "Questions related to NEWREGPH",
+  "properties": {
+    "NEWREGPH": {
+      "type": "string",
+      "title": "NEWREGPH",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Phone number: ');});What is it? End If End If If PHNETYPE = {regular} Then"
+    }
+  },
+  "required": [
+    "NEWREGPH"
+  ]
+}

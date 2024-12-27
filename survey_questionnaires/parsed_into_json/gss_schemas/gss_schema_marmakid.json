@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MARMAKID",
+  "description": "Questions related to MARMAKID",
+  "properties": {
+    "MARMAKID": {
+      "type": "string",
+      "title": "MARMAKID",
+      "description": "Children grow up in different kinds of families. To what extent do you agree or disagree with the following statements? A single mother can bring up her child as well as a married couple.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "neithagr",
+        "disagree",
+        "strongly_disagree",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "MARMAKID"
+  ]
+}

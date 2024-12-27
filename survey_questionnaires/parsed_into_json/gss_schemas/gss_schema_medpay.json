@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MEDPAY",
+  "description": "Questions related to MEDPAY",
+  "properties": {
+    "MEDPAY": {
+      "type": "string",
+      "title": "MEDPAY",
+      "description": "During the past 12 months did it ever happen that you did not get the medical treatment you needed because... You could not pay for it?",
+      "enum": [
+        "yes",
+        "no",
+        "noneedmed",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Did not need medical treatment",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "MEDPAY"
+  ]
+}

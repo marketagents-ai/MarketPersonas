@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATARMS",
+  "description": "Questions related to NATARMS",
+  "properties": {
+    "NATARMS": {
+      "type": "string",
+      "title": "NATARMS",
+      "description": "The military, armaments and defense ... are we spending too much, too little, or about the right amount on The military, armaments and defense?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATARMS"
+  ]
+}

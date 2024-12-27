@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SSNUM",
+  "description": "Questions related to SSNUM",
+  "properties": {
+    "SSNUM": {
+      "type": "integer",
+      "title": "SSNUM",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Social Security #: ');}); What are the last four digits of your social security number? If you would rather not give us the last four digits of your social security number, please enter 9999. LabelCONTNAME: If QUEXMODE.ContainsAny({capi,phone}) Then CONTFNAM.QuestionTemplate=\"LeftLabelSubWide.htm\" CONTMNAM.QuestionTemplate=\"LeftLabelSubWide.htm\" CONTLNAM.QuestionTemplate=\"LeftLabelSubWide.htm\" Else CONTFNAM.QuestionTemplate=\"LeftLabelSub.htm\" CONTMNAM.QuestionTemplate=\"LeftLabelSub.htm\" CONTLNAM.QuestionTemplate=\"LeftLabelSub.htm\" End If",
+      "minimum": 1000,
+      "maximum": 999999999
+    }
+  },
+  "required": [
+    "SSNUM"
+  ]
+}

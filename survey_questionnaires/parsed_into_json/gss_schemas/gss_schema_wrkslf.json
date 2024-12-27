@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WRKSLF",
+  "description": "Questions related to WRKSLF",
+  "properties": {
+    "WRKSLF": {
+      "type": "string",
+      "title": "WRKSLF",
+      "description": "{response to wrkslffill}",
+      "enum": [
+        "selfemployed",
+        "someone_else",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Self-employed",
+        "Someone else",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WRKSLF"
+  ]
+}

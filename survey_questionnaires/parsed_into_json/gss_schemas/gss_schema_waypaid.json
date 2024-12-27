@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WAYPAID",
+  "description": "Questions related to WAYPAID",
+  "properties": {
+    "WAYPAID": {
+      "type": "string",
+      "title": "WAYPAID",
+      "description": "In your main job, are you salaried, paid by the hour, or what?",
+      "enum": [
+        "salaried",
+        "paid_by_the_hour",
+        "other_specify",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Salaried",
+        "Paid by the hour",
+        "Other",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WAYPAID"
+  ]
+}

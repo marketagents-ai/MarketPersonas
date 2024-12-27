@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SWRKSPEC",
+  "description": "Questions related to SWRKSPEC",
+  "properties": {
+    "SWRKSPEC": {
+      "type": "string",
+      "title": "SWRKSPEC",
+      "description": "Please specify other activity: End If If SPWRKSTA.ContainsAny({working_full_time,working_part_time}) Then"
+    }
+  },
+  "required": [
+    "SWRKSPEC"
+  ]
+}

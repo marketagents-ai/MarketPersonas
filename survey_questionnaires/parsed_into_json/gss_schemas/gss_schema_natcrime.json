@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATCRIME",
+  "description": "Questions related to NATCRIME",
+  "properties": {
+    "NATCRIME": {
+      "type": "string",
+      "title": "NATCRIME",
+      "description": "Halting the rising crime rate ... are we spending too much, too little, or about the right amount on Halting the rising crime rate?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATCRIME"
+  ]
+}

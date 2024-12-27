@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SVYID",
+  "description": "Questions related to SVYID",
+  "properties": {
+    "SVYID1": {
+      "type": "string",
+      "title": "SVYID1",
+      "description": "How likely is it that you would be willing to use a video chat for a survey interview within the next few months?",
+      "enum": [
+        "very_likely",
+        "somewhat_likely",
+        "not_very_likely",
+        "not_atall_likely",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very likely",
+        "Somewhat likely",
+        "Not very likely",
+        "Not at all likely",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "SVYID2": {
+      "type": "string",
+      "title": "SVYID2",
+      "description": "How likely is it that you would be willing to have someone visit your home for a survey in-person interview within the next few months?",
+      "enum": [
+        "very_likely",
+        "somewhat_likely",
+        "not_very_likely",
+        "not_atall_likely",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very likely",
+        "Somewhat likely",
+        "Not very likely",
+        "Not at all likely",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SVYID1",
+    "SVYID2"
+  ]
+}

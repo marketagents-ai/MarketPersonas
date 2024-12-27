@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PAWRKSLF",
+  "description": "Questions related to PAWRKSLF",
+  "properties": {
+    "PAWRKSLF2": {
+      "type": "string",
+      "title": "PAWRKSLF2",
+      "description": "At this job, was {response to dadfill} an employee, self-employed without employees, or self-employed with employees?",
+      "enum": [
+        "employee",
+        "slfwoemp",
+        "slfwithemp",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Employee",
+        "Self-employed without employees",
+        "Self-employed with employees",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PAWRKSLF2"
+  ]
+}

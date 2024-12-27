@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LPREVNAME",
+  "description": "Questions related to LPREVNAME",
+  "properties": {
+    "LPREVNAME": {
+      "type": "string",
+      "title": "LPREVNAME",
+      "description": "Last name: End Page - PrevNamePage If FPREVNAME.Response.Coded = {NA} And MPREVNAME.Response.Coded = {NA} And LPREVNAME.Response.Coded = {NA} Then If QUEXLANG = {ESN} Then FPREVNAME.Errors.AddNew(\"ERR\",\"Por favor, entra al menos un nombre\") Else FPREVNAME.Errors.AddNew(\"ERR\",\"Please enter at least one name\") End If Goto LabelPREVNAME End If End If End If cashfill.Response = QUEXMODE If QUEXMODE.ContainsAny({CAPI}) Then INCENTCHOICE.Categories={cash,check,walmart,lowes,amzn,idecline,dontknow,refused,noanswer} Else INCENTCHOICE.Categories={check,walmart,lowes,amzn,idecline,dontknow,refused,noanswer} End If"
+    }
+  },
+  "required": [
+    "LPREVNAME"
+  ]
+}

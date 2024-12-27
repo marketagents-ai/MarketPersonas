@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: JEWSP",
+  "description": "Questions related to JEWSP",
+  "properties": {
+    "JEWSP": {
+      "type": "string",
+      "title": "JEWSP",
+      "description": "Please specify: End If End If If Not RELIG.ContainsAny({none, dontknow, refused,noanswer}) Then If RELIG.ContainsAny({catholic,easter,jewish,buddhist,hindu,muslim}) Then religfill.Response = RELIG ElseIf TMPDENOM.ContainsAny({baptist,methodist,lutheran,presbyterian,episcopal_church}) Then religfill.Response = TMPDENOM ElseIf TMPDENOM = {other_specify} Then religfill.Response = {othprot} ElseIf CHRISTCH = {YES} Then religfill.Response = {christian} ElseIf PROTCHRH = {yes} Then religfill.Response = {protestant} ElseIf RELIG = {other_specify} Then religfill.Response = {relgspec} ElseIf TMPDENOM.ContainsAny({no_denomination_given_or_nondenominational_church,dontknow,refused, noanswer}) Then religfill.Response = {protestant} End If If QUEXMODE.ContainsAny({capi,phone}) Or VERXY = \"Y\" Then RELITEN.Categories.Filter={strong, not_very_strong, somewhat_strong, dontknow, refused, noanswer} Else RELITEN.Categories.Filter={strong, not_very_strong, dontknow, refused,noanswer} End If"
+    }
+  },
+  "required": [
+    "JEWSP"
+  ]
+}

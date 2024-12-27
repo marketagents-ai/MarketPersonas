@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SEX",
+  "description": "Questions related to SEX",
+  "properties": {
+    "OWN16SPEC": {
+      "type": "string",
+      "title": "OWN16SPEC",
+      "description": "Text"
+    },
+    "SEX": {
+      "type": "string",
+      "title": "SEX",
+      "description": "Categorical (Single)"
+    },
+    "INTERVIEWER": {
+      "type": "string",
+      "title": "INTERVIEWER",
+      "description": "SELECT GENDER OF RESPONDENT."
+    },
+    "SEXBIRTH1": {
+      "type": "string",
+      "title": "SEXBIRTH1",
+      "description": "Categorical (Single)"
+    },
+    "SEXNOW1": {
+      "type": "string",
+      "title": "SEXNOW1",
+      "description": "Categorical (Single)"
+    },
+    "SEXCNFRM": {
+      "type": "string",
+      "title": "SEXCNFRM",
+      "description": "Categorical (Single)"
+    },
+    "BRTHMON": {
+      "type": "string",
+      "title": "BRTHMON",
+      "description": "Categorical (Single)"
+    },
+    "RYRBORN": {
+      "type": "string",
+      "title": "RYRBORN",
+      "description": "Long [1900 .. 2004]"
+    },
+    "OTHLANG": {
+      "type": "string",
+      "title": "OTHLANG",
+      "description": "Categorical (Single)"
+    },
+    "OTHLANG2": {
+      "type": "string",
+      "title": "OTHLANG2",
+      "description": "Text"
+    },
+    "OTHLANG1": {
+      "type": "string",
+      "title": "OTHLANG1",
+      "description": "Text"
+    },
+    "BETRLANG": {
+      "type": "string",
+      "title": "BETRLANG",
+      "description": "Categorical (Single)"
+    },
+    "SPKLANG": {
+      "type": "string",
+      "title": "SPKLANG",
+      "description": "Categorical (Single)"
+    },
+    "VETYRS1": {
+      "type": "string",
+      "title": "VETYRS1",
+      "description": "Categorical (Single)"
+    },
+    "VETYRS2": {
+      "type": "string",
+      "title": "VETYRS2",
+      "description": "Categorical (Single)"
+    },
+    "COMPUSE": {
+      "type": "string",
+      "title": "COMPUSE",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "OWN16SPEC",
+    "SEX",
+    "INTERVIEWER",
+    "SEXBIRTH1",
+    "SEXNOW1",
+    "SEXCNFRM",
+    "BRTHMON",
+    "RYRBORN",
+    "OTHLANG",
+    "OTHLANG2",
+    "OTHLANG1",
+    "OTHLANG2",
+    "BETRLANG",
+    "SPKLANG",
+    "VETYRS1",
+    "VETYRS2",
+    "COMPUSE"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATCITY",
+  "description": "Questions related to NATCITY",
+  "properties": {
+    "NATCITY": {
+      "type": "string",
+      "title": "NATCITY",
+      "description": "Solving the problems of the big cities ... are we spending too much, too little, or about the right amount on Solving the problems of the big cities?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATCITY"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ABGRID",
+  "description": "Questions related to ABGRID",
+  "properties": {
+    "ABGRID1": {
+      "type": "string",
+      "title": "ABGRID1",
+      "description": "Do you think it should be possible for a pregnant woman to obtain a legal abortion..."
+    },
+    "ABGRID2": {
+      "type": "string",
+      "title": "ABGRID2",
+      "description": "Do you think it should be possible for a pregnant woman to obtain a legal abortion...\nElse"
+    }
+  },
+  "required": [
+    "ABGRID1",
+    "ABGRID2"
+  ]
+}

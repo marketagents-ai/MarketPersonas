@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MNTHUSATXT",
+  "description": "Questions related to MNTHUSATXT",
+  "properties": {
+    "MNTHUSATXT": {
+      "type": "string",
+      "title": "MNTHUSATXT",
+      "description": "If less than one year:"
+    }
+  },
+  "required": [
+    "MNTHUSATXT"
+  ]
+}

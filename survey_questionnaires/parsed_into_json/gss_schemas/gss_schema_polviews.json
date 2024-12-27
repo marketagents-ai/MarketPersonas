@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: POLVIEWS",
+  "description": "Questions related to POLVIEWS",
+  "properties": {
+    "POLVIEWS": {
+      "type": "string",
+      "title": "POLVIEWS",
+      "description": "We hear a lot of talk these days about liberals and conservatives. Here is a seven-point scale on which the political views that people might hold are arranged from extremely liberal—point 1—to extremely conservative—point 7. Where would you place yourself on this scale?",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Extremely liberal",
+        "Liberal",
+        "Slightly liberal",
+        "Moderate, middle of the road",
+        "Slightly conservative",
+        "Conservative",
+        "Extremely conservative",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "POLVIEWS"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPDIPLMA",
+  "description": "Questions related to SPDIPLMA",
+  "properties": {
+    "SPDIPLMA": {
+      "type": "string",
+      "title": "SPDIPLMA",
+      "description": "Did your {response to _spfill1} ever get a high school diploma or a GED certificate?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SPDIPLMA"
+  ]
+}

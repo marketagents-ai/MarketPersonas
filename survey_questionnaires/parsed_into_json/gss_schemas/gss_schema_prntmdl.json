@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRNTMDL",
+  "description": "Questions related to PRNTMDL",
+  "properties": {
+    "PRNTMDL": {
+      "type": "string",
+      "title": "PRNTMDL",
+      "description": "(In your opinion, which parent should do the following? Who should...) ...try to be a role model for the child?",
+      "enum": [
+        "mommost",
+        "momsom",
+        "momdadeq",
+        "dadsom",
+        "dadmost",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "The mother mostly",
+        "The mother somewhat more than the father",
+        "The mother and father equally",
+        "The father somewhat more than the mother",
+        "The father mostly",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PRNTMDL"
+  ]
+}

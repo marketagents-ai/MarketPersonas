@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: AFIRM",
+  "description": "Questions related to AFIRM",
+  "properties": {
+    "AFIRM1": {
+      "type": "string",
+      "title": "AFIRM1",
+      "description": "Some people say that because of past discrimination, Black people should be given preference in hiring and promotion.  Others say that such preference in hiring and promotion of Black people is wrong because it discriminates against Whites.  What about your opinion -- are you for or against preferential hiring and promotion of Black people?",
+      "enum": [
+        "for_racial_preference",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "ce}",
+        "For racial preference",
+        "Against racial preference",
+        "Don't know"
+      ]
+    },
+    "AFIRM2": {
+      "type": "string",
+      "title": "AFIRM2",
+      "description": "Do you favor preferences in hiring and promotion strongly or not strongly?",
+      "enum": [
+        "strongly_favors",
+        "not_strongly",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly favor",
+        "Not strongly",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "AFIRM3": {
+      "type": "string",
+      "title": "AFIRM3",
+      "description": "Do you oppose preference in hiring and promotion strongly or not strongly?",
+      "enum": [
+        "oppose_strongly",
+        "not_strongly",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Oppose strongly",
+        "Not strongly",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "AFIRM1",
+    "AFIRM2",
+    "AFIRM3"
+  ]
+}

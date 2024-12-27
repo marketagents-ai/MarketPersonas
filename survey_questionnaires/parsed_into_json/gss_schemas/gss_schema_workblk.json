@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WORKBLK",
+  "description": "Questions related to WORKBLK",
+  "properties": {
+    "WORKBLK": {
+      "type": "string",
+      "title": "WORKBLK",
+      "description": "(Do people in this group tend to be hardworking or lazy?) Black people?",
+      "enum": [
+        "_1_hardworking",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7_lazy",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "1 Hardworking",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7 Lazy",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WORKBLK"
+  ]
+}

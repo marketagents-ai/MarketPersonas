@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WIDOWED",
+  "description": "Questions related to WIDOWED",
+  "properties": {
+    "WIDOWED": {
+      "type": "string",
+      "title": "WIDOWED",
+      "description": "Have you ever been widowed?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "WIDOWED"
+  ]
+}

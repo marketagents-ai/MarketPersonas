@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OCCSLF",
+  "description": "Questions related to OCCSLF",
+  "properties": {
+    "OCCSLF": {
+      "type": "string",
+      "title": "OCCSLF",
+      "description": "{response to occslffill}"
+    }
+  },
+  "required": [
+    "OCCSLF"
+  ]
+}

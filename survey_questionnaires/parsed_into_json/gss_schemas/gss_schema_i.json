@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: I",
+  "description": "Questions related to I",
+  "properties": {
+    "I_APT": {
+      "type": "string",
+      "title": "I_APT",
+      "description": "Apartment:"
+    },
+    "I_FNAME": {
+      "type": "string",
+      "title": "I_FNAME",
+      "description": "First name:"
+    },
+    "I_LNAME": {
+      "type": "string",
+      "title": "I_LNAME",
+      "description": "Last name:"
+    },
+    "I_STREET": {
+      "type": "string",
+      "title": "I_STREET",
+      "description": "Street address:"
+    },
+    "I_CITY": {
+      "type": "string",
+      "title": "I_CITY",
+      "description": "City:"
+    },
+    "I_STATE": {
+      "type": "string",
+      "title": "I_STATE",
+      "description": "State:"
+    },
+    "I_ZIP": {
+      "type": "string",
+      "title": "I_ZIP",
+      "description": "Zip: End Page - CheckIncent ElseIf INCENTCHOICE.ContainsAny({walmart,lowes,amzn}) Then paytypetxt.Response = \"Card\" If QUEXMODE.ContainsAny({capi,phone}) Then I_FNAME.QuestionTemplate=\"LeftLabelSubWide.htm\" I_LNAME.QuestionTemplate=\"LeftLabelSubWide.htm\" I_EMAIL.QuestionTemplate=\"LeftLabelSubWide.htm\" Else I_FNAME.QuestionTemplate=\"LeftLabelSub.htm\" I_LNAME.QuestionTemplate=\"LeftLabelSub.htm\" I_EMAIL.QuestionTemplate=\"LeftLabelSub.htm\" End If Begin Page - CardIncent What name and email address would you like to use to receive your gift card?"
+    },
+    "I_EMAIL": {
+      "type": "string",
+      "title": "I_EMAIL",
+      "description": "Email: End Page - CardIncent End If LabelFollowOn: followonfill.Response = {nofollowon} If QUEXMODE = {CAWI} Then If IOM.ProjectName = \"TGSS2022M\" Then If followonflag = \"1\" Then t_redirect1.Label.Inserts[\"PIN\"].Text = IOM.SampleRecord[\"pin\"] IOM.Texts.EndOfInterview = t_redirect1.Label ElseIf followonflag = \"2\" Then t_redirect2.Label.Inserts[\"PIN\"].Text = IOM.SampleRecord[\"pin\"] IOM.Texts.EndOfInterview = t_redirect2.Label Else IOM.Texts.EndOfInterview = \"\" End If Else If followonflag = \"1\" Then p_redirect1.Label.Inserts[\"PIN\"].Text = IOM.SampleRecord[\"pin\"] IOM.Texts.EndOfInterview = p_redirect1.Label ElseIf followonflag = \"2\" Then p_redirect2.Label.Inserts[\"PIN\"].Text = IOM.SampleRecord[\"pin\"] IOM.Texts.EndOfInterview = p_redirect2.Label Else IOM.Texts.EndOfInterview = \"\" End If End If Else IOM.Texts.EndOfInterview = \"\" End If If QUEXMODE = {CAWI} And followonflag > \"0\" Then followonfill.Categories[{followon1}].Label.Inserts[\"pin\"]=IOM.SampleRecord.Item[\"pin\"] followonfill.Categories[{followon2}].Label.Inserts[\"pin\"]=IOM.SampleRecord.Item[\"pin\"] If followonflag = \"1\" Then followonfill.Response = {followon1} ElseIf followonflag = \"2\" Then followonfill.Response = {followon2} End If FOLLOWON.Response.Default={continue}"
+    }
+  },
+  "required": [
+    "I_APT",
+    "I_FNAME",
+    "I_LNAME",
+    "I_STREET",
+    "I_APT",
+    "I_CITY",
+    "I_STATE",
+    "I_ZIP",
+    "I_FNAME",
+    "I_LNAME",
+    "I_EMAIL"
+  ]
+}

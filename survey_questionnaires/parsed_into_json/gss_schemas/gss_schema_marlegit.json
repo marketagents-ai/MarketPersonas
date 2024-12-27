@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MARLEGIT",
+  "description": "Questions related to MARLEGIT",
+  "properties": {
+    "MARLEGIT": {
+      "type": "string",
+      "title": "MARLEGIT",
+      "description": "(To what extent do you agree or disagree ...?) People who want children ought to get married.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "neithagr",
+        "disagree",
+        "strongly_disagree",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "MARLEGIT"
+  ]
+}

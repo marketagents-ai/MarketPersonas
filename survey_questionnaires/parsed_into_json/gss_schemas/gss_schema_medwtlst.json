@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MEDWTLST",
+  "description": "Questions related to MEDWTLST",
+  "properties": {
+    "MEDWTLST": {
+      "type": "string",
+      "title": "MEDWTLST",
+      "description": "(During the past 12 months did it ever happen that you did not get the medical treatment you needed because...) The waiting list was too long?",
+      "enum": [
+        "yes",
+        "no",
+        "noneedmed",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Did not need medical treatment",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "MEDWTLST"
+  ]
+}

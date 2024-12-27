@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WKSEXISM",
+  "description": "Questions related to WKSEXISM",
+  "properties": {
+    "WKSEXISM": {
+      "type": "string",
+      "title": "WKSEXISM",
+      "description": "Do you feel in any way discriminated against on your job because of your gender?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WKSEXISM"
+  ]
+}

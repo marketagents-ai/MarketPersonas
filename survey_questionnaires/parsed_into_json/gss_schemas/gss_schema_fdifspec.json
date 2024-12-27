@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FDIFSPEC",
+  "description": "Questions related to FDIFSPEC",
+  "properties": {
+    "FDIFSPEC": {
+      "type": "string",
+      "title": "FDIFSPEC",
+      "description": "Please describe your situation. End If If FAMILY16A = {yes} Or FAMILY16B.ContainsAny({other_specify,mother_and_stepfather,motherno_father_or_stepfather,father no_mother_or_stepmother,some_other_male_relative_no_female_head}) Then momfill.Response = mom.label ElseIf FAMILY16B.ContainsAny({father_and_stepmother}) Then momfill.Response = stepmom.label ElseIf FAMILY16B.ContainsAny({other_arrangement_with_both_male_and_female_rela,refused,dontknow,no answer}) Then momfill.Response = othfem.label ElseIf FAMILY16B.ContainsAny({some_other_female_relative_no_male_head}) And FAMSPECF.Response.Coded Then momfill.Response = momsub.label Else momfill.Response = momspec.label End If If FAMILY16A = {yes} Or FAMILY16B.ContainsAny({other_specify,father_and_stepmother,fatherno_mother_or_stepmother,moth erno_father_or_stepfather,some_other_female_relative_no_male_head}) Then dadfill.Response = dad.label ElseIf FAMILY16B.ContainsAny({mother_and_stepfather}) Then dadfill.Response = stepdad.label ElseIf FAMILY16B.ContainsAny({other_arrangement_with_both_male_and_female_rela,refused,dontknow,no answer}) Then dadfill.Response = malrel.label ElseIf FAMILY16B.ContainsAny({some_other_male_relative_no_female_head}) And FAMSPECM.Response.Coded Then dadfill.Response = dadsub.label Else dadfill.Response = dadspec.label End If Begin Page - occpapage"
+    }
+  },
+  "required": [
+    "FDIFSPEC"
+  ]
+}

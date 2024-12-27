@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MAILCITY",
+  "description": "Questions related to MAILCITY",
+  "properties": {
+    "MAILCITY": {
+      "type": "string",
+      "title": "MAILCITY",
+      "description": "City:"
+    }
+  },
+  "required": [
+    "MAILCITY"
+  ]
+}

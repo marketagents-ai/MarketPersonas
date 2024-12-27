@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NUMMEN",
+  "description": "Questions related to NUMMEN",
+  "properties": {
+    "NUMMEN": {
+      "type": "integer",
+      "title": "NUMMEN",
+      "description": "Again, thinking about the time since your 18th birthday, (including the recent past that you have already told us about) how many male partners have you ever had sex with?",
+      "minimum": 0,
+      "maximum": 776
+    }
+  },
+  "required": [
+    "NUMMEN"
+  ]
+}

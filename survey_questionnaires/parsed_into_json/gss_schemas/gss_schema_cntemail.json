@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CNTEMAIL",
+  "description": "Questions related to CNTEMAIL",
+  "properties": {
+    "CNTEMAIL": {
+      "type": "string",
+      "title": "CNTEMAIL",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Email: ');});Do they have an email address?  What is it? If Not Validate(CNTEMAIL,,,\"[-.\\w]+\\@[-.\\w]+\") Then If QUEXLANG = {ESN} Then CNTEMAIL.Errors.AddNew(\"err\",\"Por favor entra un correo electrónico válida\") Else CNTEMAIL.Errors.AddNew(\"err\",\"Please enter a valid email address\") End If Goto LabelCNTEMAIL End If adminconsenttxt.Response = QUEXMODE"
+    }
+  },
+  "required": [
+    "CNTEMAIL"
+  ]
+}

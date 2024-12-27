@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: VERXY",
+  "description": "Questions related to VERXY",
+  "properties": {
+    "VERXY": {
+      "type": "string",
+      "title": "VERXY",
+      "description": "ENTER X OR Y Else dbname = GetConfigValue(IOM,\"cmsdb\") servname = GetConfigValue(IOM,\"server\") connectionString = \"Provider=MSOLEDBSQL.1;Integrated Security=SSPI; Persist Security Info=False;Initial Catalog=\"+dbname+\";Data Source=\"+servname+\";\" debug.Log(connectionString) Set sql_conn = CreateObject(\"ADODB.Connection\") sql_conn.Open(connectionString) sqlex=\"select * from view_gss2022_preload where su_id='\" + CText(SU_ID) + \"'\" set rs=sql_conn.Execute(sqlex) debug.Log(sqlex) If Not(rs.EOF) Then If IOM.Info.IsTest Then IOM.Info.Serial=rs.Fields[\"sample_unit_key\"] End If BALLOT.Response = rs.Fields[\"BALLOT\"] VERXY.Response = rs.Fields[\"VERXY\"] ADDRESS.Response = rs.Fields[\"address\"] APRTMNT.Response = rs.Fields[\"apt\"] CITY.Response = rs.Fields[\"city\"] STATE.Response = rs.Fields[\"state\"] ZIP.Response = rs.Fields[\"zip\"] RANDORDER1.Response = rs.Fields[\"RANDORDER1\"] RANDORDER2.Response = rs.Fields[\"RANDORDER2\"] R_FNAME.Response = rs.Fields[\"first_name\"] R_MNAME.Response = rs.Fields[\"middle_name\"] R_LNAME.Response = rs.Fields[\"last_name\"] P_REG16.Response = rs.Fields[\"REG16\"] P_RGRADE.Response = rs.Fields[\"RGRADE\"] P_BRTHYEAR.Response = rs.Fields[\"BRTHYEAR\"] INTDATE.Response = rs.Fields[\"INTDATE\"] PREADMIN.Response = rs.Fields[\"PREADMIN\"] YEARFILL.Response = rs.Fields[\"YEARFILL\"] P_RACECEN1.Response = rs.Fields[\"RACECEN1\"] P_INCAMT.Response = rs.Fields[\"INCENTIVE\"] NEA_INCAMT.Response = rs.Fields[\"NEA_INCAMT\"] BRD_INCAMT.Response = rs.Fields[\"BRD_INCAMT\"] End If rs.Close() End If If IOM.Info.IsTest Or IOM.ProjectName = \"TGSS2022M\" Then"
+    }
+  },
+  "required": [
+    "VERXY"
+  ]
+}

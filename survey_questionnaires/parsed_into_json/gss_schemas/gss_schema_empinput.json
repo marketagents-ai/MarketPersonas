@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EMPINPUT",
+  "description": "Questions related to EMPINPUT",
+  "properties": {
+    "EMPINPUT": {
+      "type": "string",
+      "title": "EMPINPUT",
+      "description": "Some companies have organized workplace decision-making in ways to get more employee input and involvement. Are you personally involved in any group, team, committee, or task force that addresses issues such as product quality, cost cutting, productivity, health and safety, or other workplace issues?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "EMPINPUT"
+  ]
+}

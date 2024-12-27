@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WRKSCHED",
+  "description": "Questions related to WRKSCHED",
+  "properties": {
+    "WRKSCHED": {
+      "type": "string",
+      "title": "WRKSCHED",
+      "description": "Which of the following best describes your usual work schedule?",
+      "enum": [
+        "_1_day_shift",
+        "_2_afternoon_shift",
+        "_3_night_shift",
+        "_4_split_shift",
+        "_6_rotating_shifts",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "}",
+        "Day shift",
+        "Afternoon shift",
+        "Night shift",
+        "Split shift",
+        "Irregular shift/on-call",
+        "Rotating shifts",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "WRKSCHED"
+  ]
+}

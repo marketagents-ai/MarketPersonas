@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CAPPUN",
+  "description": "Questions related to CAPPUN",
+  "properties": {
+    "CAPPUN": {
+      "type": "string",
+      "title": "CAPPUN",
+      "description": "Do you favor or oppose the death penalty for persons convicted of murder?",
+      "enum": [
+        "favor",
+        "oppose",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Favor",
+        "Oppose",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "CAPPUN"
+  ]
+}

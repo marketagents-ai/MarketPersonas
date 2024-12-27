@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FRTVEGS",
+  "description": "Questions related to FRTVEGS",
+  "properties": {
+    "FRTVEGS": {
+      "type": "string",
+      "title": "FRTVEGS",
+      "description": "(How often do you...) eat fresh fruit or vegetables?",
+      "enum": [
+        "d17_1",
+        "d17_2",
+        "d17_3",
+        "d17_4",
+        "d17_5",
+        "d17_8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Never",
+        "Once a month or less often",
+        "Several times a month",
+        "Several times a week",
+        "Daily",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FRTVEGS"
+  ]
+}

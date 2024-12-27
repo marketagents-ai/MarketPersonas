@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: VETYRS",
+  "description": "Questions related to VETYRS",
+  "properties": {
+    "VETYRS1": {
+      "type": "string",
+      "title": "VETYRS1",
+      "description": "Have you ever been on active duty for military training or service for two consecutive months or more?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "VETYRS2": {
+      "type": "string",
+      "title": "VETYRS2",
+      "description": "What was your total time on active duty?",
+      "enum": [
+        "lt2yr",
+        "_2_4yrs",
+        "mt4yrs",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Less than 2 years",
+        "End If",
+        "2 - 4 years",
+        "More than 4 years",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "VETYRS1",
+    "VETYRS2"
+  ]
+}

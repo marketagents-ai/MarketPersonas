@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TIREDWK",
+  "description": "Questions related to TIREDWK",
+  "properties": {
+    "TIREDWK1": {
+      "type": "string",
+      "title": "TIREDWK1",
+      "description": "(How often has each of the following happened to you during the past three months?) You have arrived at work too tired to function well because of the household work you had done.",
+      "enum": [
+        "sevtimeweek",
+        "sevtimemth",
+        "onceortwice",
+        "never",
+        "nojob",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Several times a week",
+        "Several times a month",
+        "Once or twice",
+        "Never",
+        "Doesn't apply/no job",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "TIREDWK1"
+  ]
+}

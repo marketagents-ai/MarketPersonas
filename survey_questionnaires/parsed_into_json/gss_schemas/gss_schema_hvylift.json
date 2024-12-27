@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HVYLIFT",
+  "description": "Questions related to HVYLIFT",
+  "properties": {
+    "HVYLIFT": {
+      "type": "string",
+      "title": "HVYLIFT",
+      "description": "Does your job require you to do repeated lifting, pushing, pulling or bending?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HVYLIFT"
+  ]
+}

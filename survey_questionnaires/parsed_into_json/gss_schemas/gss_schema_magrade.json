@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MAGRADE",
+  "description": "Questions related to MAGRADE",
+  "properties": {
+    "MAGRADE": {
+      "type": "string",
+      "title": "MAGRADE",
+      "description": "What is the highest grade in elementary school or high school that {response to momfill} finished and got credit for?",
+      "enum": [
+        "no_formal_school",
+        "_1st_grade",
+        "_2nd_grade",
+        "_3rd_grade",
+        "_4th_grade",
+        "_5th_grade",
+        "_6th_grade",
+        "_7th_grade",
+        "_8th_grade",
+        "_9th_grade",
+        "_10th_grade",
+        "_11th_grade",
+        "_12th_grade",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "No formal school",
+        "1st grade",
+        "2nd grade",
+        "3rd grade",
+        "4th grade",
+        "5th grade",
+        "6th grade",
+        "7th grade",
+        "8th grade",
+        "9th grade",
+        "10th grade",
+        "11th grade",
+        "12th grade",
+        "Don't know",
+        "NA",
+        "If MAGRADE.ContainsAny({_9th_grade,_10th_grade,_11th_grade,_12th_grade,dontknow}) Then"
+      ]
+    }
+  },
+  "required": [
+    "MAGRADE"
+  ]
+}

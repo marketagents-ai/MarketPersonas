@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EXTRAVAL",
+  "description": "Questions related to EXTRAVAL",
+  "properties": {
+    "EXTRAVAL": {
+      "type": "string",
+      "title": "EXTRAVAL",
+      "description": "What was the approximate total dollar value of these various payments in 2021?",
+      "enum": [
+        "LT100",
+        "_100",
+        "LT499",
+        "_500",
+        "_1K",
+        "_1500",
+        "_2500",
+        "_4",
+        "_7K",
+        "_15K",
+        "_50K",
+        "GT100K",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Else",
+        "Less than $100",
+        "$100 to $299",
+        "$300 to $499",
+        "$500 to $999",
+        "$1,000 to $1,499",
+        "$1,500 to $2,499",
+        "$2,500 to $3,999",
+        "$4,000 to $6,999",
+        "$7,000 to $14,999",
+        "$15,000 to $49,999",
+        "$50,000 to $99,999",
+        "Over $100,000",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "EXTRAVAL"
+  ]
+}

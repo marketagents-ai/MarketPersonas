@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MARHISP",
+  "description": "Questions related to MARHISP",
+  "properties": {
+    "MARHISP": {
+      "type": "string",
+      "title": "MARHISP",
+      "description": "What about having a close relative marry a Hispanic or Latino person?",
+      "enum": [
+        "very_in_favor",
+        "somewhat_in_favor",
+        "somewhat_opposed",
+        "very_opposed",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very in favor",
+        "pposed}",
+        "Somewhat in favor",
+        "Neither in favor nor opposed",
+        "Somewhat opposed",
+        "Very opposed",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "MARHISP"
+  ]
+}

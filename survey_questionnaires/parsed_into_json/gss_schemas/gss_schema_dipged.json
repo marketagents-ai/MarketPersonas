@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DIPGED",
+  "description": "Questions related to DIPGED",
+  "properties": {
+    "DIPGED": {
+      "type": "string",
+      "title": "DIPGED",
+      "description": "Was that a diploma awarded by your high school at graduation at the end of 12th grade, a GED awarded after you took a test, or something else?",
+      "enum": [
+        "hsdip",
+        "ged",
+        "other",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "High school diploma",
+        "GED",
+        "Other (Specify)",
+        "Don't know",
+        "NA",
+        "If DIPGED = {other} Then"
+      ]
+    }
+  },
+  "required": [
+    "DIPGED"
+  ]
+}

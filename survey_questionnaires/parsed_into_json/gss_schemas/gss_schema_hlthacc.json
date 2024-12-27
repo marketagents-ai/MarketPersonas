@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHACC",
+  "description": "Questions related to HLTHACC",
+  "properties": {
+    "HLTHACC1": {
+      "type": "string",
+      "title": "HLTHACC1",
+      "description": "In the United States, do you think it is easier or harder to get access to health care... for rich people than for poor people",
+      "enum": [
+        "mucheas",
+        "smwteas",
+        "abtsame",
+        "smthard",
+        "muchhard",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Much easier",
+        "Somewhat easier",
+        "About the same",
+        "Somewhat harder",
+        "Much harder",
+        "Can't choose",
+        "NA"
+      ]
+    },
+    "HLTHACC2": {
+      "type": "string",
+      "title": "HLTHACC2",
+      "description": "In the United States, do you think it is easier or harder to get access to health care... for old people than for young people",
+      "enum": [
+        "mucheas",
+        "smwteas",
+        "abtsame",
+        "smthard",
+        "muchhard",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Much easier",
+        "Somewhat easier",
+        "About the same",
+        "Somewhat harder",
+        "Much harder",
+        "Can't choose",
+        "NA"
+      ]
+    },
+    "HLTHACC3": {
+      "type": "string",
+      "title": "HLTHACC3",
+      "description": "In the United States, do you think it is easier or harder to get access to health care... for women than for men",
+      "enum": [
+        "mucheas",
+        "smwteas",
+        "abtsame",
+        "smthard",
+        "muchhard",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Much easier",
+        "Somewhat easier",
+        "About the same",
+        "Somewhat harder",
+        "Much harder",
+        "Can't choose",
+        "NA"
+      ]
+    },
+    "HLTHACC4": {
+      "type": "string",
+      "title": "HLTHACC4",
+      "description": "In the United States, do you think it is easier or harder to get access to health care... for citizens of the United States  than for people who do not hold U.S.citizenship",
+      "enum": [
+        "mucheas",
+        "smwteas",
+        "abtsame",
+        "smthard",
+        "muchhard",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Much easier",
+        "Somewhat easier",
+        "About the same",
+        "Somewhat harder",
+        "Much harder",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HLTHACC1",
+    "HLTHACC2",
+    "HLTHACC3",
+    "HLTHACC4"
+  ]
+}

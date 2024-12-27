@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HYPERTEN",
+  "description": "Questions related to HYPERTEN",
+  "properties": {
+    "HYPERTEN": {
+      "type": "string",
+      "title": "HYPERTEN",
+      "description": "Now we would like to ask you some questions about general health conditions.  Has a doctor, nurse or other health professional EVER told you that you had... ...hypertension or high blood pressure?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HYPERTEN"
+  ]
+}

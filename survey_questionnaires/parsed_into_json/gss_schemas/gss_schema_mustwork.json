@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MUSTWORK",
+  "description": "Questions related to MUSTWORK",
+  "properties": {
+    "MUSTWORK": {
+      "type": "string",
+      "title": "MUSTWORK",
+      "description": "When you work extra hours on your main job, is it mandatory (required by your employer)?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "MUSTWORK"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: BALLOT",
+  "description": "Questions related to BALLOT",
+  "properties": {
+    "BALLOT": {
+      "type": "string",
+      "title": "BALLOT",
+      "description": "ENTER BALLOT NUMBER (1, 2 OR 3)"
+    }
+  },
+  "required": [
+    "BALLOT"
+  ]
+}

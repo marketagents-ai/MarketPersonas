@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FAMWKLST",
+  "description": "Questions related to FAMWKLST",
+  "properties": {
+    "FAMWKLST": {
+      "type": "string",
+      "title": "FAMWKLST",
+      "description": "And, in your opinion, which of these options would be the least desirable?",
+      "enum": [
+        "c11mhome",
+        "c11mpart",
+        "c11bothfull",
+        "c11bothpart",
+        "c11fpart",
+        "c11fhome",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "The mother stays at home and the father works full-time",
+        "The mother works part-time and the father works full-time",
+        "Both the mother and father work full-time",
+        "Both the mother and father work part-time",
+        "The father works part-time and the mother works full-time",
+        "The father stays at home and the mother works full-time",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FAMWKLST"
+  ]
+}

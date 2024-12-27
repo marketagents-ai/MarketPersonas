@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: STOPTYRAMT",
+  "description": "Questions related to STOPTYRAMT",
+  "properties": {
+    "STOPTYRAMT": {
+      "type": "string",
+      "title": "STOPTYRAMT",
+      "description": "Please give a general estimate of the total number of the stock options that your company granted to you in 2021.",
+      "enum": [
+        "LT100so",
+        "_100so",
+        "_500so",
+        "_1Kso",
+        "_3Kso",
+        "_5Kso",
+        "_10Kso",
+        "_20Kso",
+        "_40Kso",
+        "_80Kso",
+        "_100Kso",
+        "_200Kso",
+        "_300Kso",
+        "_400Kso",
+        "_500Kso",
+        "_700Kso",
+        "GT1Mso",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Less than 100 stock options",
+        "100 to 499 stock options",
+        "500 to 999 stock options",
+        "1,000 to 2,999 stock options",
+        "3,000 to 4,999 stock options",
+        "5,000 to 9,999 stock options",
+        "10,000 to 19,999 stock options",
+        "20,000 to 39,999 stock options",
+        "40,000 to 79,999 stock options",
+        "80,000 to 99,999 stock options",
+        "100,000 to 199,999 stock options",
+        "200,000 to 299,000 stock options",
+        "300,000 to 399,999 stock options",
+        "400,000 to 499,999 stock option",
+        "500,000 to 699,999 stock options",
+        "700,000 to 999,999 stock options",
+        "Over one million stock options",
+        "Don't know",
+        "NA",
+        "End If",
+        "End If",
+        "End If",
+        "End If"
+      ]
+    }
+  },
+  "required": [
+    "STOPTYRAMT"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RHEIGHTFT",
+  "description": "Questions related to RHEIGHTFT",
+  "properties": {
+    "RHEIGHTFT": {
+      "type": "integer",
+      "title": "RHEIGHTFT",
+      "description": "Feet:",
+      "minimum": 4,
+      "maximum": 7
+    }
+  },
+  "required": [
+    "RHEIGHTFT"
+  ]
+}

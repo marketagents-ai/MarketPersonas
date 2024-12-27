@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPKMSLMY",
+  "description": "Questions related to SPKMSLMY",
+  "properties": {
+    "SPKMSLMY": {
+      "type": "string",
+      "title": "SPKMSLMY",
+      "description": "Now consider an Islamic religious leader who preaches hatred of the United States. If such a person wanted to make a speech in your community preaching hatred of the United States, should this person be allowed to speak, or not?",
+      "enum": [
+        "yes_allowed",
+        "not_allowed",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes, allowed",
+        "Not allowed",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SPKMSLMY"
+  ]
+}

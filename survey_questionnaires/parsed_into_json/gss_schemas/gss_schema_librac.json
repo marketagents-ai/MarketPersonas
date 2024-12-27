@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LIBRAC",
+  "description": "Questions related to LIBRAC",
+  "properties": {
+    "LIBRAC": {
+      "type": "string",
+      "title": "LIBRAC",
+      "description": "If some people in your community suggested that a book he wrote which said Black people are inferior should be taken out of your public library, would you favor removing this book, or not?",
+      "enum": [
+        "favor",
+        "not_favor",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Favor",
+        "Not favor",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "LIBRAC"
+  ]
+}

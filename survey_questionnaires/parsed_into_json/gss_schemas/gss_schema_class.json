@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CLASS",
+  "description": "Questions related to CLASS",
+  "properties": {
+    "CLASS": {
+      "type": "string",
+      "title": "CLASS",
+      "description": "If you were asked to use one of four names for your social class, which would you say you belong in:  the lower class, the working class, the middle class, or the upper class?",
+      "enum": [
+        "lower_class",
+        "working_class",
+        "middle_class",
+        "upper_class",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Lower class",
+        "Working class",
+        "Middle class",
+        "Upper class",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "CLASS"
+  ]
+}

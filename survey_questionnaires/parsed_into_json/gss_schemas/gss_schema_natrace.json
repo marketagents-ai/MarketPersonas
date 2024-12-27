@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATRACE",
+  "description": "Questions related to NATRACE",
+  "properties": {
+    "NATRACE": {
+      "type": "string",
+      "title": "NATRACE",
+      "description": "Improving the conditions of Black people ... are we spending too much, too little, or about the right amount on Improving the conditions of Black people?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATRACE"
+  ]
+}

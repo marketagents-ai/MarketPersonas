@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WHATSLF",
+  "description": "Questions related to WHATSLF",
+  "properties": {
+    "WHATSLF": {
+      "type": "string",
+      "title": "WHATSLF",
+      "description": "{response to whatslffill} End Page - indpage"
+    },
+    "WHATSLF2": {
+      "type": "string",
+      "title": "WHATSLF2",
+      "description": "How would you classify the place where you {response to whatslf2fill}? Was this mainly...?",
+      "enum": [
+        "manufact",
+        "wholesale",
+        "retail",
+        "othclass",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Manufacturing",
+        "Wholesale trade",
+        "Retail trade",
+        "Other (agriculture, construction, service, government, etc.)",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WHATSLF",
+    "WHATSLF2"
+  ]
+}

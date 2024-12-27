@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRAYER",
+  "description": "Questions related to PRAYER",
+  "properties": {
+    "PRAYER": {
+      "type": "string",
+      "title": "PRAYER",
+      "description": "The United States Supreme Court has ruled that no state or local government may require the reading of the Lord's Prayer or Bible verses in public schools. What are your views on this--do you approve or disapprove of the court ruling?",
+      "enum": [
+        "approve",
+        "disapprove",
+        "no_opinion",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Approve",
+        "Disapprove",
+        "No opinion",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PRAYER"
+  ]
+}

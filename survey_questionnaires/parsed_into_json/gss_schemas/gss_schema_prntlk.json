@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRNTLK",
+  "description": "Questions related to PRNTLK",
+  "properties": {
+    "PRNTLK": {
+      "type": "string",
+      "title": "PRNTLK",
+      "description": "People have different opinions about how well mothers and fathers are suited to look after their children. Which of the following statements comes closest to your opinion?",
+      "enum": [
+        "mommuch",
+        "momsom",
+        "momdadeq",
+        "dadsom",
+        "dadmuch",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Mothers are much better suited",
+        "Mothers are somewhat better suited",
+        "Mothers and fathers are equally suited",
+        "Fathers are somewhat better suited",
+        "Fathers are much better suited",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PRNTLK"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LETINASN",
+  "description": "Questions related to LETINASN",
+  "properties": {
+    "LETINASN": {
+      "type": "string",
+      "title": "LETINASN",
+      "description": "Do you think the number of immigrants from Asia who are permitted to come to the United States to live should be...",
+      "enum": [
+        "decr",
+        "incr",
+        "lsame",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Decreased",
+        "Increased",
+        "Left the same",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "LETINASN"
+  ]
+}

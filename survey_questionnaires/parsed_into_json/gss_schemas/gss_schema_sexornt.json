@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SEXORNT",
+  "description": "Questions related to SEXORNT",
+  "properties": {
+    "SEXORNT": {
+      "type": "string",
+      "title": "SEXORNT",
+      "description": "Which of the following best describes you?",
+      "enum": [
+        "gay",
+        "Bisexual",
+        "straight",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Gay, lesbian, or homosexual",
+        "Bisexual",
+        "Heterosexual or straight",
+        "Don't know",
+        "NA",
+        "sexconftxt1.Response = SEXBIRTH1",
+        "sexconftxt2.Response = SEXNOW1",
+        "LabelSEXCNFRMJ:"
+      ]
+    }
+  },
+  "required": [
+    "SEXORNT"
+  ]
+}

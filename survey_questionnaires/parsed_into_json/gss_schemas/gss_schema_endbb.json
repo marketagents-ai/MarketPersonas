@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDBB",
+  "description": "Questions related to ENDBB",
+  "properties": {
+    "ENDBB": {
+      "type": "string",
+      "title": "ENDBB",
+      "description": "person\npeople\nFOR TESTING ONLY:  END OF SECTION BB\nspousepartfill: Categorical (Single)\nCategories:\n{spouse}\n{partner}\nspouse\npartner\nspousepartfill2: Categorical (Single)\nCategories:\n{spouse}\n{partner}"
+    }
+  },
+  "required": [
+    "ENDBB",
+    "ENDBB"
+  ]
+}

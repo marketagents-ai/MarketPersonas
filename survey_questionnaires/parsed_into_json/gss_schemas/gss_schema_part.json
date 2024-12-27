@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PART",
+  "description": "Questions related to PART",
+  "properties": {
+    "PART2": {
+      "type": "string",
+      "title": "PART2",
+      "description": "{response to part2text}Please press 'Next' to continue."
+    }
+  },
+  "required": [
+    "PART2"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPCOLDEG",
+  "description": "Questions related to SPCOLDEG",
+  "properties": {
+    "SPCOLDEG": {
+      "type": "string",
+      "title": "SPCOLDEG",
+      "description": "Does your {response to _spfill1} have any college degrees?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If SPCOLDEG = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "SPCOLDEG"
+  ]
+}

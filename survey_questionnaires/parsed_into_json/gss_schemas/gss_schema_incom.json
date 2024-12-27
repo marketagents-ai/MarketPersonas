@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: INCOM",
+  "description": "Questions related to INCOM",
+  "properties": {
+    "INCOM16": {
+      "type": "string",
+      "title": "INCOM16",
+      "description": "Thinking about the time when you were 16 years old, compared with American families in general then, would you say your family income was:",
+      "enum": [
+        "far_below_average",
+        "below_average",
+        "average",
+        "above_average",
+        "far_above_average",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Far below average",
+        "Below average",
+        "Average",
+        "Above average",
+        "Far above average",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "INCOM16"
+  ]
+}

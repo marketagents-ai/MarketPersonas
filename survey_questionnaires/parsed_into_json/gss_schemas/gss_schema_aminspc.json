@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: AMINSPC",
+  "description": "Questions related to AMINSPC",
+  "properties": {
+    "AMINSPC": {
+      "type": "string",
+      "title": "AMINSPC",
+      "description": "Please name enrolled or principal tribe, for example Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc."
+    }
+  },
+  "required": [
+    "AMINSPC"
+  ]
+}

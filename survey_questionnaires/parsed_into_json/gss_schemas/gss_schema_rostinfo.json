@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ROSTINFO",
+  "description": "Questions related to ROSTINFO",
+  "properties": {
+    "ROSTINFO": {
+      "type": "string",
+      "title": "ROSTINFO",
+      "description": "IF R GIVES MORE THAN ONE HOUSEHOLDER, CODE FIRST PERSON NAMED.\nhhnamecheck: Info\nYou did not enter the name. Can you please enter the name of the person or one of the persons who\nowns or rents this home? If you prefer, you can enter just initials or descriptor (for example, “my brother”).\nhasrelspfill: Info\nthis person"
+    }
+  },
+  "required": [
+    "ROSTINFO",
+    "ROSTINFO"
+  ]
+}

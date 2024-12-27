@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: KNOWWHAT",
+  "description": "Questions related to KNOWWHAT",
+  "properties": {
+    "KNOWWHAT": {
+      "type": "string",
+      "title": "KNOWWHAT",
+      "description": "(Please tell us whether you strongly agree, agree, disagree, or strongly disagree with each of these statements.) On my job, I know exactly what is expected of me.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Disagree",
+        "Strongly disagree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "KNOWWHAT"
+  ]
+}

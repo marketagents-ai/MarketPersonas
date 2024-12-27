@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RDIPLMA",
+  "description": "Questions related to RDIPLMA",
+  "properties": {
+    "RDIPLMA": {
+      "type": "string",
+      "title": "RDIPLMA",
+      "description": "Did you ever get a high school diploma or a GED certificate?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If RDIPLMA = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "RDIPLMA"
+  ]
+}

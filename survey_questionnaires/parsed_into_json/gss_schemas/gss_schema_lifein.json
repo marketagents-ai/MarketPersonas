@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LIFEIN",
+  "description": "Questions related to LIFEIN",
+  "properties": {
+    "LIFEIN10": {
+      "type": "string",
+      "title": "LIFEIN10",
+      "description": "(If you were asked to rate your overall life from 0-10, where 10 represents the best possible state and 0 represents the worst possible state...) ...how do you think you would rate your life five years from today?",
+      "enum": [
+        "_0",
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7",
+        "_8",
+        "_9",
+        "_10",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "0 Worst possible state",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10 Best possible state",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "LIFEIN10"
+  ]
+}

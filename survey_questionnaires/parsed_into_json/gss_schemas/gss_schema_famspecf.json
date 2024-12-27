@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FAMSPECF",
+  "description": "Questions related to FAMSPECF",
+  "properties": {
+    "FAMSPECF": {
+      "type": "string",
+      "title": "FAMSPECF",
+      "description": "Who was the female relative you were living with at age 16? Please tell us her relationship to you, e.g. aunt, grandmother, cousin. End If If VERXY = \"Y\" Then"
+    }
+  },
+  "required": [
+    "FAMSPECF"
+  ]
+}

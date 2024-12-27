@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SOCREL",
+  "description": "Questions related to SOCREL",
+  "properties": {
+    "SOCREL": {
+      "type": "string",
+      "title": "SOCREL",
+      "description": "For each of the next four questions, please select the answer that comes closest to how often you do the following things... How often do you spend a social evening with relatives?",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Almost every day",
+        "Once or twice a week",
+        "Several times a month",
+        "About once a month",
+        "Several times a year",
+        "About once a year",
+        "Never",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SOCREL"
+  ]
+}

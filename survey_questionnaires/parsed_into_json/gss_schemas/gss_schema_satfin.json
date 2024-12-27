@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SATFIN",
+  "description": "Questions related to SATFIN",
+  "properties": {
+    "SATFIN": {
+      "type": "string",
+      "title": "SATFIN",
+      "description": "We are interested in how people are getting along financially these days. So far as you and your family are concerned, would you say that you are pretty well satisfied with your present financial situation, more or less satisfied, or not satisfied at all?",
+      "enum": [
+        "pretty_well_satisfied",
+        "not_satisfied_at_all",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "}",
+        "Pretty well satisfied",
+        "More or less satisfied",
+        "Not satisfied at all",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "SATFIN"
+  ]
+}

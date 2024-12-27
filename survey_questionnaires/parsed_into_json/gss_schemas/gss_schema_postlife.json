@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: POSTLIFE",
+  "description": "Questions related to POSTLIFE",
+  "properties": {
+    "POSTLIFE": {
+      "type": "string",
+      "title": "POSTLIFE",
+      "description": "Now turning to a different topic: Do you believe there is a life after death?",
+      "enum": [
+        "yes",
+        "no",
+        "undecided",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Undecided",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "POSTLIFE"
+  ]
+}

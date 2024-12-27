@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ESOP",
+  "description": "Questions related to ESOP",
+  "properties": {
+    "ESOP": {
+      "type": "string",
+      "title": "ESOP",
+      "description": "Are you a member of an Employee Stock Ownership Plan, commonly called an ESOP? An ESOP is a plan where the company makes contributions to an account that you have in the plan that holds your company's stock.  You do not receive the shares until you leave the company.",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ESOP"
+  ]
+}

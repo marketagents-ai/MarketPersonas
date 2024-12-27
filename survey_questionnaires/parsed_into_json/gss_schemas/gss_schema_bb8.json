@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: BB8",
+  "description": "Questions related to BB8",
+  "properties": {
+    "RNTRLTD18": {
+      "type": "string",
+      "title": "RNTRLTD18",
+      "description": "Categorical (Single)"
+    },
+    "RBIOPRNT": {
+      "type": "string",
+      "title": "RBIOPRNT",
+      "description": "Categorical (Single)"
+    },
+    "RADPTPRNT": {
+      "type": "string",
+      "title": "RADPTPRNT",
+      "description": "Categorical (Single)"
+    },
+    "RSTPPRNT": {
+      "type": "string",
+      "title": "RSTPPRNT",
+      "description": "Categorical (Single)"
+    },
+    "RGPRNTU18": {
+      "type": "string",
+      "title": "RGPRNTU18",
+      "description": "Categorical (Single)"
+    },
+    "RRLTU18": {
+      "type": "string",
+      "title": "RRLTU18",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "RNTRLTD18",
+    "RBIOPRNT",
+    "RADPTPRNT",
+    "RSTPPRNT",
+    "RGPRNTU18",
+    "RRLTU18"
+  ]
+}

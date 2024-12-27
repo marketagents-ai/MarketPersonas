@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TIMEG",
+  "description": "Questions related to TIMEG",
+  "properties": {
+    "PTNRSXCNFRM": {
+      "type": "string",
+      "title": "PTNRSXCNFRM",
+      "description": "Categorical (Single)"
+    },
+    "SPANSELF": {
+      "type": "string",
+      "title": "SPANSELF",
+      "description": "Categorical (Single)"
+    },
+    "SVYENJOY": {
+      "type": "string",
+      "title": "SVYENJOY",
+      "description": "Categorical (Single)"
+    },
+    "SVYID1": {
+      "type": "string",
+      "title": "SVYID1",
+      "description": "Categorical (Single)"
+    },
+    "SVYID2": {
+      "type": "string",
+      "title": "SVYID2",
+      "description": "Categorical (Single)"
+    },
+    "FNAME": {
+      "type": "string",
+      "title": "FNAME",
+      "description": "Text"
+    },
+    "MNAME": {
+      "type": "string",
+      "title": "MNAME",
+      "description": "Text"
+    },
+    "LNAME": {
+      "type": "string",
+      "title": "LNAME",
+      "description": "Text"
+    },
+    "PHONE": {
+      "type": "string",
+      "title": "PHONE",
+      "description": "Text"
+    },
+    "PHONLOC": {
+      "type": "string",
+      "title": "PHONLOC",
+      "description": "Categorical (Single)"
+    },
+    "PHONLOCO": {
+      "type": "string",
+      "title": "PHONLOCO",
+      "description": "Text"
+    },
+    "PHONNAM": {
+      "type": "string",
+      "title": "PHONNAM",
+      "description": "Categorical (Single)"
+    },
+    "PHONNMOT": {
+      "type": "string",
+      "title": "PHONNMOT",
+      "description": "Text"
+    },
+    "PHNETYPE": {
+      "type": "string",
+      "title": "PHNETYPE",
+      "description": "Categorical (Single)"
+    },
+    "REGPHONE": {
+      "type": "string",
+      "title": "REGPHONE",
+      "description": "Categorical (Single)"
+    },
+    "NEWREGPH": {
+      "type": "string",
+      "title": "NEWREGPH",
+      "description": "Text"
+    },
+    "CELPHONE": {
+      "type": "string",
+      "title": "CELPHONE",
+      "description": "Categorical (Single)"
+    },
+    "NEWCELPH": {
+      "type": "string",
+      "title": "NEWCELPH",
+      "description": "Text"
+    },
+    "CALLTYPE": {
+      "type": "string",
+      "title": "CALLTYPE",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "PTNRSXCNFRM",
+    "SPANSELF",
+    "SVYENJOY",
+    "SVYID1",
+    "SVYID2",
+    "FNAME",
+    "MNAME",
+    "LNAME",
+    "PHONE",
+    "PHONLOC",
+    "PHONLOCO",
+    "PHONNAM",
+    "PHONNMOT",
+    "PHNETYPE",
+    "REGPHONE",
+    "NEWREGPH",
+    "CELPHONE",
+    "NEWCELPH",
+    "CALLTYPE"
+  ]
+}

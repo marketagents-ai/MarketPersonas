@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MABORN",
+  "description": "Questions related to MABORN",
+  "properties": {
+    "MABORN": {
+      "type": "string",
+      "title": "MABORN",
+      "description": "Was {response to MOMFILL} born in this country?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "MABORN"
+  ]
+}

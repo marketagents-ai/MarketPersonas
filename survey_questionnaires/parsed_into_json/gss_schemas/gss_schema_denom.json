@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DENOM",
+  "description": "Questions related to DENOM",
+  "properties": {
+    "DENOM": {
+      "type": "string",
+      "title": "DENOM",
+      "description": "What specific denomination is that, if any?",
+      "enum": [
+        "episcopal_church",
+        "other_specify",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "ciation}",
+        "ches_in_the_usa}",
+        "ntion_of_america}",
+        "ntion_usa_inc}",
+        "ention}",
+        "American Baptist Association",
+        "American Baptist Churches in the U.S.A",
+        "National Baptist Convention of America"
+      ]
+    },
+    "DENOM16": {
+      "type": "string",
+      "title": "DENOM16",
+      "description": "What specific denomination is that, if any?",
+      "enum": [
+        "episcopal_church",
+        "other_specify",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "ciation}",
+        "American Baptist Association",
+        "ches_in_the_usa}",
+        "ntion_of_america}",
+        "ntion_usa_inc}"
+      ]
+    }
+  },
+  "required": [
+    "DENOM",
+    "DENOM16"
+  ]
+}

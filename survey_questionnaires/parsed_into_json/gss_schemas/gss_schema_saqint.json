@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SAQINT",
+  "description": "Questions related to SAQINT",
+  "properties": {
+    "SAQINT3": {
+      "type": "string",
+      "title": "SAQINT3",
+      "description": "Have you seen a movie in the past month?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "LabelSAQTstGrid:",
+        "SAQTstGrid: Info",
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "Some questions will ask you to provide answers to several items on one screen. Here, just use the",
+        "touchscreen to click the button next to the answer you want to select on one line, then do the same for"
+      ]
+    },
+    "SAQINT2": {
+      "type": "string",
+      "title": "SAQINT2",
+      "description": "Most of the questions you answer will require you to select an answer from a list of answers. Use the touchscreen to select the button next to the answer that corresponds to your choice, then tap the green forward arrow at the bottom of the screen. This is a practice question for you to get used to answering questions on the tablet. Summer is my favorite season.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "disagree",
+        "strongly_disagree",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Disagree",
+        "Strongly disagree",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SAQINT3",
+    "SAQINT2",
+    "SAQINT3"
+  ]
+}

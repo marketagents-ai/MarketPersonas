@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SHAREHHW",
+  "description": "Questions related to SHAREHHW",
+  "properties": {
+    "SHAREHHW": {
+      "type": "string",
+      "title": "SHAREHHW",
+      "description": "Which of the following best applies to the sharing of household work between you and your {response to spousepartfill}?",
+      "enum": [
+        "idomore",
+        "idobitmore",
+        "idohalf",
+        "idobitlesshalf",
+        "idomuchless",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "I do much more than my fair share of the household work",
+        "I do a bit more than my fair share of the household work",
+        "I do roughly my fair share of the household work",
+        "I do a bit less than my fair share of the household work",
+        "I do much less than my fair share of the household work",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "SHAREHHW"
+  ]
+}

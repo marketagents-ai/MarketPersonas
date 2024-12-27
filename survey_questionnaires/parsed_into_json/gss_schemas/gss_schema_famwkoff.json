@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FAMWKOFF",
+  "description": "Questions related to FAMWKOFF",
+  "properties": {
+    "FAMWKOFF": {
+      "type": "string",
+      "title": "FAMWKOFF",
+      "description": "How hard is it to take time off during your work to take care of personal or family matters?",
+      "enum": [
+        "_1_not_at_all_hard",
+        "_2_not_too_hard",
+        "_3_somewhat_hard",
+        "_4_very_hard",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Not at all hard",
+        "Not too hard",
+        "Somewhat hard",
+        "Very hard",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FAMWKOFF"
+  ]
+}

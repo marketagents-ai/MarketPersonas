@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPDEN",
+  "description": "Questions related to SPDEN",
+  "properties": {
+    "SPDEN": {
+      "type": "string",
+      "title": "SPDEN",
+      "description": "What specific denomination is that, if any?",
+      "enum": [
+        "episcopal_church",
+        "other_specify",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "ciation}",
+        "ches_in_the_usa}",
+        "ntion_of_america}",
+        "ntion_usa_inc}",
+        "ention}",
+        "}",
+        "hich}",
+        "copal_church}"
+      ]
+    }
+  },
+  "required": [
+    "SPDEN"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: BUYVALUE",
+  "description": "Questions related to BUYVALUE",
+  "properties": {
+    "BUYVALUE": {
+      "type": "integer",
+      "title": "BUYVALUE",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').after(' % bought with my own savings or money from my wages');});Approximately what percent of the company stock that you own today did you buy with your own savings or money from your wages?",
+      "minimum": 0,
+      "maximum": 100
+    }
+  },
+  "required": [
+    "BUYVALUE"
+  ]
+}

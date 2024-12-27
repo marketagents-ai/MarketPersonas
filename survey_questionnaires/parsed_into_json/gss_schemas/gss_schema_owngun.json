@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OWNGUN",
+  "description": "Questions related to OWNGUN",
+  "properties": {
+    "OWNGUN": {
+      "type": "string",
+      "title": "OWNGUN",
+      "description": "Do you happen to have in your home any guns or revolvers?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "OWNGUN"
+  ]
+}

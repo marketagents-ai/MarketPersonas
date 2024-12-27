@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: COURTS",
+  "description": "Questions related to COURTS",
+  "properties": {
+    "COURTS": {
+      "type": "string",
+      "title": "COURTS",
+      "description": "In general, do you think the courts in your area deal too harshly or not harshly enough with criminals?",
+      "enum": [
+        "too_harshly",
+        "not_harshly_enough",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "d}",
+        "Too harshly",
+        "Not harshly enough",
+        "About right",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "COURTS"
+  ]
+}

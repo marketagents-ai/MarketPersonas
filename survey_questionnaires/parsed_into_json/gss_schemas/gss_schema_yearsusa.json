@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: YEARSUSA",
+  "description": "Questions related to YEARSUSA",
+  "properties": {
+    "YEARSUSA": {
+      "type": "integer",
+      "title": "YEARSUSA",
+      "description": "Years:",
+      "minimum": 0,
+      "maximum": 99
+    }
+  },
+  "required": [
+    "YEARSUSA"
+  ]
+}

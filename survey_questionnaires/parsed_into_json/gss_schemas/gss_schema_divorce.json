@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DIVORCE",
+  "description": "Questions related to DIVORCE",
+  "properties": {
+    "DIVORCE": {
+      "type": "string",
+      "title": "DIVORCE",
+      "description": "Have you ever been divorced or legally separated?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "DIVORCE"
+  ]
+}

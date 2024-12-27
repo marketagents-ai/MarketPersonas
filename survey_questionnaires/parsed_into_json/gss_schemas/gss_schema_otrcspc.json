@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OTRCSPC",
+  "description": "Questions related to OTRCSPC",
+  "properties": {
+    "OTRCSPC": {
+      "type": "string",
+      "title": "OTRCSPC",
+      "description": "Please give other race or origin. End Page - othracepage End If If Not IsEmpty(AMINSPC) Then AMINSPC_fill.Response = {fill} Else AMINSPC_fill.Response = {nofill} End If If Not IsEmpty(ASIASPC) Then ASIASPC_fill.Response = {fill} Else ASIASPC_fill.Response = {nofill} End If If Not IsEmpty(PACFSPC) Then PACFSPC_fill.Response = {fill} Else PACFSPC_fill.Response = {nofill} End If If Not IsEmpty(OTRCSPC) Then OTRCSPC_fill.Response = {fill} Else OTRCSPC_fill.Response = {nofill} End If"
+    }
+  },
+  "required": [
+    "OTRCSPC"
+  ]
+}

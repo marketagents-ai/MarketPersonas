@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WWWHR",
+  "description": "Questions related to WWWHR",
+  "properties": {
+    "WWWHR": {
+      "type": "integer",
+      "title": "WWWHR",
+      "description": "Hours:",
+      "minimum": 0,
+      "maximum": 168
+    }
+  },
+  "required": [
+    "WWWHR"
+  ]
+}

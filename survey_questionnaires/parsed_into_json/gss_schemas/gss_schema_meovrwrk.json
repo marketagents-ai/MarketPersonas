@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MEOVRWRK",
+  "description": "Questions related to MEOVRWRK",
+  "properties": {
+    "MEOVRWRK": {
+      "type": "string",
+      "title": "MEOVRWRK",
+      "description": "{response to _meovtxt} Family life often suffers because men concentrate too much on their work.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "disagree",
+        "strongly_disagree",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "agree}",
+        "If VerXY = \"X\" Then",
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree"
+      ]
+    }
+  },
+  "required": [
+    "MEOVRWRK"
+  ]
+}

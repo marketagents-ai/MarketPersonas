@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PHONLOCO",
+  "description": "Questions related to PHONLOCO",
+  "properties": {
+    "PHONLOCO": {
+      "type": "string",
+      "title": "PHONLOCO",
+      "description": "Where is the phone located?"
+    }
+  },
+  "required": [
+    "PHONLOCO"
+  ]
+}

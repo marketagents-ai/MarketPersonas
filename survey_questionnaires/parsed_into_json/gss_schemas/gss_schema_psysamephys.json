@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PSYSAMEPHYS",
+  "description": "Questions related to PSYSAMEPHYS",
+  "properties": {
+    "PSYSAMEPHYS": {
+      "type": "string",
+      "title": "PSYSAMEPHYS",
+      "description": "(To what extent to do you agree or disagree with the following statements?) Senior management considers psychological health to be as important as productivity.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PSYSAMEPHYS"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPREL",
+  "description": "Questions related to SPREL",
+  "properties": {
+    "SPREL": {
+      "type": "string",
+      "title": "SPREL",
+      "description": "What is your {response to _spfill1}'s religious preference?",
+      "enum": [
+        "protestant",
+        "catholic",
+        "easter",
+        "jewish",
+        "buddhist",
+        "hindu",
+        "muslim",
+        "other_specify",
+        "none",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Protestant",
+        "Catholic",
+        "Eastern Orthodox, such as Greek or Russian Orthodox",
+        "Jewish",
+        "Buddhist",
+        "Hindu",
+        "Muslim, Islam, Sufi, Sunni, or Shia",
+        "Some other religion",
+        "No religion",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SPREL"
+  ]
+}

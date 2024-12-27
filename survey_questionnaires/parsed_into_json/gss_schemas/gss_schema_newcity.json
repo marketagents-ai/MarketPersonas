@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NEWCITY",
+  "description": "Questions related to NEWCITY",
+  "properties": {
+    "NEWCITY": {
+      "type": "string",
+      "title": "NEWCITY",
+      "description": "City:"
+    }
+  },
+  "required": [
+    "NEWCITY"
+  ]
+}

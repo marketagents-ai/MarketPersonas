@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SEXNOW",
+  "description": "Questions related to SEXNOW",
+  "properties": {
+    "SEXNOW1": {
+      "type": "string",
+      "title": "SEXNOW1",
+      "description": "Do you describe yourself as male, female, or transgender?",
+      "enum": [
+        "male",
+        "female",
+        "transgender",
+        "nonethese",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow"
+      ],
+      "enumDescriptions": [
+        "Male",
+        "Female",
+        "Transgender",
+        "None of these",
+        "Don't know",
+        "NA",
+        "sexconftxt1.Response = SEXBIRTH1",
+        "sexconftxt2.Response = SEXNOW1"
+      ]
+    },
+    "SEXNOW1J": {
+      "type": "string",
+      "title": "SEXNOW1J",
+      "description": "Do you describe yourself as male, female, or transgender?",
+      "enum": [
+        "male",
+        "female",
+        "transgender",
+        "nonethese",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Male",
+        "Female",
+        "Transgender",
+        "None of these",
+        "Don't know",
+        "NA",
+        "sexconftxt1.Response = SEXBIRTH1J",
+        "sexconftxt2.Response = SEXNOW1J",
+        "Goto LabelSEXCNFRMJ",
+        "End If"
+      ]
+    }
+  },
+  "required": [
+    "SEXNOW1",
+    "SEXNOW1J",
+    "SEXNOW1J"
+  ]
+}

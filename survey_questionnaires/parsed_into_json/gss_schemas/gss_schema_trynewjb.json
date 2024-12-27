@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TRYNEWJB",
+  "description": "Questions related to TRYNEWJB",
+  "properties": {
+    "TRYNEWJB": {
+      "type": "string",
+      "title": "TRYNEWJB",
+      "description": "Taking everything into consideration, how likely is it you will make a genuine effort to find a new job with another employer within the next year?",
+      "enum": [
+        "_1_very_likely",
+        "_2_somewhat_likely",
+        "_3_not_at_all_likely",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very likely",
+        "Somewhat likely",
+        "Not at all likely",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "TRYNEWJB"
+  ]
+}

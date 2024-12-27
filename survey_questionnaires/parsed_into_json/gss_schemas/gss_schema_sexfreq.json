@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SEXFREQ",
+  "description": "Questions related to SEXFREQ",
+  "properties": {
+    "SEXFREQ": {
+      "type": "string",
+      "title": "SEXFREQ",
+      "description": "About how often did you have sex during the past 12 months? Two or three times a month Not at all Once or twice",
+      "enum": [
+        "not_at_all",
+        "once_or_twice",
+        "about_once_a_month",
+        "about_once_a_week",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "month}",
+        "week}",
+        "_week}",
+        "Don't know",
+        "NA",
+        "About once a week",
+        "Two or three times a week",
+        "Four or more times a week",
+        "LabelPARTNRS5:"
+      ]
+    }
+  },
+  "required": [
+    "SEXFREQ"
+  ]
+}

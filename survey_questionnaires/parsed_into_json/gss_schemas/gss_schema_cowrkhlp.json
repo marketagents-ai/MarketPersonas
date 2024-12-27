@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: COWRKHLP",
+  "description": "Questions related to COWRKHLP",
+  "properties": {
+    "COWRKHLP": {
+      "type": "string",
+      "title": "COWRKHLP",
+      "description": "(For each, please tell us if the statement is very true, somewhat true, not too true, or not at all true with respect to the work you do.) The people I work with can be relied on when I need help.",
+      "enum": [
+        "very_true",
+        "somewhat_true",
+        "not_too_true_or",
+        "not_at_all_true",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very true",
+        "Somewhat true",
+        "Not too true",
+        "Not at all true",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "COWRKHLP"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ADMINCONSENT",
+  "description": "Questions related to ADMINCONSENT",
+  "properties": {
+    "ADMINCONSENT": {
+      "type": "string",
+      "title": "ADMINCONSENT",
+      "description": "One important purpose of our survey is to gather information about our society in order to explain trends in attitudes and behaviors. The GSS seeks to support the study of opinion data with more behavioral, fact-based information. To do this, we need your permission to search government records that may exist now or in the future such as Census data, unemployment or social security information, Medicaid and Medicare, health records and other sources. We would link your interview with that information upon completion of the survey. Also, we would like to be able to continue combining these data for the foreseeable future. Each time, in the future, we will remove personally identifiable information after the linking process, and store anonymous data for the duration of our study. The best way for us to get this information without taking up any more of your time is to conduct the work in a secure data facility meeting strict Federal Information Security Management Act requirements, and we need your permission to proceed. All identifying information will be kept confidential as required by law. If at any time you change your mind, you can contact us at the toll-free number 888-837-8988. May we try to link government records with your survey answers? If you would like to learn more about this, you can review Frequently Asked Questions at http://gss.norc.org/Documents/MyGSS/AdminConsent.pdf.",
+      "enum": [
+        "YES",
+        "NO",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "If ADMINCONSENT = {YES} Then"
+      ]
+    }
+  },
+  "required": [
+    "ADMINCONSENT"
+  ]
+}

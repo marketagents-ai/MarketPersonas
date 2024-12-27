@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRES",
+  "description": "Questions related to PRES",
+  "properties": {
+    "PRES16": {
+      "type": "string",
+      "title": "PRES16",
+      "description": "Did you vote for Hillary Clinton or Donald Trump?",
+      "enum": [
+        "clinton",
+        "trump",
+        "dkcr",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "y}",
+        "ent}",
+        "Hillary Clinton",
+        "Donald Trump",
+        "Other candidate"
+      ]
+    },
+    "PRES20": {
+      "type": "string",
+      "title": "PRES20",
+      "description": "Did you vote for Joe Biden or Donald Trump?",
+      "enum": [
+        "biden",
+        "trump",
+        "dkcr",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "y}",
+        "ent}",
+        "Joe Biden",
+        "Donald Trump",
+        "Other candidate"
+      ]
+    }
+  },
+  "required": [
+    "PRES16",
+    "PRES20"
+  ]
+}

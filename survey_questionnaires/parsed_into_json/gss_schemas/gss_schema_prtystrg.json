@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRTYSTRG",
+  "description": "Questions related to PRTYSTRG",
+  "properties": {
+    "PRTYSTRG": {
+      "type": "string",
+      "title": "PRTYSTRG",
+      "description": "Would you call yourself a strong {response to PRTYPREF} or not a very strong {response to PRTYPREF}?",
+      "enum": [
+        "strong",
+        "not_very_strong",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Else",
+        "Strong",
+        "Not very strong",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "PRTYSTRG"
+  ]
+}

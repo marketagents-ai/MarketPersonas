@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WEALTH",
+  "description": "Questions related to WEALTH",
+  "properties": {
+    "WEALTH": {
+      "type": "string",
+      "title": "WEALTH",
+      "description": "Please estimate your total wealth. Wealth means the value of your house plus the value of your vehicles, stocks and mutual funds, cash, checking accounts, retirement accounts including 401(k) and pension assets, and any other assets minus what you owe for your mortgage and your debts.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7",
+        "_8",
+        "_9",
+        "_10",
+        "_11",
+        "_12",
+        "_13",
+        "_14",
+        "_15",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Less than $5000",
+        "$5000 to $20,000",
+        "$20,000 to $40,000",
+        "$40,000 to $75,000",
+        "$75,000 to $100,000",
+        "$100,000 to $150,000",
+        "$150,000 to $250,000",
+        "$250,000 to $500,000",
+        "$500,000 to $1 million",
+        "$1 million to $2 million",
+        "$2 million to $3 million",
+        "$3 million to $4 million",
+        "$4 million to $5 million",
+        "$5 million to $10 million",
+        "Above $10 million",
+        "Don't know",
+        "NA",
+        "End If",
+        "ETIMEEE.Response = SetTime(ETIMEEE)",
+        "ETIMEEE_D.Response = Now()"
+      ]
+    }
+  },
+  "required": [
+    "WEALTH"
+  ]
+}

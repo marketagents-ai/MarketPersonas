@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PTNRSXBRTH",
+  "description": "Questions related to PTNRSXBRTH",
+  "properties": {
+    "PTNRSXBRTH": {
+      "type": "string",
+      "title": "PTNRSXBRTH",
+      "description": "To the best of your knowledge, was your most recent sexual partner's sex recorded as male or female at birth?",
+      "enum": [
+        "male",
+        "female",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Male",
+        "Female",
+        "Don't know",
+        "NA",
+        "LabelPTNRSXNOW:"
+      ]
+    }
+  },
+  "required": [
+    "PTNRSXBRTH"
+  ]
+}

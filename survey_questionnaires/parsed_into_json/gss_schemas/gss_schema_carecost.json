@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CARECOST",
+  "description": "Questions related to CARECOST",
+  "properties": {
+    "CARECOST": {
+      "type": "string",
+      "title": "CARECOST",
+      "description": "Who do you think should primarily cover the costs of childcare for children under school age? Should....",
+      "enum": [
+        "thefam",
+        "thegov",
+        "theemp",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "The family",
+        "The government/public funds",
+        "The employers",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "CARECOST"
+  ]
+}

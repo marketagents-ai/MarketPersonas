@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ASIASPC",
+  "description": "Questions related to ASIASPC",
+  "properties": {
+    "ASIASPC": {
+      "type": "string",
+      "title": "ASIASPC",
+      "description": "Please name other Asian, for example Pakistani, Cambodian, Hmong, etc."
+    }
+  },
+  "required": [
+    "ASIASPC"
+  ]
+}

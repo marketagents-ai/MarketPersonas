@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RACEACS",
+  "description": "Questions related to RACEACS",
+  "properties": {
+    "RACEACS": {
+      "type": "string",
+      "title": "RACEACS",
+      "description": "What is your race? Please indicate what race or races do you consider yourself to be.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7",
+        "_8",
+        "_9",
+        "_10",
+        "_11",
+        "_12",
+        "_13",
+        "_14",
+        "_15",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "White",
+        "Black or African American",
+        "American Indian or Alaska Native",
+        "Asian Indian",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Vietnamese",
+        "Other Asian",
+        "Native Hawaiian",
+        "Guamanian or Chamorro",
+        "Samoan",
+        "Other Pacific Islander",
+        "Some other race",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RACEACS"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: G",
+  "description": "Questions related to G",
+  "properties": {
+    "G11": {
+      "type": "string",
+      "title": "G11",
+      "description": "If you had other partners, please indicate all categories that apply to them.\nIf G11[{OTHERSEX}].YN <> {yes} Then Goto LabelSEXSEX"
+    }
+  },
+  "required": [
+    "G11"
+  ]
+}

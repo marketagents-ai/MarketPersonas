@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRECONSENT",
+  "description": "Questions related to PRECONSENT",
+  "properties": {
+    "PRECONSENT": {
+      "type": "string",
+      "title": "PRECONSENT",
+      "description": "NORC at the University of Chicago and the National Science Foundation have done the General Social\nSurvey (GSS) for more than 50 years to keep a historical record of the concerns, experiences, attitudes\nand practices of Americans. Your household was randomly selected from addresses across the nation for\nparticipation. The information collected is used by policy makers, scientific researchers, government\nofficials and students to better understand Americans and better meet their changing needs.\nThe questions we'll ask have to do with your opinions and knowledge on a variety of important\ntopics like work, family, government, science, and health. Some topics may be sensitive for you, and you\ncan decline to answer any question.\nYour participation does not involve any risks other than what you would encounter in daily life.\nMost participants find the survey to be interesting with a chance to think about things that matter to them.\nWhich questions are asked depends partly on chance, and partly on your answers to other questions.\nThe interview length varies for different households; for most people, it usually takes about 90 minutes.\nYou may also be contacted in the future to participate in a future round of the General Social Survey or\nanother study established by the National Science Foundation. Participation in this round of the survey\ndoes not obligate you to participate in any future rounds of the General Social Survey or any other\nsurveys. Any future participation on your part will again require us to gain your consent."
+    }
+  },
+  "required": [
+    "PRECONSENT"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PHNETYPE",
+  "description": "Questions related to PHNETYPE",
+  "properties": {
+    "PHNETYPE": {
+      "type": "string",
+      "title": "PHNETYPE",
+      "description": "Is that number for a cellular phone or for a regular, landline phone?",
+      "enum": [
+        "cellular",
+        "regular",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Cellular",
+        "Regular, landline",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PHNETYPE"
+  ]
+}

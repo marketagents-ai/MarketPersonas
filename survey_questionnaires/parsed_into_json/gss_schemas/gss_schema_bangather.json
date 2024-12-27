@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: BANGATHER",
+  "description": "Questions related to BANGATHER",
+  "properties": {
+    "BANGATHER": {
+      "type": "string",
+      "title": "BANGATHER",
+      "description": "(Do you think the United States government should or should not have the right to do the following at times of severe epidemics?) Ban public gatherings.",
+      "enum": [
+        "defright",
+        "probright",
+        "probnotrt",
+        "defbitrt",
+        "contchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Definitely should have the right",
+        "Probably should have the right",
+        "Probably should not have the right",
+        "Definitely should not have the right",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "BANGATHER"
+  ]
+}

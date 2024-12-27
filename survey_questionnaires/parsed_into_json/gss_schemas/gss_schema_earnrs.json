@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EARNRS",
+  "description": "Questions related to EARNRS",
+  "properties": {
+    "EARNRS": {
+      "type": "integer",
+      "title": "EARNRS",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of persons: ');});Just thinking about your family now--those people in the household who are related to you... How many persons in the family (including yourself) earned any money last year -- 2021 -- from any job or employment?",
+      "minimum": 0,
+      "maximum": 20
+    }
+  },
+  "required": [
+    "EARNRS"
+  ]
+}

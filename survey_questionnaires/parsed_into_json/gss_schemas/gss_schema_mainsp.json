@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MAINSP",
+  "description": "Questions related to MAINSP",
+  "properties": {
+    "MAINSP": {
+      "type": "string",
+      "title": "MAINSP",
+      "description": "{mainspfill} End Page - spoccpage If SPWRKSTA.ContainsAny({working_full_time,working_part_time,not_at_work}) Then INDSP.Label.Inserts[\"indspfill\"] = indspfill1.Label WHATSP.Label.Inserts[\"whatspfill\"] = whatspfill1.Label Else INDSP.Label.Inserts[\"indspfill\"] = indspfill2.Label WHATSP.Label.Inserts[\"whatspfill\"] = whatspfill2.Label End If Begin Page - spindpage"
+    }
+  },
+  "required": [
+    "MAINSP"
+  ]
+}

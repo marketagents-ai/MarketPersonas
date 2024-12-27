@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ELDFNCE",
+  "description": "Questions related to ELDFNCE",
+  "properties": {
+    "ELDFNCE": {
+      "type": "string",
+      "title": "ELDFNCE",
+      "description": "Consider an elderly couple. One of their grandchildren is in need of temporary financial help because the company he/she worked for closed down recently. Do you think they should, or should not, try their best to help their grandchild financially? Please choose a number on a scale of 1 to 7 where 1 is \"Yes, they definitely should\" and 7 is \"No, they definitely should not\".",
+      "enum": [
+        "RSPRLTV_1",
+        "RSPRLTV_2",
+        "RSPRLTV_3",
+        "RSPRLTV_4",
+        "RSPRLTV_5",
+        "RSPRLTV_6",
+        "RSPRLTV_7",
+        "cantchoose8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "1 Yes, they definitely should",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7 No, they definitely should not",
+        "8 Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ELDFNCE"
+  ]
+}

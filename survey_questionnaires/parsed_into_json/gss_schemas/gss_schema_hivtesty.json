@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HIVTESTY",
+  "description": "Questions related to HIVTESTY",
+  "properties": {
+    "HIVTESTY": {
+      "type": "integer",
+      "title": "HIVTESTY",
+      "description": "Year: End Page - HIVTestPage",
+      "minimum": 1980,
+      "maximum": 2022
+    }
+  },
+  "required": [
+    "HIVTESTY"
+  ]
+}

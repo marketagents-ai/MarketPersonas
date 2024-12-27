@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HIVDSCRM",
+  "description": "Questions related to HIVDSCRM",
+  "properties": {
+    "HIVDSCRM": {
+      "type": "string",
+      "title": "HIVDSCRM",
+      "description": "(Please indicate how much you agree or disagree with each of the following comments.) There is a lot of discrimination against people with HIV in this country today.",
+      "enum": [
+        "str_disag",
+        "smwt_disag",
+        "smwt_agr",
+        "str_agr",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "LabelSEXORNT:",
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HIVDSCRM"
+  ]
+}

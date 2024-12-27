@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: GETAHEAD",
+  "description": "Questions related to GETAHEAD",
+  "properties": {
+    "GETAHEAD": {
+      "type": "string",
+      "title": "GETAHEAD",
+      "description": "Some people say that people get ahead by their own hard work; others say that lucky breaks or help from other people are more important.  Which do you think is most important?",
+      "enum": [
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "tant}",
+        "y_important}",
+        "er_people_most_import"
+      ]
+    }
+  },
+  "required": [
+    "GETAHEAD"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: STOCKOPTYR",
+  "description": "Questions related to STOCKOPTYR",
+  "properties": {
+    "STOCKOPTYR": {
+      "type": "string",
+      "title": "STOCKOPTYR",
+      "description": "Were you granted stock options in the company where you work in 2021? A stock option is a right to purchase stock at a set price for several years into the future, typically ten years.  For example, one stock option at $10 means that you can purchase your company stock for $10 anytime over ten years.  A stock option does not include a plan in which there are periodic deductions from payroll to set aside money to purchase shares at the end of an offering period. That is typically called an Employee Stock Purchase Plan.",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If STOCKOPTYR = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "STOCKOPTYR"
+  ]
+}

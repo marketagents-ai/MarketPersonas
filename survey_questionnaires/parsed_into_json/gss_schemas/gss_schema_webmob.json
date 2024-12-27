@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WEBMOB",
+  "description": "Questions related to WEBMOB",
+  "properties": {
+    "WEBMOB": {
+      "type": "string",
+      "title": "WEBMOB",
+      "description": "Do you have access to the Internet in your home through a Internet-enabled mobile device like a smart phone or tablet?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WEBMOB"
+  ]
+}

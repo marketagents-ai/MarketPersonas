@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RFMLY",
+  "description": "Questions related to RFMLY",
+  "properties": {
+    "RFMLY18": {
+      "type": "string",
+      "title": "RFMLY18",
+      "description": "Are you related in some other way to another individual 18 or older in your household? (For example, you live with your adult cousins, adult aunts or uncles, or other adult relatives?)",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RFMLY18"
+  ]
+}

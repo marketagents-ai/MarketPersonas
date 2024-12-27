@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DISCAFFM",
+  "description": "Questions related to DISCAFFM",
+  "properties": {
+    "DISCAFFM": {
+      "type": "string",
+      "title": "DISCAFFM",
+      "description": "What do you think the chances are these days that a man won't get a job or promotion while an equally or less qualified woman gets one instead.  Is this very likely, somewhat likely, somewhat unlikely, or very unlikely these days?",
+      "enum": [
+        "very_likely",
+        "somewhat_likely",
+        "somewhat_unlikely",
+        "very_unlikely",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Very likely",
+        "Somewhat likely",
+        "Somewhat unlikely",
+        "Very unlikely",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "DISCAFFM"
+  ]
+}

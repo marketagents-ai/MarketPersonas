@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: INSTYPESP",
+  "description": "Questions related to INSTYPESP",
+  "properties": {
+    "INSTYPESP": {
+      "type": "string",
+      "title": "INSTYPESP",
+      "description": "Please specify type of health insurance. End If End If MODECHKD.Response = SetMode(MODECHKD,QUEXMODE) ETIMED.Response = SetTime(ETIMED) ETIMED_D.Response = Now() ElapsedTimeD.Response = CalcTime(ElapsedTimeD,btimeD,btimeD_d,etimeD,etimeD_d) If IOM.Info.IsTest Or IOM.ProjectName = \"TGSS2022M\" Then"
+    }
+  },
+  "required": [
+    "INSTYPESP"
+  ]
+}

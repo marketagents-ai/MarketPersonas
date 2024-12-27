@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CONTLNAM",
+  "description": "Questions related to CONTLNAM",
+  "properties": {
+    "CONTLNAM": {
+      "type": "string",
+      "title": "CONTLNAM",
+      "description": "Last name: End Page - CONTNAMEpage If CONTFNAM.Response.Coded = {na} and CONTMNAM.Response.Coded = {na} and CONTLNAM.Response.Coded = {na} Then If QUEXLANG = {ESN} Then CONTFNAM.Errors.AddNew(\"err_1\",\"Por favor, entra un nombre.\") Else CONTFNAM.Errors.AddNew(\"err_1\",\"Please enter a name.\") End If Goto LabelCONTNAME End If If CONTFNAM.Response.Coded.ContainsAny({dontknow,refused,noanswer}) and CONTMNAM.Response.Coded.ContainsAny({dontknow,refused,noanswer}) and CONTLNAM.Response.Coded.ContainsAny({dontknow,refused,noanswer}) Then Goto LABEL_ADMINCONSENT End If"
+    }
+  },
+  "required": [
+    "CONTLNAM",
+    "CONTLNAM",
+    "CONTLNAM"
+  ]
+}

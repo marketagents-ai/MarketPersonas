@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATROAD",
+  "description": "Questions related to NATROAD",
+  "properties": {
+    "NATROAD": {
+      "type": "string",
+      "title": "NATROAD",
+      "description": "Highways and bridges ... are we spending too much, too little, or about the right amount on Highways and bridges?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATROAD"
+  ]
+}

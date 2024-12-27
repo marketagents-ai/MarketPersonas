@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CHNGNAME",
+  "description": "Questions related to CHNGNAME",
+  "properties": {
+    "CHNGNAME": {
+      "type": "string",
+      "title": "CHNGNAME",
+      "description": "Over the course of their lives, people may change their first or last name, use a nickname, or go by initials, especially in their daily lives. To help obtain accurate information, have you changed your name at all during your life?",
+      "enum": [
+        "YES",
+        "NO",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "If CHNGNAME = {YES} Then"
+      ]
+    }
+  },
+  "required": [
+    "CHNGNAME"
+  ]
+}

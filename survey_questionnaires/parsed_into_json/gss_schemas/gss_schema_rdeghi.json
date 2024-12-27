@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RDEGHI",
+  "description": "Questions related to RDEGHI",
+  "properties": {
+    "RDEGHI": {
+      "type": "string",
+      "title": "RDEGHI",
+      "description": "What degree or degrees? If you have more than one, please select the highest degree that you have.",
+      "enum": [
+        "bachelor_s",
+        "graduate",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer",
+        "instr"
+      ],
+      "enumDescriptions": [
+        "}",
+        "Associate or Junior College",
+        "Bachelor's",
+        "Graduate",
+        "Don't know",
+        "NA",
+        "End If",
+        "If RCOLDEG = {yes} And SAMPTYPE = \"AREA\" Then",
+        "RDEGHIfill.Response = RDEGHI"
+      ]
+    }
+  },
+  "required": [
+    "RDEGHI"
+  ]
+}

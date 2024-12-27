@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FAMVSWK",
+  "description": "Questions related to FAMVSWK",
+  "properties": {
+    "FAMVSWK1": {
+      "type": "string",
+      "title": "FAMVSWK1",
+      "description": "(How often has each of the following happened to you during the past three months?) You have found it difficult to concentrate at work because of your family responsibilities.",
+      "enum": [
+        "sevtimeweek",
+        "sevtimemth",
+        "onceortwice",
+        "never",
+        "nojob",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Several times a week",
+        "Several times a month",
+        "Once or twice",
+        "Never",
+        "Doesn't apply/no job",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "FAMVSWK": {
+      "type": "string",
+      "title": "FAMVSWK",
+      "description": "How often do the demands of your family interfere with your work on the job?",
+      "enum": [
+        "_1_often",
+        "_2_sometimes",
+        "_3_rarely",
+        "_4_never",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Often",
+        "Sometimes",
+        "Rarely",
+        "Never",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FAMVSWK1",
+    "FAMVSWK"
+  ]
+}

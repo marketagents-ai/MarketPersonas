@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HRSRELAX",
+  "description": "Questions related to HRSRELAX",
+  "properties": {
+    "HRSRELAX": {
+      "type": "integer",
+      "title": "HRSRELAX",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of hours: ');});After an average work day, about how many hours do you have to relax or pursue activities that you enjoy?",
+      "minimum": 0,
+      "maximum": 24
+    }
+  },
+  "required": [
+    "HRSRELAX"
+  ]
+}

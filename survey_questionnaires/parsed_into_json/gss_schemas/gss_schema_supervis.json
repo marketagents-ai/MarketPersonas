@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SUPERVIS",
+  "description": "Questions related to SUPERVIS",
+  "properties": {
+    "SUPERVIS": {
+      "type": "string",
+      "title": "SUPERVIS",
+      "description": "Do you supervise others at work as a part of your job?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SUPERVIS"
+  ]
+}

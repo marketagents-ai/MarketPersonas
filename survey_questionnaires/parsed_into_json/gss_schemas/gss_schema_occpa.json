@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OCCPA",
+  "description": "Questions related to OCCPA",
+  "properties": {
+    "OCCPA": {
+      "type": "string",
+      "title": "OCCPA",
+      "description": "What kind of work did {response to dadfill} usually do while you were growing up? (What was his job called?)"
+    }
+  },
+  "required": [
+    "OCCPA"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: COMPWAGE",
+  "description": "Questions related to COMPWAGE",
+  "properties": {
+    "COMPWAGE": {
+      "type": "string",
+      "title": "COMPWAGE",
+      "description": "Do you believe your fixed annual wages in calendar year 2021 were higher or lower than those of employees with similar experience and job descriptions in other companies in your region? Please answer on a 1 to 5 scale.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "1 Lower",
+        "2",
+        "3",
+        "4",
+        "5 Higher",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "COMPWAGE"
+  ]
+}

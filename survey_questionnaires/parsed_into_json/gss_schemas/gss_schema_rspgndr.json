@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RSPGNDR",
+  "description": "Questions related to RSPGNDR",
+  "properties": {
+    "RSPGNDR": {
+      "type": "string",
+      "title": "RSPGNDR",
+      "description": "People have different opinions about how much responsibility women and men should have for the home and family. Which of the following statements comes closest to your opinion?",
+      "enum": [
+        "wommuch",
+        "womsom",
+        "womeq",
+        "mensom",
+        "menmuch",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Women should take much more responsibility",
+        "Women should take somewhat more responsibility",
+        "Women and men should take equal responsibility",
+        "Men should take somewhat more responsibility",
+        "Men should take much more responsibility",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RSPGNDR"
+  ]
+}

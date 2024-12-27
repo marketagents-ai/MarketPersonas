@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPJEW",
+  "description": "Questions related to SPJEW",
+  "properties": {
+    "SPJEW": {
+      "type": "string",
+      "title": "SPJEW",
+      "description": "Does your {response to _spfill1} consider {response to _spfill4}self Orthodox, Conservative, Reform or none of these?",
+      "enum": [
+        "orthodox",
+        "conservative",
+        "reform",
+        "none_of_these",
+        "other",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Orthodox",
+        "Conservative",
+        "Reform",
+        "None of these",
+        "Other",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SPJEW"
+  ]
+}

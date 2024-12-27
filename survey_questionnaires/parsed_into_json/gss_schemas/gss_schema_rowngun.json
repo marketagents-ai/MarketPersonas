@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ROWNGUN",
+  "description": "Questions related to ROWNGUN",
+  "properties": {
+    "ROWNGUN": {
+      "type": "string",
+      "title": "ROWNGUN",
+      "description": "Do any of these guns personally belong to you?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "ROWNGUN"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: BORN",
+  "description": "Questions related to BORN",
+  "properties": {
+    "BORN": {
+      "type": "string",
+      "title": "BORN",
+      "description": "Were you born in this country?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "BORN"
+  ]
+}

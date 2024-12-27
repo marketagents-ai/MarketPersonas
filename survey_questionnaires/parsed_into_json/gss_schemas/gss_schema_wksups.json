@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WKSUPS",
+  "description": "Questions related to WKSUPS",
+  "properties": {
+    "WKSUPS": {
+      "type": "string",
+      "title": "WKSUPS",
+      "description": "Is anyone that {response to wksupsfill} the direct supervisor of somebody else?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "End If",
+        "If WKSUP = {yes} and WRKSTAT.ContainsAny({working_full_time,working_part_time,not_at_work})",
+        "Then"
+      ]
+    }
+  },
+  "required": [
+    "WKSUPS"
+  ]
+}

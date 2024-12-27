@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDSAQ",
+  "description": "Questions related to ENDSAQ",
+  "properties": {
+    "ENDSAQ5_TEXT": {
+      "type": "string",
+      "title": "ENDSAQ5_TEXT",
+      "description": "Please return the tablet to the interviewer."
+    },
+    "ENDSAQ5": {
+      "type": "string",
+      "title": "ENDSAQ5",
+      "description": "Thank you for your cooperation! {text}"
+    }
+  },
+  "required": [
+    "ENDSAQ5_TEXT",
+    "ENDSAQ5"
+  ]
+}

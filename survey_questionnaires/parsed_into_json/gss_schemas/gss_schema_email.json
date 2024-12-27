@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EMAIL",
+  "description": "Questions related to EMAIL",
+  "properties": {
+    "EMAIL": {
+      "type": "string",
+      "title": "EMAIL",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Email: ');});Do you have an email address?  What is it? If Not Validate(EMAIL,,,\"[-.\\w]+\\@[-.\\w]+\") Then If QUEXLANG = {ESN} Then EMAIL.Errors.AddNew(\"err\",\"Por favor entra un correo electrónico válida\") Else EMAIL.Errors.AddNew(\"err\",\"Please enter a valid email address\") End If Goto LabelEMAIL End If If QUEXMODE = {CAWI} Then SSNUM.Validation.MaxValue=9999 End If"
+    }
+  },
+  "required": [
+    "EMAIL"
+  ]
+}

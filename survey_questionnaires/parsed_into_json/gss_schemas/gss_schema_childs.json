@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CHILDS",
+  "description": "Questions related to CHILDS",
+  "properties": {
+    "CHILDS": {
+      "type": "string",
+      "title": "CHILDS",
+      "description": "How many children have you ever had?  Please count all that were born alive at any time (including any you had from a previous marriage).",
+      "enum": [
+        "none",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight_or_more",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven",
+        "Eight or more",
+        "Don't know",
+        "NA",
+        "If CHILDS <> {none} Then"
+      ]
+    }
+  },
+  "required": [
+    "CHILDS"
+  ]
+}

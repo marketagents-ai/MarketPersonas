@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: QUEXMODE",
+  "description": "Questions related to QUEXMODE",
+  "properties": {
+    "QUEXMODE": {
+      "type": "string",
+      "title": "QUEXMODE",
+      "description": "",
+      "enum": [
+        "CAPI",
+        "CAWI",
+        "PHONE"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "CAPI F2F",
+        "WEB"
+      ]
+    }
+  },
+  "required": [
+    "QUEXMODE"
+  ]
+}

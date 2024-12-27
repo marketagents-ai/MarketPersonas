@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LIBCOMY",
+  "description": "Questions related to LIBCOMY",
+  "properties": {
+    "LIBCOMY": {
+      "type": "string",
+      "title": "LIBCOMY",
+      "description": "Suppose this person wrote a book which is in your public library.  Somebody in your community suggests that the book should be removed from the library.  Would you favor removing it, or not?",
+      "enum": [
+        "favor",
+        "not_favor",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Favor",
+        "Not favor",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "LIBCOMY"
+  ]
+}

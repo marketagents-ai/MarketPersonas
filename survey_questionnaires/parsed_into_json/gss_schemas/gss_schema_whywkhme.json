@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WHYWKHME",
+  "description": "Questions related to WHYWKHME",
+  "properties": {
+    "WHYWKHME": {
+      "type": "string",
+      "title": "WHYWKHME",
+      "description": "When you work at home, is it part of your primary job at another location, are you taking work home to catch up, or do you have a home-based business?",
+      "enum": [
+        "primjob",
+        "catchup",
+        "homebus",
+        "othreas",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "I am working at home as part of my primary job at another location",
+        "I am taking work home to catch up",
+        "I am operating home-based business",
+        "LabelFAMWKOFF:",
+        "Other reasons or combination of these reasons",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "WHYWKHME"
+  ]
+}

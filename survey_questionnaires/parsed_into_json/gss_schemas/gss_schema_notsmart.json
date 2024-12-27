@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NOTSMART",
+  "description": "Questions related to NOTSMART",
+  "properties": {
+    "NOTSMART": {
+      "type": "string",
+      "title": "NOTSMART",
+      "description": "(In your day-to-day life how often have any of the following things happened to you?) People act as if they think you are not smart.",
+      "enum": [
+        "almosteveryday",
+        "atleastonceaweek",
+        "afewtimesamonth",
+        "afewtimesayear",
+        "Lessthanonceayear",
+        "never",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Almost every day",
+        "At least once a week",
+        "A few times a month",
+        "A few times a year",
+        "Less than once a year",
+        "Never",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NOTSMART"
+  ]
+}

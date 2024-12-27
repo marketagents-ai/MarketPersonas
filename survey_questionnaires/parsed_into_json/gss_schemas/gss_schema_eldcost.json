@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ELDCOST",
+  "description": "Questions related to ELDCOST",
+  "properties": {
+    "ELDCOST": {
+      "type": "string",
+      "title": "ELDCOST",
+      "description": "And who do you think should primarily cover the costs of this help to these elderly people? Should....",
+      "enum": [
+        "elderthemselv",
+        "govpub",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "The elderly people themselves or their family",
+        "The government/public funds",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ELDCOST"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WWWMIN",
+  "description": "Questions related to WWWMIN",
+  "properties": {
+    "WWWMIN": {
+      "type": "integer",
+      "title": "WWWMIN",
+      "description": "Minutes: End Page - wwwtim If WWWHR.Response.Coded = {na} and WWWMIN.Response.Coded = {na} Then WWWHR.Errors.AddNew(\"err_1\",\"Please enter a response.\") Goto LabelWWWTM End If End If LabelEndSectA: ETIMEA1.Response = SetTime(ETIMEA1) ETIMEA1_D.Response = Now() If BALLOT = 1 Or BALLOT = 3 Then If BALLOT = 1 Then cardA25_A26.Response = {a25} Else cardA25_A26.Response = {a26} End If",
+      "minimum": 0,
+      "maximum": 999
+    }
+  },
+  "required": [
+    "WWWMIN"
+  ]
+}

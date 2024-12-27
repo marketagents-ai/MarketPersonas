@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RBIOPRNT",
+  "description": "Questions related to RBIOPRNT",
+  "properties": {
+    "RBIOPRNT18": {
+      "type": "string",
+      "title": "RBIOPRNT18",
+      "description": "To clarify, are you the biological parent of at least one individual 18 or older in your household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "RBIOPRNT": {
+      "type": "string",
+      "title": "RBIOPRNT",
+      "description": "These next questions are about your relationships with other individuals who are under the age of 18 in this household. Are you the biological parent of at least one individual under the age of 18 in this household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RBIOPRNT18",
+    "RBIOPRNT"
+  ]
+}

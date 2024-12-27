@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FAMSUFFR",
+  "description": "Questions related to FAMSUFFR",
+  "properties": {
+    "FAMSUFFR": {
+      "type": "string",
+      "title": "FAMSUFFR",
+      "description": "(To what extent do you agree or disagree...?) All in all, family life suffers when the woman has a full-time job.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "neithagr",
+        "disagree",
+        "strongly_disagree",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FAMSUFFR"
+  ]
+}

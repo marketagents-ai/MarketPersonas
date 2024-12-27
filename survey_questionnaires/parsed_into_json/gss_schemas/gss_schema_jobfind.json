@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: JOBFIND",
+  "description": "Questions related to JOBFIND",
+  "properties": {
+    "JOBFIND": {
+      "type": "string",
+      "title": "JOBFIND",
+      "description": "About how easy would it be for you to find a job with another employer with approximately the same income and fringe benefits you now have? Would you say very easy, somewhat easy, or not easy at all?",
+      "enum": [
+        "very_easy",
+        "somewhat_easy",
+        "not_easy_at_all",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Very easy",
+        "Somewhat easy",
+        "Not easy at all",
+        "Don't know",
+        "REFUSED"
+      ]
+    },
+    "JOBFIND1": {
+      "type": "string",
+      "title": "JOBFIND1",
+      "description": "How easy would it be for you to find a job with another employer with approximately the same income and fringe benefits as you have now?",
+      "enum": [
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "similar_job}",
+        "_find_similar_job}",
+        "_find_similar_job}"
+      ]
+    }
+  },
+  "required": [
+    "JOBFIND",
+    "JOBFIND1"
+  ]
+}

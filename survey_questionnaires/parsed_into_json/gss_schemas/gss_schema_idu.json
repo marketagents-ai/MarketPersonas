@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: IDU",
+  "description": "Questions related to IDU",
+  "properties": {
+    "IDU30": {
+      "type": "string",
+      "title": "IDU30",
+      "description": "How long has it been since you last used a needle to inject drugs?",
+      "enum": [
+        "within_30dy",
+        "more_than_30dy",
+        "more_than_12mo",
+        "more_than_3yr",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "LabelEVCRACK:",
+        "Within the past 30 days",
+        "More than 30 days ago but within the past 12 months",
+        "More than 12 months ago but within the past 3 years",
+        "More than 3 years ago",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "IDU30"
+  ]
+}

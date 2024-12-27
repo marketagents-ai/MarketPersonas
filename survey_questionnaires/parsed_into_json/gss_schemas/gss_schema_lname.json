@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LNAME",
+  "description": "Questions related to LNAME",
+  "properties": {
+    "LNAME": {
+      "type": "string",
+      "title": "LNAME",
+      "description": "Last name: End Page - NamePage If FNAME.Response.Coded = {NA} And MNAME.Response.Coded = {NA} And LNAME.Response.Coded = {NA} Then FNAME.Errors.AddNew(\"ERR\",\"Please enter at least one name\") Goto LabelNAME End If Begin Page - phonepage What is your phone number?"
+    }
+  },
+  "required": [
+    "LNAME"
+  ]
+}

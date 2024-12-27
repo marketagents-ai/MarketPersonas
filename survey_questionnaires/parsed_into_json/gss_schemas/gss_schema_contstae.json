@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CONTSTAE",
+  "description": "Questions related to CONTSTAE",
+  "properties": {
+    "CONTSTAE": {
+      "type": "string",
+      "title": "CONTSTAE",
+      "description": "State:"
+    }
+  },
+  "required": [
+    "CONTSTAE"
+  ]
+}

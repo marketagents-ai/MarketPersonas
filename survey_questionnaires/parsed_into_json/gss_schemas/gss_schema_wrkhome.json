@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WRKHOME",
+  "description": "Questions related to WRKHOME",
+  "properties": {
+    "WRKHOME": {
+      "type": "string",
+      "title": "WRKHOME",
+      "description": "How often do you work at home as part of your job?",
+      "enum": [
+        "_1_never",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "ar}",
+        "nth}",
+        "k}",
+        "_week}"
+      ]
+    }
+  },
+  "required": [
+    "WRKHOME"
+  ]
+}

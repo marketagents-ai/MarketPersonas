@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FINRELA",
+  "description": "Questions related to FINRELA",
+  "properties": {
+    "FINRELA": {
+      "type": "string",
+      "title": "FINRELA",
+      "description": "Compared with American families in general, would you say your family income is far below average, below average, average, above average, or far above average? If you are uncertain, just give us your best guess.",
+      "enum": [
+        "far_below_average",
+        "below_average",
+        "average",
+        "above_average",
+        "far_above_average",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Far below average",
+        "Below average",
+        "Average",
+        "Above average",
+        "Far above average",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FINRELA"
+  ]
+}

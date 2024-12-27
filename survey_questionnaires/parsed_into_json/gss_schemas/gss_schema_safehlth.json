@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SAFEHLTH",
+  "description": "Questions related to SAFEHLTH",
+  "properties": {
+    "SAFEHLTH": {
+      "type": "string",
+      "title": "SAFEHLTH",
+      "description": "(Please tell us whether you strongly agree, agree, disagree, or strongly disagree with each of these statements.) The safety and health conditions where I work are good.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Disagree",
+        "Strongly disagree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SAFEHLTH"
+  ]
+}

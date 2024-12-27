@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PHYSHLTH",
+  "description": "Questions related to PHYSHLTH",
+  "properties": {
+    "PHYSHLTH": {
+      "type": "integer",
+      "title": "PHYSHLTH",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of days in past 30 days: ');});Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good? If none, enter '0'.",
+      "minimum": 0,
+      "maximum": 30
+    }
+  },
+  "required": [
+    "PHYSHLTH"
+  ]
+}

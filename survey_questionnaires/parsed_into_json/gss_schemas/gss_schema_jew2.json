@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: JEW2",
+  "description": "Questions related to JEW2",
+  "properties": {
+    "OTH16SPC": {
+      "type": "string",
+      "title": "OTH16SPC",
+      "description": "Text"
+    },
+    "JEW16": {
+      "type": "string",
+      "title": "JEW16",
+      "description": "Categorical (Single)"
+    },
+    "JEW16SP": {
+      "type": "string",
+      "title": "JEW16SP",
+      "description": "Text"
+    },
+    "ATTEND": {
+      "type": "string",
+      "title": "ATTEND",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "OTH16SPC",
+    "JEW16",
+    "JEW16SP",
+    "ATTEND"
+  ]
+}

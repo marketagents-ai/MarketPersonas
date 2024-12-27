@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PERFRT",
+  "description": "Questions related to PERFRT",
+  "properties": {
+    "PERFRT": {
+      "type": "string",
+      "title": "PERFRT",
+      "description": "If you received a performance rating from your organization in 2021, which statement best describes the rating you received?",
+      "enum": [
+        "beloexp",
+        "meetexp",
+        "abovexp",
+        "norate",
+        "nonemtch",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Below expectations",
+        "Meets expectations",
+        "Above expectations",
+        "I didn't receive a performance rating",
+        "None of the statements match the performance rating I received",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PERFRT"
+  ]
+}

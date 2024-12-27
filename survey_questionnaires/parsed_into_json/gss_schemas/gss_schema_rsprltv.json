@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RSPRLTV",
+  "description": "Questions related to RSPRLTV",
+  "properties": {
+    "RSPRLTV1": {
+      "type": "string",
+      "title": "RSPRLTV1",
+      "description": "People have different opinions about responsibilities towards relatives. Consider a couple living with their two children who has enough space in their home for someone to come and stay. A sibling of one of the couple needs a place to stay for a few months. In your opinion, do you think they should, or should not, offer him/her to stay for free in their home? Please choose a number on a scale of 1 to 7 where 1 is \"Yes, they definitely should\" and 7 is \"No, they definitely should not\".",
+      "enum": [
+        "RSPRLTV_1",
+        "RSPRLTV_2",
+        "RSPRLTV_3",
+        "RSPRLTV_4",
+        "RSPRLTV_5",
+        "RSPRLTV_6",
+        "RSPRLTV_7",
+        "cantchoose8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "1 Yes, they definitely should",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7 No, they definitely should not",
+        "8 Can't choose",
+        "NA"
+      ]
+    },
+    "RSPRLTV2": {
+      "type": "string",
+      "title": "RSPRLTV2",
+      "description": "Consider another couple living with their two children who has enough space in their home for someone to come and stay. The father of one of them recently became a widower. Although he is in good health, he is feeling lonely. In your opinion, do you think they should, or should not, ask the father to come and live with them permanently? Please choose a number on a scale of 1 to 7 where 1 is \"Yes, they definitely should\" and 7 is \"No, they definitely should not\".",
+      "enum": [
+        "RSPRLTV_1",
+        "RSPRLTV_2",
+        "RSPRLTV_3",
+        "RSPRLTV_4",
+        "RSPRLTV_5",
+        "RSPRLTV_6",
+        "RSPRLTV_7",
+        "cantchoose8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "1 Yes, they definitely should",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7 No, they definitely should not",
+        "8 Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RSPRLTV1",
+    "RSPRLTV2"
+  ]
+}

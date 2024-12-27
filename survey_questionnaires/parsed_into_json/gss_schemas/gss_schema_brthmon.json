@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: BRTHMON",
+  "description": "Questions related to BRTHMON",
+  "properties": {
+    "BRTHMON": {
+      "type": "string",
+      "title": "BRTHMON",
+      "description": "Month:",
+      "enum": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+        "Don't know",
+        "Refused",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "BRTHMON"
+  ]
+}

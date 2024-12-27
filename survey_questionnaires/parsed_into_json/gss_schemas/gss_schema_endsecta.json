@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EndSectA",
+  "description": "Questions related to EndSectA",
+  "properties": {
+    "WWWMIN": {
+      "type": "string",
+      "title": "WWWMIN",
+      "description": "Long [0 .. 999]"
+    },
+    "DISRSPCT": {
+      "type": "string",
+      "title": "DISRSPCT",
+      "description": "Categorical (Single)"
+    },
+    "POORSERV": {
+      "type": "string",
+      "title": "POORSERV",
+      "description": "Categorical (Single)"
+    },
+    "NOTSMART": {
+      "type": "string",
+      "title": "NOTSMART",
+      "description": "Categorical (Single)"
+    },
+    "AFRAIDOF": {
+      "type": "string",
+      "title": "AFRAIDOF",
+      "description": "Categorical (Single)"
+    },
+    "THREATEN": {
+      "type": "string",
+      "title": "THREATEN",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "WWWMIN",
+    "DISRSPCT",
+    "POORSERV",
+    "NOTSMART",
+    "AFRAIDOF",
+    "THREATEN"
+  ]
+}

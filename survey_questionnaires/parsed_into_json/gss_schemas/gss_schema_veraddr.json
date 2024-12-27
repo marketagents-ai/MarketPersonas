@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: VERADDR",
+  "description": "Questions related to VERADDR",
+  "properties": {
+    "VERADDR": {
+      "type": "string",
+      "title": "VERADDR",
+      "description": "Is your mailing address... Address: {response to ADDRESS} Apt:     {response to APRTMNT} City:    {response to CITY} State:   {response to STATE} Zip:     {response to ZIP}",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "VERADDR"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: USCITZN",
+  "description": "Questions related to USCITZN",
+  "properties": {
+    "USCITZN": {
+      "type": "string",
+      "title": "USCITZN",
+      "description": "Now we would like to ask you about U.S. citizenship. Are you...",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "A U.S. Citizen",
+        "Not a U.S. Citizen",
+        "A U.S. citizen born in Puerto Rico, the U.S. Virgin Islands, or the",
+        "Northern Marianas Islands",
+        "Born outside of the United States to parents who were U.S. citizens at",
+        "that time",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "USCITZN"
+  ]
+}

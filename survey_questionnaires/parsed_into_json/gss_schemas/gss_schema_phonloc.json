@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PHONLOC",
+  "description": "Questions related to PHONLOC",
+  "properties": {
+    "PHONLOC": {
+      "type": "string",
+      "title": "PHONLOC",
+      "description": "Is this phone located in your own house?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PHONLOC"
+  ]
+}

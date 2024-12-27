@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FAIREARN",
+  "description": "Questions related to FAIREARN",
+  "properties": {
+    "FAIREARN": {
+      "type": "string",
+      "title": "FAIREARN",
+      "description": "How fair is what you earn on your job in comparison to others doing the same type of work you do?",
+      "enum": [
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "ou_deserve}",
+        "an_you_deserve}",
+        "_you_deserve}"
+      ]
+    }
+  },
+  "required": [
+    "FAIREARN"
+  ]
+}

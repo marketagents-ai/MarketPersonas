@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HANDCARDAY",
+  "description": "Questions related to HANDCARDAY",
+  "properties": {
+    "HANDCARDAY": {
+      "type": "string",
+      "title": "HANDCARDAY",
+      "description": "mygss.norc.org/AY.pdf"
+    }
+  },
+  "required": [
+    "HANDCARDAY"
+  ]
+}

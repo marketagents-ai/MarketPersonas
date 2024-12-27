@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: JOBVSFA",
+  "description": "Questions related to JOBVSFA",
+  "properties": {
+    "JOBVSFA1": {
+      "type": "string",
+      "title": "JOBVSFA1",
+      "description": "(How often has each of the following happened to you during the past three months?) It has been difficult for you to fulfill your family responsibilities because of the amount of time you spent on your job.",
+      "enum": [
+        "sevtimeweek",
+        "sevtimemth",
+        "onceortwice",
+        "never",
+        "nojob",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Several times a week",
+        "Several times a month",
+        "Once or twice",
+        "Never",
+        "Doesn't apply/no job",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "JOBVSFA1"
+  ]
+}

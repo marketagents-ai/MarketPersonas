@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HISPANIC",
+  "description": "Questions related to HISPANIC",
+  "properties": {
+    "HISPANIC": {
+      "type": "string",
+      "title": "HISPANIC",
+      "description": "Are you of Hispanic, Latino, or Spanish origin?",
+      "enum": [
+        "nothisp",
+        "yesmex",
+        "yespr",
+        "yescub",
+        "yesothsp",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "No, not of Hispanic, Latino, or Spanish origin",
+        "Yes, Mexican, Mexican American, Chicano",
+        "Yes, Puerto Rican",
+        "Yes, Cuban",
+        "Yes, another Hispanic, Latino, or Spanish origin",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HISPANIC"
+  ]
+}

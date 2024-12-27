@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TVHOURS",
+  "description": "Questions related to TVHOURS",
+  "properties": {
+    "TVHOURS": {
+      "type": "integer",
+      "title": "TVHOURS",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of hours: ');});On the average day, about how many hours do you personally watch television?",
+      "minimum": 0,
+      "maximum": 24
+    }
+  },
+  "required": [
+    "TVHOURS"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TRDUNION",
+  "description": "Questions related to TRDUNION",
+  "properties": {
+    "TRDUNION": {
+      "type": "string",
+      "title": "TRDUNION",
+      "description": "(Please tell us whether you strongly agree, agree, disagree, or strongly disagree with each of these statements.) Workers need strong trade unions to protect their interests.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Disagree",
+        "Strongly disagree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "TRDUNION"
+  ]
+}

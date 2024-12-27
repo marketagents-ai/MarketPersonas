@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HANDCARD",
+  "description": "Questions related to HANDCARD",
+  "properties": {
+    "HANDCARD1": {
+      "type": "string",
+      "title": "HANDCARD1",
+      "description": "Do you currently have internet access?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "HANDCARD2": {
+      "type": "string",
+      "title": "HANDCARD2",
+      "description": "For a better interviewing experience, you can access a visual aid for the survey online. Please type this URL into your browser window to access some answer options that we will be giving you during the interview."
+    }
+  },
+  "required": [
+    "HANDCARD1",
+    "HANDCARD2"
+  ]
+}

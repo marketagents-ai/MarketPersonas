@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WORKWHT",
+  "description": "Questions related to WORKWHT",
+  "properties": {
+    "WORKWHT": {
+      "type": "string",
+      "title": "WORKWHT",
+      "description": "{response to workwhtintro} Where would you rate Whites in general on this scale?",
+      "enum": [
+        "_1_hardworking",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7_lazy",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "1 Hardworking",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7 Lazy",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WORKWHT"
+  ]
+}

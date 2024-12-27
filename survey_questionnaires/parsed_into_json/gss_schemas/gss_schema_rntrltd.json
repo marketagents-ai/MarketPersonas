@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RNTRLTD",
+  "description": "Questions related to RNTRLTD",
+  "properties": {
+    "RNTRLTD18": {
+      "type": "string",
+      "title": "RNTRLTD18",
+      "description": "Is there anyone in your household who you are not related to? For example, an adult roommate or lodger?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "End If",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "RNTRLTD18"
+  ]
+}

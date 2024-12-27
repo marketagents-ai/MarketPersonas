@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FECHLD",
+  "description": "Questions related to FECHLD",
+  "properties": {
+    "FECHLD": {
+      "type": "string",
+      "title": "FECHLD",
+      "description": "Please read the following statements and indicate whether you strongly agree, agree, disagree, or strongly disagree with each statement: A working mother can establish just as warm and secure a relationship with her children as a mother who does not work.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "disagree",
+        "strongly_disagree",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Disagree",
+        "Strongly disagree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "FECHLD2": {
+      "type": "string",
+      "title": "FECHLD2",
+      "description": "To begin, we have some questions about women. To what extent do you agree or disagree...? A working mother can establish just as warm and secure a relationship with her children as a mother who does not work.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "neithagr",
+        "disagree",
+        "strongly_disagree",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FECHLD",
+    "FECHLD2"
+  ]
+}

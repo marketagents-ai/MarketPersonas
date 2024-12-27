@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: KIDSUND",
+  "description": "Questions related to KIDSUND",
+  "properties": {
+    "KIDSUND18": {
+      "type": "string",
+      "title": "KIDSUND18",
+      "description": "This section contains questions about you and your household. We are interested in understanding what households in the United States look like and we are grateful for any information you provide. Are there any individuals aged 0 to 17 years old living at this household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "KIDSUND18"
+  ]
+}

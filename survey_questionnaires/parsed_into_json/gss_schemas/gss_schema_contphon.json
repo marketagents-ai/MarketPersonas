@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CONTPHON",
+  "description": "Questions related to CONTPHON",
+  "properties": {
+    "CONTPHON": {
+      "type": "string",
+      "title": "CONTPHON",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Phone: ');});What is their phone number? LabelCONTADDR: If QUEXMODE.ContainsAny({capi,phone}) Then CONTADDR.QuestionTemplate=\"LeftLabelSubWide.htm\" CONTCITY.QuestionTemplate=\"LeftLabelSubWide.htm\" CONTSTAE.QuestionTemplate=\"LeftLabelSubWide.htm\" CONTZIP.QuestionTemplate=\"LeftLabelSubWide.htm\" Else CONTADDR.QuestionTemplate=\"LeftLabelSub.htm\" CONTCITY.QuestionTemplate=\"LeftLabelSub.htm\" CONTSTAE.QuestionTemplate=\"LeftLabelSub.htm\" CONTZIP.QuestionTemplate=\"LeftLabelSub.htm\" End If Begin Page - CONTADDRpage What is their mailing address?"
+    }
+  },
+  "required": [
+    "CONTPHON"
+  ]
+}

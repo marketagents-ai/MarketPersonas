@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SIBS",
+  "description": "Questions related to SIBS",
+  "properties": {
+    "SIBS": {
+      "type": "string",
+      "title": "SIBS",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Brothers and sisters: ');});How many brothers and sisters did you have?  (Count those born alive, but no longer living, as well as those alive now.  Also include stepbrothers and stepsisters, and children adopted by your parents.)"
+    }
+  },
+  "required": [
+    "SIBS"
+  ]
+}

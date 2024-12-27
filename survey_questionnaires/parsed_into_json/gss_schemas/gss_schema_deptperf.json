@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DEPTPERF",
+  "description": "Questions related to DEPTPERF",
+  "properties": {
+    "DEPTPERF": {
+      "type": "string",
+      "title": "DEPTPERF",
+      "description": "(Does the size of these performance-based payments depend on...) Workgroup or department performance?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "DEPTPERF"
+  ]
+}

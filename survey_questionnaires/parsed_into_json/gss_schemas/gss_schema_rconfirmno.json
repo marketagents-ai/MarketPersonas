@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RCONFIRMNO",
+  "description": "Questions related to RCONFIRMNO",
+  "properties": {
+    "RCONFIRMNO": {
+      "type": "string",
+      "title": "RCONFIRMNO",
+      "description": "We greatly appreciate your willingness to participate in the General Social Survey, but this survey is\nintended for {response to R_FNAME} {response to R_LNAME}.\nCan you provide contact information for {response to R_FNAME} {response to R_LNAME}?"
+    }
+  },
+  "required": [
+    "RCONFIRMNO"
+  ]
+}

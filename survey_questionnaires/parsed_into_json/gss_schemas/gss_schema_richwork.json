@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RICHWORK",
+  "description": "Questions related to RICHWORK",
+  "properties": {
+    "RICHWORK": {
+      "type": "string",
+      "title": "RICHWORK",
+      "description": "If you were to get enough money to live as comfortably as you would like for the rest of your life, would you continue to work or would you stop working?",
+      "enum": [
+        "continue_to_work",
+        "stop_working",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Continue to work",
+        "Stop working",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "RICHWORK"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LOCALNUM",
+  "description": "Questions related to LOCALNUM",
+  "properties": {
+    "LOCALNUM": {
+      "type": "string",
+      "title": "LOCALNUM",
+      "description": "About how many people work at the location where you work?  Count part-time as well as full-time employees in all areas, departments, and buildings. If the location where you work is currently closed, please tell us how many people usually work there.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "1-9",
+        "10-49",
+        "50-99",
+        "100-499",
+        "500-999",
+        "1,000-1,999",
+        "More than 2,000",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "LOCALNUM"
+  ]
+}

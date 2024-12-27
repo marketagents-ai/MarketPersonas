@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CONTFNAM",
+  "description": "Questions related to CONTFNAM",
+  "properties": {
+    "CONTFNAM": {
+      "type": "string",
+      "title": "CONTFNAM",
+      "description": "First name:"
+    }
+  },
+  "required": [
+    "CONTFNAM",
+    "CONTFNAM"
+  ]
+}

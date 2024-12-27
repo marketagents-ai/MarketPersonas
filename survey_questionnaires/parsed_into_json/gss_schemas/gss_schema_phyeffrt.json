@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PHYEFFRT",
+  "description": "Questions related to PHYEFFRT",
+  "properties": {
+    "PHYEFFRT": {
+      "type": "string",
+      "title": "PHYEFFRT",
+      "description": "Please rate the overall physical effort at the job you normally do.",
+      "enum": [
+        "vhard",
+        "hard",
+        "smwhard",
+        "farlit",
+        "vlite",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very hard",
+        "Hard",
+        "Somewhat hard",
+        "Fairly light",
+        "Very light",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PHYEFFRT"
+  ]
+}

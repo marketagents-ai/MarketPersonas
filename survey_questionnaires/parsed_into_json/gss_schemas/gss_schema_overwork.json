@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OVERWORK",
+  "description": "Questions related to OVERWORK",
+  "properties": {
+    "OVERWORK": {
+      "type": "string",
+      "title": "OVERWORK",
+      "description": "(Please tell us whether you strongly agree, agree, disagree, or strongly disagree with each of these statements.) I have too much work to do everything well.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Disagree",
+        "Strongly disagree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "OVERWORK"
+  ]
+}

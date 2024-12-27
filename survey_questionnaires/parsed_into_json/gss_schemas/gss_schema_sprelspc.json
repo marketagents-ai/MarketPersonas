@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPRELSPC",
+  "description": "Questions related to SPRELSPC",
+  "properties": {
+    "SPRELSPC": {
+      "type": "string",
+      "title": "SPRELSPC",
+      "description": "Please specify religion and/or church denomination:"
+    }
+  },
+  "required": [
+    "SPRELSPC"
+  ]
+}

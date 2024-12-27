@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATMASS",
+  "description": "Questions related to NATMASS",
+  "properties": {
+    "NATMASS": {
+      "type": "string",
+      "title": "NATMASS",
+      "description": "Mass transportation ... are we spending too much, too little, or about the right amount on Mass transportation?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATMASS"
+  ]
+}

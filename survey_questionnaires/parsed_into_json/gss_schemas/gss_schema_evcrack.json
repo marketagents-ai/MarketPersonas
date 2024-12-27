@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EVCRACK",
+  "description": "Questions related to EVCRACK",
+  "properties": {
+    "EVCRACK": {
+      "type": "string",
+      "title": "EVCRACK",
+      "description": "Have you ever, even once, used \"crack\" cocaine in chunk or rock form?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If EVCRACK <> {yes} Then Goto LabelHIVTEST"
+      ]
+    }
+  },
+  "required": [
+    "EVCRACK"
+  ]
+}

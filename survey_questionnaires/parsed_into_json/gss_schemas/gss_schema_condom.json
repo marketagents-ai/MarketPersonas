@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CONDOM",
+  "description": "Questions related to CONDOM",
+  "properties": {
+    "CONDOM": {
+      "type": "string",
+      "title": "CONDOM",
+      "description": "The last time you had sex, was a condom used? By \"sex\" we mean vaginal, oral or anal sex.",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes, the last time I had sex a condom was used",
+        "No, the last time I had sex a condom was not used",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "CONDOM"
+  ]
+}

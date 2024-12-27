@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: INCENTCHOICE",
+  "description": "Questions related to INCENTCHOICE",
+  "properties": {
+    "INCENTCHOICE": {
+      "type": "string",
+      "title": "INCENTCHOICE",
+      "description": "Thank you very much for your time and help. Those are all the survey questions I have for you. In appreciation of your participation, we will send you ${response to P_INCAMT}. We have a few options for you to receive ${response to P_INCAMT} – {response to cashfill} Checks will be mailed via the U.S. Postal Service and will take 2 to 4 weeks to arrive. Gift cards are typically delivered via email within 1 to 7 days. Please tell me how you would like to receive your incentive: Click here to see terms of service.",
+      "enum": [
+        "cash",
+        "check",
+        "walmart",
+        "lowes",
+        "amzn",
+        "idecline",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Cash",
+        "Check mailed to me",
+        "Walmart e-gift card",
+        "Lowe's e-gift card",
+        "Amazon e-gift card",
+        "Please do not send me rewards",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "INCENTCHOICE"
+  ]
+}

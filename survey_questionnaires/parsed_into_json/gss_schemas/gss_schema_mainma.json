@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MAINMA",
+  "description": "Questions related to MAINMA",
+  "properties": {
+    "MAINMA": {
+      "type": "string",
+      "title": "MAINMA",
+      "description": "What did she actually do in that job? (What were some of her main duties?) End Page - occmapage Begin Page - indmapage"
+    }
+  },
+  "required": [
+    "MAINMA"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WEBDOCEXP",
+  "description": "Questions related to WEBDOCEXP",
+  "properties": {
+    "WEBDOCEXP": {
+      "type": "string",
+      "title": "WEBDOCEXP",
+      "description": "(To what extent do you agree or disagree with the following statements? During the past 12 months, information on the internet...) ...helped me understand what a doctor tried to explain to me.",
+      "enum": [
+        "d5_1",
+        "d5_2",
+        "d5_3",
+        "d5_4",
+        "d5_5",
+        "d5_6",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "LabelISSPQ14:",
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WEBDOCEXP"
+  ]
+}

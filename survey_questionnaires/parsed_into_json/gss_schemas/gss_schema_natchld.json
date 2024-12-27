@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATCHLD",
+  "description": "Questions related to NATCHLD",
+  "properties": {
+    "NATCHLD": {
+      "type": "string",
+      "title": "NATCHLD",
+      "description": "Assistance for childcare ... are we spending too much, too little, or about the right amount on Assistance for childcare?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATCHLD"
+  ]
+}

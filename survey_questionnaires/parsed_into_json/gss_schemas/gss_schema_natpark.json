@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATPARK",
+  "description": "Questions related to NATPARK",
+  "properties": {
+    "NATPARK": {
+      "type": "string",
+      "title": "NATPARK",
+      "description": "Parks and recreation ... are we spending too much, too little, or about the right amount on Parks and recreation?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATPARK"
+  ]
+}

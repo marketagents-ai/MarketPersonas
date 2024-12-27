@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATEDUCY",
+  "description": "Questions related to NATEDUCY",
+  "properties": {
+    "NATEDUCY": {
+      "type": "string",
+      "title": "NATEDUCY",
+      "description": "Education ... are we spending too much, too little, or about the right amount on Education?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATEDUCY"
+  ]
+}

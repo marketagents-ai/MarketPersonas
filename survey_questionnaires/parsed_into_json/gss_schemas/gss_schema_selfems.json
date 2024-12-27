@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SELFEMS",
+  "description": "Questions related to SELFEMS",
+  "properties": {
+    "SELFEMS": {
+      "type": "string",
+      "title": "SELFEMS",
+      "description": "{response to selfemsfill}",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SELFEMS"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WLTHBLK",
+  "description": "Questions related to WLTHBLK",
+  "properties": {
+    "WLTHBLK": {
+      "type": "string",
+      "title": "WLTHBLK",
+      "description": "(Do people in this group tend to be rich or poor?) Black people?",
+      "enum": [
+        "_1_rich",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "_6",
+        "_7_poor",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "1 Rich",
+        "2",
+        "3",
+        "If VerXY = \"X\" Then",
+        "4",
+        "5",
+        "6",
+        "7 Poor",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "WLTHBLK"
+  ]
+}

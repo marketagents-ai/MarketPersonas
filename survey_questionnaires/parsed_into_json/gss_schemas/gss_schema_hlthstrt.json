@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHSTRT",
+  "description": "Questions related to HLTHSTRT",
+  "properties": {
+    "HLTHSTRT": {
+      "type": "string",
+      "title": "HLTHSTRT",
+      "description": "WOULD YOU SAY THE RESPONDENT'S HEALTH, IN GENERAL, IS EXCELLENT, GOOD, FAIR, OR POOR?",
+      "enum": [
+        "excelent",
+        "good",
+        "fair",
+        "poor",
+        "webskip"
+      ],
+      "enumDescriptions": [
+        "Excellent",
+        "Good",
+        "Fair",
+        "Poor",
+        "ETIME_HLTHSTRT.Response = SetTime(ETIME_HLTHSTRT)"
+      ]
+    }
+  },
+  "required": [
+    "HLTHSTRT"
+  ]
+}

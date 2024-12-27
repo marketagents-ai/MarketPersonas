@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PTNRSXCNFRM",
+  "description": "Questions related to PTNRSXCNFRM",
+  "properties": {
+    "PTNRSXCNFRM": {
+      "type": "string",
+      "title": "PTNRSXCNFRM",
+      "description": "Just to confirm, {response to ptsexconftxt1} at birth and {response to ptsexconftxt2}.  Is that correct?",
+      "enum": [
+        "yes",
+        "birthno",
+        "sexno",
+        "bothno",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "skiptoend",
+        "NA"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "Birth sex incorrect",
+        "Current sex incorrect",
+        "Both incorrect",
+        "Don't know",
+        "NA",
+        "If PTNRSXCNFRM = {birthno} Then",
+        "Goto LabelPTNRSXBRTH",
+        "ElseIf PTNRSXCNFRM = {sexno} Then",
+        "Goto LabelPTNRSXNOW",
+        "ElseIf PTNRSXCNFRM = {bothno} Then",
+        "Goto LabelPTNRSXBRTH",
+        "End If",
+        "LabelJ39:",
+        "changetitle=0",
+        "changetitle=1",
+        "If VERXY=\"Y\" Then",
+        "J39.Categories={MASCSELF,FEMSELF}",
+        "J40.Categories={MASCSEE,FEMSEE}",
+        "End If"
+      ]
+    }
+  },
+  "required": [
+    "PTNRSXCNFRM",
+    "PTNRSXCNFRM"
+  ]
+}

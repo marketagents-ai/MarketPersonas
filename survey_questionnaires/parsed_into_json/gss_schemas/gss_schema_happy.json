@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HAPPY",
+  "description": "Questions related to HAPPY",
+  "properties": {
+    "HAPPY": {
+      "type": "string",
+      "title": "HAPPY",
+      "description": "Taken all together, how would you say things are these days—would you say that you are very happy, pretty happy, or not too happy?",
+      "enum": [
+        "very_happy",
+        "pretty_happy",
+        "not_too_happy",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very happy",
+        "Pretty happy",
+        "Not too happy",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "HAPPY7": {
+      "type": "string",
+      "title": "HAPPY7",
+      "description": "If you were to consider your life in general, how happy or unhappy would you say you are, on the whole? Are you...",
+      "enum": [
+        "comhappy",
+        "veryhappy",
+        "fairhappy",
+        "neitherhapnorun",
+        "fairlyunhappy",
+        "veryunhappy",
+        "comunhappy",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Completely happy",
+        "Very happy",
+        "Fairly happy",
+        "Neither happy nor unhappy",
+        "Fairly unhappy",
+        "Very unhappy",
+        "Completely unhappy",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HAPPY",
+    "HAPPY7"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MAWRKGRW",
+  "description": "Questions related to MAWRKGRW",
+  "properties": {
+    "MAWRKGRW": {
+      "type": "string",
+      "title": "MAWRKGRW",
+      "description": "Did {response to momfill} ever work for pay for as long as a year while you were growing up?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If MAWRKGRW = {yes} Then",
+        "Begin Page - occmapage"
+      ]
+    }
+  },
+  "required": [
+    "MAWRKGRW"
+  ]
+}

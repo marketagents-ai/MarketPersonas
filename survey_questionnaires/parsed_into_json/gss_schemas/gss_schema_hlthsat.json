@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHSAT",
+  "description": "Questions related to HLTHSAT",
+  "properties": {
+    "HLTHSAT": {
+      "type": "string",
+      "title": "HLTHSAT",
+      "description": "In general, how satisfied or dissatisfied are you with the health care system in the United States? Are you...",
+      "enum": [
+        "d14_1",
+        "d14_2",
+        "d14_3",
+        "d14_4",
+        "d14_5",
+        "d14_6",
+        "d14_7",
+        "d14_8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Completely satisfied",
+        "Very satisfied",
+        "Fairly satisfied",
+        "Neither satisfied nor dissatisfied",
+        "Fairly dissatisfied",
+        "Very dissatisfied",
+        "Completely dissatisfied",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HLTHSAT"
+  ]
+}

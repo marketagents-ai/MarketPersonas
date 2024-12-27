@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SAFETYWK",
+  "description": "Questions related to SAFETYWK",
+  "properties": {
+    "SAFETYWK": {
+      "type": "string",
+      "title": "SAFETYWK",
+      "description": "(Please tell us whether you strongly agree, agree, disagree, or strongly disagree with each of these statements.) The safety of workers is a high priority with management where I work.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Disagree",
+        "Strongly disagree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SAFETYWK"
+  ]
+}

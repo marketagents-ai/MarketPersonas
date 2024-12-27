@@ -1,0 +1,340 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ISSPQ14",
+  "description": "Questions related to ISSPQ14",
+  "properties": {
+    "WEBDOCEXP": {
+      "type": "string",
+      "title": "WEBDOCEXP",
+      "description": "Categorical (Single)"
+    },
+    "WEBSYMPT": {
+      "type": "string",
+      "title": "WEBSYMPT",
+      "description": "Categorical (Single)"
+    },
+    "WEBDRADV": {
+      "type": "string",
+      "title": "WEBDRADV",
+      "description": "Categorical (Single)"
+    },
+    "WEBRELY": {
+      "type": "string",
+      "title": "WEBRELY",
+      "description": "Categorical (Single)"
+    },
+    "VAXDOHARM": {
+      "type": "string",
+      "title": "VAXDOHARM",
+      "description": "Categorical (Single)"
+    },
+    "IMMUNBETR": {
+      "type": "string",
+      "title": "IMMUNBETR",
+      "description": "Categorical (Single)"
+    },
+    "HLTHPRB": {
+      "type": "string",
+      "title": "HLTHPRB",
+      "description": "Categorical (Single)"
+    },
+    "HLTHPAIN": {
+      "type": "string",
+      "title": "HLTHPAIN",
+      "description": "Categorical (Single)"
+    },
+    "HLTHDEP": {
+      "type": "string",
+      "title": "HLTHDEP",
+      "description": "Categorical (Single)"
+    },
+    "HLTHCONF": {
+      "type": "string",
+      "title": "HLTHCONF",
+      "description": "Categorical (Single)"
+    },
+    "HLTHNOT": {
+      "type": "string",
+      "title": "HLTHNOT",
+      "description": "Categorical (Single)"
+    },
+    "DOCVST": {
+      "type": "string",
+      "title": "DOCVST",
+      "description": "Categorical (Single)"
+    },
+    "DOCALT": {
+      "type": "string",
+      "title": "DOCALT",
+      "description": "Categorical (Single)"
+    },
+    "MEDPAY": {
+      "type": "string",
+      "title": "MEDPAY",
+      "description": "Categorical (Single)"
+    },
+    "MEDCOMMT": {
+      "type": "string",
+      "title": "MEDCOMMT",
+      "description": "Categorical (Single)"
+    },
+    "MEDWTLST": {
+      "type": "string",
+      "title": "MEDWTLST",
+      "description": "Categorical (Single)"
+    },
+    "MEDBEST": {
+      "type": "string",
+      "title": "MEDBEST",
+      "description": "Categorical (Single)"
+    },
+    "HLTHSAT": {
+      "type": "string",
+      "title": "HLTHSAT",
+      "description": "Categorical (Single)"
+    },
+    "DOCSAT": {
+      "type": "string",
+      "title": "DOCSAT",
+      "description": "Categorical (Single)"
+    },
+    "ALTSAT": {
+      "type": "string",
+      "title": "ALTSAT",
+      "description": "Categorical (Single)"
+    },
+    "SMOKEDAY": {
+      "type": "string",
+      "title": "SMOKEDAY",
+      "description": "Categorical (Single)"
+    },
+    "DRINKDAY": {
+      "type": "string",
+      "title": "DRINKDAY",
+      "description": "Categorical (Single)"
+    },
+    "PHYSACT": {
+      "type": "string",
+      "title": "PHYSACT",
+      "description": "Categorical (Single)"
+    },
+    "FRTVEGS": {
+      "type": "string",
+      "title": "FRTVEGS",
+      "description": "Categorical (Single)"
+    },
+    "ISSPHEALTH": {
+      "type": "string",
+      "title": "ISSPHEALTH",
+      "description": "Categorical (Single)"
+    },
+    "DISBLTY": {
+      "type": "string",
+      "title": "DISBLTY",
+      "description": "Categorical (Single)"
+    },
+    "RHEIGHTFT": {
+      "type": "string",
+      "title": "RHEIGHTFT",
+      "description": "Long [4 .. 7]"
+    },
+    "RHEIGHTIN": {
+      "type": "string",
+      "title": "RHEIGHTIN",
+      "description": "Long [0 .. 11]"
+    },
+    "RWEIGHT": {
+      "type": "string",
+      "title": "RWEIGHT",
+      "description": "Long [80 .. 999]"
+    },
+    "SHUTBUS": {
+      "type": "string",
+      "title": "SHUTBUS",
+      "description": "Categorical (Single)"
+    },
+    "STAYHOME": {
+      "type": "string",
+      "title": "STAYHOME",
+      "description": "Categorical (Single)"
+    },
+    "MOBILSURV": {
+      "type": "string",
+      "title": "MOBILSURV",
+      "description": "Categorical (Single)"
+    },
+    "REQMASKS": {
+      "type": "string",
+      "title": "REQMASKS",
+      "description": "Categorical (Single)"
+    },
+    "BANGATHER": {
+      "type": "string",
+      "title": "BANGATHER",
+      "description": "Categorical (Single)"
+    },
+    "INSTYPE": {
+      "type": "string",
+      "title": "INSTYPE",
+      "description": "Categorical (Single)"
+    },
+    "INSTYPESP": {
+      "type": "string",
+      "title": "INSTYPESP",
+      "description": "Text"
+    },
+    "ENDD": {
+      "type": "string",
+      "title": "ENDD",
+      "description": "Info"
+    },
+    "WRKSTAT": {
+      "type": "string",
+      "title": "WRKSTAT",
+      "description": "Categorical (Single)"
+    },
+    "WORKFOR1": {
+      "type": "string",
+      "title": "WORKFOR1",
+      "description": "Categorical (Single)"
+    },
+    "OWNSTOCK": {
+      "type": "string",
+      "title": "OWNSTOCK",
+      "description": "Categorical (Single)"
+    },
+    "STOCKVAL": {
+      "type": "string",
+      "title": "STOCKVAL",
+      "description": "Categorical (Single)"
+    },
+    "STOCKYR": {
+      "type": "string",
+      "title": "STOCKYR",
+      "description": "Categorical (Single)"
+    },
+    "STOCKYRVAL": {
+      "type": "string",
+      "title": "STOCKYRVAL",
+      "description": "Categorical (Single)"
+    },
+    "ESOP": {
+      "type": "string",
+      "title": "ESOP",
+      "description": "Categorical (Single)"
+    },
+    "BUYVALUE": {
+      "type": "string",
+      "title": "BUYVALUE",
+      "description": "Long [0 .. 100]"
+    },
+    "STOCKOPS": {
+      "type": "string",
+      "title": "STOCKOPS",
+      "description": "Categorical (Single)"
+    },
+    "STOCKOPTYR": {
+      "type": "string",
+      "title": "STOCKOPTYR",
+      "description": "Categorical (Single)"
+    },
+    "STOPTYRAMT": {
+      "type": "string",
+      "title": "STOPTYRAMT",
+      "description": "Categorical (Single)"
+    },
+    "EXTRAPAY": {
+      "type": "string",
+      "title": "EXTRAPAY",
+      "description": "Categorical (Single)"
+    },
+    "COMPPERF": {
+      "type": "string",
+      "title": "COMPPERF",
+      "description": "Categorical (Single)"
+    },
+    "DEPTPERF": {
+      "type": "string",
+      "title": "DEPTPERF",
+      "description": "Categorical (Single)"
+    },
+    "INDPERF": {
+      "type": "string",
+      "title": "INDPERF",
+      "description": "Categorical (Single)"
+    },
+    "EXTR2021": {
+      "type": "string",
+      "title": "EXTR2021",
+      "description": "Categorical (Single)"
+    },
+    "EXTRAVAL": {
+      "type": "string",
+      "title": "EXTRAVAL",
+      "description": "Categorical (Single)"
+    },
+    "EXTRAYR": {
+      "type": "string",
+      "title": "EXTRAYR",
+      "description": "Long [1900 .. 2022]"
+    }
+  },
+  "required": [
+    "WEBDOCEXP",
+    "WEBSYMPT",
+    "WEBDRADV",
+    "WEBRELY",
+    "VAXDOHARM",
+    "IMMUNBETR",
+    "HLTHPRB",
+    "HLTHPAIN",
+    "HLTHDEP",
+    "HLTHCONF",
+    "HLTHNOT",
+    "DOCVST",
+    "DOCALT",
+    "MEDPAY",
+    "MEDCOMMT",
+    "MEDWTLST",
+    "MEDBEST",
+    "HLTHSAT",
+    "DOCSAT",
+    "ALTSAT",
+    "SMOKEDAY",
+    "DRINKDAY",
+    "PHYSACT",
+    "FRTVEGS",
+    "ISSPHEALTH",
+    "DISBLTY",
+    "RHEIGHTFT",
+    "RHEIGHTIN",
+    "RWEIGHT",
+    "SHUTBUS",
+    "STAYHOME",
+    "MOBILSURV",
+    "REQMASKS",
+    "BANGATHER",
+    "INSTYPE",
+    "INSTYPESP",
+    "ENDD",
+    "WRKSTAT",
+    "WORKFOR1",
+    "OWNSTOCK",
+    "STOCKVAL",
+    "STOCKYR",
+    "STOCKYRVAL",
+    "ESOP",
+    "BUYVALUE",
+    "STOCKOPS",
+    "STOCKOPTYR",
+    "STOPTYRAMT",
+    "EXTRAPAY",
+    "COMPPERF",
+    "DEPTPERF",
+    "INDPERF",
+    "EXTR2021",
+    "EXTRAVAL",
+    "EXTRAYR"
+  ]
+}

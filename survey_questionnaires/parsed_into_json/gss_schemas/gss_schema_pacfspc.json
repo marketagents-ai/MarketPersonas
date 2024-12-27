@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PACFSPC",
+  "description": "Questions related to PACFSPC",
+  "properties": {
+    "PACFSPC": {
+      "type": "string",
+      "title": "PACFSPC",
+      "description": "Please name other Pacific Islander, for example Tongan, Fijian, Marshallese etc."
+    }
+  },
+  "required": [
+    "PACFSPC"
+  ]
+}

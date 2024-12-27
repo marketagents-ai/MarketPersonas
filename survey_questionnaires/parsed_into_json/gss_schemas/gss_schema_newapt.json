@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NEWAPT",
+  "description": "Questions related to NEWAPT",
+  "properties": {
+    "NEWAPT": {
+      "type": "string",
+      "title": "NEWAPT",
+      "description": "Apt:"
+    }
+  },
+  "required": [
+    "NEWAPT"
+  ]
+}

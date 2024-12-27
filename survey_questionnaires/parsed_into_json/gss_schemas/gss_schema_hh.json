@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HH",
+  "description": "Questions related to HH",
+  "properties": {
+    "HH": {
+      "type": "string",
+      "title": "HH",
+      "description": "HH[{b}].NAME.FNAME=Format(HH[{b}].NAME.FNAME,\"w\")\nHH[{b}].NAME.LNAME=Format(HH[{b}].NAME.LNAME,\"w\")\nEnd If\nIf QUEXMODE.ContainsAny({capi,phone}) Then\nrosttable=\"<br/><br/><u>HH MEMBERS:</u><br/>\"\nElse\nIf QUEXLANG = {ESN} Then\nrosttable=\"<br/><br/><u>Miembros actuales del hogar:</u><br/>\"\nElse\nrosttable=\"<br/><br/><u>Current Household Members:</u><br/>\"\nEnd If\nEnd If\nIf itemLooped.QuestionName <> \"A\" And itemLooped.QuestionName <> \"B\" And\nitemLooped.QuestionName <> \"K\" And itemLooped.QuestionName <> \"L\" And\nitemLooped.QuestionName <> \"M\" And itemLooped.QuestionName <> \"N\" Then\nLabelHHName:\nitemLooped.hhtextfill1=itemLooped.QuestionName\nitemLooped.hhtextfill2=itemLooped.QuestionName\nIf itemLooped.QuestionName = \"j\" Then\nExit For\nEnd If\nitemLooped.WHOELSE.Label.Inserts[\"roster\"]=MakeString(rosttable,FillRoster(HH, REMOVE,\"\"))\nitemLooped.whoelsefill={liv}\nIf itemLooped.QuestionName = \"K\" Or itemLooped.QuestionName = \"L\" Or itemLooped.QuestionName\n= \"M\" Or itemLooped.QuestionName = \"N\" Then\nLabelTempHHName:\nitemLooped.hhtextfill1=itemLooped.QuestionName\nitemLooped.hhtextfill2=itemLooped.QuestionName\nitemLooped.WHOELSE.Label.Inserts[\"roster\"]=MakeString(rosttable,FillRoster(HH, REMOVE,\"\"))\nitemLooped.whoelsefill={vis}\nIf HASRELSP = {yes} Then\nHH.Categories={a,b,c,d,e,f,g,h,i,j,k,l,m,n}\nElse\nHH.Categories={a,c,d,e,f,g,h,i,j,k,l,m,n}\nEnd If\nIf Not IsEmpty(itemLooped.NAME.FNAME) Then\nREMOVE.Categories=REMOVE.Categories+itemLooped.QuestionName\nREMOVE.Categories[itemLooped.QuestionName].Label.Inserts[\"name\"]=itemLooped.NAME.FNAME\nEnd If\nIf HASRELSP = {yes} Then\nHH.Categories={a,b,c,d,e,f,g,h,i,j,k,l,m,n}\nElse\nHH.Categories={a,c,d,e,f,g,h,i,j,k,l,m,n}\nEnd If\nIf (Not REMOVE.ContainsAny(ItemLooped.QuestionName)) And Not\nIsEmpty(itemLooped.NAME.FNAME) Then\nRESPNUM.Categories=RESPNUM.Categories+itemLooped.QuestionName\nRESPNUM.Categories[itemLooped.QuestionName].Label.Inserts[\"name\"]=itemLooped.NAME.FNAME\nEnd If"
+    }
+  },
+  "required": [
+    "HH",
+    "HH"
+  ]
+}

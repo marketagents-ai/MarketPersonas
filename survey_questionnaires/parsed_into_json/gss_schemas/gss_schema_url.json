@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: URL",
+  "description": "Questions related to URL",
+  "properties": {
+    "URL": {
+      "type": "string",
+      "title": "URL",
+      "description": "Categories: {fulacc} {noacc} {dontknow} {refused} {noanswer} R SUCCESSFULLY ACCESSES HANDCARDS R CANNOT OR DOES NOT ACCESS HANDCARDS Don't know REFUSED NA End If ElseIf QUEXMODE.ContainsAny({capi}) Then"
+    }
+  },
+  "required": [
+    "URL"
+  ]
+}

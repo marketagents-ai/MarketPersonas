@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PROTCHRH",
+  "description": "Questions related to PROTCHRH",
+  "properties": {
+    "PROTCHRH": {
+      "type": "string",
+      "title": "PROTCHRH",
+      "description": "Would you consider that a Protestant church?",
+      "enum": [
+        "yes",
+        "no",
+        "not_sure",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Not sure",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PROTCHRH"
+  ]
+}

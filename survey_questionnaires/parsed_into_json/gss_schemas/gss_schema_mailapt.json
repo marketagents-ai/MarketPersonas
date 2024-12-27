@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MAILAPT",
+  "description": "Questions related to MAILAPT",
+  "properties": {
+    "MAILAPT": {
+      "type": "string",
+      "title": "MAILAPT",
+      "description": "Apt:"
+    }
+  },
+  "required": [
+    "MAILAPT"
+  ]
+}

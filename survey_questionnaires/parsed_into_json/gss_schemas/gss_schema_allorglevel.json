@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ALLORGLEVEL",
+  "description": "Questions related to ALLORGLEVEL",
+  "properties": {
+    "ALLORGLEVEL": {
+      "type": "string",
+      "title": "ALLORGLEVEL",
+      "description": "(To what extent to do you agree or disagree with the following statements?) In my organization, the prevention of stress involves all levels of the organization.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ALLORGLEVEL"
+  ]
+}

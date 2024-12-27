@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPCOL",
+  "description": "Questions related to SPCOL",
+  "properties": {
+    "SPCOL": {
+      "type": "string",
+      "title": "SPCOL",
+      "description": "Did your {response to _spfill1} ever complete one or more years of college for credit -- not including schooling such as business college, technical, or vocational school?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If SPCOL = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "SPCOL"
+  ]
+}

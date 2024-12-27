@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDG",
+  "description": "Questions related to ENDG",
+  "properties": {
+    "ENDG": {
+      "type": "string",
+      "title": "ENDG",
+      "description": "FOR TESTING ONLY:  END OF SECTION J\npoltrtblkfill: Categorical (Single)\nCategories:\n{x}\n{y}\nWhites better than Blacks, treat them both the same, or treat Blacks\nbetter than Whites\nBlacks better than Whites, treat them both the same, or treat Whites\nbetter than Blacks\npoltrtb1fill: Categorical (Single)\nCategories:\n{x}\n{y}\nmuch better, moderately better, or a little better\na little better, moderately better, or much better\npoltrthspfill: Categorical (Single)\nCategories:\n{x}\n{y}\nShowName: Info\nWhites better than Latinos, treat them both the same, or treat Latinos\nbetter than Whites\nLatinos better than Whites, treat them both the same, or treat Whites\nbetter than Latinos\nFOR TESTING ONLY:  NAME = {response to fname} {response to mname} {response to lname}\nShowPhone: Info\nFOR TESTING ONLY:  PHONE = {response to PHONE}\ncashfill: Categorical (Single)\nCategories:\n{CAPI}\n{CAWI}\n{PHONE}\nt_redirect1: Info\ncash, a check, or a gift card from one of several online retailers. Cash\ncan be provided at the end of this interview\na check, or a gift card from one of several online retailers.\na check, or a gift card from one of several online retailers.\nhttps://websurvey.norc.org/mrIWeb/mrIWeb.dll?I.Project=tgssnea&pin={PIN}\nt_redirect2: Info\nhttps://websurvey.norc.org/mrIWeb/mrIWeb.dll?I.Project=tgssnext&pin={PIN}\np_redirect1: Info\nhttps://websurvey.norc.org/mrIWeb/mrIWeb.dll?I.Project=gssnea&pin={PIN}\np_redirect2: Info\nhttps://websurvey.norc.org/mrIWeb/mrIWeb.dll?I.Project=gssnext&pin={PIN}"
+    }
+  },
+  "required": [
+    "ENDG",
+    "ENDG"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: STRMGTSUP",
+  "description": "Questions related to STRMGTSUP",
+  "properties": {
+    "STRMGTSUP": {
+      "type": "string",
+      "title": "STRMGTSUP",
+      "description": "To what extent to do you agree or disagree with the following statements? Senior management show support for stress prevention through involvement and commitment.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly disagree",
+        "Disagree",
+        "Neither agree nor disagree",
+        "Agree",
+        "Strongly agree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "STRMGTSUP"
+  ]
+}

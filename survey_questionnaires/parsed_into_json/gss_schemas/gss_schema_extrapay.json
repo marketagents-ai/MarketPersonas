@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EXTRAPAY",
+  "description": "Questions related to EXTRAPAY",
+  "properties": {
+    "EXTRAPAY": {
+      "type": "string",
+      "title": "EXTRAPAY",
+      "description": "In your job are you eligible for any type of performance-based pay, such as individual or group bonuses or any type of profit-sharing?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If EXTRAPAY = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "EXTRAPAY"
+  ]
+}

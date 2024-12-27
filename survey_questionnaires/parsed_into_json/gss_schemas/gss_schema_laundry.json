@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LAUNDRY",
+  "description": "Questions related to LAUNDRY",
+  "properties": {
+    "LAUNDRY1": {
+      "type": "string",
+      "title": "LAUNDRY1",
+      "description": "In your household who does the following things...? Is it always you, usually you, about equal or both together, usually your {response to spousepartfill}, always your {response to spousepartfill}, or by a third person? Does the laundry?",
+      "enum": [
+        "alwaysme",
+        "usuallyme",
+        "equal",
+        "usuallypart",
+        "alwayspart",
+        "thirdperson",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Always me",
+        "Usually me",
+        "About equal or both together",
+        "Usually my {response to spousepartfill}",
+        "Always my {response to spousepartfill}",
+        "Is done by a third person",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "LAUNDRY1"
+  ]
+}

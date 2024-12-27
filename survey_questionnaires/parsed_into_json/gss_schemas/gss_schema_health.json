@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HEALTH",
+  "description": "Questions related to HEALTH",
+  "properties": {
+    "HEALTH": {
+      "type": "string",
+      "title": "HEALTH",
+      "description": "Would you say your own health, in general, is excellent, good, fair, or poor?",
+      "enum": [
+        "excellent",
+        "good",
+        "fair",
+        "poor",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Excellent",
+        "Good",
+        "Fair",
+        "Poor",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "HEALTH1": {
+      "type": "string",
+      "title": "HEALTH1",
+      "description": "Would you say that in general your health is excellent, very good, good, fair, or poor?",
+      "enum": [
+        "_1_excellent",
+        "_2_very_good",
+        "_3_good",
+        "_4_fair",
+        "_5_poor",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Excellent",
+        "Very good",
+        "Good",
+        "Fair",
+        "Poor",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HEALTH",
+    "HEALTH1"
+  ]
+}

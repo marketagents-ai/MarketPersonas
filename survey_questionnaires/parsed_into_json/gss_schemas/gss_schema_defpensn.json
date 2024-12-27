@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DEFPENSN",
+  "description": "Questions related to DEFPENSN",
+  "properties": {
+    "DEFPENSN": {
+      "type": "string",
+      "title": "DEFPENSN",
+      "description": "Do you have a defined benefit pension plan at your company? A defined benefit plan is a pension plan of your employer that promises to pay you a set amount per year when you retire based on your salary and years of work.",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "DEFPENSN"
+  ]
+}

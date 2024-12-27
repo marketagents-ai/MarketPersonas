@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MARTYPE",
+  "description": "Questions related to MARTYPE",
+  "properties": {
+    "MARTYPE": {
+      "type": "string",
+      "title": "MARTYPE",
+      "description": "",
+      "enum": [
+        "marhetero",
+        "marhomo",
+        "mardk"
+      ],
+      "enumDescriptions": [
+        "Marriage between a man and a woman",
+        "Same-gender marriage, a man married to a man or a woman married",
+        "to a woman"
+      ]
+    }
+  },
+  "required": [
+    "MARTYPE"
+  ]
+}

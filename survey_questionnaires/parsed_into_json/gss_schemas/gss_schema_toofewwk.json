@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TOOFEWWK",
+  "description": "Questions related to TOOFEWWK",
+  "properties": {
+    "TOOFEWWK": {
+      "type": "string",
+      "title": "TOOFEWWK",
+      "description": "How often are there not enough people or staff to get all the work done?",
+      "enum": [
+        "_1_often",
+        "_2_sometimes",
+        "_3_rarely",
+        "_4_never",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Often",
+        "Sometimes",
+        "Rarely",
+        "Never",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "TOOFEWWK"
+  ]
+}

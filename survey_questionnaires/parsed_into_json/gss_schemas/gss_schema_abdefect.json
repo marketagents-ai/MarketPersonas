@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ABDEFECT",
+  "description": "Questions related to ABDEFECT",
+  "properties": {
+    "ABDEFECT": {
+      "type": "string",
+      "title": "ABDEFECT",
+      "description": "Do you think it should be possible for a pregnant woman to obtain a legal abortion... If there is a strong chance of serious defect in the baby?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ABDEFECT"
+  ]
+}

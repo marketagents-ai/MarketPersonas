@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SECONDWK",
+  "description": "Questions related to SECONDWK",
+  "properties": {
+    "SECONDWK": {
+      "type": "string",
+      "title": "SECONDWK",
+      "description": "Do you have any jobs besides your main job or do any other work for pay?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SECONDWK"
+  ]
+}

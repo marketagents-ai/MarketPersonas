@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDD",
+  "description": "Questions related to ENDD",
+  "properties": {
+    "ENDD": {
+      "type": "string",
+      "title": "ENDD",
+      "description": "FOR TESTING ONLY:\nTHIS IS THE END OF SECTION D\nSkipSection: Categorical (Single)\nCHOOSE NEXT SECTION TO TEST OR CLICK [NEXT]\nCategories:\n{A}\n{B}\n{C}\nA - Core\nB - Household Composition\nC - ISSP Family and Gender Roles\n{D}\n{E}\n{F}\n{G}\n{H}\n{skiptoend}\n{NA}\nD - ISSP Health and Health Care\nEE - Shared Capitalism\nF - NIOSH\nG - CDC RISKY BEHAVIORS SAQ\nH - Contact/Validation\nSKIP TO END\nDO NOT SKIP\nIf SkipSection = {A} Then\nGoto LabelSectionA\nElseIf SkipSection = {B} Then\nGoto LabelSectionB\nElseIf SkipSection = {D} Then\nGoto LabelSectionD\nElseIf SkipSection = {E} Then\nGoto LabelSectionE\nElseIf SkipSection = {F} Then\nGoto LabelSectionF\nElseIf SkipSection = {G} Then\nGoto LabelSectionG\nElseIf SkipSection = {H} Then\nGoto LabelSectionH\nElseIf SkipSection = {skiptoend} Then\nGoto LabelTimeQuex\nEnd If\nEnd If\nBTIMEEE.Response = SetTime(BTIMEEE)\nBTIMEEE_D.Response = Now()\nLASTSECT.Response = \"EE\"\nIf (BALLOT = 2 And VERXY = \"X\") Or BALLOT = 3 Then\nIf IOM.Info.IsTest Or IOM.ProjectName = \"TGSS2022M\" Then\nWRKSTAT.Errors.AddNew(\"err\",\"FOR TESTING ONLY\")"
+    }
+  },
+  "required": [
+    "ENDD",
+    "ENDD"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDH",
+  "description": "Questions related to ENDH",
+  "properties": {
+    "ENDH": {
+      "type": "string",
+      "title": "ENDH",
+      "description": "FOR TESTING ONLY:  END OF SECTION H\nUnlikelyError: Info\nTHAT IS AN UNLIKELY VALUE. EITHER CHANGE THE RESPONSE OR PRESS [PAGE DOWN] TO\nACCEPT IT.\nFunctions"
+    }
+  },
+  "required": [
+    "ENDH",
+    "ENDH"
+  ]
+}

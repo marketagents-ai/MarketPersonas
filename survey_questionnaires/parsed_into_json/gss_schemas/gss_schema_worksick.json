@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WORKSICK",
+  "description": "Questions related to WORKSICK",
+  "properties": {
+    "WORKSICK": {
+      "type": "integer",
+      "title": "WORKSICK",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of days: ');});During the past 3 months, how many days did you work while physically ill? If none, enter '0'.",
+      "minimum": 0,
+      "maximum": 99
+    }
+  },
+  "required": [
+    "WORKSICK"
+  ]
+}

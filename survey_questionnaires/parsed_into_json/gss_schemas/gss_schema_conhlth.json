@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CONHLTH",
+  "description": "Questions related to CONHLTH",
+  "properties": {
+    "CONHLTH": {
+      "type": "string",
+      "title": "CONHLTH",
+      "description": "In general, how much confidence do you have in the health care system in the United States?",
+      "enum": [
+        "CompleteConfidence",
+        "SomeConfidence",
+        "VeryLittleConfidence",
+        "NoConfidenceAtAll",
+        "cantchoose",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "ce}",
+        "Complete confidence",
+        "A great deal of confidence",
+        "Some confidence",
+        "Very little confidence",
+        "No confidence at all",
+        "Can't choose"
+      ]
+    }
+  },
+  "required": [
+    "CONHLTH"
+  ]
+}

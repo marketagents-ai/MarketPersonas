@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ADOPTUS",
+  "description": "Questions related to ADOPTUS",
+  "properties": {
+    "ADOPTUS": {
+      "type": "string",
+      "title": "ADOPTUS",
+      "description": "Do you think immigrants living in the U.S. should adopt U.S. culture, keep their own culture, or do both?",
+      "enum": [
+        "adus",
+        "owncult",
+        "doboth",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Adopt U.S. culture",
+        "Keep their own culture",
+        "Do both",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ADOPTUS"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OWN",
+  "description": "Questions related to OWN",
+  "properties": {
+    "OWN16SPEC": {
+      "type": "string",
+      "title": "OWN16SPEC",
+      "description": "Please explain the situation with your dwelling at age 16. End If LabelSEX: If QUEXMODE.ContainsAny({CAPI,PHONE}) Then"
+    }
+  },
+  "required": [
+    "OWN16SPEC"
+  ]
+}

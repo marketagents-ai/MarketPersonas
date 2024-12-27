@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: THANKYOU",
+  "description": "Questions related to THANKYOU",
+  "properties": {
+    "THANKYOU": {
+      "type": "string",
+      "title": "THANKYOU",
+      "description": "{response to followonfill}{instr}\nEnd If\nIf FOLLOWON = {continue} Then\nIOM.Texts.EndOfInterview = \"\"\nEnd If\nETIMEH.Response = SetTime(ETIMEH)\nETIMEH_D.Response = Now()\nElapsedTimeH.Response = CalcTime(ElapsedTimeH,BTIMEH,BTIMEH_D,ETIMEH,ETIMEH_D)\nMODECHKH.Response = SetMode(MODECHKH,QUEXMODE)\nLabelTimeQuex:\nTIMEQUEX.Response = SetTime(TIMEQUEX)\nIf QUEXMODE = {CAWI} Then\nqmodetext.Response = \"Web\"\nElseIf QUEXMODE = {PHONE} Then\nqmodetext.Response = \"Phone\"\nElse\nqmodetext.Response = \"In Person\"\nEnd If\nText-Fill Variables\nShowPreloads: Info\nSU_ID = {response to SU_ID}\nBALLOT = {response to BALLOT}\nVERXY = {response to VERXY}\nSAMPTYPE = {response to SAMPTYPE}\nPANEL = {response to PANEL}\nADDRESS = {response to ADDRESS}\nAPRTMNT = {response to APRTMNT}\nCITY = {response to CITY}\nSTATE = {response to STATE}\nZIP = {response to ZIP}\ncurrmotxt: Categorical (Single)\nCategories:\n{January}\n{February}\n{March}\n{April}\n{May}\n{June}\n{July}\n{August}\n{September}\n{October}\n{November}\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\n{December}\nDecember\nintmotxt: Categorical (Single)\nCategories:\n{January}\n{February}\n{March}\n{April}\n{May}\n{June}\n{July}\n{August}\n{September}\n{October}\n{November}\n{December}\nconftext: Info\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember\nBefore we get started, we want to confirm that you participated in an earlier round of the General Social\nSurvey. Please answer the following questions:\nscrphonetext: Info\nWe are having difficulty confirming your responses. Please contact us at (888) 837-8988 or at\nmygss@norc.org for additional assistance or to schedule an interview over the phone. If you would like us\nto contact you instead, please provide a phone number and email address where we can reach you:"
+    },
+    "THANKYOU2": {
+      "type": "string",
+      "title": "THANKYOU2",
+      "description": "You have been selected for a second interview called the American National Election Study in November.\nPlease watch for our invitation letter!\nIf you have questions about your rights as a research participant, you may call the NORC\nInstitutional Review Board Manager toll-free at 1-866-309-0542."
+    }
+  },
+  "required": [
+    "THANKYOU",
+    "THANKYOU",
+    "THANKYOU",
+    "THANKYOU2"
+  ]
+}

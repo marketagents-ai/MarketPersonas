@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NATSCI",
+  "description": "Questions related to NATSCI",
+  "properties": {
+    "NATSCI": {
+      "type": "string",
+      "title": "NATSCI",
+      "description": "Supporting scientific research ... are we spending too much, too little, or about the right amount on Supporting scientific research?",
+      "enum": [
+        "too_little",
+        "about_right",
+        "too_much",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Too little",
+        "About right",
+        "Too much",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NATSCI"
+  ]
+}

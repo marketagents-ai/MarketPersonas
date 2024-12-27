@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ABPOOR",
+  "description": "Questions related to ABPOOR",
+  "properties": {
+    "ABPOOR": {
+      "type": "string",
+      "title": "ABPOOR",
+      "description": "Do you think it should be possible for a pregnant woman to obtain a legal abortion... If the family has a very low income and cannot afford any more children?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ABPOOR"
+  ]
+}

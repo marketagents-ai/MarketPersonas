@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RELPERSN",
+  "description": "Questions related to RELPERSN",
+  "properties": {
+    "RELPERSN": {
+      "type": "string",
+      "title": "RELPERSN",
+      "description": "To what extent do you consider yourself a religious person? Are you very religious, moderately religious, slightly religious, or not religious at all?",
+      "enum": [
+        "very_religious",
+        "moderately_religious",
+        "slightly_religious",
+        "not_religious_at_all",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very religious",
+        "Moderately religious",
+        "Slightly religious",
+        "Not religious at all",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RELPERSN"
+  ]
+}

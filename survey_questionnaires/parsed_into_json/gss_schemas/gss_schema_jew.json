@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: JEW",
+  "description": "Questions related to JEW",
+  "properties": {
+    "JEW": {
+      "type": "string",
+      "title": "JEW",
+      "description": "Do you consider yourself Orthodox, Conservative, Reform or none of these? Orthodox Conservative Reform None of these Other Don't know REFUSED NA",
+      "enum": [
+        "orthodox"
+      ],
+      "enumDescriptions": [
+        "If JEW = {other} Then"
+      ]
+    },
+    "JEW16": {
+      "type": "string",
+      "title": "JEW16",
+      "description": "Were you Orthodox, Conservative, Reform or none of these? Orthodox Conservative Reform None of these Other Don't know REFUSED NA",
+      "enum": [
+        "orthodox"
+      ],
+      "enumDescriptions": [
+        "If JEW16 = {other} Then"
+      ]
+    },
+    "JEW16SP": {
+      "type": "string",
+      "title": "JEW16SP",
+      "description": "Please specify: End If End If"
+    }
+  },
+  "required": [
+    "JEW",
+    "JEW16",
+    "JEW16SP"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RRLTU",
+  "description": "Questions related to RRLTU",
+  "properties": {
+    "RRLTU18": {
+      "type": "string",
+      "title": "RRLTU18",
+      "description": "Are you related in some other way to at least one individual under the age of 18 in this household? For example, you are an aunt or uncle, cousin, or some other relative.",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RRLTU18"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SVYENJOY",
+  "description": "Questions related to SVYENJOY",
+  "properties": {
+    "SVYENJOY": {
+      "type": "string",
+      "title": "SVYENJOY",
+      "description": "Overall, how much do you enjoy participating in surveys? Would you say a great deal, a good bit, some, a little, or not at all?",
+      "enum": [
+        "grtdeal",
+        "gdbit",
+        "some",
+        "alittl",
+        "notatal",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "A great deal",
+        "A good bit",
+        "Some",
+        "A little",
+        "Not at all",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SVYENJOY"
+  ]
+}

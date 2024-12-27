@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PREMARSX",
+  "description": "Questions related to PREMARSX",
+  "properties": {
+    "PREMARSX": {
+      "type": "string",
+      "title": "PREMARSX",
+      "description": "There's been a lot of discussion about the way morals and attitudes about sex are changing in this country.  If a man and a woman have sexual relations before marriage, do you think it is always wrong, almost always  wrong, wrong only sometimes, or not wrong at all?",
+      "enum": [
+        "always_wrong",
+        "almost_always_wrong",
+        "not_wrong_at_all",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Always wrong",
+        "s}",
+        "Not wrong at all",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PREMARSX"
+  ]
+}

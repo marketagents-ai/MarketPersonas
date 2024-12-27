@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HIVTESTMO",
+  "description": "Questions related to HIVTESTMO",
+  "properties": {
+    "HIVTESTMO": {
+      "type": "string",
+      "title": "HIVTESTMO",
+      "description": "Month:",
+      "enum": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+        "dontknow",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+        "Don't know",
+        "Prefer not to answer"
+      ]
+    }
+  },
+  "required": [
+    "HIVTESTMO"
+  ]
+}

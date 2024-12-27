@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: COLCOM",
+  "description": "Questions related to COLCOM",
+  "properties": {
+    "COLCOM": {
+      "type": "string",
+      "title": "COLCOM",
+      "description": "Suppose he is teaching in a college.  Should he be fired, or not?",
+      "enum": [
+        "yes_fired",
+        "not_fired",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes, fired",
+        "Not fired",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "COLCOM"
+  ]
+}

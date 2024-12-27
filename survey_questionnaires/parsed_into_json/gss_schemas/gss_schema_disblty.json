@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DISBLTY",
+  "description": "Questions related to DISBLTY",
+  "properties": {
+    "DISBLTY": {
+      "type": "string",
+      "title": "DISBLTY",
+      "description": "Do you have a long-standing illness, a chronic condition, or a disability?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "DISBLTY"
+  ]
+}

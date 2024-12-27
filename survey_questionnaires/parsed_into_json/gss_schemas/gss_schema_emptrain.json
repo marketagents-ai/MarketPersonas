@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EMPTRAIN",
+  "description": "Questions related to EMPTRAIN",
+  "properties": {
+    "EMPTRAIN": {
+      "type": "string",
+      "title": "EMPTRAIN",
+      "description": "In the last 12 months have you received any formal training from your current employer, such as in classes or seminars sponsored by the employer?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "EMPTRAIN"
+  ]
+}

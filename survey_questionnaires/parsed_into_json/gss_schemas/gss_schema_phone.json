@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PHONE",
+  "description": "Questions related to PHONE",
+  "properties": {
+    "PHONE": {
+      "type": "string",
+      "title": "PHONE",
+      "description": "Phone: End Page - phonepage"
+    }
+  },
+  "required": [
+    "PHONE"
+  ]
+}

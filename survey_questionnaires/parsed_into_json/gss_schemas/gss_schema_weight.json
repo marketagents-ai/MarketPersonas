@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WEIGHT",
+  "description": "Questions related to WEIGHT",
+  "properties": {
+    "WEIGHT": {
+      "type": "integer",
+      "title": "WEIGHT",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Pounds: ');});About how much do you weigh without shoes? Begin Page - HEIGHT About how tall are you without shoes?",
+      "minimum": 80,
+      "maximum": 999
+    }
+  },
+  "required": [
+    "WEIGHT"
+  ]
+}

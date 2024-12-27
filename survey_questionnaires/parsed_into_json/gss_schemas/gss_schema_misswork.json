@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MISSWORK",
+  "description": "Questions related to MISSWORK",
+  "properties": {
+    "MISSWORK": {
+      "type": "integer",
+      "title": "MISSWORK",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of days in past 30 days: ');});During the past 30 days, about how many days did you miss work due to your mental or physical health?",
+      "minimum": 0,
+      "maximum": 30
+    }
+  },
+  "required": [
+    "MISSWORK"
+  ]
+}

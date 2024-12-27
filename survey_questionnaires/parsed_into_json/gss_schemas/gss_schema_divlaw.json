@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DIVLAW",
+  "description": "Questions related to DIVLAW",
+  "properties": {
+    "DIVLAW": {
+      "type": "string",
+      "title": "DIVLAW",
+      "description": "Should divorce in this country be easier or more difficult to obtain than it is now?",
+      "enum": [
+        "easier",
+        "more_difficult",
+        "stay_as_is",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Easier",
+        "More difficult",
+        "Stay as it is",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "DIVLAW"
+  ]
+}

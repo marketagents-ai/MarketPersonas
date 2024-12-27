@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MNTLHLTH",
+  "description": "Questions related to MNTLHLTH",
+  "properties": {
+    "MNTLHLTH": {
+      "type": "integer",
+      "title": "MNTLHLTH",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of days in past 30 days: ');});Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good? If none, enter '0'.",
+      "minimum": 0,
+      "maximum": 30
+    }
+  },
+  "required": [
+    "MNTLHLTH"
+  ]
+}

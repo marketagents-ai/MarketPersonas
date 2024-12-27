@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HEIGHTFT",
+  "description": "Questions related to HEIGHTFT",
+  "properties": {
+    "HEIGHTFT": {
+      "type": "integer",
+      "title": "HEIGHTFT",
+      "description": "Feet:",
+      "minimum": 4,
+      "maximum": 7
+    }
+  },
+  "required": [
+    "HEIGHTFT"
+  ]
+}

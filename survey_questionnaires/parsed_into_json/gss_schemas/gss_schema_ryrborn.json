@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RYRBORN",
+  "description": "Questions related to RYRBORN",
+  "properties": {
+    "RYRBORN": {
+      "type": "integer",
+      "title": "RYRBORN",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Year: ');});In what year were you born? If Not(RYRBORN.Response.Coded) And Not(brthdy.Response.Coded) And Not(brthmo.Response.Coded) Then If currmo > brthmo Or (currmo = brthmo And currdy > brthdy) Then AGECALC.Response = curryr - RYRBORN Else AGECALC.Response = curryr - RYRBORN - 1 End If ElseIf Not(RYRBORN.Response.Coded) And brthdy.Response.Coded And Not(brthmo.Response.Coded) Then If currmo > brthmo Then AGECALC.Response = curryr - RYRBORN Else AGECALC.Response = curryr - RYRBORN - 1 End If ElseIf Not(RYRBORN.Response.Coded) And brthdy.Response.Coded And brthmo.Response.Coded Then AGECALC.Response = curryr - RYRBORN ElseIf Not(RYRBORN.Response.Coded) And Not(brthdy.Response.Coded) Then AGECALC.Response = curryr - RYRBORN End If End If If TIMEA6.Info.OffPathResponse = \"\" Then TIMEA6.Response = Now() Else TIMEA6.Response = TIMEA6.Info.OffPathResponse End If MODECHKA6.Response = SetMode(MODECHKA6,QUEXMODE)",
+      "minimum": 1900,
+      "maximum": 2004
+    }
+  },
+  "required": [
+    "RYRBORN"
+  ]
+}

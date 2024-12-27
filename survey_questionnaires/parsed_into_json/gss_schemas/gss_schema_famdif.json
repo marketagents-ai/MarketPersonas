@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FAMDIF",
+  "description": "Questions related to FAMDIF",
+  "properties": {
+    "FAMDIF16Y": {
+      "type": "string",
+      "title": "FAMDIF16Y",
+      "description": "Which of the following best describes your situation?",
+      "enum": [
+        "other_specify",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "died}",
+        "eparated}",
+        "d_forces}",
+        "One or both parents died",
+        "Parents divorced or separated",
+        "Parent absent in armed forces",
+        "n_institution}"
+      ]
+    },
+    "FAMDIF16": {
+      "type": "string",
+      "title": "FAMDIF16",
+      "description": "Which of the following best describes your situation?",
+      "enum": [
+        "other_specify",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "died}",
+        "eparated}",
+        "d_forces}",
+        "n_institution}"
+      ]
+    }
+  },
+  "required": [
+    "FAMDIF16Y",
+    "FAMDIF16"
+  ]
+}

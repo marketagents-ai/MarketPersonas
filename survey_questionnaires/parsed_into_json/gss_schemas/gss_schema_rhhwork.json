@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RHHWORK",
+  "description": "Questions related to RHHWORK",
+  "properties": {
+    "RHHWORK": {
+      "type": "integer",
+      "title": "RHHWORK",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Hours: ');});Now thinking of your own situation: On average, how many hours a week do you personally spend on household work, not including childcare and leisure time activities?",
+      "minimum": 0,
+      "maximum": 168
+    }
+  },
+  "required": [
+    "RHHWORK"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RGPRNTU",
+  "description": "Questions related to RGPRNTU",
+  "properties": {
+    "RGPRNTU18": {
+      "type": "string",
+      "title": "RGPRNTU18",
+      "description": "Are you the grandparent (or great-grandparent) of at least one individual under the age of 18 in this household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RGPRNTU18"
+  ]
+}

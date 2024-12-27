@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHDAYS",
+  "description": "Questions related to HLTHDAYS",
+  "properties": {
+    "HLTHDAYS": {
+      "type": "integer",
+      "title": "HLTHDAYS",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of days in past 30 days: ');});During the past 30 days, for about how many days did your poor physical or mental health keep you from doing your usual activities, such as self-care, work, or recreation? If none, enter '0'.",
+      "minimum": 0,
+      "maximum": 30
+    }
+  },
+  "required": [
+    "HLTHDAYS"
+  ]
+}

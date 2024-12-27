@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HRS",
+  "description": "Questions related to HRS",
+  "properties": {
+    "HRS1": {
+      "type": "integer",
+      "title": "HRS1",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Hours: ');});How many hours did you work last week, at all jobs? End If If WRKSTAT.ContainsAny({not_at_work}) Then",
+      "minimum": 0,
+      "maximum": 168
+    },
+    "HRS2": {
+      "type": "integer",
+      "title": "HRS2",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Hours: ');});How many hours a week do you usually work, at all jobs? End If If WRKSTAT.ContainsAny({retired,in_school,keeping_house,other_specify}) Then",
+      "minimum": 1,
+      "maximum": 168
+    }
+  },
+  "required": [
+    "HRS1",
+    "HRS2"
+  ]
+}

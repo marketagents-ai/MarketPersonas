@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: USWARY",
+  "description": "Questions related to USWARY",
+  "properties": {
+    "USWARY": {
+      "type": "string",
+      "title": "USWARY",
+      "description": "Do you expect the United States to fight in another world war within the next ten years?",
+      "enum": [
+        "yes",
+        "no",
+        "no_opinion",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "No opinion",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "USWARY"
+  ]
+}

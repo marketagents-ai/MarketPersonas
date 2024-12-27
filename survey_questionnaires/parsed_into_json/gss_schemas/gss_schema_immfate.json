@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: IMMFATE",
+  "description": "Questions related to IMMFATE",
+  "properties": {
+    "IMMFATE": {
+      "type": "string",
+      "title": "IMMFATE",
+      "description": "What should be done about immigrants who are currently living in the U.S. illegally?",
+      "enum": [
+        "citzn",
+        "prmres",
+        "deport",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "They should be allowed to become citizens, provided they meet",
+        "certain requirements",
+        "They should be allowed to become permanent legal residents, but not",
+        "citizens",
+        "They should be identified and deported",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "IMMFATE"
+  ]
+}

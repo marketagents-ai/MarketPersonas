@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ABHLTH",
+  "description": "Questions related to ABHLTH",
+  "properties": {
+    "ABHLTH": {
+      "type": "string",
+      "title": "ABHLTH",
+      "description": "Do you think it should be possible for a pregnant woman to obtain a legal abortion... If the woman's own health is seriously endangered by the pregnancy?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ABHLTH"
+  ]
+}

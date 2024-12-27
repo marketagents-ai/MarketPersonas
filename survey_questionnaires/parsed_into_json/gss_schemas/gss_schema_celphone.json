@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CELPHONE",
+  "description": "Questions related to CELPHONE",
+  "properties": {
+    "CELPHONE": {
+      "type": "string",
+      "title": "CELPHONE",
+      "description": "Do you or any other members of your household have a working cellular phone number?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "CELPHONE"
+  ]
+}

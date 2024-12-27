@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRTYSPEC",
+  "description": "Questions related to PRTYSPEC",
+  "properties": {
+    "PRTYSPEC": {
+      "type": "string",
+      "title": "PRTYSPEC",
+      "description": "Specify other party: End If If PRTYPREF.ContainsAny({Republican,Democrat}) Then"
+    }
+  },
+  "required": [
+    "PRTYSPEC"
+  ]
+}

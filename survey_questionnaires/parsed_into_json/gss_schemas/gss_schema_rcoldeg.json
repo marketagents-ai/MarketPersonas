@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RCOLDEG",
+  "description": "Questions related to RCOLDEG",
+  "properties": {
+    "RCOLDEG": {
+      "type": "string",
+      "title": "RCOLDEG",
+      "description": "Do you have any college degrees?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If RCOLDEG = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "RCOLDEG"
+  ]
+}

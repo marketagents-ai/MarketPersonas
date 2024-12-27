@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: INTERVIEWER",
+  "description": "Questions related to INTERVIEWER",
+  "properties": {
+    "INTERVIEWER": {
+      "type": "string",
+      "title": "INTERVIEWER",
+      "description": "INTERVIEW. YOU WILL BE ABLE TO DO THIS FROM A LINK IN CM-FIELD FOR THIS CASE. IF THIS SECOND ATTEMPT IS UNSUCCESSFUL, PLEASE LEAVE INSTRUCTIONS WITH THE RESPONDENT TO COMPLETE THE FACEBOOK PROTOCOL ON HIS/HER OWN."
+    }
+  },
+  "required": [
+    "INTERVIEWER",
+    "INTERVIEWER",
+    "INTERVIEWER",
+    "INTERVIEWER",
+    "INTERVIEWER"
+  ]
+}

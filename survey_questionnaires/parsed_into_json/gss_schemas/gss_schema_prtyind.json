@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PRTYIND",
+  "description": "Questions related to PRTYIND",
+  "properties": {
+    "PRTYIND": {
+      "type": "string",
+      "title": "PRTYIND",
+      "description": "Do you think of yourself as closer to the Republican or Democratic Party?",
+      "enum": [
+        "republican",
+        "democrat",
+        "neither",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Republican",
+        "Democrat",
+        "Neither",
+        "End If",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "PRTYIND"
+  ]
+}

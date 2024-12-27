@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SEXBIRTH",
+  "description": "Questions related to SEXBIRTH",
+  "properties": {
+    "SEXBIRTH1": {
+      "type": "string",
+      "title": "SEXBIRTH1",
+      "description": "Was your sex recorded as male or female at birth?",
+      "enum": [
+        "male",
+        "female",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Male",
+        "Female",
+        "Don't know",
+        "NA"
+      ]
+    },
+    "SEXBIRTH1J": {
+      "type": "string",
+      "title": "SEXBIRTH1J",
+      "description": "Was your sex recorded as male or female at birth?",
+      "enum": [
+        "male",
+        "female",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Male",
+        "Female",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SEXBIRTH1",
+    "SEXBIRTH1J",
+    "SEXBIRTH1J"
+  ]
+}

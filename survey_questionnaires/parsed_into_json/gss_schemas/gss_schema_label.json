@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: LABEL",
+  "description": "Questions related to LABEL",
+  "properties": {
+    "LABEL_INUSA": {
+      "type": "string",
+      "title": "LABEL_INUSA",
+      "description": "YEARSUSA.QuestionTemplate=\"LeftLabelSub.htm\" MNTHSUSA.QuestionTemplate=\"LeftLabelSub.htm\" Begin Page - INUSA How long have you lived in the United States? If less than a year, please specify the time in months. If you have lived in the United States for more than one period during your life, what is the total number of years you have lived in the United States?"
+    }
+  },
+  "required": [
+    "LABEL_INUSA"
+  ]
+}

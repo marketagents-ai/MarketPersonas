@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PARTNRS",
+  "description": "Questions related to PARTNRS",
+  "properties": {
+    "PARTNRS5": {
+      "type": "string",
+      "title": "PARTNRS5",
+      "description": "Now thinking about the past five years--the time since {response to currmotxt} 2017, and including the past 12 months. How many sex partners have you had in that five year period?",
+      "enum": [
+        "no_partners",
+        "_1_partner",
+        "_2_partners",
+        "_3_partners",
+        "_4_partners",
+        "_510_partners",
+        "_1120_partners",
+        "_21100_partners",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "rs}",
+        "No partners",
+        "1 partner",
+        "2 partners",
+        "3 partners",
+        "4 partners",
+        "5-10 partners",
+        "11-20 partners",
+        "21-100 partners",
+        "More than 100 partners",
+        "Don't know",
+        "NA",
+        "If PARTNRS5 = {no_partners} Then Goto LabelNUMWOMEN"
+      ]
+    }
+  },
+  "required": [
+    "PARTNRS5"
+  ]
+}

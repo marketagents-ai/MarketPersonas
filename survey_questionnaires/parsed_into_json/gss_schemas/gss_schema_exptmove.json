@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EXPTMOVE",
+  "description": "Questions related to EXPTMOVE",
+  "properties": {
+    "EXPTMOVE": {
+      "type": "string",
+      "title": "EXPTMOVE",
+      "description": "Do you expect your address to change in the near future?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "EXPTMOVE"
+  ]
+}

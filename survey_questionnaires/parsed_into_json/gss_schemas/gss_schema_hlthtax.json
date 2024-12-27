@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHTAX",
+  "description": "Questions related to HLTHTAX",
+  "properties": {
+    "HLTHTAX": {
+      "type": "string",
+      "title": "HLTHTAX",
+      "description": "How willing would you be to pay higher taxes to improve the level of health care for all people in the United States? Would you be ...",
+      "enum": [
+        "d6_1",
+        "d6_2",
+        "d6_3",
+        "d6_4",
+        "d6_5",
+        "d5_8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Very willing",
+        "Fairly willing",
+        "Neither willing nor unwilling",
+        "Fairly unwilling",
+        "Very unwilling",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HLTHTAX"
+  ]
+}

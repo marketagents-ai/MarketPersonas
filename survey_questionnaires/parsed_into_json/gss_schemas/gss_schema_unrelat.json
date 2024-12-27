@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: UNRELAT",
+  "description": "Questions related to UNRELAT",
+  "properties": {
+    "UNRELAT1": {
+      "type": "string",
+      "title": "UNRELAT1",
+      "description": "Now we would like you to think about the people who live in this household. Please include any persons who usually live here but are away temporarily--on business, on vacation, or in a general hospital--and include all babies and small children. Do not include college students who are living away at college, persons stationed away from here in the armed forces, or persons away in institutions. Is everyone in this household related to you in some way?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "UNRELAT2": {
+      "type": "integer",
+      "title": "UNRELAT2",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of persons: ');});How many persons in this household are not related to you in any way? End If",
+      "minimum": 1,
+      "maximum": 20
+    }
+  },
+  "required": [
+    "UNRELAT1",
+    "UNRELAT2"
+  ]
+}

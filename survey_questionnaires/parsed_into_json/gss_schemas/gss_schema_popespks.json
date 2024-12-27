@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: POPESPKS",
+  "description": "Questions related to POPESPKS",
+  "properties": {
+    "POPESPKS": {
+      "type": "string",
+      "title": "POPESPKS",
+      "description": "We are interested in what American Catholics think about religious matters.  Please select the answer from this card that comes closest to your own personal opinion about the following statement: Under certain conditions, the pope is infallible when he speaks on matters of faith and morals.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Certainly true",
+        "Probably true",
+        "I am uncertain whether this is true or false",
+        "Probably false",
+        "Certainly false",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "POPESPKS"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WKPRAISE",
+  "description": "Questions related to WKPRAISE",
+  "properties": {
+    "WKPRAISE": {
+      "type": "string",
+      "title": "WKPRAISE",
+      "description": "When you do your job well, are you likely to be praised by your supervisor or employer?",
+      "enum": [
+        "_1_yes",
+        "_2_maybe",
+        "_3_no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "Maybe",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WKPRAISE"
+  ]
+}

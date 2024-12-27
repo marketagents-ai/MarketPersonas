@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HAPMAR",
+  "description": "Questions related to HAPMAR",
+  "properties": {
+    "HAPMAR": {
+      "type": "string",
+      "title": "HAPMAR",
+      "description": "Taking things all together, how would you describe your marriage? Would you say that your marriage is very happy, pretty happy, or not too happy?",
+      "enum": [
+        "very_happy",
+        "pretty_happy",
+        "not_too_happy",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very happy",
+        "Pretty happy",
+        "Not too happy",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HAPMAR"
+  ]
+}

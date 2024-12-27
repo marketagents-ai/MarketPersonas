@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: DIPGEDSP",
+  "description": "Questions related to DIPGEDSP",
+  "properties": {
+    "DIPGEDSP": {
+      "type": "string",
+      "title": "DIPGEDSP",
+      "description": "Please specify End If If DIPGED.ContainsAny({ged,hsdip}) Then DIPGEDfill.Response = DIPGED Else DIPGEDfill.Response = {other} End If End If"
+    }
+  },
+  "required": [
+    "DIPGEDSP"
+  ]
+}

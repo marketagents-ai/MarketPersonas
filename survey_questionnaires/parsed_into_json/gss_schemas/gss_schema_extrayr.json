@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EXTRAYR",
+  "description": "Questions related to EXTRAYR",
+  "properties": {
+    "EXTRAYR": {
+      "type": "integer",
+      "title": "EXTRAYR",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Year: ');});What was the most recent year in which you received these performance-based payments? Performance-based pay means individual or group bonuses, commissions, or any type of profit- sharing.",
+      "minimum": 1900,
+      "maximum": 2022
+    }
+  },
+  "required": [
+    "EXTRAYR"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PACOLCOM",
+  "description": "Questions related to PACOLCOM",
+  "properties": {
+    "PACOLCOM": {
+      "type": "string",
+      "title": "PACOLCOM",
+      "description": "How many years did he complete?",
+      "enum": [
+        "_1_year",
+        "_2_years",
+        "_3_years",
+        "_4_years",
+        "_5_years",
+        "_6_years",
+        "_7_years",
+        "_8_or_more_years",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "1 year",
+        "2 years",
+        "3 years",
+        "4  years",
+        "5 years",
+        "6 years",
+        "7 years",
+        "8 or more  years",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PACOLCOM"
+  ]
+}

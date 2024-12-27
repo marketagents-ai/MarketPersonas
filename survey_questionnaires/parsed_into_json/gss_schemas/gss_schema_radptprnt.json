@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RADPTPRNT",
+  "description": "Questions related to RADPTPRNT",
+  "properties": {
+    "RADPTPRNT18": {
+      "type": "string",
+      "title": "RADPTPRNT18",
+      "description": "To clarify, are you the adoptive parent of at least one individual 18 or older in your household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "RADPTPRNT": {
+      "type": "string",
+      "title": "RADPTPRNT",
+      "description": "Are you the adoptive parent of at least one individual under the age of 18 in this household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RADPTPRNT18",
+    "RADPTPRNT"
+  ]
+}

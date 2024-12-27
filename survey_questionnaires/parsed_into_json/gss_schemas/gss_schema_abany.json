@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ABANY",
+  "description": "Questions related to ABANY",
+  "properties": {
+    "ABANY": {
+      "type": "string",
+      "title": "ABANY",
+      "description": "Do you think it should be possible for a pregnant woman to obtain a legal abortion... If the woman wants it for any reason?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "ABANY"
+  ]
+}

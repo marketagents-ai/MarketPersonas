@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FPREVNAME",
+  "description": "Questions related to FPREVNAME",
+  "properties": {
+    "FPREVNAME": {
+      "type": "string",
+      "title": "FPREVNAME",
+      "description": "First name:"
+    }
+  },
+  "required": [
+    "FPREVNAME"
+  ]
+}

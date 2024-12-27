@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HAPCOHAB",
+  "description": "Questions related to HAPCOHAB",
+  "properties": {
+    "HAPCOHAB": {
+      "type": "string",
+      "title": "HAPCOHAB",
+      "description": "Taking things all together, would you say that your relationship with your partner is very happy, pretty happy, or not too happy?",
+      "enum": [
+        "very_happy",
+        "pretty_happy",
+        "not_too_happy",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Very happy",
+        "Pretty happy",
+        "Not too happy",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "HAPCOHAB"
+  ]
+}

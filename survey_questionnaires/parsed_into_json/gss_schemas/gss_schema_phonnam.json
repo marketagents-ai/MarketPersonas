@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PHONNAM",
+  "description": "Questions related to PHONNAM",
+  "properties": {
+    "PHONNAM": {
+      "type": "string",
+      "title": "PHONNAM",
+      "description": "In whose name is your phone listed?",
+      "enum": [
+        "r_s_name",
+        "other_specify",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Your name",
+        "Someone else's name",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PHONNAM"
+  ]
+}

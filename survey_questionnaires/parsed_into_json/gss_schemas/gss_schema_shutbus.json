@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SHUTBUS",
+  "description": "Questions related to SHUTBUS",
+  "properties": {
+    "SHUTBUS": {
+      "type": "string",
+      "title": "SHUTBUS",
+      "description": "Do you think the United States government should or should not have the right to do the following at times of severe epidemics? Shut down businesses and places of employment.",
+      "enum": [
+        "defright",
+        "probright",
+        "probnotrt",
+        "defbitrt",
+        "contchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Definitely should have the right",
+        "Probably should have the right",
+        "Probably should not have the right",
+        "Definitely should not have the right",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SHUTBUS"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MARBLK",
+  "description": "Questions related to MARBLK",
+  "properties": {
+    "MARBLK": {
+      "type": "string",
+      "title": "MARBLK",
+      "description": "What about having a close relative marry a Black person?",
+      "enum": [
+        "very_in_favor",
+        "somewhat_in_favor",
+        "somewhat_opposed",
+        "very_opposed",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "pposed}",
+        "Very in favor",
+        "Somewhat in favor",
+        "Neither in favor nor opposed",
+        "Somewhat opposed",
+        "Very opposed",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "MARBLK"
+  ]
+}

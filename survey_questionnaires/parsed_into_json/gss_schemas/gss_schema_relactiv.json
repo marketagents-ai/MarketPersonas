@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RELACTIV",
+  "description": "Questions related to RELACTIV",
+  "properties": {
+    "RELACTIV": {
+      "type": "string",
+      "title": "RELACTIV",
+      "description": "How often do you take part in the activities and organizations of a church or place of worship other than attending service?",
+      "enum": [
+        "never",
+        "several_times_a_year",
+        "about_once_a_month",
+        "_23_times_a_month",
+        "nearly_every_week",
+        "every_week",
+        "once_a_day",
+        "several_times_a_day",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "About once or twice a year",
+        "Never",
+        "Less than once a year",
+        "r}",
+        "a_year}",
+        "2-3 times a month",
+        "Nearly every week",
+        "Every week",
+        "Once a day",
+        "Several times a day",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "RELACTIV"
+  ]
+}

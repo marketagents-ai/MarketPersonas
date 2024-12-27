@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FINALTER",
+  "description": "Questions related to FINALTER",
+  "properties": {
+    "FINALTER": {
+      "type": "string",
+      "title": "FINALTER",
+      "description": "During the last few years, has your financial situation been getting better, getting worse, or has it stayed the same?",
+      "enum": [
+        "getting_better",
+        "getting_worse",
+        "stayed_the_same",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Getting better",
+        "Getting worse",
+        "Stayed the same",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FINALTER"
+  ]
+}

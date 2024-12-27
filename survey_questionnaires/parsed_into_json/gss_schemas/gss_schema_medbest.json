@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MEDBEST",
+  "description": "Questions related to MEDBEST",
+  "properties": {
+    "MEDBEST": {
+      "type": "string",
+      "title": "MEDBEST",
+      "description": "How likely is it that if you become seriously ill, you would get or not get the best treatment available in the United States?",
+      "enum": [
+        "d13_1",
+        "d13_2",
+        "d13_3",
+        "d13_4",
+        "d13_5",
+        "d13_8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "It's certain I would get",
+        "It's likely I would get",
+        "Equal chance of getting or not getting",
+        "It's likely I would not get",
+        "It's certain I would not get",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "MEDBEST"
+  ]
+}

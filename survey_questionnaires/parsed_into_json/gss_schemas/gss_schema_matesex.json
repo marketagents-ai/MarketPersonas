@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MATESEX",
+  "description": "Questions related to MATESEX",
+  "properties": {
+    "MATESEX": {
+      "type": "string",
+      "title": "MATESEX",
+      "description": "Was one of the partners your husband or wife or regular sex partner?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If PARTNERS = {_1_partner} and MATESEX = {yes} Then Goto LabelSEXSEX",
+        "LabelG11:",
+        "If IOM.RoutingContext = \"CAPI\" Then",
+        "Else"
+      ]
+    }
+  },
+  "required": [
+    "MATESEX"
+  ]
+}

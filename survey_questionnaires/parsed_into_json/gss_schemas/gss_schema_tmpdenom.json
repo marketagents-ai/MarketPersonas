@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TMPDENOM",
+  "description": "Questions related to TMPDENOM",
+  "properties": {
+    "TMPDENOM": {
+      "type": "string",
+      "title": "TMPDENOM",
+      "description": "What specific denomination is that, if any?",
+      "enum": [
+        "baptist",
+        "methodist",
+        "lutheran",
+        "presbyterian",
+        "episcopal_church",
+        "other_specify",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "n_or_nondenominationa",
+        "l_church}",
+        "Baptist",
+        "Methodist",
+        "Lutheran",
+        "Presbyterian",
+        "Episcopal church",
+        "Other",
+        "No denomination or non-denominational church",
+        "Don't know",
+        "NA",
+        "If TMPDENOM = {baptist} Then"
+      ]
+    }
+  },
+  "required": [
+    "TMPDENOM"
+  ]
+}

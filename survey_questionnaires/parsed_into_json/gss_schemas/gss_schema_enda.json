@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDA",
+  "description": "Questions related to ENDA",
+  "properties": {
+    "ENDA": {
+      "type": "string",
+      "title": "ENDA",
+      "description": "THIS IS THE END OF SECTION A\nEnd If\nLabelSkipSection:\nIf IOM.Info.IsTest Or IOM.ProjectName = \"TGSS2022M\" Then\nSkipSection: Categorical (Single)\nCHOOSE NEXT SECTION TO TEST OR CLICK [NEXT]\nCategories:\n{A}\n{B}\n{C}\n{D}\n{E}\n{F}\n{G}\n{H}\n{skiptoend}\n{NA}\nA - Core\nB - Household Composition\nC - ISSP Family and Gender Roles\nD - ISSP Health and Health Care\nEE - Shared Capitalism\nF - NIOSH\nG - CDC RISKY BEHAVIORS SAQ\nH - Contact/Validation\nSKIP TO END\nDO NOT SKIP\nIf SkipSection = {A} Then\nGoto LabelSectionA\nElseIf SkipSection = {B} Then\nGoto LabelSectionB\nElseIf SkipSection = {C} Then\nGoto LabelSectionC\nElseIf SkipSection = {D} Then\nGoto LabelSectionD\nElseIf SkipSection = {E} Then\nGoto LabelSectionE\nElseIf SkipSection = {F} Then\nGoto LabelSectionF\nElseIf SkipSection = {G} Then\nGoto LabelSectionG\nElseIf SkipSection = {H} Then\nGoto LabelSectionH\nElseIf SkipSection = {skiptoend} Then\nGoto LabelTimeQuex\nEnd If\nEnd If\nBTIMEB.Response = SetTime(BTIMEB)\nBTIMEB_D.Response = Now()\nLASTSECT.Response = \"B\"\nrostintrotxt.Response = {hh}\nrostinsttxt.Response = {hh}\nIf QUEXMODE.ContainsAny({capi,phone}) Then\nHH[{a}].NAME.Label.Inserts[\"info\"]=ROSTINFO.Label\nHH[{b}].NAME.Label.Inserts[\"info\"]=\"\"\nEnd If\nBegin Page - NAME\nIf IsEmpty(HH[{a}].NAME.FNAME) And IsEmpty(HH[{a}].NAME.LNAME) Then\nHH[{a}].NAME.Label.Inserts[\"err\"]=hhnamecheck.Label"
+    }
+  },
+  "required": [
+    "ENDA",
+    "ENDA"
+  ]
+}

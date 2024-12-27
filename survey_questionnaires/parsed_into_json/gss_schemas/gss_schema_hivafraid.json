@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HIVAFRAID",
+  "description": "Questions related to HIVAFRAID",
+  "properties": {
+    "HIVAFRAID": {
+      "type": "string",
+      "title": "HIVAFRAID",
+      "description": "Please indicate how much you agree or disagree with each of the following comments. I would be afraid to be around a person with HIV because I would be worried I could get infected.",
+      "enum": [
+        "str_disag",
+        "smwt_disag",
+        "smwt_agr",
+        "str_agr",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HIVAFRAID"
+  ]
+}

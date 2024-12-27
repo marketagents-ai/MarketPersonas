@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HUNT",
+  "description": "Questions related to HUNT",
+  "properties": {
+    "HUNT": {
+      "type": "string",
+      "title": "HUNT",
+      "description": "And now a question on a different topic.  {spfill} go hunting?",
+      "enum": [
+        "yes_respondent_does",
+        "yes_spouse_does",
+        "yes_both_do",
+        "no",
+        "dontknow"
+      ],
+      "enumDescriptions": [
+        "Yes, my {spfill} hunts",
+        "Yes, we both hunt",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HUNT"
+  ]
+}

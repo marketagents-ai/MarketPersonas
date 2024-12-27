@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NUMKIDS",
+  "description": "Questions related to NUMKIDS",
+  "properties": {
+    "NUMKIDS": {
+      "type": "integer",
+      "title": "NUMKIDS",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number: ');});All in all, what do you think is the ideal number of children for a family to have?",
+      "minimum": 0,
+      "maximum": 99
+    }
+  },
+  "required": [
+    "NUMKIDS"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MADEGHI",
+  "description": "Questions related to MADEGHI",
+  "properties": {
+    "MADEGHI": {
+      "type": "string",
+      "title": "MADEGHI",
+      "description": "What was the highest degree she earned?",
+      "enum": [
+        "bachelor_s",
+        "graduate",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "}",
+        "End If",
+        "End If",
+        "End If",
+        "Associate/Junior College",
+        "Bachelor's",
+        "Graduate",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "MADEGHI"
+  ]
+}

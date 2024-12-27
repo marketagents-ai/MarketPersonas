@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WRKWAYUP",
+  "description": "Questions related to WRKWAYUP",
+  "properties": {
+    "WRKWAYUP": {
+      "type": "string",
+      "title": "WRKWAYUP",
+      "description": "Do you agree strongly, agree somewhat, neither agree nor disagree, disagree somewhat, or disagree strongly with the following statement: Irish, Italian, Jewish and many other minorities overcame prejudice and worked their way up. Black people should do the same without special favors.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Agree strongly",
+        "Agree somewhat",
+        "Neither agree nor disagree",
+        "Disagree somewhat",
+        "Disagree strongly",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WRKWAYUP"
+  ]
+}

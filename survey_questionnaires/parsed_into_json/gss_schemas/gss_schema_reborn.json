@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: REBORN",
+  "description": "Questions related to REBORN",
+  "properties": {
+    "REBORN": {
+      "type": "string",
+      "title": "REBORN",
+      "description": "Would you say you have been \"born again\" or have had a \"born again\" experience – that is, a turning point in your life when you committed yourself to Christ?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "REBORN"
+  ]
+}

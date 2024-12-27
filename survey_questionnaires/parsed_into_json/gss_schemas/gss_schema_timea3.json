@@ -1,0 +1,280 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TIMEA3",
+  "description": "Questions related to TIMEA3",
+  "properties": {
+    "RACERANK3": {
+      "type": "string",
+      "title": "RACERANK3",
+      "description": "Categorical (Single)"
+    },
+    "RACOPENY": {
+      "type": "string",
+      "title": "RACOPENY",
+      "description": "Categorical (Single)"
+    },
+    "RACOPEN": {
+      "type": "string",
+      "title": "RACOPEN",
+      "description": "Categorical (Single)"
+    },
+    "RACLIVE": {
+      "type": "string",
+      "title": "RACLIVE",
+      "description": "Categorical (Single)"
+    },
+    "RACDIF1": {
+      "type": "string",
+      "title": "RACDIF1",
+      "description": "Categorical (Single)"
+    },
+    "RACDIF2": {
+      "type": "string",
+      "title": "RACDIF2",
+      "description": "Categorical (Single)"
+    },
+    "RACDIF3": {
+      "type": "string",
+      "title": "RACDIF3",
+      "description": "Categorical (Single)"
+    },
+    "RACDIF4": {
+      "type": "string",
+      "title": "RACDIF4",
+      "description": "Categorical (Single)"
+    },
+    "AFIRM1": {
+      "type": "string",
+      "title": "AFIRM1",
+      "description": "Categorical (Single)"
+    },
+    "AFIRM2": {
+      "type": "string",
+      "title": "AFIRM2",
+      "description": "Categorical (Single)"
+    },
+    "AFIRM3": {
+      "type": "string",
+      "title": "AFIRM3",
+      "description": "Categorical (Single)"
+    },
+    "WRKWAYUP": {
+      "type": "string",
+      "title": "WRKWAYUP",
+      "description": "Categorical (Single)"
+    },
+    "WLTHWHT": {
+      "type": "string",
+      "title": "WLTHWHT",
+      "description": "Categorical (Single)"
+    },
+    "WLTHBLK": {
+      "type": "string",
+      "title": "WLTHBLK",
+      "description": "Categorical (Single)"
+    },
+    "WLTHHSPS": {
+      "type": "string",
+      "title": "WLTHHSPS",
+      "description": "Categorical (Single)"
+    },
+    "WORKWHT": {
+      "type": "string",
+      "title": "WORKWHT",
+      "description": "Categorical (Single)"
+    },
+    "WORKBLK": {
+      "type": "string",
+      "title": "WORKBLK",
+      "description": "Categorical (Single)"
+    },
+    "WORKHSPS": {
+      "type": "string",
+      "title": "WORKHSPS",
+      "description": "Categorical (Single)"
+    },
+    "INTLWHT": {
+      "type": "string",
+      "title": "INTLWHT",
+      "description": "Categorical (Single)"
+    },
+    "INTLBLK": {
+      "type": "string",
+      "title": "INTLBLK",
+      "description": "Categorical (Single)"
+    },
+    "INTLHSPS": {
+      "type": "string",
+      "title": "INTLHSPS",
+      "description": "Categorical (Single)"
+    },
+    "LIVEBLKS": {
+      "type": "string",
+      "title": "LIVEBLKS",
+      "description": "Categorical (Single)"
+    },
+    "MARWHT": {
+      "type": "string",
+      "title": "MARWHT",
+      "description": "Categorical (Single)"
+    },
+    "MARBLK": {
+      "type": "string",
+      "title": "MARBLK",
+      "description": "Categorical (Single)"
+    },
+    "MARASIAN": {
+      "type": "string",
+      "title": "MARASIAN",
+      "description": "Categorical (Single)"
+    },
+    "MARHISP": {
+      "type": "string",
+      "title": "MARHISP",
+      "description": "Categorical (Single)"
+    },
+    "RACWORK": {
+      "type": "string",
+      "title": "RACWORK",
+      "description": "Categorical (Single)"
+    },
+    "DISCAFF": {
+      "type": "string",
+      "title": "DISCAFF",
+      "description": "Categorical (Single)"
+    },
+    "LETIN1A": {
+      "type": "string",
+      "title": "LETIN1A",
+      "description": "Categorical (Single)"
+    },
+    "IMMCRIME": {
+      "type": "string",
+      "title": "IMMCRIME",
+      "description": "Categorical (Single)"
+    },
+    "IMMJOBS": {
+      "type": "string",
+      "title": "IMMJOBS",
+      "description": "Categorical (Single)"
+    },
+    "ADOPTUS": {
+      "type": "string",
+      "title": "ADOPTUS",
+      "description": "Categorical (Single)"
+    },
+    "IMMFATE": {
+      "type": "string",
+      "title": "IMMFATE",
+      "description": "Categorical (Single)"
+    },
+    "LETINHSP": {
+      "type": "string",
+      "title": "LETINHSP",
+      "description": "Categorical (Single)"
+    },
+    "LETINASN": {
+      "type": "string",
+      "title": "LETINASN",
+      "description": "Categorical (Single)"
+    },
+    "GETAHEAD": {
+      "type": "string",
+      "title": "GETAHEAD",
+      "description": "Categorical (Single)"
+    },
+    "LIFE": {
+      "type": "string",
+      "title": "LIFE",
+      "description": "Categorical (Single)"
+    },
+    "HAPMAR": {
+      "type": "string",
+      "title": "HAPMAR",
+      "description": "Categorical (Single)"
+    },
+    "HAPCOHAB": {
+      "type": "string",
+      "title": "HAPCOHAB",
+      "description": "Categorical (Single)"
+    },
+    "HAPPY": {
+      "type": "string",
+      "title": "HAPPY",
+      "description": "Categorical (Single)"
+    },
+    "HEALTH": {
+      "type": "string",
+      "title": "HEALTH",
+      "description": "Categorical (Single)"
+    },
+    "CHLDIDEL": {
+      "type": "string",
+      "title": "CHLDIDEL",
+      "description": "Categorical (Single)"
+    },
+    "CHILDS": {
+      "type": "string",
+      "title": "CHILDS",
+      "description": "Categorical (Single)"
+    },
+    "AGEKDBRN": {
+      "type": "string",
+      "title": "AGEKDBRN",
+      "description": "Long [9 .. 97]"
+    },
+    "SEXEDUC": {
+      "type": "string",
+      "title": "SEXEDUC",
+      "description": "Categorical (Single)"
+    }
+  },
+  "required": [
+    "RACERANK3",
+    "RACOPENY",
+    "RACOPEN",
+    "RACLIVE",
+    "RACDIF1",
+    "RACDIF2",
+    "RACDIF3",
+    "RACDIF4",
+    "AFIRM1",
+    "AFIRM2",
+    "AFIRM3",
+    "WRKWAYUP",
+    "WLTHWHT",
+    "WLTHBLK",
+    "WLTHHSPS",
+    "WORKWHT",
+    "WORKBLK",
+    "WORKHSPS",
+    "INTLWHT",
+    "INTLBLK",
+    "INTLHSPS",
+    "LIVEBLKS",
+    "MARWHT",
+    "MARBLK",
+    "MARASIAN",
+    "MARHISP",
+    "RACWORK",
+    "DISCAFF",
+    "LETIN1A",
+    "IMMCRIME",
+    "IMMJOBS",
+    "ADOPTUS",
+    "IMMFATE",
+    "LETINHSP",
+    "LETINASN",
+    "GETAHEAD",
+    "LIFE",
+    "HAPMAR",
+    "HAPCOHAB",
+    "HAPPY",
+    "HEALTH",
+    "CHLDIDEL",
+    "CHILDS",
+    "AGEKDBRN",
+    "SEXEDUC"
+  ]
+}

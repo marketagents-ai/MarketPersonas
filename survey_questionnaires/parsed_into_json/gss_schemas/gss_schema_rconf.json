@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RCONF",
+  "description": "Questions related to RCONF",
+  "properties": {
+    "RCONF_PHONE": {
+      "type": "string",
+      "title": "RCONF_PHONE",
+      "description": "Phone:"
+    },
+    "RCONF_EMAIL": {
+      "type": "string",
+      "title": "RCONF_EMAIL",
+      "description": "Email: End Page - rconfnopg IOM.Terminate(Signals.sigStopped, True, TerminateStatus.tsScriptStopped) End If Else RCONFIRM.Response = {yes} End If"
+    }
+  },
+  "required": [
+    "RCONF_PHONE",
+    "RCONF_EMAIL"
+  ]
+}

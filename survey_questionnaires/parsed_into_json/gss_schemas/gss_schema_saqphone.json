@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SAQPHONE",
+  "description": "Questions related to SAQPHONE",
+  "properties": {
+    "SAQPHONE2": {
+      "type": "string",
+      "title": "SAQPHONE2",
+      "description": "The next questions may be sensitive for you. You can decline to answer any question but remember that\nall of your answers are completely confidential; they will not be associated with your name in any way.\nEnd If\nIf SAQMODE2 = {inperson} Then\nIOM.Context=\"Question\""
+    }
+  },
+  "required": [
+    "SAQPHONE2"
+  ]
+}

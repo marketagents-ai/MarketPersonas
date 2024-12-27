@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHDEP",
+  "description": "Questions related to HLTHDEP",
+  "properties": {
+    "HLTHDEP": {
+      "type": "string",
+      "title": "HLTHDEP",
+      "description": "(During the past 4 weeks how often...) Have you felt unhappy and depressed?",
+      "enum": [
+        "d12_1",
+        "d12_2",
+        "d12_3",
+        "d12_4",
+        "d12_5",
+        "d12_8",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Never",
+        "Seldom",
+        "Sometimes",
+        "Often",
+        "Very often",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HLTHDEP"
+  ]
+}

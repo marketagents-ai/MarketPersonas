@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OWNSTOCK",
+  "description": "Questions related to OWNSTOCK",
+  "properties": {
+    "OWNSTOCK": {
+      "type": "string",
+      "title": "OWNSTOCK",
+      "description": "Do you own any shares of stock in the company where you now work, either directly or through some type of retirement or stock plan? Stock in the company would include stock in an Employee Stock Ownership Plan, in a 401k plan, in a profit sharing plan, in a stock bonus plan or other retirement plan or company sponsored plan, or stock that you bought directly in your company.",
+      "enum": [
+        "yes",
+        "nostock",
+        "noown",
+        "noowndk",
+        "dkown",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No, I work for a company that does not have stock",
+        "No, my company has stock but I do not own any of my company's",
+        "stock",
+        "No, I do not own stock and I do not know if my company has stock",
+        "I do not know if I own stock in my company",
+        "Don't know",
+        "NA",
+        "If OWNSTOCK = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "OWNSTOCK"
+  ]
+}

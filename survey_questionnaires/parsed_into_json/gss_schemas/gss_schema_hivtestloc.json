@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HIVTESTLOC",
+  "description": "Questions related to HIVTESTLOC",
+  "properties": {
+    "HIVTESTLOC": {
+      "type": "string",
+      "title": "HIVTESTLOC",
+      "description": "Where did you have your last HIV test?",
+      "enum": [
+        "er",
+        "hospital",
+        "clinic",
+        "jail_or_prison",
+        "drugtx",
+        "home",
+        "somewhere_else",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "_office}",
+        "g_site}",
+        "Private doctor or HMO office",
+        "Counseling and testing site",
+        "Emergency room",
+        "Hospital inpatient",
+        "Clinic",
+        "Jail or prison",
+        "Drug treatment facility",
+        "Home",
+        "Somewhere else",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HIVTESTLOC"
+  ]
+}

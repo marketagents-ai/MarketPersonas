@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FEPRESCH",
+  "description": "Questions related to FEPRESCH",
+  "properties": {
+    "FEPRESCH": {
+      "type": "string",
+      "title": "FEPRESCH",
+      "description": "(Please read the following statements and indicate whether you strongly agree, agree, neither agree nor disagree, disagree, or strongly disagree with each statement.) A preschool child is likely to suffer if his or her mother works.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "disagree",
+        "strongly_disagree",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Disagree",
+        "Strongly disagree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "FEPRESCH2": {
+      "type": "string",
+      "title": "FEPRESCH2",
+      "description": "(To what extent do you agree or disagree...?) A pre-school child is likely to suffer if his or her mother works.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "neithagr",
+        "disagree",
+        "strongly_disagree",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FEPRESCH",
+    "FEPRESCH2"
+  ]
+}

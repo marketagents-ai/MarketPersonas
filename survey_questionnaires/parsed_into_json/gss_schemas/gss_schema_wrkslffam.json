@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WRKSLFFAM",
+  "description": "Questions related to WRKSLFFAM",
+  "properties": {
+    "WRKSLFFAM": {
+      "type": "string",
+      "title": "WRKSLFFAM",
+      "description": "{response to wrkslffamfill} you work in your own family business or farm?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "WRKSLFFAM"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPKLANG",
+  "description": "Questions related to SPKLANG",
+  "properties": {
+    "SPKLANG": {
+      "type": "string",
+      "title": "SPKLANG",
+      "description": "How well do you speak that language ({BETRLANG})?",
+      "enum": [
+        "very_well",
+        "well",
+        "not_well",
+        "poorhardly_at_all",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "End If",
+        "Very well",
+        "Well",
+        "Not well",
+        "Poor/Hardly at all",
+        "Don't know"
+      ]
+    }
+  },
+  "required": [
+    "SPKLANG"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HOMEKID",
+  "description": "Questions related to HOMEKID",
+  "properties": {
+    "HOMEKID": {
+      "type": "string",
+      "title": "HOMEKID",
+      "description": "(To what extent do you agree or disagree...?) A job is all right, but what most women really want is a home and children.",
+      "enum": [
+        "strongly_agree",
+        "agree",
+        "neithagr",
+        "disagree",
+        "strongly_disagree",
+        "cantchoose",
+        "refused"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Can't choose",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HOMEKID"
+  ]
+}

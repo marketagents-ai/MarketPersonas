@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TimeQuex",
+  "description": "Questions related to TimeQuex",
+  "properties": {
+    "THANKYOU": {
+      "type": "string",
+      "title": "THANKYOU",
+      "description": "Info"
+    },
+    "OOSTHANKS": {
+      "type": "string",
+      "title": "OOSTHANKS",
+      "description": "Info"
+    },
+    "HANDCARDAX": {
+      "type": "string",
+      "title": "HANDCARDAX",
+      "description": "Info"
+    },
+    "HANDCARDAY": {
+      "type": "string",
+      "title": "HANDCARDAY",
+      "description": "Info"
+    },
+    "HANDCARDBX": {
+      "type": "string",
+      "title": "HANDCARDBX",
+      "description": "Info"
+    },
+    "HANDCARDBY": {
+      "type": "string",
+      "title": "HANDCARDBY",
+      "description": "Info"
+    },
+    "HANDCARDC": {
+      "type": "string",
+      "title": "HANDCARDC",
+      "description": "Info"
+    },
+    "ROSTINTRO": {
+      "type": "string",
+      "title": "ROSTINTRO",
+      "description": "Info"
+    },
+    "ROSTINFO": {
+      "type": "string",
+      "title": "ROSTINFO",
+      "description": "Info"
+    },
+    "PROBE2": {
+      "type": "string",
+      "title": "PROBE2",
+      "description": "Info"
+    },
+    "ENDB": {
+      "type": "string",
+      "title": "ENDB",
+      "description": "Info"
+    },
+    "ENDBB": {
+      "type": "string",
+      "title": "ENDBB",
+      "description": "Info"
+    },
+    "ENDC": {
+      "type": "string",
+      "title": "ENDC",
+      "description": "Info"
+    },
+    "ENDEE": {
+      "type": "string",
+      "title": "ENDEE",
+      "description": "Info"
+    },
+    "ENDSAQ5_TEXT": {
+      "type": "string",
+      "title": "ENDSAQ5_TEXT",
+      "description": "Info"
+    },
+    "ENDSAQ5": {
+      "type": "string",
+      "title": "ENDSAQ5",
+      "description": "Info"
+    },
+    "PASSWORD_DISP": {
+      "type": "string",
+      "title": "PASSWORD_DISP",
+      "description": "Info"
+    },
+    "ENDG": {
+      "type": "string",
+      "title": "ENDG",
+      "description": "Info"
+    },
+    "THANKYOU2": {
+      "type": "string",
+      "title": "THANKYOU2",
+      "description": "Info"
+    },
+    "FBPROMPT": {
+      "type": "string",
+      "title": "FBPROMPT",
+      "description": "Info"
+    },
+    "INTERVIEWER": {
+      "type": "string",
+      "title": "INTERVIEWER",
+      "description": "PLEASE RE-ATTEMPT THE FACEBOOK PROTOCOL AFTER CLOSING THIS"
+    },
+    "ENDH": {
+      "type": "string",
+      "title": "ENDH",
+      "description": "Info"
+    }
+  },
+  "required": [
+    "THANKYOU",
+    "OOSTHANKS",
+    "HANDCARDAX",
+    "HANDCARDAY",
+    "HANDCARDBX",
+    "HANDCARDBY",
+    "HANDCARDC",
+    "ROSTINTRO",
+    "ROSTINFO",
+    "PROBE2",
+    "ENDB",
+    "ENDBB",
+    "ENDC",
+    "ENDEE",
+    "ENDSAQ5_TEXT",
+    "ENDSAQ5",
+    "PASSWORD_DISP",
+    "ENDG",
+    "THANKYOU2",
+    "FBPROMPT",
+    "INTERVIEWER",
+    "ENDH"
+  ]
+}

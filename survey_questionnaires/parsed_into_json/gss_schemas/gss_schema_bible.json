@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: BIBLE",
+  "description": "Questions related to BIBLE",
+  "properties": {
+    "BIBLE": {
+      "type": "string",
+      "title": "BIBLE",
+      "description": "Which one of these statements comes closest to describing your feelings about the Bible?",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "othr",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "The Bible is the actual word of God and is to be taken literally, word for",
+        "word",
+        "The Bible is the inspired word of God but not everything should be",
+        "taken literally, word for word",
+        "The Bible is an ancient book of fables, legends, history and moral",
+        "precepts recorded by man",
+        "Something else"
+      ]
+    }
+  },
+  "required": [
+    "BIBLE"
+  ]
+}

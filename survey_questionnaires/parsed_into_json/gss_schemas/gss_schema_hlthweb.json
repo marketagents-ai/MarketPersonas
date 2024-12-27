@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HLTHWEB",
+  "description": "Questions related to HLTHWEB",
+  "properties": {
+    "HLTHWEB": {
+      "type": "string",
+      "title": "HLTHWEB",
+      "description": "During the past 12 months, how often, if at all, did you use the internet on any device (such as computers, tablets and smartphones) to look for health or medical information for yourself or someone else?",
+      "enum": [
+        "svtmday",
+        "onceday",
+        "svtmweek",
+        "svtmmo",
+        "svtmyear",
+        "nevalmst",
+        "cantchoose",
+        "noaccess",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Several times a day",
+        "Once a day",
+        "Several times a week",
+        "Several times a month",
+        "Several times a year",
+        "Never or almost never",
+        "Can't choose",
+        "I do not have access to the internet",
+        "NA",
+        "If HLTHWEB = {noaccess} Then Goto LabelISSPQ14"
+      ]
+    }
+  },
+  "required": [
+    "HLTHWEB"
+  ]
+}

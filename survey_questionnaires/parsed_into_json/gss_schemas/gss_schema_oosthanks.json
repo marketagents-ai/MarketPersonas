@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: OOSTHANKS",
+  "description": "Questions related to OOSTHANKS",
+  "properties": {
+    "OOSTHANKS": {
+      "type": "string",
+      "title": "OOSTHANKS",
+      "description": "Thank you.\nSectionHeader: Info\nSECTION {sect} - BALLOT {response to BALLOT} - VERSION {response to VERXY} - {response to\nSU_ID}"
+    }
+  },
+  "required": [
+    "OOSTHANKS",
+    "OOSTHANKS"
+  ]
+}

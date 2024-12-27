@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MAINSLF",
+  "description": "Questions related to MAINSLF",
+  "properties": {
+    "MAINSLF": {
+      "type": "string",
+      "title": "MAINSLF",
+      "description": "{response to mainslffill} End Page - occpage Begin Page - indpage"
+    }
+  },
+  "required": [
+    "MAINSLF"
+  ]
+}

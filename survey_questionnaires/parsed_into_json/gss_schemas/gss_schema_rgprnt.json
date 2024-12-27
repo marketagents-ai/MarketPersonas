@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RGPRNT",
+  "description": "Questions related to RGPRNT",
+  "properties": {
+    "RGPRNT18": {
+      "type": "string",
+      "title": "RGPRNT18",
+      "description": "Are you the grandparent of another individual 18 or older in your house?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RGPRNT18"
+  ]
+}

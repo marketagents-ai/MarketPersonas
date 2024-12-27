@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RACWORK",
+  "description": "Questions related to RACWORK",
+  "properties": {
+    "RACWORK": {
+      "type": "string",
+      "title": "RACWORK",
+      "description": "Are the people who work where you work all White, mostly White, about half and half, mostly Black, or all Black?",
+      "enum": [
+        "all_white",
+        "mostly_white",
+        "about_half_and_half",
+        "mostly_black",
+        "all_black",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "All White",
+        "Mostly White",
+        "About half and half",
+        "Mostly Black",
+        "All Black",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RACWORK"
+  ]
+}

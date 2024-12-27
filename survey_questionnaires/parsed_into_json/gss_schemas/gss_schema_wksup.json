@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: WKSUP",
+  "description": "Questions related to WKSUP",
+  "properties": {
+    "WKSUP": {
+      "type": "string",
+      "title": "WKSUP",
+      "description": "{wksupfill}",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If WKSUP = {yes} Then"
+      ]
+    }
+  },
+  "required": [
+    "WKSUP"
+  ]
+}

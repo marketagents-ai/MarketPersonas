@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: USEDUP",
+  "description": "Questions related to USEDUP",
+  "properties": {
+    "USEDUP": {
+      "type": "string",
+      "title": "USEDUP",
+      "description": "How often during the past month have you felt used up at the end of the day?",
+      "enum": [
+        "_1_very_often",
+        "_2_often",
+        "_3_sometimes",
+        "_4_rarely",
+        "_5_never",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Very often",
+        "Often",
+        "Sometimes",
+        "Rarely",
+        "Never",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "USEDUP"
+  ]
+}

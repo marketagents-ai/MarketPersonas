@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MARHOMO",
+  "description": "Questions related to MARHOMO",
+  "properties": {
+    "MARHOMO": {
+      "type": "string",
+      "title": "MARHOMO",
+      "description": "Do you agree or disagree with the following statement: Homosexual couples should have the right to marry one another.",
+      "enum": [
+        "_1",
+        "_2",
+        "_3",
+        "_4",
+        "_5",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Strongly agree",
+        "Agree",
+        "Neither agree nor disagree",
+        "Disagree",
+        "Strongly disagree",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "MARHOMO"
+  ]
+}

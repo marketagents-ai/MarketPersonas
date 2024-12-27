@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PAIDLV",
+  "description": "Questions related to PAIDLV",
+  "properties": {
+    "PAIDLV": {
+      "type": "string",
+      "title": "PAIDLV",
+      "description": "Consider a couple who both work full-time and now have a new born child. One of them stops working for some time to care for their child. Do you think there should be paid leave available and, if so, for how long?",
+      "enum": [
+        "yesmth",
+        "no",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes, enter months",
+        "No, there should be no paid leave",
+        "NA",
+        "If PAIDLV = {yesmth} Then"
+      ]
+    }
+  },
+  "required": [
+    "PAIDLV"
+  ]
+}

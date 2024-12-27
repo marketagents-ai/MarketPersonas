@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RES",
+  "description": "Questions related to RES",
+  "properties": {
+    "RES16": {
+      "type": "string",
+      "title": "RES16",
+      "description": "Next, we have a few factual questions about yourself.  Which of the categories comes closest to the type of place you were living in when you were 16 years old?",
+      "enum": [
+        "_2_on_a_farm",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "ut_not_on_a_farm}",
+        "_town_under_50000}",
+        "city_50000250000}",
+        "a_large_city}"
+      ]
+    }
+  },
+  "required": [
+    "RES16"
+  ]
+}

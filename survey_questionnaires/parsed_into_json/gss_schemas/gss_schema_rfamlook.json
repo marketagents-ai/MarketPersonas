@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RFAMLOOK",
+  "description": "Questions related to RFAMLOOK",
+  "properties": {
+    "RFAMLOOK": {
+      "type": "integer",
+      "title": "RFAMLOOK",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Hours: ');});(On average, how many hours a week do you spend...) ...looking after family members (e.g. children, elderly, ill or disabled family members)? If MARITAL = {married} Or (POSSLQ.ContainsAny({marliv,posslq}) Or POSSLQ.ContainsAny({marliv,posslq})) Then If MARITAL = {married} Or POSSLQ = {marliv} Or POSSLQY = {marliv} Then spousepartfill.Response = {spouse} spousepartfill2.Response = {spouse} Else spousepartfill.Response = {partner} spousepartfill2.Response = {partner} End If",
+      "minimum": 0,
+      "maximum": 168
+    }
+  },
+  "required": [
+    "RFAMLOOK"
+  ]
+}

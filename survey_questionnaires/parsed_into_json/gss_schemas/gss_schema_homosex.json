@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HOMOSEX",
+  "description": "Questions related to HOMOSEX",
+  "properties": {
+    "HOMOSEX": {
+      "type": "string",
+      "title": "HOMOSEX",
+      "description": "What about sexual relations between two adults of the same sex-- do you think it is always wrong, almost always wrong, wrong only sometimes, or not wrong at all?",
+      "enum": [
+        "always_wrong",
+        "almost_always_wrong",
+        "not_wrong_at_all",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Always wrong",
+        "s}",
+        "Not wrong at all",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HOMOSEX"
+  ]
+}

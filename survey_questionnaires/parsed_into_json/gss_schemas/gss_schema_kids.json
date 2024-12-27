@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: KIDS",
+  "description": "Questions related to KIDS",
+  "properties": {
+    "KIDS0TO6": {
+      "type": "integer",
+      "title": "KIDS0TO6",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of individuals aged 0-6: ');});How many individuals are there in this household between the ages of 0 and 6?",
+      "minimum": 0,
+      "maximum": 99
+    },
+    "KIDS7TO12": {
+      "type": "integer",
+      "title": "KIDS7TO12",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of individuals aged 7-12: ');});How many individuals are there in this household between the ages of 7 and 12?",
+      "minimum": 0,
+      "maximum": 99
+    },
+    "KIDS13TO17": {
+      "type": "integer",
+      "title": "KIDS13TO17",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Number of individuals aged 13-17: ');});How many individuals are there in this household between the ages of 13 and 17?",
+      "minimum": 0,
+      "maximum": 99
+    }
+  },
+  "required": [
+    "KIDS0TO6",
+    "KIDS7TO12",
+    "KIDS13TO17"
+  ]
+}

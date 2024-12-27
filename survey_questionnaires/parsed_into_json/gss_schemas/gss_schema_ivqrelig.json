@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: IVQRELIG",
+  "description": "Questions related to IVQRELIG",
+  "properties": {
+    "IVQRELIG": {
+      "type": "string",
+      "title": "IVQRELIG",
+      "description": "Is your religious preference any of the following?",
+      "enum": [
+        "christian",
+        "interdenominational",
+        "nondenominational",
+        "nopref",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Christian",
+        "Interdenominational",
+        "Non-denominational",
+        "Something else",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "IVQRELIG3": {
+      "type": "string",
+      "title": "IVQRELIG3",
+      "description": "Is your {response to _spfill1}'s religious preference any of the following?",
+      "enum": [
+        "christian",
+        "interdenominational",
+        "nondenominational",
+        "nopref",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Christian",
+        "Interdenominational",
+        "Non-denominational",
+        "Something else",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "IVQRELIG",
+    "IVQRELIG3"
+  ]
+}

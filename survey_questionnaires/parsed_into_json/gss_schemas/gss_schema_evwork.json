@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: EVWORK",
+  "description": "Questions related to EVWORK",
+  "properties": {
+    "EVWORK": {
+      "type": "string",
+      "title": "EVWORK",
+      "description": "Did you ever work for as long as one year?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "End If",
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED"
+      ]
+    }
+  },
+  "required": [
+    "EVWORK"
+  ]
+}

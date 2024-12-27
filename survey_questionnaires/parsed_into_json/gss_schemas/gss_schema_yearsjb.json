@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: YEARSJB",
+  "description": "Questions related to YEARSJB",
+  "properties": {
+    "YEARSJB1": {
+      "type": "string",
+      "title": "YEARSJB1",
+      "description": "How long have you worked in your present job for your current employer?",
+      "enum": [
+        "less_than_6_months",
+        "_612_months",
+        "enter_years",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Less than 6 months",
+        "6-12 months",
+        "More than 12 months",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "YEARSJB2": {
+      "type": "integer",
+      "title": "YEARSJB2",
+      "description": "Enter number of years worked in your present job: LabelWAYPAID:",
+      "minimum": 1,
+      "maximum": 99
+    }
+  },
+  "required": [
+    "YEARSJB1",
+    "YEARSJB2"
+  ]
+}

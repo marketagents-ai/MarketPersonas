@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PTNRSXNOW",
+  "description": "Questions related to PTNRSXNOW",
+  "properties": {
+    "PTNRSXNOW": {
+      "type": "string",
+      "title": "PTNRSXNOW",
+      "description": "To the best of your knowledge, does your most recent sexual partner describe themselves as male, female, or transgender?",
+      "enum": [
+        "male",
+        "female",
+        "transgender",
+        "nonethese",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow"
+      ],
+      "enumDescriptions": [
+        "Male",
+        "Female",
+        "Transgender",
+        "None of these",
+        "Don't know",
+        "NA",
+        "ptsexconftxt1.Response = PTNRSXBRTH",
+        "ptsexconftxt2.Response = PTNRSXNOW"
+      ]
+    }
+  },
+  "required": [
+    "PTNRSXNOW"
+  ]
+}

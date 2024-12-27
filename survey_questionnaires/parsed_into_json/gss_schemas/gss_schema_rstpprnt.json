@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RSTPPRNT",
+  "description": "Questions related to RSTPPRNT",
+  "properties": {
+    "RSTPPRNT18": {
+      "type": "string",
+      "title": "RSTPPRNT18",
+      "description": "To clarify, are you the stepparent of at least one individual 18 or older in your household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "RSTPPRNT": {
+      "type": "string",
+      "title": "RSTPPRNT",
+      "description": "Are you the stepparent of at least one individual under the age of 18 in this household?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RSTPPRNT18",
+    "RSTPPRNT"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RHEIGHTIN",
+  "description": "Questions related to RHEIGHTIN",
+  "properties": {
+    "RHEIGHTIN": {
+      "type": "integer",
+      "title": "RHEIGHTIN",
+      "description": "Inches: End Page - RHEIGHT",
+      "minimum": 0,
+      "maximum": 11
+    }
+  },
+  "required": [
+    "RHEIGHTIN"
+  ]
+}

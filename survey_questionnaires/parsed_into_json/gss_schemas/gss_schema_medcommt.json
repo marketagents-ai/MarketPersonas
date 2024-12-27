@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MEDCOMMT",
+  "description": "Questions related to MEDCOMMT",
+  "properties": {
+    "MEDCOMMT": {
+      "type": "string",
+      "title": "MEDCOMMT",
+      "description": "(During the past 12 months did it ever happen that you did not get the medical treatment you needed because...) You could not take the time off work or had other commitments?",
+      "enum": [
+        "yes",
+        "no",
+        "noneedmed",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Did not need medical treatment",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "MEDCOMMT"
+  ]
+}

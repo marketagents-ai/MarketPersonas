@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CONTZIP",
+  "description": "Questions related to CONTZIP",
+  "properties": {
+    "CONTZIP": {
+      "type": "string",
+      "title": "CONTZIP",
+      "description": "Zip: End Page - CONTADDRpage If Not IsEmpty(CONTSTAE) Then CONTSTAE.Response = Ucase(CONTSTAE) End If If Not(CONTSTAE.Response.Coded) And Not(ItemInList(CONTSTAE,\"AL,AK,AZ,AR,CA,CO,CT,DE,DC,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD, MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,PR,RI,SC,SD,TN,TX,UT,VT,VA, WA,WV,WI,WY,CZ,GU,VI,FC\",\",\")) Then If QUEXLANG = {ESN} Then CONTSTAE.Errors.AddNew(\"err\",\"Por favor, entra la abreviatura del estado válida\") Else CONTSTAE.Errors.AddNew(\"err\",\"Please enter valid state abbreviation\") End If Goto LabelCONTADDR End If"
+    }
+  },
+  "required": [
+    "CONTZIP"
+  ]
+}

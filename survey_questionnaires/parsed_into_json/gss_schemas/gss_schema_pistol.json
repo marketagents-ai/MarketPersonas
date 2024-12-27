@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PISTOL",
+  "description": "Questions related to PISTOL",
+  "properties": {
+    "PISTOL": {
+      "type": "string",
+      "title": "PISTOL",
+      "description": "Is it a pistol, shotgun, rifle, or what? If you have more than one gun, please check all that apply. Categories: {pistol} {shotgun} {rifle} {other_specify} {dummy1} {dummy2} {dummy3} {dntknow} {refused} {noanswer} Pistol Shotgun Rifle Other Don't know NA If PISTOL.ContainsAny({other_specify}) Then"
+    }
+  },
+  "required": [
+    "PISTOL"
+  ]
+}

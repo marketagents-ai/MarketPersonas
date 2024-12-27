@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SLFMANGD",
+  "description": "Questions related to SLFMANGD",
+  "properties": {
+    "SLFMANGD": {
+      "type": "string",
+      "title": "SLFMANGD",
+      "description": "Are you currently involved in a self-managed team? These teams have some degree of responsibility and discretion over such decisions as methods of work, task schedules, assignment of members to different tasks, and feedback about group performance.",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "SLFMANGD"
+  ]
+}

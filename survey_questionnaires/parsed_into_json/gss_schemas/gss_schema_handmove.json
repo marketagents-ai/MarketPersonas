@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HANDMOVE",
+  "description": "Questions related to HANDMOVE",
+  "properties": {
+    "HANDMOVE": {
+      "type": "string",
+      "title": "HANDMOVE",
+      "description": "Does your job regularly require you to perform repetitive or forceful hand movements or involve awkward postures?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "HANDMOVE"
+  ]
+}

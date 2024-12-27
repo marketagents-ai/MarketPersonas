@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: CHRSTCH",
+  "description": "Questions related to CHRSTCH",
+  "properties": {
+    "CHRSTCH2": {
+      "type": "string",
+      "title": "CHRSTCH2",
+      "description": "Would that be a Christian church?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    },
+    "CHRSTCH3": {
+      "type": "string",
+      "title": "CHRSTCH3",
+      "description": "Would that be a Christian church?",
+      "enum": [
+        "yes",
+        "no",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "CHRSTCH2",
+    "CHRSTCH3"
+  ]
+}

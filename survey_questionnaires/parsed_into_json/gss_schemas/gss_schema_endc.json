@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: ENDC",
+  "description": "Questions related to ENDC",
+  "properties": {
+    "ENDC": {
+      "type": "string",
+      "title": "ENDC",
+      "description": "spouse\nsteady partner\nFOR TESTING ONLY:  END OF SECTION C"
+    }
+  },
+  "required": [
+    "ENDC"
+  ]
+}

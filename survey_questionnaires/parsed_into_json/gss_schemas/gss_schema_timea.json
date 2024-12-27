@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: TIMEA",
+  "description": "Questions related to TIMEA",
+  "properties": {
+    "TIMEA1": {
+      "type": "string",
+      "title": "TIMEA1",
+      "description": "ShowTIMEA2: Info FOR TESTING ONLY:"
+    },
+    "TIMEA2": {
+      "type": "string",
+      "title": "TIMEA2",
+      "description": "ShowTIMEA3: Info FOR TESTING ONLY:"
+    },
+    "TIMEA3": {
+      "type": "string",
+      "title": "TIMEA3",
+      "description": "ShowTIMEA4: Info FOR TESTING ONLY:"
+    },
+    "TIMEA4": {
+      "type": "string",
+      "title": "TIMEA4",
+      "description": "ShowTIMEA5: Info FOR TESTING ONLY:"
+    },
+    "TIMEA5": {
+      "type": "string",
+      "title": "TIMEA5",
+      "description": "ShowTIMEA6: Info FOR TESTING ONLY:"
+    },
+    "TIMEA6": {
+      "type": "string",
+      "title": "TIMEA6",
+      "description": "ShowTIMEA7: Info FOR TESTING ONLY:"
+    },
+    "TIMEA7": {
+      "type": "string",
+      "title": "TIMEA7",
+      "description": "rostintrotxt: Categorical (Single) Categories: {hh} {hef} Now we would like to ask some basic questions about your household. Thank you for confirming that the household list I showed you is not correct. rostinsttxt: Categorical (Single) Here, we are interested in how adults, children, and babies living within households are related. Let's start with names, or nicknames - you can use whichever is easiest for you. Categories: {hh} {hef}"
+    }
+  },
+  "required": [
+    "TIMEA1",
+    "TIMEA2",
+    "TIMEA3",
+    "TIMEA4",
+    "TIMEA5",
+    "TIMEA6",
+    "TIMEA7"
+  ]
+}

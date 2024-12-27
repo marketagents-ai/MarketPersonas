@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NTWKHARD",
+  "description": "Questions related to NTWKHARD",
+  "properties": {
+    "NTWKHARD1": {
+      "type": "integer",
+      "title": "NTWKHARD1",
+      "description": "Percentage of time (Number between 0 and 100): nt: Info",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "NTWKHARD0": {
+      "type": "string",
+      "title": "NTWKHARD0",
+      "description": "",
+      "enum": [
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "NTWKHARD1",
+    "NTWKHARD1",
+    "NTWKHARD0"
+  ]
+}

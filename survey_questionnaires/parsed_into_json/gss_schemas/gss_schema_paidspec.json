@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PAIDSPEC",
+  "description": "Questions related to PAIDSPEC",
+  "properties": {
+    "PAIDSPEC": {
+      "type": "string",
+      "title": "PAIDSPEC",
+      "description": "You’ve indicated that you receive “Other” type of payment. Please tell us how you are paid: End If"
+    }
+  },
+  "required": [
+    "PAIDSPEC"
+  ]
+}

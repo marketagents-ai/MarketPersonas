@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: FEPOL",
+  "description": "Questions related to FEPOL",
+  "properties": {
+    "FEPOL": {
+      "type": "string",
+      "title": "FEPOL",
+      "description": "{response to fepolfill} if you agree or disagree with this statement: Most men are better suited emotionally for politics than are most women.",
+      "enum": [
+        "agree",
+        "disagree",
+        "not_sure",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Agree",
+        "Disagree",
+        "Not sure",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "FEPOL"
+  ]
+}

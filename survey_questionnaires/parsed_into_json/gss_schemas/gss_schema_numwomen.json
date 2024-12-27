@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NUMWOMEN",
+  "description": "Questions related to NUMWOMEN",
+  "properties": {
+    "NUMWOMEN": {
+      "type": "integer",
+      "title": "NUMWOMEN",
+      "description": "Now thinking about the time since your 18th birthday, (again, including the recent past that you have already told us about) how many female partners have you ever had sex with?",
+      "minimum": 0,
+      "maximum": 776
+    }
+  },
+  "required": [
+    "NUMWOMEN"
+  ]
+}

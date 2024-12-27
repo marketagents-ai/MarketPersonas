@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PABORN",
+  "description": "Questions related to PABORN",
+  "properties": {
+    "PABORN": {
+      "type": "string",
+      "title": "PABORN",
+      "description": "Was {response to DADFILL} born in this country?",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "PABORN"
+  ]
+}

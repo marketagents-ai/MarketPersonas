@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: MPREVNAME",
+  "description": "Questions related to MPREVNAME",
+  "properties": {
+    "MPREVNAME": {
+      "type": "string",
+      "title": "MPREVNAME",
+      "description": "Middle name:"
+    }
+  },
+  "required": [
+    "MPREVNAME"
+  ]
+}

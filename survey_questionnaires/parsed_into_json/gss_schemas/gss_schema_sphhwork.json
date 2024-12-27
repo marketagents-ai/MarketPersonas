@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SPHHWORK",
+  "description": "Questions related to SPHHWORK",
+  "properties": {
+    "SPHHWORK": {
+      "type": "integer",
+      "title": "SPHHWORK",
+      "description": "$(document).ready(function() {$('input[type=\"text\"].mrEdit').before('Hours: ');});And what about your {response to spousepartfill}? On average, how many hours a week does he/she spend on household work, not including childcare and leisure time activities?",
+      "minimum": 0,
+      "maximum": 168
+    }
+  },
+  "required": [
+    "SPHHWORK"
+  ]
+}

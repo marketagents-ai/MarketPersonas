@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: NAVIGATION",
+  "description": "Questions related to NAVIGATION",
+  "properties": {
+    "NAVIGATION": {
+      "type": "string",
+      "title": "NAVIGATION",
+      "description": "Navigating the survey:\nThis survey contains questions you will be asked to answer on each screen.\nClick the 'Next' button to continue to the next page.\nClick the 'Back' button if you want to go back to an earlier question.\nLeaving and returning to the survey:\nClick the 'Exit' button on the top right of the screen if you need to complete the rest of the survey\nat a later time. Exiting will help ensure that all of your responses are saved.\nTo return to the survey, go to the survey's URL and re-enter the unique PIN you were provided.\nChanging the survey language:\nClick on the language dropdown in the top right corner. The language will update after you click\n'Next'.\nEnd If\nLabelBegTime:\nBEGHOUR.Response = Hour(Now())\nBEGMIN.Response = Minute(Now())\nCURRMO.Response = Month(Now())\nCURRDY.Response = Day(Now())\nCURRYR.Response = Year(Now())\ncurrmotxt.Response = {January}\ncurrmotxt.Response = {February}\ncurrmotxt.Response = {March}\ncurrmotxt.Response = {April}\ncurrmotxt.Response = {May}\ncurrmotxt.Response = {June}\ncurrmotxt.Response = {July}\ncurrmotxt.Response = {August}\ncurrmotxt.Response = {September}\ncurrmotxt.Response = {October}\ncurrmotxt.Response = {November}\ncurrmotxt.Response = {December}\nIf BREAKOFF.Info.OffPathResponse <> \"\" Then\nBREAKOFF.Response = BREAKOFF.Info.OffPathResponse\nEnd If\nBTIMEA.Response = SetTime(BTIMEA)\nBTIMEA_D.Response = Now()\nLASTSECT.Response = \"A\"\nIf IOM.Info.IsTest Or IOM.ProjectName = \"TGSS2022M\" Then\nSkipSection: Categorical (Single)\nCHOOSE NEXT SECTION TO TEST OR CLICK [NEXT]\nCategories:\n{A}\nA - Core\n{B}\n{C}\n{D}\n{E}\n{F}\n{G}\n{H}\n{skiptoend}\n{NA}\nB - Household Composition\nC - ISSP Family and Gender Roles\nD - ISSP Health and Health Care\nEE - Shared Capitalism\nF - NIOSH\nG - CDC RISKY BEHAVIORS SAQ\nH - Contact/Validation\nSKIP TO END\nDO NOT SKIP\nIf SkipSection = {A} Then\nGoto LabelSectionA\nElseIf SkipSection = {B} Then\nGoto LabelSectionB\nElseIf SkipSection = {C} Then\nGoto LabelSectionC\nElseIf SkipSection = {D} Then\nGoto LabelSectionD\nElseIf SkipSection = {E} Then\nGoto LabelSectionE\nElseIf SkipSection = {F} Then\nGoto LabelSectionF\nElseIf SkipSection = {G} Then\nGoto LabelSectionG\nElseIf SkipSection = {H} Then\nGoto LabelSectionH\nElseIf SkipSection = {skiptoend} Then\nGoto LabelTimeQuex\nEnd If\nEnd If\nLabelSectionA:\nIf QUEXMODE.ContainsAny({capi,phone}) And VERXY = \"Y\" Then\nBTIME_HLTHSTRT.Response = SetTime(BTIME_HLTHSTRT)\nBTIME_HLTHSTRT_D.Response = Now()"
+    }
+  },
+  "required": [
+    "NAVIGATION",
+    "NAVIGATION"
+  ]
+}

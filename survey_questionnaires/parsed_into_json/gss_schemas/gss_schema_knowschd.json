@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: KNOWSCHD",
+  "description": "Questions related to KNOWSCHD",
+  "properties": {
+    "KNOWSCHD": {
+      "type": "string",
+      "title": "KNOWSCHD",
+      "description": "How far in advance do you usually know what days and hours you will need to work?",
+      "enum": [
+        "oneweekless",
+        "between1and2",
+        "between3and4",
+        "more4",
+        "nevchg",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "One week or less",
+        "Between 1 and 2 weeks",
+        "Between 3 and 4 weeks",
+        "4 weeks or more",
+        "My schedule never changes",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "KNOWSCHD"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: SectionA",
+  "description": "Questions related to SectionA",
+  "properties": {
+    "NAVIGATION": {
+      "type": "string",
+      "title": "NAVIGATION",
+      "description": "Info"
+    },
+    "HLTHSTRT": {
+      "type": "string",
+      "title": "HLTHSTRT",
+      "description": "Categorical (Single)"
+    },
+    "HANDCARD1": {
+      "type": "string",
+      "title": "HANDCARD1",
+      "description": "Categorical (Single)"
+    },
+    "HANDCARD2": {
+      "type": "string",
+      "title": "HANDCARD2",
+      "description": "Categorical (Single)"
+    },
+    "HANDCARD": {
+      "type": "string",
+      "title": "HANDCARD",
+      "description": "Info"
+    }
+  },
+  "required": [
+    "NAVIGATION",
+    "HLTHSTRT",
+    "HANDCARD1",
+    "HANDCARD2",
+    "HANDCARD"
+  ]
+}

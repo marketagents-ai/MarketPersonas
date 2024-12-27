@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PROBE",
+  "description": "Questions related to PROBE",
+  "properties": {
+    "PROBE2": {
+      "type": "string",
+      "title": "PROBE2",
+      "description": "Are there any people staying here, like visitors, friends, or relatives, who do not usually live here??\n(“Visitors” are people who have stayed 4 or more of the previous 7 nights.)"
+    }
+  },
+  "required": [
+    "PROBE2"
+  ]
+}

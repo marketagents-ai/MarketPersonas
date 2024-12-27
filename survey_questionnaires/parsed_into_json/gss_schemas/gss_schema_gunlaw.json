@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: GUNLAW",
+  "description": "Questions related to GUNLAW",
+  "properties": {
+    "GUNLAW": {
+      "type": "string",
+      "title": "GUNLAW",
+      "description": "Would you favor or oppose a law which would require a person to obtain a police permit before he or she could buy a gun?",
+      "enum": [
+        "favor",
+        "oppose",
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Favor",
+        "Oppose",
+        "Don't know",
+        "REFUSED",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "GUNLAW"
+  ]
+}

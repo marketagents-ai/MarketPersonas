@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: PARTTEAM",
+  "description": "Questions related to PARTTEAM",
+  "properties": {
+    "PARTTEAM": {
+      "type": "string",
+      "title": "PARTTEAM",
+      "description": "In your job, do you normally work as part of a team, or do you work mostly on your own?",
+      "enum": [
+        "dontknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "_a_team}",
+        "my_own}",
+        "Yes, I work as part of a team"
+      ]
+    }
+  },
+  "required": [
+    "PARTTEAM"
+  ]
+}

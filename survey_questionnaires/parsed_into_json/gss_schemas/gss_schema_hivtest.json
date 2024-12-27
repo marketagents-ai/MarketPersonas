@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: HIVTEST",
+  "description": "Questions related to HIVTEST",
+  "properties": {
+    "HIVTEST": {
+      "type": "string",
+      "title": "HIVTEST",
+      "description": "Have you ever been tested for HIV? Do not count tests you may have had as part of a blood donation. Include oral tests (where they take a swab from your mouth.)",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow",
+        "refused",
+        "noanswer"
+      ],
+      "enumDescriptions": [
+        "Yes",
+        "No",
+        "Don't know",
+        "NA",
+        "If HIVTEST = {yes} Then",
+        "HIVTESTY.QuestionTemplate = \"LeftLabelSub.htm\"",
+        "HIVTESTMO.QuestionTemplate = \"LeftLabelSub.htm\"",
+        "Begin Page - HIVTestPage"
+      ]
+    }
+  },
+  "required": [
+    "HIVTEST"
+  ]
+}

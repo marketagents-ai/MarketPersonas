@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GSS Survey Section: RELATSEX",
+  "description": "Questions related to RELATSEX",
+  "properties": {
+    "RELATSEX": {
+      "type": "string",
+      "title": "RELATSEX",
+      "description": "The last time you had sex, was it with someone you were in an on-going relationship with, or was it with someone else?  Remember that by 'sex' we mean only vaginal, oral or anal sex.",
+      "enum": [
+        "yes",
+        "no",
+        "dummy1",
+        "dummy2",
+        "dummy3",
+        "dntknow"
+      ],
+      "enumDescriptions": [
+        "Yes, the last time I had sex, it was with someone I was in an on-going",
+        "relationship with",
+        "No, the last time I had sex, it was not with someone I was in an on-",
+        "going relationship with",
+        "Don't know",
+        "NA"
+      ]
+    }
+  },
+  "required": [
+    "RELATSEX"
+  ]
+}
