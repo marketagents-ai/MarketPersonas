@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 # 1. Load .env file from a custom path
 script_dir = os.path.dirname(__file__)
 # make sure to add your env file path
-dotenv_path = ".env"
+dotenv_path = "/home/erebus/Desktop/Sandbox/test/MarketVille/.env"
 load_dotenv(dotenv_path=dotenv_path)
 
 # 2. Initialize OpenAI client
